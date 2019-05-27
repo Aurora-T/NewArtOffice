@@ -1,0 +1,35 @@
+<!--pages/ticket/ticket.wxml-->
+<view>
+<view class='people'>
+<text class='my'>张三</text>
+<text class='id'>居民身份证：3****************0</text>
+</view>
+<view  class='people'>
+<text class='my'>预约日期</text>
+<label class="selLab">
+  <picker bindchange="bindPickerChange2" mode="date"
+    value="{{date}}"
+    start="2019-02-01"
+    end="2019-09-01" >
+   <view wx:if="{{status2}}" class="picker1" >
+     {{date}}
+    </view>
+    <view wx:else class="picker2">请选择时间
+    </view>
+  </picker>
+</label> 
+</view>
+<view class='people'>
+<text class='my'>添加同行者(最多两名)</text>
+<text class='id'>居民身份证：</text>
+ <input class="inputid" placeholder="请输入身份证号" bindinput="noval" value='{{noInputValue}}'/> 
+<text class='id'>姓名：</text>
+ <input class="inputName" placeholder="请输入姓名" bindinput="nameval" value='{{nameInputValue}}'/> 
+ <text class='id'>居民身份证：</text>
+ <input class="inputid1" placeholder="请输入身份证号" bindinput="noval1" value='{{noInputValue1}}'/> 
+<text class='id'>姓名：</text>
+ <input class="inputName1" placeholder="请输入姓名" bindinput="nameval1" value='{{nameInputValue1}}'/> 
+
+</view>
+<button>提交</button>
+</view>

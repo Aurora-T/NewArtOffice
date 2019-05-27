@@ -1,0 +1,40 @@
+/* pages/yuyue/yuyue.wxss */
+ 
+text{
+  color: #1b1a1abb;
+  margin-left:0rpx; 
+}
+.title{
+ 
+  margin-bottom: 20rpx;
+}
+.xiugai{
+
+  display: flex;
+  flex-direction: row;
+}
+.modify{
+  font-size:30rpx;
+  color:#aaaaaa;
+}
+.delete{
+ font-size:30rpx;
+  color:#aaaaaa;
+  margin-left:100rpx;
+}
+.container{
+  
+  display: flex;
+  flex-direction: column;
+ 
+}
+.line{
+  margin-top: 20rpx;
+  background-color: rgba(85, 76, 76, 0.74);
+  height:1px;
+  width:650rpx;
+}
+.top{
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+}

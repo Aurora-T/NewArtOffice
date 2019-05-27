@@ -1,0 +1,23 @@
+
+<view class="back">
+<!--pages/my/my.wxml-->
+<button 
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+<text class="username">账号：{{userInfo.nickName}}</text>
+
+</view>
+<view class="container" catchtap='infoTap'>
+<text class="content" >我的信息</text>
+</view>
+
+ <view class="line"/>
+<view class="container">
+<text class="content" catchtap='ayiTap'>我的预约</text>
+</view>
+
+<view class="line"/>
+<view class="container">
+<text class="content"catchtap='adviceTap'>投诉与建议</text>
+</view> 

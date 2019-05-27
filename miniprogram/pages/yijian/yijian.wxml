@@ -1,0 +1,13 @@
+<!--pages/yijian/yijian.wxml-->
+<view class='container'>
+
+<label class="name">联系方式:
+  <input class="inputName" placeholder="请输入联系方式" bindinput="nameval" value='{{nameInputValue}}'/> 
+</label> 
+<view class='line'/>
+<view class="adress">反馈内容:
+  <textarea class="inputAdress" placeholder="请输入反馈内容" bindinput="contentval" value='{{contentInputValue}}'/> 
+</view> 
+
+<button class='button' catchtap='buttonTap'>提交</button>
+</view> 

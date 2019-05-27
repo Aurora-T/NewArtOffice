@@ -1,0 +1,19 @@
+<!--pages/zhanlan/zhanlan.wxml-->
+<import src="zhanlan-item/zhanlan-item.wxml"/>
+
+<view class='btn'>
+
+<button>正在展出</button>
+<button>即将到来</button>
+<button>往期回顾</button>
+</view>
+
+<view>
+<block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx">
+<view catchtap='onTapToDetail' data-inform-id="{{item._id}}" class='top'>
+<template is="informItem" data="{{item}}"/>
+  <view class="line"/>
+  </view>
+</block>
+<text wx:if="{{!status}}">还没有消息发布</text>
+</view>

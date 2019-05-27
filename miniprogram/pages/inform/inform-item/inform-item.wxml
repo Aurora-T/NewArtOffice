@@ -1,0 +1,9 @@
+<template name="informItem">
+
+<view class='container'>
+  <text class="title" >{{item.title}}{{openid}}</text>
+  <text class="time">{{item.time}}</text>
+  
+</view>
+
+</template>

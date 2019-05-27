@@ -1,0 +1,11 @@
+<!--pages/inform/inform.wxml-->
+<import src="inform-item/inform-item.wxml"/>
+
+<block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx">
+<view catchtap='onTapToDetail' data-inform-id="{{item._id}}" class='top'>
+<template is="informItem" data="{{item}}"/>
+  <view class="line"/>
+  </view>
+</block>
+<text wx:if="{{!status}}">还没有消息发布</text>
+

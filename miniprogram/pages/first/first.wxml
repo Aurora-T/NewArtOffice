@@ -1,0 +1,26 @@
+<!--pages/first/first.wxml-->
+<view class='function'>
+  <view class='first'>
+    <view class='fix' catchtap='fixTap'>
+      <image class="fix-ima" src="/image/zhanlan.jpg">
+      </image>
+      <text>展览</text>
+    </view>
+    <view catchtap='cardTap' class='card'>
+      <image class="card-ima" src="/image/hua.jpg"></image>
+    <text>藏品</text>
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class='second'>
+    <view class='grade' catchtap='gradeTap'>
+      <image class="grade-ima" src="/image/ticket.jpg"> </image>
+      <text>预约</text>
+    </view>
+  <!-- <view class='respond' catchtap='respondTap'>
+      <image class="respond-ima" src="/image/xx.png"></image>
+      <text>常见问题</text>
+   </view> -->
+  </view>
+</view>
+

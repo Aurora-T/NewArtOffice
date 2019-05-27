@@ -1,0 +1,12 @@
+
+
+    <view class='back'>
+    <text calss='welcome'>欢迎进入</text>
+    <text>玛珈山美术馆</text>
+      <button class="userinfo-nickname"   open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo">授权登录</button>
+    </view>
+
+
+
+  

@@ -1,0 +1,91 @@
+.fix
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.card
+{
+  display: flex;
+  width:50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.grade
+{
+  display: flex;
+  width:50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.respond
+{
+  display: flex;
+  width:50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.card-ima
+{
+  margin-top: 99rpx;
+  margin-bottom: 47rpx;
+  height:120rpx;
+  width:180rpx;  
+}
+.grade-ima
+{
+    margin-top: 70rpx;
+    border-radius: 50%;
+    height:200rpx;
+    width:200rpx;  
+}
+.respond-ima
+{
+  margin-top: 66rpx;
+    height:200rpx;
+    width:210rpx;  
+}
+text{
+  margin-top: 40rpx;
+  font-size: 36rpx;
+}
+.fix-ima
+{
+    margin-top: 70rpx;
+    border-radius: 50%;
+    height:200rpx;
+    width:200rpx;  
+}
+.first{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ justify-content: center;
+ width: 100%
+}
+.second{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ justify-content: center;
+ width: 100%
+}
+.function{
+  height:1200rpx;
+  background-color: white;
+}
+.line{
+  background-color: rgba(128, 128, 128, 0.082);
+  width: 100%;
+  height: 3px;
+  margin-top: 20rpx;
+}

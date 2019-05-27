@@ -1,0 +1,104 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "wx0c82b75980a3d90a",
+	"projectname": "%E7%BE%8E%E6%9C%AF%E9%A6%86",
+	"libVersion": "2.2.5",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 9,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "inform",
+					"pathName": "pages/inform/inform",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "yuyue",
+					"pathName": "pages/ticket/ticket",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "zhanlan",
+					"pathName": "pages/zhanlan/zhanlan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "zhanlan",
+					"pathName": "pages/yijian/yijian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "zhanlan",
+					"pathName": "pages/cangpin/cangpin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "zhanlan",
+					"pathName": "pages/people/people",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "yuyue",
+					"pathName": "pages/yuyue/yuyue",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "yuyue",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"scene": null
+				}
+			]
+		}
+	}
+}

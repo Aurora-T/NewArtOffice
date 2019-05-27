@@ -1,0 +1,15 @@
+<!--pages/yuyue/yuyue.wxml-->
+<view catchtap='onTapToDetail' data-inform-id="{{item._id}}" class='top'>
+<view class='container'>
+  <text class="title" >预约时间：2018-2-2</text>
+  <text class="time">状态：已入馆</text>
+  
+  <text class="time">同行者：李四</text>
+  
+</view>
+<view class="xiugai" >
+  <text class="modify" catchtap='modify' data-inform-id="{{item._id}}">编辑</text>
+  <text class="delete" catchtap='deleted' data-inform-id="{{item._id}}">取消预约</text>
+  </view>
+  <view class="line"/>
+  </view>

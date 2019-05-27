@@ -1,0 +1,52 @@
+/* pages/ticket/ticket.wxss */
+page{
+background-color: #eeeeee
+
+}
+.people{
+ display: flex;
+ flex-direction: column;
+  background-color: white;
+   border-radius: 3%;
+   margin:50rpx;
+}
+label{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom:30rpx; 
+
+}
+picker{
+  width:75%
+}
+.picker1 {
+  
+  margin-left: 30rpx;
+
+}
+input{
+  margin-left: 30rpx;
+  font-size:30rpx;
+  color: #aaaaaa;
+  margin-bottom: 10rpx;
+  margin-top: -20rpx;
+}
+button{
+width:500rpx;
+}
+.picker2{
+  font-size: 35rpx;
+color:#aaaaaa;
+margin-left:30rpx;
+}
+.my{
+margin: 30rpx;
+
+}
+.id{
+margin:0rpx 30rpx;
+margin-bottom: 30rpx;
+font-size: 30rpx;
+color:#aaaaaa;
+}

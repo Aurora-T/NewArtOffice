@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/zhanlan/zhanlan",
+    "pages/cangpin/cangpin",
+    "pages/ticket/ticket",
+    "pages/my/my",
+    "pages/first/first",
+    "pages/people/people",
+"pages/yuyue/yuyue",
+    "pages/inform/inform",
+    "pages/yijian/yijian"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#cccccc",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "玛珈山美术馆",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/inform/inform",
+        "text": "通知",
+        "iconPath": "image/info-be.jpg",
+        "selectedIconPath": "image/info-af.png"
+      },
+      {
+        "pagePath": "pages/first/first",
+        "text": "功能",
+        "iconPath": "image/home-be.png",
+        "selectedIconPath": "image/home-af.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "image/peo-be.png",
+        "selectedIconPath": "image/peo-af.png"
+      }
+    ],
+    "position": "bottom",
+    "backgroundColor": "#fff",
+    "selectedColor": "#222222",
+    "color": "#666"
+  }
+}

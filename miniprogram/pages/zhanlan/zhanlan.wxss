@@ -1,0 +1,42 @@
+/* pages/zhanlan/zhanlan.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+}
+.btn{
+
+  display: flex;
+ flex-direction: row;
+ width:100%;
+}
+button{
+  background-color: white;
+width:250rpx;
+  margin: 0rpx;}
+
+  .title{
+ 
+  margin-bottom: 20rpx;
+}
+
+.container{
+  
+  display: flex;
+  flex-direction: column;
+ 
+}
+.top{
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+}
+.line{
+  margin-top: 20rpx;
+  background-color: rgba(85, 76, 76, 0.74);
+  height:1px;
+  width:650rpx;
+}
+text{
+  color: #1b1a1abb;
+  margin-left:0rpx; 
+}

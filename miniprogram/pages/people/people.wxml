@@ -1,0 +1,27 @@
+<!--pages/people/people.wxml-->
+<view class='container'>
+<label class="name">姓名:
+  <input class="inputName" placeholder="请输入姓名"bindinput="nameval" value='{{nameInputValue}}'/> 
+</label> 
+<view class='line'/>
+<label class="no">居民身份证号:
+  <input class="inputNo" placeholder="请输入身份证号" bindinput="noval" value='{{noInputValue}}'/> 
+</label> 
+<view class='line'/>
+<label class="adress">联系方式:
+   <input class="inputNo" placeholder="请输入联系方式" bindinput="phoneval" value='{{phoneInputValue}}'/> 
+</label> 
+
+<view class='line'/>
+<label class="selLab">性别:
+<radio-group bindchange="radiochange">
+<radio class='radio' value='男' checked='{{status1}}'>男</radio> <radio class='radio' value='女'checked='{{status2}}'>女</radio>
+</radio-group>
+</label> 
+<view class='line'/>
+
+<text  class="tip">请认真核对信息，以免给自己和他人带来不必要的麻烦,谢谢配合！</text>
+
+<button class='button' catchtap='buttonTap'>提交</button>
+</view>
+

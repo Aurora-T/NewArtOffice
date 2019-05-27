@@ -1,0 +1,31 @@
+<!--pages/cangpin/cangpin.wxml-->
+
+  <view class='page_row' bindtap="suo">  
+
+      <view class="search">  
+
+        <view class="df search_arr">  
+
+          <icon class="searchcion" size='20' type='search'></icon>  
+
+          <input class="" disabled placeholder="请输入关键字" value="{{searchValue}}"/>  
+
+        </view>  
+
+      </view>  
+
+      <view class='sousuo'>搜索</view>  
+
+    </view>  
+
+<view catchtap='onTapToDetail' data-inform-id="{{item._id}}" class='top'>
+<view class='container'>
+  <text class="title" >藏品名称：蒙娜丽莎的微笑</text>
+  <image src="/image/mengna.jpg"></image>
+  <text class="time">类别：油画</text>
+  <text class="time">作者：达芬奇</text>
+  <text class="time">年代：未知</text>
+  <text class="time">大小：100*80</text>
+</view>
+  <view class="line"/>
+  </view>

@@ -1,0 +1,11 @@
+<template name="informItem">
+
+<view class='container'>
+  <text class="title" >{{item.title}}</text>
+  <text class="content" >简介：{{item.content}}</text>
+  <text class="weizhi" >位置：{{item.weizhi}}</text>
+  <text class="time">{{item.qi}}至{{item.zhi}}</text>
+
+</view>
+
+</template>
