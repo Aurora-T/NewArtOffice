@@ -29,14 +29,8 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.工号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.专家姓名 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.领域 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.待鉴定数量 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.已鉴定数量 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.专家工号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.姓名 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -54,7 +49,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -71,58 +65,20 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.工号,
-            this.专家姓名,
-            this.领域,
-            this.待鉴定数量,
-            this.已鉴定数量});
             this.dataGridView1.Location = new System.Drawing.Point(25, 23);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.RowHeadersWidth = 40;
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.Size = new System.Drawing.Size(442, 443);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // 工号
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.工号.DefaultCellStyle = dataGridViewCellStyle2;
-            this.工号.HeaderText = "工号";
-            this.工号.Name = "工号";
-            this.工号.Width = 80;
-            // 
-            // 专家姓名
-            // 
-            this.专家姓名.HeaderText = "专家姓名";
-            this.专家姓名.Name = "专家姓名";
-            this.专家姓名.Width = 80;
-            // 
-            // 领域
-            // 
-            this.领域.HeaderText = "领域";
-            this.领域.Name = "领域";
-            this.领域.Width = 80;
-            // 
-            // 待鉴定数量
-            // 
-            this.待鉴定数量.HeaderText = "待鉴定数量";
-            this.待鉴定数量.Name = "待鉴定数量";
-            this.待鉴定数量.Width = 80;
-            // 
-            // 已鉴定数量
-            // 
-            this.已鉴定数量.HeaderText = "已鉴定数量";
-            this.已鉴定数量.Name = "已鉴定数量";
-            this.已鉴定数量.Width = 80;
             // 
             // dataGridView2
             // 
@@ -197,6 +153,15 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "选定藏品信息：";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(143, 138);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 18);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "*****";
             // 
             // label3
             // 
@@ -279,15 +244,6 @@
             this.button4.Text = "重置";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(143, 138);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 18);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "*****";
-            // 
             // matchingExpert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -313,11 +269,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 工号;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 专家姓名;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 领域;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 待鉴定数量;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 已鉴定数量;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn 专家工号;
         private System.Windows.Forms.DataGridViewTextBoxColumn 姓名;

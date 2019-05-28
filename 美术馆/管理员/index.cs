@@ -19,7 +19,6 @@ namespace 美术馆.管理员
             InitializeComponent();
             this.conn = l.conn;
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             cangpinjianding jianding = new cangpinjianding(this);
