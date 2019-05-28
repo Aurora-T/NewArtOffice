@@ -20,9 +20,9 @@ namespace 美术馆 {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("artDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("美术馆DataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class artDataSet : global::System.Data.DataSet {
+    public partial class 美术馆DataSet : global::System.Data.DataSet {
         
         private 财务表DataTable table财务表;
         
@@ -68,63 +68,63 @@ namespace 美术馆 {
         
         private 专家表DataTable table专家表;
         
-        private global::System.Data.DataRelation relationFK__财务表__负责人工号__4E88ABD4;
+        private global::System.Data.DataRelation relationFK__财务表__负责人工号__619B8048;
         
-        private global::System.Data.DataRelation relationFK__采购记录表__操作员工号__6EF57B66;
+        private global::System.Data.DataRelation relationFK__采购记录表__操作员工号__05D8E0BE;
         
-        private global::System.Data.DataRelation relationFK__出馆表__藏品编号__5EBF139D;
+        private global::System.Data.DataRelation relationFK__出馆表__藏品编号__72C60C4A;
         
-        private global::System.Data.DataRelation relationFK__出馆表__操作员工号__5FB337D6;
+        private global::System.Data.DataRelation relationFK__出馆表__操作员工号__73BA3083;
         
-        private global::System.Data.DataRelation relationFK__放票数表__操作员工号__778AC167;
+        private global::System.Data.DataRelation relationFK__放票数表__操作员工号__10566F31;
         
-        private global::System.Data.DataRelation relationFK__检查表__藏品编号__48CFD27E;
+        private global::System.Data.DataRelation relationFK__检查表__藏品编号__5AEE82B9;
         
-        private global::System.Data.DataRelation relationFK__检查表__专家工号__49C3F6B7;
+        private global::System.Data.DataRelation relationFK__检查表__专家工号__5BE2A6F2;
         
-        private global::System.Data.DataRelation relationFK__鉴定表__藏品编号__6383C8BA;
+        private global::System.Data.DataRelation relationFK__鉴定表__藏品编号__778AC167;
         
-        private global::System.Data.DataRelation relationFK__鉴定表__管理员工号__6477ECF3;
+        private global::System.Data.DataRelation relationFK__鉴定表__管理员工号__787EE5A0;
         
-        private global::System.Data.DataRelation relationFK__鉴定表__专家工号__628FA481;
+        private global::System.Data.DataRelation relationFK__鉴定表__专家工号__76969D2E;
         
-        private global::System.Data.DataRelation relationFK__入馆表__藏品编号__5AEE82B9;
+        private global::System.Data.DataRelation relationFK__入馆表__藏品编号__6EF57B66;
         
-        private global::System.Data.DataRelation relationFK__入馆表__操作员工号__5BE2A6F2;
+        private global::System.Data.DataRelation relationFK__入馆表__操作员工号__6FE99F9F;
         
-        private global::System.Data.DataRelation relationFK__通知表__发布者工号__693CA210;
+        private global::System.Data.DataRelation relationFK__通知表__发布者工号__7E37BEF6;
         
-        private global::System.Data.DataRelation relationFK__投诉建议表__ID__6C190EBB;
+        private global::System.Data.DataRelation relationFK__投诉建议表__ID__02084FDA;
         
-        private global::System.Data.DataRelation relationFK__外借表__藏品编号__5629CD9C;
+        private global::System.Data.DataRelation relationFK__外借表__藏品编号__6A30C649;
         
-        private global::System.Data.DataRelation relationFK__外借表__操作员工号__571DF1D5;
+        private global::System.Data.DataRelation relationFK__外借表__操作员工号__6B24EA82;
         
-        private global::System.Data.DataRelation relationFK__外借表__外借美术馆编号__5812160E;
+        private global::System.Data.DataRelation relationFK__外借表__外借美术馆编号__6C190EBB;
         
-        private global::System.Data.DataRelation relationFK__修复表__藏品编号__5165187F;
+        private global::System.Data.DataRelation relationFK__修复表__藏品编号__6477ECF3;
         
-        private global::System.Data.DataRelation relationFK__修复表__管理员工号__52593CB8;
+        private global::System.Data.DataRelation relationFK__修复表__管理员工号__656C112C;
         
-        private global::System.Data.DataRelation relationFK__修复表__修复人员工号__534D60F1;
+        private global::System.Data.DataRelation relationFK__修复表__修复人员工号__66603565;
         
-        private global::System.Data.DataRelation relationFK__展览安排表__负责人编号__4316F928;
+        private global::System.Data.DataRelation relationFK__展览安排表__负责人编号__5535A963;
         
-        private global::System.Data.DataRelation relationFK__展览安排表__展厅编号__4222D4EF;
+        private global::System.Data.DataRelation relationFK__展览安排表__展厅编号__5441852A;
         
-        private global::System.Data.DataRelation relationFK__展览品表__展览编号__45F365D3;
+        private global::System.Data.DataRelation relationFK__展览品表__展览编号__5812160E;
         
-        private global::System.Data.DataRelation relationFK__征集表__藏品编号__73BA3083;
+        private global::System.Data.DataRelation relationFK__征集表__藏品编号__0B91BA14;
         
-        private global::System.Data.DataRelation relationFK__征集表__操作员工号__74AE54BC;
+        private global::System.Data.DataRelation relationFK__征集表__操作员工号__0C85DE4D;
         
-        private global::System.Data.DataRelation relationFK__专家表__工号__3F466844;
+        private global::System.Data.DataRelation relationFK__专家表__工号__5165187F;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public artDataSet() {
+        public 美术馆DataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -135,7 +135,7 @@ namespace 美术馆 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected artDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected 美术馆DataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -494,7 +494,7 @@ namespace 美术馆 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            artDataSet cln = ((artDataSet)(base.Clone()));
+            美术馆DataSet cln = ((美术馆DataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -750,40 +750,40 @@ namespace 美术馆 {
                     this.table专家表.InitVars();
                 }
             }
-            this.relationFK__财务表__负责人工号__4E88ABD4 = this.Relations["FK__财务表__负责人工号__4E88ABD4"];
-            this.relationFK__采购记录表__操作员工号__6EF57B66 = this.Relations["FK__采购记录表__操作员工号__6EF57B66"];
-            this.relationFK__出馆表__藏品编号__5EBF139D = this.Relations["FK__出馆表__藏品编号__5EBF139D"];
-            this.relationFK__出馆表__操作员工号__5FB337D6 = this.Relations["FK__出馆表__操作员工号__5FB337D6"];
-            this.relationFK__放票数表__操作员工号__778AC167 = this.Relations["FK__放票数表__操作员工号__778AC167"];
-            this.relationFK__检查表__藏品编号__48CFD27E = this.Relations["FK__检查表__藏品编号__48CFD27E"];
-            this.relationFK__检查表__专家工号__49C3F6B7 = this.Relations["FK__检查表__专家工号__49C3F6B7"];
-            this.relationFK__鉴定表__藏品编号__6383C8BA = this.Relations["FK__鉴定表__藏品编号__6383C8BA"];
-            this.relationFK__鉴定表__管理员工号__6477ECF3 = this.Relations["FK__鉴定表__管理员工号__6477ECF3"];
-            this.relationFK__鉴定表__专家工号__628FA481 = this.Relations["FK__鉴定表__专家工号__628FA481"];
-            this.relationFK__入馆表__藏品编号__5AEE82B9 = this.Relations["FK__入馆表__藏品编号__5AEE82B9"];
-            this.relationFK__入馆表__操作员工号__5BE2A6F2 = this.Relations["FK__入馆表__操作员工号__5BE2A6F2"];
-            this.relationFK__通知表__发布者工号__693CA210 = this.Relations["FK__通知表__发布者工号__693CA210"];
-            this.relationFK__投诉建议表__ID__6C190EBB = this.Relations["FK__投诉建议表__ID__6C190EBB"];
-            this.relationFK__外借表__藏品编号__5629CD9C = this.Relations["FK__外借表__藏品编号__5629CD9C"];
-            this.relationFK__外借表__操作员工号__571DF1D5 = this.Relations["FK__外借表__操作员工号__571DF1D5"];
-            this.relationFK__外借表__外借美术馆编号__5812160E = this.Relations["FK__外借表__外借美术馆编号__5812160E"];
-            this.relationFK__修复表__藏品编号__5165187F = this.Relations["FK__修复表__藏品编号__5165187F"];
-            this.relationFK__修复表__管理员工号__52593CB8 = this.Relations["FK__修复表__管理员工号__52593CB8"];
-            this.relationFK__修复表__修复人员工号__534D60F1 = this.Relations["FK__修复表__修复人员工号__534D60F1"];
-            this.relationFK__展览安排表__负责人编号__4316F928 = this.Relations["FK__展览安排表__负责人编号__4316F928"];
-            this.relationFK__展览安排表__展厅编号__4222D4EF = this.Relations["FK__展览安排表__展厅编号__4222D4EF"];
-            this.relationFK__展览品表__展览编号__45F365D3 = this.Relations["FK__展览品表__展览编号__45F365D3"];
-            this.relationFK__征集表__藏品编号__73BA3083 = this.Relations["FK__征集表__藏品编号__73BA3083"];
-            this.relationFK__征集表__操作员工号__74AE54BC = this.Relations["FK__征集表__操作员工号__74AE54BC"];
-            this.relationFK__专家表__工号__3F466844 = this.Relations["FK__专家表__工号__3F466844"];
+            this.relationFK__财务表__负责人工号__619B8048 = this.Relations["FK__财务表__负责人工号__619B8048"];
+            this.relationFK__采购记录表__操作员工号__05D8E0BE = this.Relations["FK__采购记录表__操作员工号__05D8E0BE"];
+            this.relationFK__出馆表__藏品编号__72C60C4A = this.Relations["FK__出馆表__藏品编号__72C60C4A"];
+            this.relationFK__出馆表__操作员工号__73BA3083 = this.Relations["FK__出馆表__操作员工号__73BA3083"];
+            this.relationFK__放票数表__操作员工号__10566F31 = this.Relations["FK__放票数表__操作员工号__10566F31"];
+            this.relationFK__检查表__藏品编号__5AEE82B9 = this.Relations["FK__检查表__藏品编号__5AEE82B9"];
+            this.relationFK__检查表__专家工号__5BE2A6F2 = this.Relations["FK__检查表__专家工号__5BE2A6F2"];
+            this.relationFK__鉴定表__藏品编号__778AC167 = this.Relations["FK__鉴定表__藏品编号__778AC167"];
+            this.relationFK__鉴定表__管理员工号__787EE5A0 = this.Relations["FK__鉴定表__管理员工号__787EE5A0"];
+            this.relationFK__鉴定表__专家工号__76969D2E = this.Relations["FK__鉴定表__专家工号__76969D2E"];
+            this.relationFK__入馆表__藏品编号__6EF57B66 = this.Relations["FK__入馆表__藏品编号__6EF57B66"];
+            this.relationFK__入馆表__操作员工号__6FE99F9F = this.Relations["FK__入馆表__操作员工号__6FE99F9F"];
+            this.relationFK__通知表__发布者工号__7E37BEF6 = this.Relations["FK__通知表__发布者工号__7E37BEF6"];
+            this.relationFK__投诉建议表__ID__02084FDA = this.Relations["FK__投诉建议表__ID__02084FDA"];
+            this.relationFK__外借表__藏品编号__6A30C649 = this.Relations["FK__外借表__藏品编号__6A30C649"];
+            this.relationFK__外借表__操作员工号__6B24EA82 = this.Relations["FK__外借表__操作员工号__6B24EA82"];
+            this.relationFK__外借表__外借美术馆编号__6C190EBB = this.Relations["FK__外借表__外借美术馆编号__6C190EBB"];
+            this.relationFK__修复表__藏品编号__6477ECF3 = this.Relations["FK__修复表__藏品编号__6477ECF3"];
+            this.relationFK__修复表__管理员工号__656C112C = this.Relations["FK__修复表__管理员工号__656C112C"];
+            this.relationFK__修复表__修复人员工号__66603565 = this.Relations["FK__修复表__修复人员工号__66603565"];
+            this.relationFK__展览安排表__负责人编号__5535A963 = this.Relations["FK__展览安排表__负责人编号__5535A963"];
+            this.relationFK__展览安排表__展厅编号__5441852A = this.Relations["FK__展览安排表__展厅编号__5441852A"];
+            this.relationFK__展览品表__展览编号__5812160E = this.Relations["FK__展览品表__展览编号__5812160E"];
+            this.relationFK__征集表__藏品编号__0B91BA14 = this.Relations["FK__征集表__藏品编号__0B91BA14"];
+            this.relationFK__征集表__操作员工号__0C85DE4D = this.Relations["FK__征集表__操作员工号__0C85DE4D"];
+            this.relationFK__专家表__工号__5165187F = this.Relations["FK__专家表__工号__5165187F"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "artDataSet";
+            this.DataSetName = "美术馆DataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/artDataSet.xsd";
+            this.Namespace = "http://tempuri.org/美术馆DataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.table财务表 = new 财务表DataTable();
@@ -830,110 +830,110 @@ namespace 美术馆 {
             base.Tables.Add(this.table征集表);
             this.table专家表 = new 专家表DataTable();
             base.Tables.Add(this.table专家表);
-            this.relationFK__财务表__负责人工号__4E88ABD4 = new global::System.Data.DataRelation("FK__财务表__负责人工号__4E88ABD4", new global::System.Data.DataColumn[] {
+            this.relationFK__财务表__负责人工号__619B8048 = new global::System.Data.DataRelation("FK__财务表__负责人工号__619B8048", new global::System.Data.DataColumn[] {
                         this.table员工信息表.工号Column}, new global::System.Data.DataColumn[] {
                         this.table财务表.负责人工号Column}, false);
-            this.Relations.Add(this.relationFK__财务表__负责人工号__4E88ABD4);
-            this.relationFK__采购记录表__操作员工号__6EF57B66 = new global::System.Data.DataRelation("FK__采购记录表__操作员工号__6EF57B66", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__财务表__负责人工号__619B8048);
+            this.relationFK__采购记录表__操作员工号__05D8E0BE = new global::System.Data.DataRelation("FK__采购记录表__操作员工号__05D8E0BE", new global::System.Data.DataColumn[] {
                         this.table员工信息表.工号Column}, new global::System.Data.DataColumn[] {
                         this.table采购记录表.操作员工号Column}, false);
-            this.Relations.Add(this.relationFK__采购记录表__操作员工号__6EF57B66);
-            this.relationFK__出馆表__藏品编号__5EBF139D = new global::System.Data.DataRelation("FK__出馆表__藏品编号__5EBF139D", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__采购记录表__操作员工号__05D8E0BE);
+            this.relationFK__出馆表__藏品编号__72C60C4A = new global::System.Data.DataRelation("FK__出馆表__藏品编号__72C60C4A", new global::System.Data.DataColumn[] {
                         this.table藏品表.藏品编号Column}, new global::System.Data.DataColumn[] {
                         this.table出馆表.藏品编号Column}, false);
-            this.Relations.Add(this.relationFK__出馆表__藏品编号__5EBF139D);
-            this.relationFK__出馆表__操作员工号__5FB337D6 = new global::System.Data.DataRelation("FK__出馆表__操作员工号__5FB337D6", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__出馆表__藏品编号__72C60C4A);
+            this.relationFK__出馆表__操作员工号__73BA3083 = new global::System.Data.DataRelation("FK__出馆表__操作员工号__73BA3083", new global::System.Data.DataColumn[] {
                         this.table员工信息表.工号Column}, new global::System.Data.DataColumn[] {
                         this.table出馆表.操作员工号Column}, false);
-            this.Relations.Add(this.relationFK__出馆表__操作员工号__5FB337D6);
-            this.relationFK__放票数表__操作员工号__778AC167 = new global::System.Data.DataRelation("FK__放票数表__操作员工号__778AC167", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__出馆表__操作员工号__73BA3083);
+            this.relationFK__放票数表__操作员工号__10566F31 = new global::System.Data.DataRelation("FK__放票数表__操作员工号__10566F31", new global::System.Data.DataColumn[] {
                         this.table员工信息表.工号Column}, new global::System.Data.DataColumn[] {
                         this.table放票数表.操作员工号Column}, false);
-            this.Relations.Add(this.relationFK__放票数表__操作员工号__778AC167);
-            this.relationFK__检查表__藏品编号__48CFD27E = new global::System.Data.DataRelation("FK__检查表__藏品编号__48CFD27E", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__放票数表__操作员工号__10566F31);
+            this.relationFK__检查表__藏品编号__5AEE82B9 = new global::System.Data.DataRelation("FK__检查表__藏品编号__5AEE82B9", new global::System.Data.DataColumn[] {
                         this.table藏品表.藏品编号Column}, new global::System.Data.DataColumn[] {
                         this.table检查表.藏品编号Column}, false);
-            this.Relations.Add(this.relationFK__检查表__藏品编号__48CFD27E);
-            this.relationFK__检查表__专家工号__49C3F6B7 = new global::System.Data.DataRelation("FK__检查表__专家工号__49C3F6B7", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__检查表__藏品编号__5AEE82B9);
+            this.relationFK__检查表__专家工号__5BE2A6F2 = new global::System.Data.DataRelation("FK__检查表__专家工号__5BE2A6F2", new global::System.Data.DataColumn[] {
                         this.table专家表.专家编号Column}, new global::System.Data.DataColumn[] {
                         this.table检查表.专家工号Column}, false);
-            this.Relations.Add(this.relationFK__检查表__专家工号__49C3F6B7);
-            this.relationFK__鉴定表__藏品编号__6383C8BA = new global::System.Data.DataRelation("FK__鉴定表__藏品编号__6383C8BA", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__检查表__专家工号__5BE2A6F2);
+            this.relationFK__鉴定表__藏品编号__778AC167 = new global::System.Data.DataRelation("FK__鉴定表__藏品编号__778AC167", new global::System.Data.DataColumn[] {
                         this.table藏品表.藏品编号Column}, new global::System.Data.DataColumn[] {
                         this.table鉴定表.藏品编号Column}, false);
-            this.Relations.Add(this.relationFK__鉴定表__藏品编号__6383C8BA);
-            this.relationFK__鉴定表__管理员工号__6477ECF3 = new global::System.Data.DataRelation("FK__鉴定表__管理员工号__6477ECF3", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__鉴定表__藏品编号__778AC167);
+            this.relationFK__鉴定表__管理员工号__787EE5A0 = new global::System.Data.DataRelation("FK__鉴定表__管理员工号__787EE5A0", new global::System.Data.DataColumn[] {
                         this.table员工信息表.工号Column}, new global::System.Data.DataColumn[] {
                         this.table鉴定表.管理员工号Column}, false);
-            this.Relations.Add(this.relationFK__鉴定表__管理员工号__6477ECF3);
-            this.relationFK__鉴定表__专家工号__628FA481 = new global::System.Data.DataRelation("FK__鉴定表__专家工号__628FA481", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__鉴定表__管理员工号__787EE5A0);
+            this.relationFK__鉴定表__专家工号__76969D2E = new global::System.Data.DataRelation("FK__鉴定表__专家工号__76969D2E", new global::System.Data.DataColumn[] {
                         this.table专家表.专家编号Column}, new global::System.Data.DataColumn[] {
                         this.table鉴定表.专家工号Column}, false);
-            this.Relations.Add(this.relationFK__鉴定表__专家工号__628FA481);
-            this.relationFK__入馆表__藏品编号__5AEE82B9 = new global::System.Data.DataRelation("FK__入馆表__藏品编号__5AEE82B9", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__鉴定表__专家工号__76969D2E);
+            this.relationFK__入馆表__藏品编号__6EF57B66 = new global::System.Data.DataRelation("FK__入馆表__藏品编号__6EF57B66", new global::System.Data.DataColumn[] {
                         this.table藏品表.藏品编号Column}, new global::System.Data.DataColumn[] {
                         this.table入馆表.藏品编号Column}, false);
-            this.Relations.Add(this.relationFK__入馆表__藏品编号__5AEE82B9);
-            this.relationFK__入馆表__操作员工号__5BE2A6F2 = new global::System.Data.DataRelation("FK__入馆表__操作员工号__5BE2A6F2", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__入馆表__藏品编号__6EF57B66);
+            this.relationFK__入馆表__操作员工号__6FE99F9F = new global::System.Data.DataRelation("FK__入馆表__操作员工号__6FE99F9F", new global::System.Data.DataColumn[] {
                         this.table员工信息表.工号Column}, new global::System.Data.DataColumn[] {
                         this.table入馆表.操作员工号Column}, false);
-            this.Relations.Add(this.relationFK__入馆表__操作员工号__5BE2A6F2);
-            this.relationFK__通知表__发布者工号__693CA210 = new global::System.Data.DataRelation("FK__通知表__发布者工号__693CA210", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__入馆表__操作员工号__6FE99F9F);
+            this.relationFK__通知表__发布者工号__7E37BEF6 = new global::System.Data.DataRelation("FK__通知表__发布者工号__7E37BEF6", new global::System.Data.DataColumn[] {
                         this.table员工信息表.工号Column}, new global::System.Data.DataColumn[] {
                         this.table通知表.发布者工号Column}, false);
-            this.Relations.Add(this.relationFK__通知表__发布者工号__693CA210);
-            this.relationFK__投诉建议表__ID__6C190EBB = new global::System.Data.DataRelation("FK__投诉建议表__ID__6C190EBB", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__通知表__发布者工号__7E37BEF6);
+            this.relationFK__投诉建议表__ID__02084FDA = new global::System.Data.DataRelation("FK__投诉建议表__ID__02084FDA", new global::System.Data.DataColumn[] {
                         this.table用户表.IDColumn}, new global::System.Data.DataColumn[] {
                         this.table投诉建议表.IDColumn}, false);
-            this.Relations.Add(this.relationFK__投诉建议表__ID__6C190EBB);
-            this.relationFK__外借表__藏品编号__5629CD9C = new global::System.Data.DataRelation("FK__外借表__藏品编号__5629CD9C", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__投诉建议表__ID__02084FDA);
+            this.relationFK__外借表__藏品编号__6A30C649 = new global::System.Data.DataRelation("FK__外借表__藏品编号__6A30C649", new global::System.Data.DataColumn[] {
                         this.table藏品表.藏品编号Column}, new global::System.Data.DataColumn[] {
                         this.table外借表.藏品编号Column}, false);
-            this.Relations.Add(this.relationFK__外借表__藏品编号__5629CD9C);
-            this.relationFK__外借表__操作员工号__571DF1D5 = new global::System.Data.DataRelation("FK__外借表__操作员工号__571DF1D5", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__外借表__藏品编号__6A30C649);
+            this.relationFK__外借表__操作员工号__6B24EA82 = new global::System.Data.DataRelation("FK__外借表__操作员工号__6B24EA82", new global::System.Data.DataColumn[] {
                         this.table员工信息表.工号Column}, new global::System.Data.DataColumn[] {
                         this.table外借表.操作员工号Column}, false);
-            this.Relations.Add(this.relationFK__外借表__操作员工号__571DF1D5);
-            this.relationFK__外借表__外借美术馆编号__5812160E = new global::System.Data.DataRelation("FK__外借表__外借美术馆编号__5812160E", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__外借表__操作员工号__6B24EA82);
+            this.relationFK__外借表__外借美术馆编号__6C190EBB = new global::System.Data.DataRelation("FK__外借表__外借美术馆编号__6C190EBB", new global::System.Data.DataColumn[] {
                         this.table美术馆表.美术馆编号Column}, new global::System.Data.DataColumn[] {
                         this.table外借表.外借美术馆编号Column}, false);
-            this.Relations.Add(this.relationFK__外借表__外借美术馆编号__5812160E);
-            this.relationFK__修复表__藏品编号__5165187F = new global::System.Data.DataRelation("FK__修复表__藏品编号__5165187F", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__外借表__外借美术馆编号__6C190EBB);
+            this.relationFK__修复表__藏品编号__6477ECF3 = new global::System.Data.DataRelation("FK__修复表__藏品编号__6477ECF3", new global::System.Data.DataColumn[] {
                         this.table藏品表.藏品编号Column}, new global::System.Data.DataColumn[] {
                         this.table修复表.藏品编号Column}, false);
-            this.Relations.Add(this.relationFK__修复表__藏品编号__5165187F);
-            this.relationFK__修复表__管理员工号__52593CB8 = new global::System.Data.DataRelation("FK__修复表__管理员工号__52593CB8", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__修复表__藏品编号__6477ECF3);
+            this.relationFK__修复表__管理员工号__656C112C = new global::System.Data.DataRelation("FK__修复表__管理员工号__656C112C", new global::System.Data.DataColumn[] {
                         this.table员工信息表.工号Column}, new global::System.Data.DataColumn[] {
                         this.table修复表.管理员工号Column}, false);
-            this.Relations.Add(this.relationFK__修复表__管理员工号__52593CB8);
-            this.relationFK__修复表__修复人员工号__534D60F1 = new global::System.Data.DataRelation("FK__修复表__修复人员工号__534D60F1", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__修复表__管理员工号__656C112C);
+            this.relationFK__修复表__修复人员工号__66603565 = new global::System.Data.DataRelation("FK__修复表__修复人员工号__66603565", new global::System.Data.DataColumn[] {
                         this.table专家表.专家编号Column}, new global::System.Data.DataColumn[] {
                         this.table修复表.修复人员工号Column}, false);
-            this.Relations.Add(this.relationFK__修复表__修复人员工号__534D60F1);
-            this.relationFK__展览安排表__负责人编号__4316F928 = new global::System.Data.DataRelation("FK__展览安排表__负责人编号__4316F928", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__修复表__修复人员工号__66603565);
+            this.relationFK__展览安排表__负责人编号__5535A963 = new global::System.Data.DataRelation("FK__展览安排表__负责人编号__5535A963", new global::System.Data.DataColumn[] {
                         this.table员工信息表.工号Column}, new global::System.Data.DataColumn[] {
                         this.table展览安排表.负责人编号Column}, false);
-            this.Relations.Add(this.relationFK__展览安排表__负责人编号__4316F928);
-            this.relationFK__展览安排表__展厅编号__4222D4EF = new global::System.Data.DataRelation("FK__展览安排表__展厅编号__4222D4EF", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__展览安排表__负责人编号__5535A963);
+            this.relationFK__展览安排表__展厅编号__5441852A = new global::System.Data.DataRelation("FK__展览安排表__展厅编号__5441852A", new global::System.Data.DataColumn[] {
                         this.table展厅信息总表.展厅编号Column}, new global::System.Data.DataColumn[] {
                         this.table展览安排表.展厅编号Column}, false);
-            this.Relations.Add(this.relationFK__展览安排表__展厅编号__4222D4EF);
-            this.relationFK__展览品表__展览编号__45F365D3 = new global::System.Data.DataRelation("FK__展览品表__展览编号__45F365D3", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__展览安排表__展厅编号__5441852A);
+            this.relationFK__展览品表__展览编号__5812160E = new global::System.Data.DataRelation("FK__展览品表__展览编号__5812160E", new global::System.Data.DataColumn[] {
                         this.table展览安排表.展览编号Column}, new global::System.Data.DataColumn[] {
                         this.table展览品表.展览编号Column}, false);
-            this.Relations.Add(this.relationFK__展览品表__展览编号__45F365D3);
-            this.relationFK__征集表__藏品编号__73BA3083 = new global::System.Data.DataRelation("FK__征集表__藏品编号__73BA3083", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__展览品表__展览编号__5812160E);
+            this.relationFK__征集表__藏品编号__0B91BA14 = new global::System.Data.DataRelation("FK__征集表__藏品编号__0B91BA14", new global::System.Data.DataColumn[] {
                         this.table藏品表.藏品编号Column}, new global::System.Data.DataColumn[] {
                         this.table征集表.藏品编号Column}, false);
-            this.Relations.Add(this.relationFK__征集表__藏品编号__73BA3083);
-            this.relationFK__征集表__操作员工号__74AE54BC = new global::System.Data.DataRelation("FK__征集表__操作员工号__74AE54BC", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__征集表__藏品编号__0B91BA14);
+            this.relationFK__征集表__操作员工号__0C85DE4D = new global::System.Data.DataRelation("FK__征集表__操作员工号__0C85DE4D", new global::System.Data.DataColumn[] {
                         this.table员工信息表.工号Column}, new global::System.Data.DataColumn[] {
                         this.table征集表.操作员工号Column}, false);
-            this.Relations.Add(this.relationFK__征集表__操作员工号__74AE54BC);
-            this.relationFK__专家表__工号__3F466844 = new global::System.Data.DataRelation("FK__专家表__工号__3F466844", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__征集表__操作员工号__0C85DE4D);
+            this.relationFK__专家表__工号__5165187F = new global::System.Data.DataRelation("FK__专家表__工号__5165187F", new global::System.Data.DataColumn[] {
                         this.table员工信息表.工号Column}, new global::System.Data.DataColumn[] {
                         this.table专家表.工号Column}, false);
-            this.Relations.Add(this.relationFK__专家表__工号__3F466844);
+            this.Relations.Add(this.relationFK__专家表__工号__5165187F);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1079,7 +1079,7 @@ namespace 美术馆 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            artDataSet ds = new artDataSet();
+            美术馆DataSet ds = new 美术馆DataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -1336,7 +1336,7 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 财务表Row Add财务表Row(string 来源, string 类别, double 金额, double 总账剩余, System.DateTime 时间, 员工信息表Row parent员工信息表RowByFK__财务表__负责人工号__4E88ABD4) {
+            public 财务表Row Add财务表Row(string 来源, string 类别, double 金额, double 总账剩余, System.DateTime 时间, 员工信息表Row parent员工信息表RowByFK__财务表__负责人工号__619B8048) {
                 财务表Row row财务表Row = ((财务表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1346,8 +1346,8 @@ namespace 美术馆 {
                         总账剩余,
                         时间,
                         null};
-                if ((parent员工信息表RowByFK__财务表__负责人工号__4E88ABD4 != null)) {
-                    columnValuesArray[6] = parent员工信息表RowByFK__财务表__负责人工号__4E88ABD4[0];
+                if ((parent员工信息表RowByFK__财务表__负责人工号__619B8048 != null)) {
+                    columnValuesArray[6] = parent员工信息表RowByFK__财务表__负责人工号__619B8048[0];
                 }
                 row财务表Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row财务表Row);
@@ -1481,7 +1481,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1687,7 +1687,7 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 采购记录表Row Add采购记录表Row(string 物资类别, int 物资数量, double 物资单价, double 总金额, 员工信息表Row parent员工信息表RowByFK__采购记录表__操作员工号__6EF57B66, System.DateTime 采购时间) {
+            public 采购记录表Row Add采购记录表Row(string 物资类别, int 物资数量, double 物资单价, double 总金额, 员工信息表Row parent员工信息表RowByFK__采购记录表__操作员工号__05D8E0BE, System.DateTime 采购时间) {
                 采购记录表Row row采购记录表Row = ((采购记录表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1697,8 +1697,8 @@ namespace 美术馆 {
                         总金额,
                         null,
                         采购时间};
-                if ((parent员工信息表RowByFK__采购记录表__操作员工号__6EF57B66 != null)) {
-                    columnValuesArray[5] = parent员工信息表RowByFK__采购记录表__操作员工号__6EF57B66[0];
+                if ((parent员工信息表RowByFK__采购记录表__操作员工号__05D8E0BE != null)) {
+                    columnValuesArray[5] = parent员工信息表RowByFK__采购记录表__操作员工号__05D8E0BE[0];
                 }
                 row采购记录表Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row采购记录表Row);
@@ -1831,7 +1831,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2037,7 +2037,7 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 藏品表Row Add藏品表Row(string 藏品名称, string 风格, string 作者姓名, System.DateTime 创作时间, string 大小, string 图片) {
+            public 藏品表Row Add藏品表Row(string 藏品名称, string 风格, string 作者姓名, System.DateTime 创作时间, string 大小, byte[] 图片) {
                 藏品表Row row藏品表Row = ((藏品表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2100,7 +2100,7 @@ namespace 美术馆 {
                 base.Columns.Add(this.column创作时间);
                 this.column大小 = new global::System.Data.DataColumn("大小", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.column大小);
-                this.column图片 = new global::System.Data.DataColumn("图片", typeof(string), null, global::System.Data.MappingType.Element);
+                this.column图片 = new global::System.Data.DataColumn("图片", typeof(byte[]), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.column图片);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.column藏品编号}, true));
@@ -2114,7 +2114,6 @@ namespace 美术馆 {
                 this.column风格.MaxLength = 20;
                 this.column作者姓名.MaxLength = 10;
                 this.column大小.MaxLength = 20;
-                this.column图片.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2182,7 +2181,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2368,7 +2367,7 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 出馆表Row Add出馆表Row(藏品表Row parent藏品表RowByFK__出馆表__藏品编号__5EBF139D, 员工信息表Row parent员工信息表RowByFK__出馆表__操作员工号__5FB337D6, System.DateTime 出馆时间, string 去向) {
+            public 出馆表Row Add出馆表Row(藏品表Row parent藏品表RowByFK__出馆表__藏品编号__72C60C4A, 员工信息表Row parent员工信息表RowByFK__出馆表__操作员工号__73BA3083, System.DateTime 出馆时间, string 去向) {
                 出馆表Row row出馆表Row = ((出馆表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2376,11 +2375,11 @@ namespace 美术馆 {
                         null,
                         出馆时间,
                         去向};
-                if ((parent藏品表RowByFK__出馆表__藏品编号__5EBF139D != null)) {
-                    columnValuesArray[1] = parent藏品表RowByFK__出馆表__藏品编号__5EBF139D[0];
+                if ((parent藏品表RowByFK__出馆表__藏品编号__72C60C4A != null)) {
+                    columnValuesArray[1] = parent藏品表RowByFK__出馆表__藏品编号__72C60C4A[0];
                 }
-                if ((parent员工信息表RowByFK__出馆表__操作员工号__5FB337D6 != null)) {
-                    columnValuesArray[2] = parent员工信息表RowByFK__出馆表__操作员工号__5FB337D6[0];
+                if ((parent员工信息表RowByFK__出馆表__操作员工号__73BA3083 != null)) {
+                    columnValuesArray[2] = parent员工信息表RowByFK__出馆表__操作员工号__73BA3083[0];
                 }
                 row出馆表Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row出馆表Row);
@@ -2507,7 +2506,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2683,15 +2682,15 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 放票数表Row Add放票数表Row(System.DateTime 设置的时间, int 票数, 员工信息表Row parent员工信息表RowByFK__放票数表__操作员工号__778AC167) {
+            public 放票数表Row Add放票数表Row(System.DateTime 设置的时间, int 票数, 员工信息表Row parent员工信息表RowByFK__放票数表__操作员工号__10566F31) {
                 放票数表Row row放票数表Row = ((放票数表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         设置的时间,
                         票数,
                         null};
-                if ((parent员工信息表RowByFK__放票数表__操作员工号__778AC167 != null)) {
-                    columnValuesArray[3] = parent员工信息表RowByFK__放票数表__操作员工号__778AC167[0];
+                if ((parent员工信息表RowByFK__放票数表__操作员工号__10566F31 != null)) {
+                    columnValuesArray[3] = parent员工信息表RowByFK__放票数表__操作员工号__10566F31[0];
                 }
                 row放票数表Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row放票数表Row);
@@ -2814,7 +2813,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3010,7 +3009,7 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 检查表Row Add检查表Row(藏品表Row parent藏品表RowByFK__检查表__藏品编号__48CFD27E, 专家表Row parent专家表RowByFK__检查表__专家工号__49C3F6B7, System.DateTime 下次检查时间, string 状态, string 检查情况) {
+            public 检查表Row Add检查表Row(藏品表Row parent藏品表RowByFK__检查表__藏品编号__5AEE82B9, 专家表Row parent专家表RowByFK__检查表__专家工号__5BE2A6F2, System.DateTime 下次检查时间, string 状态, string 检查情况) {
                 检查表Row row检查表Row = ((检查表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -3019,11 +3018,11 @@ namespace 美术馆 {
                         下次检查时间,
                         状态,
                         检查情况};
-                if ((parent藏品表RowByFK__检查表__藏品编号__48CFD27E != null)) {
-                    columnValuesArray[1] = parent藏品表RowByFK__检查表__藏品编号__48CFD27E[0];
+                if ((parent藏品表RowByFK__检查表__藏品编号__5AEE82B9 != null)) {
+                    columnValuesArray[1] = parent藏品表RowByFK__检查表__藏品编号__5AEE82B9[0];
                 }
-                if ((parent专家表RowByFK__检查表__专家工号__49C3F6B7 != null)) {
-                    columnValuesArray[2] = parent专家表RowByFK__检查表__专家工号__49C3F6B7[0];
+                if ((parent专家表RowByFK__检查表__专家工号__5BE2A6F2 != null)) {
+                    columnValuesArray[2] = parent专家表RowByFK__检查表__专家工号__5BE2A6F2[0];
                 }
                 row检查表Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row检查表Row);
@@ -3154,7 +3153,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3370,7 +3369,7 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 鉴定表Row Add鉴定表Row(专家表Row parent专家表RowByFK__鉴定表__专家工号__628FA481, 藏品表Row parent藏品表RowByFK__鉴定表__藏品编号__6383C8BA, 员工信息表Row parent员工信息表RowByFK__鉴定表__管理员工号__6477ECF3, string 鉴定结果, string 鉴定价值, System.DateTime 鉴定时间, string 备注) {
+            public 鉴定表Row Add鉴定表Row(专家表Row parent专家表RowByFK__鉴定表__专家工号__76969D2E, 藏品表Row parent藏品表RowByFK__鉴定表__藏品编号__778AC167, 员工信息表Row parent员工信息表RowByFK__鉴定表__管理员工号__787EE5A0, string 鉴定结果, string 鉴定价值, System.DateTime 鉴定时间, string 备注) {
                 鉴定表Row row鉴定表Row = ((鉴定表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -3381,14 +3380,14 @@ namespace 美术馆 {
                         鉴定价值,
                         鉴定时间,
                         备注};
-                if ((parent专家表RowByFK__鉴定表__专家工号__628FA481 != null)) {
-                    columnValuesArray[1] = parent专家表RowByFK__鉴定表__专家工号__628FA481[0];
+                if ((parent专家表RowByFK__鉴定表__专家工号__76969D2E != null)) {
+                    columnValuesArray[1] = parent专家表RowByFK__鉴定表__专家工号__76969D2E[0];
                 }
-                if ((parent藏品表RowByFK__鉴定表__藏品编号__6383C8BA != null)) {
-                    columnValuesArray[2] = parent藏品表RowByFK__鉴定表__藏品编号__6383C8BA[0];
+                if ((parent藏品表RowByFK__鉴定表__藏品编号__778AC167 != null)) {
+                    columnValuesArray[2] = parent藏品表RowByFK__鉴定表__藏品编号__778AC167[0];
                 }
-                if ((parent员工信息表RowByFK__鉴定表__管理员工号__6477ECF3 != null)) {
-                    columnValuesArray[3] = parent员工信息表RowByFK__鉴定表__管理员工号__6477ECF3[0];
+                if ((parent员工信息表RowByFK__鉴定表__管理员工号__787EE5A0 != null)) {
+                    columnValuesArray[3] = parent员工信息表RowByFK__鉴定表__管理员工号__787EE5A0[0];
                 }
                 row鉴定表Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row鉴定表Row);
@@ -3526,7 +3525,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3848,7 +3847,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4154,7 +4153,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4229,6 +4228,8 @@ namespace 美术馆 {
             private global::System.Data.DataColumn column入馆时间;
             
             private global::System.Data.DataColumn column来源详情;
+            
+            private global::System.Data.DataColumn column价值;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -4305,6 +4306,14 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn 价值Column {
+                get {
+                    return this.column价值;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -4340,19 +4349,20 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 入馆表Row Add入馆表Row(藏品表Row parent藏品表RowByFK__入馆表__藏品编号__5AEE82B9, 员工信息表Row parent员工信息表RowByFK__入馆表__操作员工号__5BE2A6F2, System.DateTime 入馆时间, string 来源详情) {
+            public 入馆表Row Add入馆表Row(藏品表Row parent藏品表RowByFK__入馆表__藏品编号__6EF57B66, 员工信息表Row parent员工信息表RowByFK__入馆表__操作员工号__6FE99F9F, System.DateTime 入馆时间, string 来源详情, double 价值) {
                 入馆表Row row入馆表Row = ((入馆表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         null,
                         入馆时间,
-                        来源详情};
-                if ((parent藏品表RowByFK__入馆表__藏品编号__5AEE82B9 != null)) {
-                    columnValuesArray[1] = parent藏品表RowByFK__入馆表__藏品编号__5AEE82B9[0];
+                        来源详情,
+                        价值};
+                if ((parent藏品表RowByFK__入馆表__藏品编号__6EF57B66 != null)) {
+                    columnValuesArray[1] = parent藏品表RowByFK__入馆表__藏品编号__6EF57B66[0];
                 }
-                if ((parent员工信息表RowByFK__入馆表__操作员工号__5BE2A6F2 != null)) {
-                    columnValuesArray[2] = parent员工信息表RowByFK__入馆表__操作员工号__5BE2A6F2[0];
+                if ((parent员工信息表RowByFK__入馆表__操作员工号__6FE99F9F != null)) {
+                    columnValuesArray[2] = parent员工信息表RowByFK__入馆表__操作员工号__6FE99F9F[0];
                 }
                 row入馆表Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row入馆表Row);
@@ -4388,6 +4398,7 @@ namespace 美术馆 {
                 this.column操作员工号 = base.Columns["操作员工号"];
                 this.column入馆时间 = base.Columns["入馆时间"];
                 this.column来源详情 = base.Columns["来源详情"];
+                this.column价值 = base.Columns["价值"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4403,6 +4414,8 @@ namespace 美术馆 {
                 base.Columns.Add(this.column入馆时间);
                 this.column来源详情 = new global::System.Data.DataColumn("来源详情", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.column来源详情);
+                this.column价值 = new global::System.Data.DataColumn("价值", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column价值);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.column编号}, true));
                 this.column编号.AutoIncrement = true;
@@ -4479,7 +4492,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4665,7 +4678,7 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 通知表Row Add通知表Row(员工信息表Row parent员工信息表RowByFK__通知表__发布者工号__693CA210, System.DateTime 发布时间, string 标题, string 内容) {
+            public 通知表Row Add通知表Row(员工信息表Row parent员工信息表RowByFK__通知表__发布者工号__7E37BEF6, System.DateTime 发布时间, string 标题, string 内容) {
                 通知表Row row通知表Row = ((通知表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -4673,8 +4686,8 @@ namespace 美术馆 {
                         发布时间,
                         标题,
                         内容};
-                if ((parent员工信息表RowByFK__通知表__发布者工号__693CA210 != null)) {
-                    columnValuesArray[1] = parent员工信息表RowByFK__通知表__发布者工号__693CA210[0];
+                if ((parent员工信息表RowByFK__通知表__发布者工号__7E37BEF6 != null)) {
+                    columnValuesArray[1] = parent员工信息表RowByFK__通知表__发布者工号__7E37BEF6[0];
                 }
                 row通知表Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row通知表Row);
@@ -4802,7 +4815,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4978,15 +4991,15 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 投诉建议表Row Add投诉建议表Row(用户表Row parent用户表RowByFK__投诉建议表__ID__6C190EBB, string 内容, System.DateTime 时间) {
+            public 投诉建议表Row Add投诉建议表Row(用户表Row parent用户表RowByFK__投诉建议表__ID__02084FDA, string 内容, System.DateTime 时间) {
                 投诉建议表Row row投诉建议表Row = ((投诉建议表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         内容,
                         时间};
-                if ((parent用户表RowByFK__投诉建议表__ID__6C190EBB != null)) {
-                    columnValuesArray[1] = parent用户表RowByFK__投诉建议表__ID__6C190EBB[0];
+                if ((parent用户表RowByFK__投诉建议表__ID__02084FDA != null)) {
+                    columnValuesArray[1] = parent用户表RowByFK__投诉建议表__ID__02084FDA[0];
                 }
                 row投诉建议表Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row投诉建议表Row);
@@ -5111,7 +5124,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5347,7 +5360,7 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 外借表Row Add外借表Row(藏品表Row parent藏品表RowByFK__外借表__藏品编号__5629CD9C, 员工信息表Row parent员工信息表RowByFK__外借表__操作员工号__571DF1D5, 美术馆表Row parent美术馆表RowByFK__外借表__外借美术馆编号__5812160E, int 美术馆负责人姓名, string 联系方式, System.DateTime 起始时间, System.DateTime 截止时间, System.DateTime 归还时间, string 状态) {
+            public 外借表Row Add外借表Row(藏品表Row parent藏品表RowByFK__外借表__藏品编号__6A30C649, 员工信息表Row parent员工信息表RowByFK__外借表__操作员工号__6B24EA82, 美术馆表Row parent美术馆表RowByFK__外借表__外借美术馆编号__6C190EBB, int 美术馆负责人姓名, string 联系方式, System.DateTime 起始时间, System.DateTime 截止时间, System.DateTime 归还时间, string 状态) {
                 外借表Row row外借表Row = ((外借表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -5360,14 +5373,14 @@ namespace 美术馆 {
                         截止时间,
                         归还时间,
                         状态};
-                if ((parent藏品表RowByFK__外借表__藏品编号__5629CD9C != null)) {
-                    columnValuesArray[1] = parent藏品表RowByFK__外借表__藏品编号__5629CD9C[0];
+                if ((parent藏品表RowByFK__外借表__藏品编号__6A30C649 != null)) {
+                    columnValuesArray[1] = parent藏品表RowByFK__外借表__藏品编号__6A30C649[0];
                 }
-                if ((parent员工信息表RowByFK__外借表__操作员工号__571DF1D5 != null)) {
-                    columnValuesArray[2] = parent员工信息表RowByFK__外借表__操作员工号__571DF1D5[0];
+                if ((parent员工信息表RowByFK__外借表__操作员工号__6B24EA82 != null)) {
+                    columnValuesArray[2] = parent员工信息表RowByFK__外借表__操作员工号__6B24EA82[0];
                 }
-                if ((parent美术馆表RowByFK__外借表__外借美术馆编号__5812160E != null)) {
-                    columnValuesArray[3] = parent美术馆表RowByFK__外借表__外借美术馆编号__5812160E[0];
+                if ((parent美术馆表RowByFK__外借表__外借美术馆编号__6C190EBB != null)) {
+                    columnValuesArray[3] = parent美术馆表RowByFK__外借表__外借美术馆编号__6C190EBB[0];
                 }
                 row外借表Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row外借表Row);
@@ -5510,7 +5523,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5706,7 +5719,7 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 修复表Row Add修复表Row(藏品表Row parent藏品表RowByFK__修复表__藏品编号__5165187F, 员工信息表Row parent员工信息表RowByFK__修复表__管理员工号__52593CB8, 专家表Row parent专家表RowByFK__修复表__修复人员工号__534D60F1, string 状态, System.DateTime 时间) {
+            public 修复表Row Add修复表Row(藏品表Row parent藏品表RowByFK__修复表__藏品编号__6477ECF3, 员工信息表Row parent员工信息表RowByFK__修复表__管理员工号__656C112C, 专家表Row parent专家表RowByFK__修复表__修复人员工号__66603565, string 状态, System.DateTime 时间) {
                 修复表Row row修复表Row = ((修复表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -5715,14 +5728,14 @@ namespace 美术馆 {
                         null,
                         状态,
                         时间};
-                if ((parent藏品表RowByFK__修复表__藏品编号__5165187F != null)) {
-                    columnValuesArray[1] = parent藏品表RowByFK__修复表__藏品编号__5165187F[0];
+                if ((parent藏品表RowByFK__修复表__藏品编号__6477ECF3 != null)) {
+                    columnValuesArray[1] = parent藏品表RowByFK__修复表__藏品编号__6477ECF3[0];
                 }
-                if ((parent员工信息表RowByFK__修复表__管理员工号__52593CB8 != null)) {
-                    columnValuesArray[2] = parent员工信息表RowByFK__修复表__管理员工号__52593CB8[0];
+                if ((parent员工信息表RowByFK__修复表__管理员工号__656C112C != null)) {
+                    columnValuesArray[2] = parent员工信息表RowByFK__修复表__管理员工号__656C112C[0];
                 }
-                if ((parent专家表RowByFK__修复表__修复人员工号__534D60F1 != null)) {
-                    columnValuesArray[3] = parent专家表RowByFK__修复表__修复人员工号__534D60F1[0];
+                if ((parent专家表RowByFK__修复表__修复人员工号__66603565 != null)) {
+                    columnValuesArray[3] = parent专家表RowByFK__修复表__修复人员工号__66603565[0];
                 }
                 row修复表Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row修复表Row);
@@ -5852,7 +5865,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -6186,7 +6199,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -6256,8 +6269,6 @@ namespace 美术馆 {
             
             private global::System.Data.DataColumn column预约日期;
             
-            private global::System.Data.DataColumn column时间;
-            
             private global::System.Data.DataColumn column同行人1姓名;
             
             private global::System.Data.DataColumn column同行人1身份证号;
@@ -6314,14 +6325,6 @@ namespace 美术馆 {
             public global::System.Data.DataColumn 预约日期Column {
                 get {
                     return this.column预约日期;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn 时间Column {
-                get {
-                    return this.column时间;
                 }
             }
             
@@ -6402,12 +6405,11 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 预约表Row Add预约表Row(System.DateTime 预约日期, System.DateTime 时间, string 同行人1姓名, string 同行人1身份证号, string 同行人2姓名, string 同行人2身份证号, string 状态) {
+            public 预约表Row Add预约表Row(System.DateTime 预约日期, string 同行人1姓名, string 同行人1身份证号, string 同行人2姓名, string 同行人2身份证号, string 状态) {
                 预约表Row row预约表Row = ((预约表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         预约日期,
-                        时间,
                         同行人1姓名,
                         同行人1身份证号,
                         同行人2姓名,
@@ -6444,7 +6446,6 @@ namespace 美术馆 {
             internal void InitVars() {
                 this.column编号 = base.Columns["编号"];
                 this.column预约日期 = base.Columns["预约日期"];
-                this.column时间 = base.Columns["时间"];
                 this.column同行人1姓名 = base.Columns["同行人1姓名"];
                 this.column同行人1身份证号 = base.Columns["同行人1身份证号"];
                 this.column同行人2姓名 = base.Columns["同行人2姓名"];
@@ -6459,8 +6460,6 @@ namespace 美术馆 {
                 base.Columns.Add(this.column编号);
                 this.column预约日期 = new global::System.Data.DataColumn("预约日期", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.column预约日期);
-                this.column时间 = new global::System.Data.DataColumn("时间", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.column时间);
                 this.column同行人1姓名 = new global::System.Data.DataColumn("同行人1姓名", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.column同行人1姓名);
                 this.column同行人1身份证号 = new global::System.Data.DataColumn("同行人1身份证号", typeof(string), null, global::System.Data.MappingType.Element);
@@ -6551,7 +6550,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -6628,8 +6627,6 @@ namespace 美术馆 {
             private global::System.Data.DataColumn column联系方式;
             
             private global::System.Data.DataColumn column职位;
-            
-            private global::System.Data.DataColumn column权限;
             
             private global::System.Data.DataColumn column身份证号;
             
@@ -6720,14 +6717,6 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn 权限Column {
-                get {
-                    return this.column权限;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public global::System.Data.DataColumn 身份证号Column {
                 get {
                     return this.column身份证号;
@@ -6787,7 +6776,7 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 员工信息表Row Add员工信息表Row(string 姓名, string 密码, string 性别, string 联系方式, string 职位, string 权限, string 身份证号, string 密保问题, string 密保问题的答案) {
+            public 员工信息表Row Add员工信息表Row(string 姓名, string 密码, string 性别, string 联系方式, string 职位, string 身份证号, string 密保问题, string 密保问题的答案) {
                 员工信息表Row row员工信息表Row = ((员工信息表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -6796,7 +6785,6 @@ namespace 美术馆 {
                         性别,
                         联系方式,
                         职位,
-                        权限,
                         身份证号,
                         密保问题,
                         密保问题的答案};
@@ -6835,7 +6823,6 @@ namespace 美术馆 {
                 this.column性别 = base.Columns["性别"];
                 this.column联系方式 = base.Columns["联系方式"];
                 this.column职位 = base.Columns["职位"];
-                this.column权限 = base.Columns["权限"];
                 this.column身份证号 = base.Columns["身份证号"];
                 this.column密保问题 = base.Columns["密保问题"];
                 this.column密保问题的答案 = base.Columns["密保问题的答案"];
@@ -6856,8 +6843,6 @@ namespace 美术馆 {
                 base.Columns.Add(this.column联系方式);
                 this.column职位 = new global::System.Data.DataColumn("职位", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.column职位);
-                this.column权限 = new global::System.Data.DataColumn("权限", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.column权限);
                 this.column身份证号 = new global::System.Data.DataColumn("身份证号", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.column身份证号);
                 this.column密保问题 = new global::System.Data.DataColumn("密保问题", typeof(string), null, global::System.Data.MappingType.Element);
@@ -6877,7 +6862,6 @@ namespace 美术馆 {
                 this.column性别.MaxLength = 5;
                 this.column联系方式.MaxLength = 15;
                 this.column职位.MaxLength = 10;
-                this.column权限.MaxLength = 10;
                 this.column身份证号.MaxLength = 20;
                 this.column密保问题.MaxLength = 20;
                 this.column密保问题的答案.MaxLength = 50;
@@ -6948,7 +6932,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -7027,6 +7011,8 @@ namespace 美术馆 {
             private global::System.Data.DataColumn column结束时间;
             
             private global::System.Data.DataColumn column负责人编号;
+            
+            private global::System.Data.DataColumn column租金;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -7119,6 +7105,14 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn 租金Column {
+                get {
+                    return this.column租金;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -7154,7 +7148,7 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 展览安排表Row Add展览安排表Row(string 展览名称, string 展览类别, 展厅信息总表Row parent展厅信息总表RowByFK__展览安排表__展厅编号__4222D4EF, System.DateTime 开始时间, System.DateTime 结束时间, 员工信息表Row parent员工信息表RowByFK__展览安排表__负责人编号__4316F928) {
+            public 展览安排表Row Add展览安排表Row(string 展览名称, string 展览类别, 展厅信息总表Row parent展厅信息总表RowByFK__展览安排表__展厅编号__5441852A, System.DateTime 开始时间, System.DateTime 结束时间, 员工信息表Row parent员工信息表RowByFK__展览安排表__负责人编号__5535A963, double 租金) {
                 展览安排表Row row展览安排表Row = ((展览安排表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -7163,12 +7157,13 @@ namespace 美术馆 {
                         null,
                         开始时间,
                         结束时间,
-                        null};
-                if ((parent展厅信息总表RowByFK__展览安排表__展厅编号__4222D4EF != null)) {
-                    columnValuesArray[3] = parent展厅信息总表RowByFK__展览安排表__展厅编号__4222D4EF[0];
+                        null,
+                        租金};
+                if ((parent展厅信息总表RowByFK__展览安排表__展厅编号__5441852A != null)) {
+                    columnValuesArray[3] = parent展厅信息总表RowByFK__展览安排表__展厅编号__5441852A[0];
                 }
-                if ((parent员工信息表RowByFK__展览安排表__负责人编号__4316F928 != null)) {
-                    columnValuesArray[6] = parent员工信息表RowByFK__展览安排表__负责人编号__4316F928[0];
+                if ((parent员工信息表RowByFK__展览安排表__负责人编号__5535A963 != null)) {
+                    columnValuesArray[6] = parent员工信息表RowByFK__展览安排表__负责人编号__5535A963[0];
                 }
                 row展览安排表Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row展览安排表Row);
@@ -7206,6 +7201,7 @@ namespace 美术馆 {
                 this.column开始时间 = base.Columns["开始时间"];
                 this.column结束时间 = base.Columns["结束时间"];
                 this.column负责人编号 = base.Columns["负责人编号"];
+                this.column租金 = base.Columns["租金"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7225,6 +7221,8 @@ namespace 美术馆 {
                 base.Columns.Add(this.column结束时间);
                 this.column负责人编号 = new global::System.Data.DataColumn("负责人编号", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.column负责人编号);
+                this.column租金 = new global::System.Data.DataColumn("租金", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column租金);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.column展览编号}, true));
                 this.column展览编号.AutoIncrement = true;
@@ -7302,7 +7300,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -7379,6 +7377,8 @@ namespace 美术馆 {
             private global::System.Data.DataColumn column展览品大小;
             
             private global::System.Data.DataColumn column展览品类别;
+            
+            private global::System.Data.DataColumn column图片;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -7463,6 +7463,14 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn 图片Column {
+                get {
+                    return this.column图片;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -7498,7 +7506,7 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 展览品表Row Add展览品表Row(展览安排表Row parent展览安排表RowByFK__展览品表__展览编号__45F365D3, string 展览品名称, string 展览品作者姓名, string 展览品大小, string 展览品类别) {
+            public 展览品表Row Add展览品表Row(展览安排表Row parent展览安排表RowByFK__展览品表__展览编号__5812160E, string 展览品名称, string 展览品作者姓名, string 展览品大小, string 展览品类别, byte[] 图片) {
                 展览品表Row row展览品表Row = ((展览品表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -7506,9 +7514,10 @@ namespace 美术馆 {
                         展览品名称,
                         展览品作者姓名,
                         展览品大小,
-                        展览品类别};
-                if ((parent展览安排表RowByFK__展览品表__展览编号__45F365D3 != null)) {
-                    columnValuesArray[1] = parent展览安排表RowByFK__展览品表__展览编号__45F365D3[0];
+                        展览品类别,
+                        图片};
+                if ((parent展览安排表RowByFK__展览品表__展览编号__5812160E != null)) {
+                    columnValuesArray[1] = parent展览安排表RowByFK__展览品表__展览编号__5812160E[0];
                 }
                 row展览品表Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row展览品表Row);
@@ -7545,6 +7554,7 @@ namespace 美术馆 {
                 this.column展览品作者姓名 = base.Columns["展览品作者姓名"];
                 this.column展览品大小 = base.Columns["展览品大小"];
                 this.column展览品类别 = base.Columns["展览品类别"];
+                this.column图片 = base.Columns["图片"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7562,6 +7572,8 @@ namespace 美术馆 {
                 base.Columns.Add(this.column展览品大小);
                 this.column展览品类别 = new global::System.Data.DataColumn("展览品类别", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.column展览品类别);
+                this.column图片 = new global::System.Data.DataColumn("图片", typeof(byte[]), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column图片);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.column展览品编号}, true));
                 this.column展览品编号.AutoIncrement = true;
@@ -7641,7 +7653,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -7974,7 +7986,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -8220,7 +8232,7 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 征集表Row Add征集表Row(藏品表Row parent藏品表RowByFK__征集表__藏品编号__73BA3083, string 类别, double 理想价格, string 作者, System.DateTime 创作年代, string 联系人姓名, 员工信息表Row parent员工信息表RowByFK__征集表__操作员工号__74AE54BC, string 联系方式, string 藏品图片, string 备注) {
+            public 征集表Row Add征集表Row(藏品表Row parent藏品表RowByFK__征集表__藏品编号__0B91BA14, string 类别, double 理想价格, string 作者, System.DateTime 创作年代, string 联系人姓名, 员工信息表Row parent员工信息表RowByFK__征集表__操作员工号__0C85DE4D, string 联系方式, string 藏品图片, string 备注) {
                 征集表Row row征集表Row = ((征集表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -8234,11 +8246,11 @@ namespace 美术馆 {
                         联系方式,
                         藏品图片,
                         备注};
-                if ((parent藏品表RowByFK__征集表__藏品编号__73BA3083 != null)) {
-                    columnValuesArray[1] = parent藏品表RowByFK__征集表__藏品编号__73BA3083[0];
+                if ((parent藏品表RowByFK__征集表__藏品编号__0B91BA14 != null)) {
+                    columnValuesArray[1] = parent藏品表RowByFK__征集表__藏品编号__0B91BA14[0];
                 }
-                if ((parent员工信息表RowByFK__征集表__操作员工号__74AE54BC != null)) {
-                    columnValuesArray[7] = parent员工信息表RowByFK__征集表__操作员工号__74AE54BC[0];
+                if ((parent员工信息表RowByFK__征集表__操作员工号__0C85DE4D != null)) {
+                    columnValuesArray[7] = parent员工信息表RowByFK__征集表__操作员工号__0C85DE4D[0];
                 }
                 row征集表Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row征集表Row);
@@ -8388,7 +8400,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -8564,15 +8576,15 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 专家表Row Add专家表Row(string 姓名, 员工信息表Row parent员工信息表RowByFK__专家表__工号__3F466844, string 擅长领域) {
+            public 专家表Row Add专家表Row(string 姓名, 员工信息表Row parent员工信息表RowByFK__专家表__工号__5165187F, string 擅长领域) {
                 专家表Row row专家表Row = ((专家表Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         姓名,
                         null,
                         擅长领域};
-                if ((parent员工信息表RowByFK__专家表__工号__3F466844 != null)) {
-                    columnValuesArray[2] = parent员工信息表RowByFK__专家表__工号__3F466844[0];
+                if ((parent员工信息表RowByFK__专家表__工号__5165187F != null)) {
+                    columnValuesArray[2] = parent员工信息表RowByFK__专家表__工号__5165187F[0];
                 }
                 row专家表Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row专家表Row);
@@ -8697,7 +8709,7 @@ namespace 美术馆 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                artDataSet ds = new artDataSet();
+                美术馆DataSet ds = new 美术馆DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -8881,10 +8893,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 员工信息表Row 员工信息表Row {
                 get {
-                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__财务表__负责人工号__4E88ABD4"])));
+                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__财务表__负责人工号__619B8048"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__财务表__负责人工号__4E88ABD4"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__财务表__负责人工号__619B8048"]);
                 }
             }
             
@@ -9086,10 +9098,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 员工信息表Row 员工信息表Row {
                 get {
-                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__采购记录表__操作员工号__6EF57B66"])));
+                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__采购记录表__操作员工号__05D8E0BE"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__采购记录表__操作员工号__6EF57B66"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__采购记录表__操作员工号__05D8E0BE"]);
                 }
             }
             
@@ -9273,10 +9285,10 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string 图片 {
+            public byte[] 图片 {
                 get {
                     try {
-                        return ((string)(this[this.table藏品表.图片Column]));
+                        return ((byte[])(this[this.table藏品表.图片Column]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("表“藏品表”中列“图片”的值为 DBNull。", e);
@@ -9362,77 +9374,77 @@ namespace 美术馆 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 出馆表Row[] Get出馆表Rows() {
-                if ((this.Table.ChildRelations["FK__出馆表__藏品编号__5EBF139D"] == null)) {
+                if ((this.Table.ChildRelations["FK__出馆表__藏品编号__72C60C4A"] == null)) {
                     return new 出馆表Row[0];
                 }
                 else {
-                    return ((出馆表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__出馆表__藏品编号__5EBF139D"])));
+                    return ((出馆表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__出馆表__藏品编号__72C60C4A"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 检查表Row[] Get检查表Rows() {
-                if ((this.Table.ChildRelations["FK__检查表__藏品编号__48CFD27E"] == null)) {
+                if ((this.Table.ChildRelations["FK__检查表__藏品编号__5AEE82B9"] == null)) {
                     return new 检查表Row[0];
                 }
                 else {
-                    return ((检查表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__检查表__藏品编号__48CFD27E"])));
+                    return ((检查表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__检查表__藏品编号__5AEE82B9"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 鉴定表Row[] Get鉴定表Rows() {
-                if ((this.Table.ChildRelations["FK__鉴定表__藏品编号__6383C8BA"] == null)) {
+                if ((this.Table.ChildRelations["FK__鉴定表__藏品编号__778AC167"] == null)) {
                     return new 鉴定表Row[0];
                 }
                 else {
-                    return ((鉴定表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__鉴定表__藏品编号__6383C8BA"])));
+                    return ((鉴定表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__鉴定表__藏品编号__778AC167"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 入馆表Row[] Get入馆表Rows() {
-                if ((this.Table.ChildRelations["FK__入馆表__藏品编号__5AEE82B9"] == null)) {
+                if ((this.Table.ChildRelations["FK__入馆表__藏品编号__6EF57B66"] == null)) {
                     return new 入馆表Row[0];
                 }
                 else {
-                    return ((入馆表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__入馆表__藏品编号__5AEE82B9"])));
+                    return ((入馆表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__入馆表__藏品编号__6EF57B66"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 外借表Row[] Get外借表Rows() {
-                if ((this.Table.ChildRelations["FK__外借表__藏品编号__5629CD9C"] == null)) {
+                if ((this.Table.ChildRelations["FK__外借表__藏品编号__6A30C649"] == null)) {
                     return new 外借表Row[0];
                 }
                 else {
-                    return ((外借表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__外借表__藏品编号__5629CD9C"])));
+                    return ((外借表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__外借表__藏品编号__6A30C649"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 修复表Row[] Get修复表Rows() {
-                if ((this.Table.ChildRelations["FK__修复表__藏品编号__5165187F"] == null)) {
+                if ((this.Table.ChildRelations["FK__修复表__藏品编号__6477ECF3"] == null)) {
                     return new 修复表Row[0];
                 }
                 else {
-                    return ((修复表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__修复表__藏品编号__5165187F"])));
+                    return ((修复表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__修复表__藏品编号__6477ECF3"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 征集表Row[] Get征集表Rows() {
-                if ((this.Table.ChildRelations["FK__征集表__藏品编号__73BA3083"] == null)) {
+                if ((this.Table.ChildRelations["FK__征集表__藏品编号__0B91BA14"] == null)) {
                     return new 征集表Row[0];
                 }
                 else {
-                    return ((征集表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__征集表__藏品编号__73BA3083"])));
+                    return ((征集表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__征集表__藏品编号__0B91BA14"])));
                 }
             }
         }
@@ -9530,10 +9542,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 藏品表Row 藏品表Row {
                 get {
-                    return ((藏品表Row)(this.GetParentRow(this.Table.ParentRelations["FK__出馆表__藏品编号__5EBF139D"])));
+                    return ((藏品表Row)(this.GetParentRow(this.Table.ParentRelations["FK__出馆表__藏品编号__72C60C4A"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__出馆表__藏品编号__5EBF139D"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__出馆表__藏品编号__72C60C4A"]);
                 }
             }
             
@@ -9541,10 +9553,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 员工信息表Row 员工信息表Row {
                 get {
-                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__出馆表__操作员工号__5FB337D6"])));
+                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__出馆表__操作员工号__73BA3083"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__出馆表__操作员工号__5FB337D6"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__出馆表__操作员工号__73BA3083"]);
                 }
             }
             
@@ -9674,10 +9686,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 员工信息表Row 员工信息表Row {
                 get {
-                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__放票数表__操作员工号__778AC167"])));
+                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__放票数表__操作员工号__10566F31"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__放票数表__操作员工号__778AC167"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__放票数表__操作员工号__10566F31"]);
                 }
             }
             
@@ -9827,10 +9839,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 藏品表Row 藏品表Row {
                 get {
-                    return ((藏品表Row)(this.GetParentRow(this.Table.ParentRelations["FK__检查表__藏品编号__48CFD27E"])));
+                    return ((藏品表Row)(this.GetParentRow(this.Table.ParentRelations["FK__检查表__藏品编号__5AEE82B9"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__检查表__藏品编号__48CFD27E"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__检查表__藏品编号__5AEE82B9"]);
                 }
             }
             
@@ -9838,10 +9850,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 专家表Row 专家表Row {
                 get {
-                    return ((专家表Row)(this.GetParentRow(this.Table.ParentRelations["FK__检查表__专家工号__49C3F6B7"])));
+                    return ((专家表Row)(this.GetParentRow(this.Table.ParentRelations["FK__检查表__专家工号__5BE2A6F2"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__检查表__专家工号__49C3F6B7"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__检查表__专家工号__5BE2A6F2"]);
                 }
             }
             
@@ -10047,10 +10059,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 藏品表Row 藏品表Row {
                 get {
-                    return ((藏品表Row)(this.GetParentRow(this.Table.ParentRelations["FK__鉴定表__藏品编号__6383C8BA"])));
+                    return ((藏品表Row)(this.GetParentRow(this.Table.ParentRelations["FK__鉴定表__藏品编号__778AC167"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__鉴定表__藏品编号__6383C8BA"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__鉴定表__藏品编号__778AC167"]);
                 }
             }
             
@@ -10058,10 +10070,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 员工信息表Row 员工信息表Row {
                 get {
-                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__鉴定表__管理员工号__6477ECF3"])));
+                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__鉴定表__管理员工号__787EE5A0"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__鉴定表__管理员工号__6477ECF3"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__鉴定表__管理员工号__787EE5A0"]);
                 }
             }
             
@@ -10069,10 +10081,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 专家表Row 专家表Row {
                 get {
-                    return ((专家表Row)(this.GetParentRow(this.Table.ParentRelations["FK__鉴定表__专家工号__628FA481"])));
+                    return ((专家表Row)(this.GetParentRow(this.Table.ParentRelations["FK__鉴定表__专家工号__76969D2E"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__鉴定表__专家工号__628FA481"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__鉴定表__专家工号__76969D2E"]);
                 }
             }
             
@@ -10301,11 +10313,11 @@ namespace 美术馆 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 外借表Row[] Get外借表Rows() {
-                if ((this.Table.ChildRelations["FK__外借表__外借美术馆编号__5812160E"] == null)) {
+                if ((this.Table.ChildRelations["FK__外借表__外借美术馆编号__6C190EBB"] == null)) {
                     return new 外借表Row[0];
                 }
                 else {
-                    return ((外借表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__外借表__外借美术馆编号__5812160E"])));
+                    return ((外借表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__外借表__外借美术馆编号__6C190EBB"])));
                 }
             }
         }
@@ -10511,12 +10523,28 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 藏品表Row 藏品表Row {
+            public double 价值 {
                 get {
-                    return ((藏品表Row)(this.GetParentRow(this.Table.ParentRelations["FK__入馆表__藏品编号__5AEE82B9"])));
+                    try {
+                        return ((double)(this[this.table入馆表.价值Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“入馆表”中列“价值”的值为 DBNull。", e);
+                    }
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__入馆表__藏品编号__5AEE82B9"]);
+                    this[this.table入馆表.价值Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public 藏品表Row 藏品表Row {
+                get {
+                    return ((藏品表Row)(this.GetParentRow(this.Table.ParentRelations["FK__入馆表__藏品编号__6EF57B66"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__入馆表__藏品编号__6EF57B66"]);
                 }
             }
             
@@ -10524,10 +10552,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 员工信息表Row 员工信息表Row {
                 get {
-                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__入馆表__操作员工号__5BE2A6F2"])));
+                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__入馆表__操作员工号__6FE99F9F"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__入馆表__操作员工号__5BE2A6F2"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__入馆表__操作员工号__6FE99F9F"]);
                 }
             }
             
@@ -10577,6 +10605,18 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void Set来源详情Null() {
                 this[this.table入馆表.来源详情Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool Is价值Null() {
+                return this.IsNull(this.table入馆表.价值Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void Set价值Null() {
+                this[this.table入馆表.价值Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -10673,10 +10713,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 员工信息表Row 员工信息表Row {
                 get {
-                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__通知表__发布者工号__693CA210"])));
+                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__通知表__发布者工号__7E37BEF6"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__通知表__发布者工号__693CA210"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__通知表__发布者工号__7E37BEF6"]);
                 }
             }
             
@@ -10806,10 +10846,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 用户表Row 用户表Row {
                 get {
-                    return ((用户表Row)(this.GetParentRow(this.Table.ParentRelations["FK__投诉建议表__ID__6C190EBB"])));
+                    return ((用户表Row)(this.GetParentRow(this.Table.ParentRelations["FK__投诉建议表__ID__02084FDA"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__投诉建议表__ID__6C190EBB"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__投诉建议表__ID__02084FDA"]);
                 }
             }
             
@@ -11023,10 +11063,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 藏品表Row 藏品表Row {
                 get {
-                    return ((藏品表Row)(this.GetParentRow(this.Table.ParentRelations["FK__外借表__藏品编号__5629CD9C"])));
+                    return ((藏品表Row)(this.GetParentRow(this.Table.ParentRelations["FK__外借表__藏品编号__6A30C649"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__外借表__藏品编号__5629CD9C"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__外借表__藏品编号__6A30C649"]);
                 }
             }
             
@@ -11034,10 +11074,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 员工信息表Row 员工信息表Row {
                 get {
-                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__外借表__操作员工号__571DF1D5"])));
+                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__外借表__操作员工号__6B24EA82"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__外借表__操作员工号__571DF1D5"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__外借表__操作员工号__6B24EA82"]);
                 }
             }
             
@@ -11045,10 +11085,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 美术馆表Row 美术馆表Row {
                 get {
-                    return ((美术馆表Row)(this.GetParentRow(this.Table.ParentRelations["FK__外借表__外借美术馆编号__5812160E"])));
+                    return ((美术馆表Row)(this.GetParentRow(this.Table.ParentRelations["FK__外借表__外借美术馆编号__6C190EBB"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__外借表__外借美术馆编号__5812160E"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__外借表__外借美术馆编号__6C190EBB"]);
                 }
             }
             
@@ -11270,10 +11310,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 藏品表Row 藏品表Row {
                 get {
-                    return ((藏品表Row)(this.GetParentRow(this.Table.ParentRelations["FK__修复表__藏品编号__5165187F"])));
+                    return ((藏品表Row)(this.GetParentRow(this.Table.ParentRelations["FK__修复表__藏品编号__6477ECF3"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__修复表__藏品编号__5165187F"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__修复表__藏品编号__6477ECF3"]);
                 }
             }
             
@@ -11281,10 +11321,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 员工信息表Row 员工信息表Row {
                 get {
-                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__修复表__管理员工号__52593CB8"])));
+                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__修复表__管理员工号__656C112C"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__修复表__管理员工号__52593CB8"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__修复表__管理员工号__656C112C"]);
                 }
             }
             
@@ -11292,10 +11332,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 专家表Row 专家表Row {
                 get {
-                    return ((专家表Row)(this.GetParentRow(this.Table.ParentRelations["FK__修复表__修复人员工号__534D60F1"])));
+                    return ((专家表Row)(this.GetParentRow(this.Table.ParentRelations["FK__修复表__修复人员工号__66603565"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__修复表__修复人员工号__534D60F1"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__修复表__修复人员工号__66603565"]);
                 }
             }
             
@@ -11528,11 +11568,11 @@ namespace 美术馆 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 投诉建议表Row[] Get投诉建议表Rows() {
-                if ((this.Table.ChildRelations["FK__投诉建议表__ID__6C190EBB"] == null)) {
+                if ((this.Table.ChildRelations["FK__投诉建议表__ID__02084FDA"] == null)) {
                     return new 投诉建议表Row[0];
                 }
                 else {
-                    return ((投诉建议表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__投诉建议表__ID__6C190EBB"])));
+                    return ((投诉建议表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__投诉建议表__ID__02084FDA"])));
                 }
             }
         }
@@ -11575,22 +11615,6 @@ namespace 美术馆 {
                 }
                 set {
                     this[this.table预约表.预约日期Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public System.DateTime 时间 {
-                get {
-                    try {
-                        return ((global::System.DateTime)(this[this.table预约表.时间Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“预约表”中列“时间”的值为 DBNull。", e);
-                    }
-                }
-                set {
-                    this[this.table预约表.时间Column] = value;
                 }
             }
             
@@ -11684,18 +11708,6 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void Set预约日期Null() {
                 this[this.table预约表.预约日期Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool Is时间Null() {
-                return this.IsNull(this.table预约表.时间Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void Set时间Null() {
-                this[this.table预约表.时间Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11866,22 +11878,6 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string 权限 {
-                get {
-                    try {
-                        return ((string)(this[this.table员工信息表.权限Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("表“员工信息表”中列“权限”的值为 DBNull。", e);
-                    }
-                }
-                set {
-                    this[this.table员工信息表.权限Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public string 身份证号 {
                 get {
                     try {
@@ -11990,18 +11986,6 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool Is权限Null() {
-                return this.IsNull(this.table员工信息表.权限Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void Set权限Null() {
-                this[this.table员工信息表.权限Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool Is身份证号Null() {
                 return this.IsNull(this.table员工信息表.身份证号Column);
             }
@@ -12039,132 +12023,132 @@ namespace 美术馆 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 财务表Row[] Get财务表Rows() {
-                if ((this.Table.ChildRelations["FK__财务表__负责人工号__4E88ABD4"] == null)) {
+                if ((this.Table.ChildRelations["FK__财务表__负责人工号__619B8048"] == null)) {
                     return new 财务表Row[0];
                 }
                 else {
-                    return ((财务表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__财务表__负责人工号__4E88ABD4"])));
+                    return ((财务表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__财务表__负责人工号__619B8048"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 采购记录表Row[] Get采购记录表Rows() {
-                if ((this.Table.ChildRelations["FK__采购记录表__操作员工号__6EF57B66"] == null)) {
+                if ((this.Table.ChildRelations["FK__采购记录表__操作员工号__05D8E0BE"] == null)) {
                     return new 采购记录表Row[0];
                 }
                 else {
-                    return ((采购记录表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__采购记录表__操作员工号__6EF57B66"])));
+                    return ((采购记录表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__采购记录表__操作员工号__05D8E0BE"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 出馆表Row[] Get出馆表Rows() {
-                if ((this.Table.ChildRelations["FK__出馆表__操作员工号__5FB337D6"] == null)) {
+                if ((this.Table.ChildRelations["FK__出馆表__操作员工号__73BA3083"] == null)) {
                     return new 出馆表Row[0];
                 }
                 else {
-                    return ((出馆表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__出馆表__操作员工号__5FB337D6"])));
+                    return ((出馆表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__出馆表__操作员工号__73BA3083"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 放票数表Row[] Get放票数表Rows() {
-                if ((this.Table.ChildRelations["FK__放票数表__操作员工号__778AC167"] == null)) {
+                if ((this.Table.ChildRelations["FK__放票数表__操作员工号__10566F31"] == null)) {
                     return new 放票数表Row[0];
                 }
                 else {
-                    return ((放票数表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__放票数表__操作员工号__778AC167"])));
+                    return ((放票数表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__放票数表__操作员工号__10566F31"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 鉴定表Row[] Get鉴定表Rows() {
-                if ((this.Table.ChildRelations["FK__鉴定表__管理员工号__6477ECF3"] == null)) {
+                if ((this.Table.ChildRelations["FK__鉴定表__管理员工号__787EE5A0"] == null)) {
                     return new 鉴定表Row[0];
                 }
                 else {
-                    return ((鉴定表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__鉴定表__管理员工号__6477ECF3"])));
+                    return ((鉴定表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__鉴定表__管理员工号__787EE5A0"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 入馆表Row[] Get入馆表Rows() {
-                if ((this.Table.ChildRelations["FK__入馆表__操作员工号__5BE2A6F2"] == null)) {
+                if ((this.Table.ChildRelations["FK__入馆表__操作员工号__6FE99F9F"] == null)) {
                     return new 入馆表Row[0];
                 }
                 else {
-                    return ((入馆表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__入馆表__操作员工号__5BE2A6F2"])));
+                    return ((入馆表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__入馆表__操作员工号__6FE99F9F"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 通知表Row[] Get通知表Rows() {
-                if ((this.Table.ChildRelations["FK__通知表__发布者工号__693CA210"] == null)) {
+                if ((this.Table.ChildRelations["FK__通知表__发布者工号__7E37BEF6"] == null)) {
                     return new 通知表Row[0];
                 }
                 else {
-                    return ((通知表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__通知表__发布者工号__693CA210"])));
+                    return ((通知表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__通知表__发布者工号__7E37BEF6"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 外借表Row[] Get外借表Rows() {
-                if ((this.Table.ChildRelations["FK__外借表__操作员工号__571DF1D5"] == null)) {
+                if ((this.Table.ChildRelations["FK__外借表__操作员工号__6B24EA82"] == null)) {
                     return new 外借表Row[0];
                 }
                 else {
-                    return ((外借表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__外借表__操作员工号__571DF1D5"])));
+                    return ((外借表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__外借表__操作员工号__6B24EA82"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 修复表Row[] Get修复表Rows() {
-                if ((this.Table.ChildRelations["FK__修复表__管理员工号__52593CB8"] == null)) {
+                if ((this.Table.ChildRelations["FK__修复表__管理员工号__656C112C"] == null)) {
                     return new 修复表Row[0];
                 }
                 else {
-                    return ((修复表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__修复表__管理员工号__52593CB8"])));
+                    return ((修复表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__修复表__管理员工号__656C112C"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 展览安排表Row[] Get展览安排表Rows() {
-                if ((this.Table.ChildRelations["FK__展览安排表__负责人编号__4316F928"] == null)) {
+                if ((this.Table.ChildRelations["FK__展览安排表__负责人编号__5535A963"] == null)) {
                     return new 展览安排表Row[0];
                 }
                 else {
-                    return ((展览安排表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__展览安排表__负责人编号__4316F928"])));
+                    return ((展览安排表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__展览安排表__负责人编号__5535A963"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 征集表Row[] Get征集表Rows() {
-                if ((this.Table.ChildRelations["FK__征集表__操作员工号__74AE54BC"] == null)) {
+                if ((this.Table.ChildRelations["FK__征集表__操作员工号__0C85DE4D"] == null)) {
                     return new 征集表Row[0];
                 }
                 else {
-                    return ((征集表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__征集表__操作员工号__74AE54BC"])));
+                    return ((征集表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__征集表__操作员工号__0C85DE4D"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 专家表Row[] Get专家表Rows() {
-                if ((this.Table.ChildRelations["FK__专家表__工号__3F466844"] == null)) {
+                if ((this.Table.ChildRelations["FK__专家表__工号__5165187F"] == null)) {
                     return new 专家表Row[0];
                 }
                 else {
-                    return ((专家表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__专家表__工号__3F466844"])));
+                    return ((专家表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__专家表__工号__5165187F"])));
                 }
             }
         }
@@ -12292,12 +12276,28 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 员工信息表Row 员工信息表Row {
+            public double 租金 {
                 get {
-                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__展览安排表__负责人编号__4316F928"])));
+                    try {
+                        return ((double)(this[this.table展览安排表.租金Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“展览安排表”中列“租金”的值为 DBNull。", e);
+                    }
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__展览安排表__负责人编号__4316F928"]);
+                    this[this.table展览安排表.租金Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public 员工信息表Row 员工信息表Row {
+                get {
+                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__展览安排表__负责人编号__5535A963"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__展览安排表__负责人编号__5535A963"]);
                 }
             }
             
@@ -12305,10 +12305,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 展厅信息总表Row 展厅信息总表Row {
                 get {
-                    return ((展厅信息总表Row)(this.GetParentRow(this.Table.ParentRelations["FK__展览安排表__展厅编号__4222D4EF"])));
+                    return ((展厅信息总表Row)(this.GetParentRow(this.Table.ParentRelations["FK__展览安排表__展厅编号__5441852A"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__展览安排表__展厅编号__4222D4EF"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__展览安排表__展厅编号__5441852A"]);
                 }
             }
             
@@ -12386,12 +12386,24 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool Is租金Null() {
+                return this.IsNull(this.table展览安排表.租金Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void Set租金Null() {
+                this[this.table展览安排表.租金Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 展览品表Row[] Get展览品表Rows() {
-                if ((this.Table.ChildRelations["FK__展览品表__展览编号__45F365D3"] == null)) {
+                if ((this.Table.ChildRelations["FK__展览品表__展览编号__5812160E"] == null)) {
                     return new 展览品表Row[0];
                 }
                 else {
-                    return ((展览品表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__展览品表__展览编号__45F365D3"])));
+                    return ((展览品表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__展览品表__展览编号__5812160E"])));
                 }
             }
         }
@@ -12503,12 +12515,28 @@ namespace 美术馆 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public 展览安排表Row 展览安排表Row {
+            public byte[] 图片 {
                 get {
-                    return ((展览安排表Row)(this.GetParentRow(this.Table.ParentRelations["FK__展览品表__展览编号__45F365D3"])));
+                    try {
+                        return ((byte[])(this[this.table展览品表.图片Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“展览品表”中列“图片”的值为 DBNull。", e);
+                    }
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__展览品表__展览编号__45F365D3"]);
+                    this[this.table展览品表.图片Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public 展览安排表Row 展览安排表Row {
+                get {
+                    return ((展览安排表Row)(this.GetParentRow(this.Table.ParentRelations["FK__展览品表__展览编号__5812160E"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__展览品表__展览编号__5812160E"]);
                 }
             }
             
@@ -12570,6 +12598,18 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void Set展览品类别Null() {
                 this[this.table展览品表.展览品类别Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool Is图片Null() {
+                return this.IsNull(this.table展览品表.图片Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void Set图片Null() {
+                this[this.table展览品表.图片Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -12741,11 +12781,11 @@ namespace 美术馆 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 展览安排表Row[] Get展览安排表Rows() {
-                if ((this.Table.ChildRelations["FK__展览安排表__展厅编号__4222D4EF"] == null)) {
+                if ((this.Table.ChildRelations["FK__展览安排表__展厅编号__5441852A"] == null)) {
                     return new 展览安排表Row[0];
                 }
                 else {
-                    return ((展览安排表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__展览安排表__展厅编号__4222D4EF"])));
+                    return ((展览安排表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__展览安排表__展厅编号__5441852A"])));
                 }
             }
         }
@@ -12939,10 +12979,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 藏品表Row 藏品表Row {
                 get {
-                    return ((藏品表Row)(this.GetParentRow(this.Table.ParentRelations["FK__征集表__藏品编号__73BA3083"])));
+                    return ((藏品表Row)(this.GetParentRow(this.Table.ParentRelations["FK__征集表__藏品编号__0B91BA14"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__征集表__藏品编号__73BA3083"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__征集表__藏品编号__0B91BA14"]);
                 }
             }
             
@@ -12950,10 +12990,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 员工信息表Row 员工信息表Row {
                 get {
-                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__征集表__操作员工号__74AE54BC"])));
+                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__征集表__操作员工号__0C85DE4D"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__征集表__操作员工号__74AE54BC"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__征集表__操作员工号__0C85DE4D"]);
                 }
             }
             
@@ -13155,10 +13195,10 @@ namespace 美术馆 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 员工信息表Row 员工信息表Row {
                 get {
-                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__专家表__工号__3F466844"])));
+                    return ((员工信息表Row)(this.GetParentRow(this.Table.ParentRelations["FK__专家表__工号__5165187F"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__专家表__工号__3F466844"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__专家表__工号__5165187F"]);
                 }
             }
             
@@ -13201,33 +13241,33 @@ namespace 美术馆 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 检查表Row[] Get检查表Rows() {
-                if ((this.Table.ChildRelations["FK__检查表__专家工号__49C3F6B7"] == null)) {
+                if ((this.Table.ChildRelations["FK__检查表__专家工号__5BE2A6F2"] == null)) {
                     return new 检查表Row[0];
                 }
                 else {
-                    return ((检查表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__检查表__专家工号__49C3F6B7"])));
+                    return ((检查表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__检查表__专家工号__5BE2A6F2"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 鉴定表Row[] Get鉴定表Rows() {
-                if ((this.Table.ChildRelations["FK__鉴定表__专家工号__628FA481"] == null)) {
+                if ((this.Table.ChildRelations["FK__鉴定表__专家工号__76969D2E"] == null)) {
                     return new 鉴定表Row[0];
                 }
                 else {
-                    return ((鉴定表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__鉴定表__专家工号__628FA481"])));
+                    return ((鉴定表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__鉴定表__专家工号__76969D2E"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public 修复表Row[] Get修复表Rows() {
-                if ((this.Table.ChildRelations["FK__修复表__修复人员工号__534D60F1"] == null)) {
+                if ((this.Table.ChildRelations["FK__修复表__修复人员工号__66603565"] == null)) {
                     return new 修复表Row[0];
                 }
                 else {
-                    return ((修复表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__修复表__修复人员工号__534D60F1"])));
+                    return ((修复表Row[])(base.GetChildRows(this.Table.ChildRelations["FK__修复表__修复人员工号__66603565"])));
                 }
             }
         }
@@ -13981,7 +14021,7 @@ namespace 美术馆 {
         }
     }
 }
-namespace 美术馆.artDataSetTableAdapters {
+namespace 美术馆.美术馆DataSetTableAdapters {
     
     
     /// <summary>
@@ -14173,7 +14213,7 @@ SELECT 编号, 来源, 类别, 金额, 总账剩余, 时间, 负责人工号 FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14190,7 +14230,7 @@ SELECT 编号, 来源, 类别, 金额, 总账剩余, 时间, 负责人工号 FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.财务表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.财务表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -14203,9 +14243,9 @@ SELECT 编号, 来源, 类别, 金额, 总账剩余, 时间, 负责人工号 FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.财务表DataTable GetData() {
+        public virtual 美术馆DataSet.财务表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.财务表DataTable dataTable = new artDataSet.财务表DataTable();
+            美术馆DataSet.财务表DataTable dataTable = new 美术馆DataSet.财务表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -14213,14 +14253,14 @@ SELECT 编号, 来源, 类别, 金额, 总账剩余, 时间, 负责人工号 FRO
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.财务表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.财务表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "财务表");
         }
         
@@ -14671,7 +14711,7 @@ SELECT 采购编号, 物资类别, 物资数量, 物资单价, 总金额, 操作
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14688,7 +14728,7 @@ SELECT 采购编号, 物资类别, 物资数量, 物资单价, 总金额, 操作
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.采购记录表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.采购记录表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -14701,9 +14741,9 @@ SELECT 采购编号, 物资类别, 物资数量, 物资单价, 总金额, 操作
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.采购记录表DataTable GetData() {
+        public virtual 美术馆DataSet.采购记录表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.采购记录表DataTable dataTable = new artDataSet.采购记录表DataTable();
+            美术馆DataSet.采购记录表DataTable dataTable = new 美术馆DataSet.采购记录表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -14711,14 +14751,14 @@ SELECT 采购编号, 物资类别, 物资数量, 物资单价, 总金额, 操作
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.采购记录表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.采购记录表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "采购记录表");
         }
         
@@ -15111,7 +15151,7 @@ SELECT 采购编号, 物资类别, 物资数量, 物资单价, 总金额, 操作
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[藏品表] WHERE (([藏品编号] = @Original_藏品编号) AND ((@IsNull_藏品名称 = 1 AND [藏品名称] IS NULL) OR ([藏品名称] = @Original_藏品名称)) AND ((@IsNull_风格 = 1 AND [风格] IS NULL) OR ([风格] = @Original_风格)) AND ((@IsNull_作者姓名 = 1 AND [作者姓名] IS NULL) OR ([作者姓名] = @Original_作者姓名)) AND ((@IsNull_创作时间 = 1 AND [创作时间] IS NULL) OR ([创作时间] = @Original_创作时间)) AND ((@IsNull_大小 = 1 AND [大小] IS NULL) OR ([大小] = @Original_大小)) AND ((@IsNull_图片 = 1 AND [图片] IS NULL) OR ([图片] = @Original_图片)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[藏品表] WHERE (([藏品编号] = @Original_藏品编号) AND ((@IsNull_藏品名称 = 1 AND [藏品名称] IS NULL) OR ([藏品名称] = @Original_藏品名称)) AND ((@IsNull_风格 = 1 AND [风格] IS NULL) OR ([风格] = @Original_风格)) AND ((@IsNull_作者姓名 = 1 AND [作者姓名] IS NULL) OR ([作者姓名] = @Original_作者姓名)) AND ((@IsNull_创作时间 = 1 AND [创作时间] IS NULL) OR ([创作时间] = @Original_创作时间)) AND ((@IsNull_大小 = 1 AND [大小] IS NULL) OR ([大小] = @Original_大小)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_藏品编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "藏品编号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_藏品名称", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "藏品名称", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -15124,8 +15164,6 @@ SELECT 采购编号, 物资类别, 物资数量, 物资单价, 总金额, 操作
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_创作时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "创作时间", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_大小", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "大小", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_大小", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "大小", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_图片", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "图片", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_图片", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "图片", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[藏品表] ([藏品名称], [风格], [作者姓名], [创作时间], [大小], [图片]) VALUES (@藏品名称," +
@@ -15137,10 +15175,10 @@ SELECT 采购编号, 物资类别, 物资数量, 物资单价, 总金额, 操作
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@作者姓名", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "作者姓名", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@创作时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "创作时间", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@大小", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "大小", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@图片", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "图片", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@图片", global::System.Data.SqlDbType.Image, 0, global::System.Data.ParameterDirection.Input, 0, 0, "图片", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[藏品表] SET [藏品名称] = @藏品名称, [风格] = @风格, [作者姓名] = @作者姓名, [创作时间] = @创作时间, [大小] = @大小, [图片] = @图片 WHERE (([藏品编号] = @Original_藏品编号) AND ((@IsNull_藏品名称 = 1 AND [藏品名称] IS NULL) OR ([藏品名称] = @Original_藏品名称)) AND ((@IsNull_风格 = 1 AND [风格] IS NULL) OR ([风格] = @Original_风格)) AND ((@IsNull_作者姓名 = 1 AND [作者姓名] IS NULL) OR ([作者姓名] = @Original_作者姓名)) AND ((@IsNull_创作时间 = 1 AND [创作时间] IS NULL) OR ([创作时间] = @Original_创作时间)) AND ((@IsNull_大小 = 1 AND [大小] IS NULL) OR ([大小] = @Original_大小)) AND ((@IsNull_图片 = 1 AND [图片] IS NULL) OR ([图片] = @Original_图片)));
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[藏品表] SET [藏品名称] = @藏品名称, [风格] = @风格, [作者姓名] = @作者姓名, [创作时间] = @创作时间, [大小] = @大小, [图片] = @图片 WHERE (([藏品编号] = @Original_藏品编号) AND ((@IsNull_藏品名称 = 1 AND [藏品名称] IS NULL) OR ([藏品名称] = @Original_藏品名称)) AND ((@IsNull_风格 = 1 AND [风格] IS NULL) OR ([风格] = @Original_风格)) AND ((@IsNull_作者姓名 = 1 AND [作者姓名] IS NULL) OR ([作者姓名] = @Original_作者姓名)) AND ((@IsNull_创作时间 = 1 AND [创作时间] IS NULL) OR ([创作时间] = @Original_创作时间)) AND ((@IsNull_大小 = 1 AND [大小] IS NULL) OR ([大小] = @Original_大小)));
 SELECT 藏品编号, 藏品名称, 风格, 作者姓名, 创作时间, 大小, 图片 FROM 藏品表 WHERE (藏品编号 = @藏品编号)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@藏品名称", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "藏品名称", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -15148,7 +15186,7 @@ SELECT 藏品编号, 藏品名称, 风格, 作者姓名, 创作时间, 大小, �
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@作者姓名", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "作者姓名", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@创作时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "创作时间", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@大小", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "大小", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@图片", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "图片", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@图片", global::System.Data.SqlDbType.Image, 0, global::System.Data.ParameterDirection.Input, 0, 0, "图片", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_藏品编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "藏品编号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_藏品名称", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "藏品名称", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_藏品名称", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "藏品名称", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -15160,8 +15198,6 @@ SELECT 藏品编号, 藏品名称, 风格, 作者姓名, 创作时间, 大小, �
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_创作时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "创作时间", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_大小", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "大小", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_大小", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "大小", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_图片", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "图片", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_图片", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "图片", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@藏品编号", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "藏品编号", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -15169,7 +15205,7 @@ SELECT 藏品编号, 藏品名称, 风格, 作者姓名, 创作时间, 大小, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15186,7 +15222,7 @@ SELECT 藏品编号, 藏品名称, 风格, 作者姓名, 创作时间, 大小, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.藏品表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.藏品表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -15199,9 +15235,9 @@ SELECT 藏品编号, 藏品名称, 风格, 作者姓名, 创作时间, 大小, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.藏品表DataTable GetData() {
+        public virtual 美术馆DataSet.藏品表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.藏品表DataTable dataTable = new artDataSet.藏品表DataTable();
+            美术馆DataSet.藏品表DataTable dataTable = new 美术馆DataSet.藏品表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -15209,14 +15245,14 @@ SELECT 藏品编号, 藏品名称, 风格, 作者姓名, 创作时间, 大小, �
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.藏品表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.藏品表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "藏品表");
         }
         
@@ -15239,7 +15275,7 @@ SELECT 藏品编号, 藏品名称, 风格, 作者姓名, 创作时间, 大小, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_藏品编号, string Original_藏品名称, string Original_风格, string Original_作者姓名, global::System.Nullable<global::System.DateTime> Original_创作时间, string Original_大小, string Original_图片) {
+        public virtual int Delete(int Original_藏品编号, string Original_藏品名称, string Original_风格, string Original_作者姓名, global::System.Nullable<global::System.DateTime> Original_创作时间, string Original_大小) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_藏品编号));
             if ((Original_藏品名称 == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -15281,14 +15317,6 @@ SELECT 藏品编号, 藏品名称, 风格, 作者姓名, 创作时间, 大小, �
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_大小));
             }
-            if ((Original_图片 == null)) {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_图片));
-            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -15309,7 +15337,7 @@ SELECT 藏品编号, 藏品名称, 风格, 作者姓名, 创作时间, 大小, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string 藏品名称, string 风格, string 作者姓名, global::System.Nullable<global::System.DateTime> 创作时间, string 大小, string 图片) {
+        public virtual int Insert(string 藏品名称, string 风格, string 作者姓名, global::System.Nullable<global::System.DateTime> 创作时间, string 大小, byte[] 图片) {
             if ((藏品名称 == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -15344,7 +15372,7 @@ SELECT 藏品编号, 藏品名称, 风格, 作者姓名, 创作时间, 大小, �
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(图片));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((byte[])(图片));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -15366,7 +15394,7 @@ SELECT 藏品编号, 藏品名称, 风格, 作者姓名, 创作时间, 大小, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string 藏品名称, string 风格, string 作者姓名, global::System.Nullable<global::System.DateTime> 创作时间, string 大小, string 图片, int Original_藏品编号, string Original_藏品名称, string Original_风格, string Original_作者姓名, global::System.Nullable<global::System.DateTime> Original_创作时间, string Original_大小, string Original_图片, int 藏品编号) {
+        public virtual int Update(string 藏品名称, string 风格, string 作者姓名, global::System.Nullable<global::System.DateTime> 创作时间, string 大小, byte[] 图片, int Original_藏品编号, string Original_藏品名称, string Original_风格, string Original_作者姓名, global::System.Nullable<global::System.DateTime> Original_创作时间, string Original_大小, int 藏品编号) {
             if ((藏品名称 == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -15401,7 +15429,7 @@ SELECT 藏品编号, 藏品名称, 风格, 作者姓名, 创作时间, 大小, �
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(图片));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((byte[])(图片));
             }
             this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_藏品编号));
             if ((Original_藏品名称 == null)) {
@@ -15444,15 +15472,7 @@ SELECT 藏品编号, 藏品名称, 风格, 作者姓名, 创作时间, 大小, �
                 this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_大小));
             }
-            if ((Original_图片 == null)) {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_图片));
-            }
-            this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(藏品编号));
+            this.Adapter.UpdateCommand.Parameters[17].Value = ((int)(藏品编号));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -15473,8 +15493,8 @@ SELECT 藏品编号, 藏品名称, 风格, 作者姓名, 创作时间, 大小, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string 藏品名称, string 风格, string 作者姓名, global::System.Nullable<global::System.DateTime> 创作时间, string 大小, string 图片, int Original_藏品编号, string Original_藏品名称, string Original_风格, string Original_作者姓名, global::System.Nullable<global::System.DateTime> Original_创作时间, string Original_大小, string Original_图片) {
-            return this.Update(藏品名称, 风格, 作者姓名, 创作时间, 大小, 图片, Original_藏品编号, Original_藏品名称, Original_风格, Original_作者姓名, Original_创作时间, Original_大小, Original_图片, Original_藏品编号);
+        public virtual int Update(string 藏品名称, string 风格, string 作者姓名, global::System.Nullable<global::System.DateTime> 创作时间, string 大小, byte[] 图片, int Original_藏品编号, string Original_藏品名称, string Original_风格, string Original_作者姓名, global::System.Nullable<global::System.DateTime> Original_创作时间, string Original_大小) {
+            return this.Update(藏品名称, 风格, 作者姓名, 创作时间, 大小, 图片, Original_藏品编号, Original_藏品名称, Original_风格, Original_作者姓名, Original_创作时间, Original_大小, Original_藏品编号);
         }
     }
     
@@ -15653,7 +15673,7 @@ SELECT 编号, 藏品编号, 操作员工号, 出馆时间, 去向 FROM 出馆�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15670,7 +15690,7 @@ SELECT 编号, 藏品编号, 操作员工号, 出馆时间, 去向 FROM 出馆�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.出馆表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.出馆表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -15683,9 +15703,9 @@ SELECT 编号, 藏品编号, 操作员工号, 出馆时间, 去向 FROM 出馆�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.出馆表DataTable GetData() {
+        public virtual 美术馆DataSet.出馆表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.出馆表DataTable dataTable = new artDataSet.出馆表DataTable();
+            美术馆DataSet.出馆表DataTable dataTable = new 美术馆DataSet.出馆表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -15693,14 +15713,14 @@ SELECT 编号, 藏品编号, 操作员工号, 出馆时间, 去向 FROM 出馆�
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.出馆表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.出馆表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "出馆表");
         }
         
@@ -16073,7 +16093,7 @@ SELECT 编号, 设置的时间, 票数, 操作员工号 FROM 放票数表 WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16090,7 +16110,7 @@ SELECT 编号, 设置的时间, 票数, 操作员工号 FROM 放票数表 WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.放票数表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.放票数表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -16103,9 +16123,9 @@ SELECT 编号, 设置的时间, 票数, 操作员工号 FROM 放票数表 WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.放票数表DataTable GetData() {
+        public virtual 美术馆DataSet.放票数表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.放票数表DataTable dataTable = new artDataSet.放票数表DataTable();
+            美术馆DataSet.放票数表DataTable dataTable = new 美术馆DataSet.放票数表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -16113,14 +16133,14 @@ SELECT 编号, 设置的时间, 票数, 操作员工号 FROM 放票数表 WHERE 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.放票数表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.放票数表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "放票数表");
         }
         
@@ -16480,7 +16500,7 @@ SELECT 检查记录编号, 藏品编号, 专家工号, 下次检查时间, 状�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16497,7 +16517,7 @@ SELECT 检查记录编号, 藏品编号, 专家工号, 下次检查时间, 状�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.检查表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.检查表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -16510,9 +16530,9 @@ SELECT 检查记录编号, 藏品编号, 专家工号, 下次检查时间, 状�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.检查表DataTable GetData() {
+        public virtual 美术馆DataSet.检查表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.检查表DataTable dataTable = new artDataSet.检查表DataTable();
+            美术馆DataSet.检查表DataTable dataTable = new 美术馆DataSet.检查表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -16520,14 +16540,14 @@ SELECT 检查记录编号, 藏品编号, 专家工号, 下次检查时间, 状�
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.检查表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.检查表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "检查表");
         }
         
@@ -16957,7 +16977,7 @@ SELECT 编号, 专家工号, 藏品编号, 管理员工号, 鉴定结果, 鉴定
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16974,7 +16994,7 @@ SELECT 编号, 专家工号, 藏品编号, 管理员工号, 鉴定结果, 鉴定
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.鉴定表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.鉴定表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -16987,9 +17007,9 @@ SELECT 编号, 专家工号, 藏品编号, 管理员工号, 鉴定结果, 鉴定
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.鉴定表DataTable GetData() {
+        public virtual 美术馆DataSet.鉴定表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.鉴定表DataTable dataTable = new artDataSet.鉴定表DataTable();
+            美术馆DataSet.鉴定表DataTable dataTable = new 美术馆DataSet.鉴定表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -16997,14 +17017,14 @@ SELECT 编号, 专家工号, 藏品编号, 管理员工号, 鉴定结果, 鉴定
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.鉴定表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.鉴定表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "鉴定表");
         }
         
@@ -17484,7 +17504,7 @@ SELECT 美术馆编号, 名称, 地址, 邮政编码, 类型 FROM 美术馆表 W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -17501,7 +17521,7 @@ SELECT 美术馆编号, 名称, 地址, 邮政编码, 类型 FROM 美术馆表 W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.美术馆表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.美术馆表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -17514,9 +17534,9 @@ SELECT 美术馆编号, 名称, 地址, 邮政编码, 类型 FROM 美术馆表 W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.美术馆表DataTable GetData() {
+        public virtual 美术馆DataSet.美术馆表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.美术馆表DataTable dataTable = new artDataSet.美术馆表DataTable();
+            美术馆DataSet.美术馆表DataTable dataTable = new 美术馆DataSet.美术馆表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -17524,14 +17544,14 @@ SELECT 美术馆编号, 名称, 地址, 邮政编码, 类型 FROM 美术馆表 W
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.美术馆表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.美术馆表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "美术馆表");
         }
         
@@ -17904,7 +17924,7 @@ SELECT 票号, 出票时间, 参观者姓名, 参观者身份证号 FROM 取票�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -17921,7 +17941,7 @@ SELECT 票号, 出票时间, 参观者姓名, 参观者身份证号 FROM 取票�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.取票表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.取票表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -17934,9 +17954,9 @@ SELECT 票号, 出票时间, 参观者姓名, 参观者身份证号 FROM 取票�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.取票表DataTable GetData() {
+        public virtual 美术馆DataSet.取票表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.取票表DataTable dataTable = new artDataSet.取票表DataTable();
+            美术馆DataSet.取票表DataTable dataTable = new 美术馆DataSet.取票表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -17944,14 +17964,14 @@ SELECT 票号, 出票时间, 参观者姓名, 参观者身份证号 FROM 取票�
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.取票表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.取票表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "取票表");
         }
         
@@ -18255,10 +18275,11 @@ SELECT 票号, 出票时间, 参观者姓名, 参观者身份证号 FROM 取票�
             tableMapping.ColumnMappings.Add("操作员工号", "操作员工号");
             tableMapping.ColumnMappings.Add("入馆时间", "入馆时间");
             tableMapping.ColumnMappings.Add("来源详情", "来源详情");
+            tableMapping.ColumnMappings.Add("价值", "价值");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[入馆表] WHERE (([编号] = @Original_编号) AND ((@IsNull_藏品编号 = 1 AND [藏品编号] IS NULL) OR ([藏品编号] = @Original_藏品编号)) AND ((@IsNull_操作员工号 = 1 AND [操作员工号] IS NULL) OR ([操作员工号] = @Original_操作员工号)) AND ((@IsNull_入馆时间 = 1 AND [入馆时间] IS NULL) OR ([入馆时间] = @Original_入馆时间)) AND ((@IsNull_来源详情 = 1 AND [来源详情] IS NULL) OR ([来源详情] = @Original_来源详情)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[入馆表] WHERE (([编号] = @Original_编号) AND ((@IsNull_藏品编号 = 1 AND [藏品编号] IS NULL) OR ([藏品编号] = @Original_藏品编号)) AND ((@IsNull_操作员工号 = 1 AND [操作员工号] IS NULL) OR ([操作员工号] = @Original_操作员工号)) AND ((@IsNull_入馆时间 = 1 AND [入馆时间] IS NULL) OR ([入馆时间] = @Original_入馆时间)) AND ((@IsNull_来源详情 = 1 AND [来源详情] IS NULL) OR ([来源详情] = @Original_来源详情)) AND ((@IsNull_价值 = 1 AND [价值] IS NULL) OR ([价值] = @Original_价值)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "编号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_藏品编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "藏品编号", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -18269,25 +18290,29 @@ SELECT 票号, 出票时间, 参观者姓名, 参观者身份证号 FROM 取票�
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_入馆时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "入馆时间", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_来源详情", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "来源详情", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_来源详情", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "来源详情", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_价值", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "价值", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_价值", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "价值", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[入馆表] ([藏品编号], [操作员工号], [入馆时间], [来源详情]) VALUES (@藏品编号, @操作员工号, " +
-                "@入馆时间, @来源详情);\r\nSELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM 入馆表 WHERE (编号 = SCOPE_ID" +
-                "ENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[入馆表] ([藏品编号], [操作员工号], [入馆时间], [来源详情], [价值]) VALUES (@藏品编号, @操" +
+                "作员工号, @入馆时间, @来源详情, @价值);\r\nSELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情, 价值 FROM 入馆表 WHERE" +
+                " (编号 = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@藏品编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "藏品编号", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@操作员工号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "操作员工号", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@入馆时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "入馆时间", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@来源详情", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "来源详情", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@价值", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "价值", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[入馆表] SET [藏品编号] = @藏品编号, [操作员工号] = @操作员工号, [入馆时间] = @入馆时间, [来源详情] = @来源详情 WHERE (([编号] = @Original_编号) AND ((@IsNull_藏品编号 = 1 AND [藏品编号] IS NULL) OR ([藏品编号] = @Original_藏品编号)) AND ((@IsNull_操作员工号 = 1 AND [操作员工号] IS NULL) OR ([操作员工号] = @Original_操作员工号)) AND ((@IsNull_入馆时间 = 1 AND [入馆时间] IS NULL) OR ([入馆时间] = @Original_入馆时间)) AND ((@IsNull_来源详情 = 1 AND [来源详情] IS NULL) OR ([来源详情] = @Original_来源详情)));
-SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM 入馆表 WHERE (编号 = @编号)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[入馆表] SET [藏品编号] = @藏品编号, [操作员工号] = @操作员工号, [入馆时间] = @入馆时间, [来源详情] = @来源详情, [价值] = @价值 WHERE (([编号] = @Original_编号) AND ((@IsNull_藏品编号 = 1 AND [藏品编号] IS NULL) OR ([藏品编号] = @Original_藏品编号)) AND ((@IsNull_操作员工号 = 1 AND [操作员工号] IS NULL) OR ([操作员工号] = @Original_操作员工号)) AND ((@IsNull_入馆时间 = 1 AND [入馆时间] IS NULL) OR ([入馆时间] = @Original_入馆时间)) AND ((@IsNull_来源详情 = 1 AND [来源详情] IS NULL) OR ([来源详情] = @Original_来源详情)) AND ((@IsNull_价值 = 1 AND [价值] IS NULL) OR ([价值] = @Original_价值)));
+SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情, 价值 FROM 入馆表 WHERE (编号 = @编号)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@藏品编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "藏品编号", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@操作员工号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "操作员工号", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@入馆时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "入馆时间", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@来源详情", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "来源详情", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@价值", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "价值", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "编号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_藏品编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "藏品编号", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_藏品编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "藏品编号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -18297,6 +18322,8 @@ SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM �
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_入馆时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "入馆时间", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_来源详情", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "来源详情", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_来源详情", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "来源详情", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_价值", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "价值", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_价值", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "价值", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@编号", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "编号", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -18304,7 +18331,7 @@ SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -18313,7 +18340,7 @@ SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM �
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM dbo.入馆表";
+            this._commandCollection[0].CommandText = "SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情, 价值 FROM dbo.入馆表";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -18321,7 +18348,7 @@ SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.入馆表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.入馆表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -18334,9 +18361,9 @@ SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.入馆表DataTable GetData() {
+        public virtual 美术馆DataSet.入馆表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.入馆表DataTable dataTable = new artDataSet.入馆表DataTable();
+            美术馆DataSet.入馆表DataTable dataTable = new 美术馆DataSet.入馆表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -18344,14 +18371,14 @@ SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM �
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.入馆表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.入馆表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "入馆表");
         }
         
@@ -18374,7 +18401,7 @@ SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_编号, global::System.Nullable<int> Original_藏品编号, global::System.Nullable<int> Original_操作员工号, global::System.Nullable<global::System.DateTime> Original_入馆时间, string Original_来源详情) {
+        public virtual int Delete(int Original_编号, global::System.Nullable<int> Original_藏品编号, global::System.Nullable<int> Original_操作员工号, global::System.Nullable<global::System.DateTime> Original_入馆时间, string Original_来源详情, global::System.Nullable<double> Original_价值) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_编号));
             if ((Original_藏品编号.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
@@ -18408,6 +18435,14 @@ SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM �
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_来源详情));
             }
+            if ((Original_价值.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((double)(Original_价值.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -18428,7 +18463,7 @@ SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> 藏品编号, global::System.Nullable<int> 操作员工号, global::System.Nullable<global::System.DateTime> 入馆时间, string 来源详情) {
+        public virtual int Insert(global::System.Nullable<int> 藏品编号, global::System.Nullable<int> 操作员工号, global::System.Nullable<global::System.DateTime> 入馆时间, string 来源详情, global::System.Nullable<double> 价值) {
             if ((藏品编号.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((int)(藏品编号.Value));
             }
@@ -18453,6 +18488,12 @@ SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM �
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = ((string)(来源详情));
             }
+            if ((价值.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((double)(价值.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -18473,7 +18514,7 @@ SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> 藏品编号, global::System.Nullable<int> 操作员工号, global::System.Nullable<global::System.DateTime> 入馆时间, string 来源详情, int Original_编号, global::System.Nullable<int> Original_藏品编号, global::System.Nullable<int> Original_操作员工号, global::System.Nullable<global::System.DateTime> Original_入馆时间, string Original_来源详情, int 编号) {
+        public virtual int Update(global::System.Nullable<int> 藏品编号, global::System.Nullable<int> 操作员工号, global::System.Nullable<global::System.DateTime> 入馆时间, string 来源详情, global::System.Nullable<double> 价值, int Original_编号, global::System.Nullable<int> Original_藏品编号, global::System.Nullable<int> Original_操作员工号, global::System.Nullable<global::System.DateTime> Original_入馆时间, string Original_来源详情, global::System.Nullable<double> Original_价值, int 编号) {
             if ((藏品编号.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(藏品编号.Value));
             }
@@ -18498,40 +18539,54 @@ SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM �
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(来源详情));
             }
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_编号));
-            if ((Original_藏品编号.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_藏品编号.Value));
+            if ((价值.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((double)(价值.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_编号));
+            if ((Original_藏品编号.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_藏品编号.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             if ((Original_操作员工号.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_操作员工号.Value));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_操作员工号.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             if ((Original_入馆时间.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((System.DateTime)(Original_入馆时间.Value));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((System.DateTime)(Original_入馆时间.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             if ((Original_来源详情 == null)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_来源详情));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_来源详情));
             }
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(编号));
+            if ((Original_价值.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((double)(Original_价值.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(编号));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -18552,8 +18607,8 @@ SELECT 编号, 藏品编号, 操作员工号, 入馆时间, 来源详情 FROM �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> 藏品编号, global::System.Nullable<int> 操作员工号, global::System.Nullable<global::System.DateTime> 入馆时间, string 来源详情, int Original_编号, global::System.Nullable<int> Original_藏品编号, global::System.Nullable<int> Original_操作员工号, global::System.Nullable<global::System.DateTime> Original_入馆时间, string Original_来源详情) {
-            return this.Update(藏品编号, 操作员工号, 入馆时间, 来源详情, Original_编号, Original_藏品编号, Original_操作员工号, Original_入馆时间, Original_来源详情, Original_编号);
+        public virtual int Update(global::System.Nullable<int> 藏品编号, global::System.Nullable<int> 操作员工号, global::System.Nullable<global::System.DateTime> 入馆时间, string 来源详情, global::System.Nullable<double> 价值, int Original_编号, global::System.Nullable<int> Original_藏品编号, global::System.Nullable<int> Original_操作员工号, global::System.Nullable<global::System.DateTime> Original_入馆时间, string Original_来源详情, global::System.Nullable<double> Original_价值) {
+            return this.Update(藏品编号, 操作员工号, 入馆时间, 来源详情, 价值, Original_编号, Original_藏品编号, Original_操作员工号, Original_入馆时间, Original_来源详情, Original_价值, Original_编号);
         }
     }
     
@@ -18731,7 +18786,7 @@ SELECT 编号, 发布者工号, 发布时间, 标题, 内容 FROM 通知表 WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -18748,7 +18803,7 @@ SELECT 编号, 发布者工号, 发布时间, 标题, 内容 FROM 通知表 WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.通知表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.通知表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -18761,9 +18816,9 @@ SELECT 编号, 发布者工号, 发布时间, 标题, 内容 FROM 通知表 WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.通知表DataTable GetData() {
+        public virtual 美术馆DataSet.通知表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.通知表DataTable dataTable = new artDataSet.通知表DataTable();
+            美术馆DataSet.通知表DataTable dataTable = new 美术馆DataSet.通知表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -18771,14 +18826,14 @@ SELECT 编号, 发布者工号, 发布时间, 标题, 内容 FROM 通知表 WHER
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.通知表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.通知表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "通知表");
         }
         
@@ -19154,7 +19209,7 @@ SELECT 编号, ID, 内容, 时间 FROM 投诉建议表 WHERE (编号 = @编号)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -19171,7 +19226,7 @@ SELECT 编号, ID, 内容, 时间 FROM 投诉建议表 WHERE (编号 = @编号)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.投诉建议表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.投诉建议表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -19184,9 +19239,9 @@ SELECT 编号, ID, 内容, 时间 FROM 投诉建议表 WHERE (编号 = @编号)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.投诉建议表DataTable GetData() {
+        public virtual 美术馆DataSet.投诉建议表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.投诉建议表DataTable dataTable = new artDataSet.投诉建议表DataTable();
+            美术馆DataSet.投诉建议表DataTable dataTable = new 美术馆DataSet.投诉建议表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -19194,14 +19249,14 @@ SELECT 编号, ID, 内容, 时间 FROM 投诉建议表 WHERE (编号 = @编号)"
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.投诉建议表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.投诉建议表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "投诉建议表");
         }
         
@@ -19588,7 +19643,7 @@ SELECT 编号, 藏品编号, 操作员工号, 外借美术馆编号, 美术馆�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -19606,7 +19661,7 @@ SELECT 编号, 藏品编号, 操作员工号, 外借美术馆编号, 美术馆�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.外借表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.外借表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -19619,9 +19674,9 @@ SELECT 编号, 藏品编号, 操作员工号, 外借美术馆编号, 美术馆�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.外借表DataTable GetData() {
+        public virtual 美术馆DataSet.外借表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.外借表DataTable dataTable = new artDataSet.外借表DataTable();
+            美术馆DataSet.外借表DataTable dataTable = new 美术馆DataSet.外借表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -19629,14 +19684,14 @@ SELECT 编号, 藏品编号, 操作员工号, 外借美术馆编号, 美术馆�
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.外借表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.外借表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "外借表");
         }
         
@@ -20203,7 +20258,7 @@ SELECT 编号, 藏品编号, 管理员工号, 修复人员工号, 状态, 时间
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -20220,7 +20275,7 @@ SELECT 编号, 藏品编号, 管理员工号, 修复人员工号, 状态, 时间
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.修复表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.修复表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -20233,9 +20288,9 @@ SELECT 编号, 藏品编号, 管理员工号, 修复人员工号, 状态, 时间
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.修复表DataTable GetData() {
+        public virtual 美术馆DataSet.修复表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.修复表DataTable dataTable = new artDataSet.修复表DataTable();
+            美术馆DataSet.修复表DataTable dataTable = new 美术馆DataSet.修复表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -20243,14 +20298,14 @@ SELECT 编号, 藏品编号, 管理员工号, 修复人员工号, 状态, 时间
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.修复表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.修复表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "修复表");
         }
         
@@ -20667,7 +20722,7 @@ SELECT ID, 姓名, 性别, 身份证号, 联系方式, 微信号 FROM 用户表 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -20684,7 +20739,7 @@ SELECT ID, 姓名, 性别, 身份证号, 联系方式, 微信号 FROM 用户表 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.用户表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.用户表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -20697,9 +20752,9 @@ SELECT ID, 姓名, 性别, 身份证号, 联系方式, 微信号 FROM 用户表 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.用户表DataTable GetData() {
+        public virtual 美术馆DataSet.用户表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.用户表DataTable dataTable = new artDataSet.用户表DataTable();
+            美术馆DataSet.用户表DataTable dataTable = new 美术馆DataSet.用户表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -20707,14 +20762,14 @@ SELECT ID, 姓名, 性别, 身份证号, 联系方式, 微信号 FROM 用户表 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.用户表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.用户表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "用户表");
         }
         
@@ -21092,7 +21147,6 @@ SELECT ID, 姓名, 性别, 身份证号, 联系方式, 微信号 FROM 用户表 
             tableMapping.DataSetTable = "预约表";
             tableMapping.ColumnMappings.Add("编号", "编号");
             tableMapping.ColumnMappings.Add("预约日期", "预约日期");
-            tableMapping.ColumnMappings.Add("时间", "时间");
             tableMapping.ColumnMappings.Add("同行人1姓名", "同行人1姓名");
             tableMapping.ColumnMappings.Add("同行人1身份证号", "同行人1身份证号");
             tableMapping.ColumnMappings.Add("同行人2姓名", "同行人2姓名");
@@ -21101,13 +21155,11 @@ SELECT ID, 姓名, 性别, 身份证号, 联系方式, 微信号 FROM 用户表 
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[预约表] WHERE (([编号] = @Original_编号) AND ((@IsNull_预约日期 = 1 AND [预约日期] IS NULL) OR ([预约日期] = @Original_预约日期)) AND ((@IsNull_时间 = 1 AND [时间] IS NULL) OR ([时间] = @Original_时间)) AND ((@IsNull_同行人1姓名 = 1 AND [同行人1姓名] IS NULL) OR ([同行人1姓名] = @Original_同行人1姓名)) AND ((@IsNull_同行人1身份证号 = 1 AND [同行人1身份证号] IS NULL) OR ([同行人1身份证号] = @Original_同行人1身份证号)) AND ((@IsNull_同行人2姓名 = 1 AND [同行人2姓名] IS NULL) OR ([同行人2姓名] = @Original_同行人2姓名)) AND ((@IsNull_同行人2身份证号 = 1 AND [同行人2身份证号] IS NULL) OR ([同行人2身份证号] = @Original_同行人2身份证号)) AND ((@IsNull_状态 = 1 AND [状态] IS NULL) OR ([状态] = @Original_状态)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[预约表] WHERE (([编号] = @Original_编号) AND ((@IsNull_预约日期 = 1 AND [预约日期] IS NULL) OR ([预约日期] = @Original_预约日期)) AND ((@IsNull_同行人1姓名 = 1 AND [同行人1姓名] IS NULL) OR ([同行人1姓名] = @Original_同行人1姓名)) AND ((@IsNull_同行人1身份证号 = 1 AND [同行人1身份证号] IS NULL) OR ([同行人1身份证号] = @Original_同行人1身份证号)) AND ((@IsNull_同行人2姓名 = 1 AND [同行人2姓名] IS NULL) OR ([同行人2姓名] = @Original_同行人2姓名)) AND ((@IsNull_同行人2身份证号 = 1 AND [同行人2身份证号] IS NULL) OR ([同行人2身份证号] = @Original_同行人2身份证号)) AND ((@IsNull_状态 = 1 AND [状态] IS NULL) OR ([状态] = @Original_状态)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "编号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_预约日期", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "预约日期", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_预约日期", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "预约日期", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_时间", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "时间", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "时间", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_同行人1姓名", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "同行人1姓名", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_同行人1姓名", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "同行人1姓名", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_同行人1身份证号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "同行人1身份证号", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -21120,13 +21172,11 @@ SELECT ID, 姓名, 性别, 身份证号, 联系方式, 微信号 FROM 用户表 
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_状态", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "状态", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[预约表] ([预约日期], [时间], [同行人1姓名], [同行人1身份证号], [同行人2姓名], [同行人2身份证号]" +
-                ", [状态]) VALUES (@预约日期, @时间, @同行人1姓名, @同行人1身份证号, @同行人2姓名, @同行人2身份证号, @状态);\r\nSELEC" +
-                "T 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, 同行人2姓名, 同行人2身份证号, 状态 FROM 预约表 WHERE (编号 = SCOP" +
-                "E_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[预约表] ([预约日期], [同行人1姓名], [同行人1身份证号], [同行人2姓名], [同行人2身份证号], [状态]" +
+                ") VALUES (@预约日期, @同行人1姓名, @同行人1身份证号, @同行人2姓名, @同行人2身份证号, @状态);\r\nSELECT 编号, 预约日期," +
+                " 同行人1姓名, 同行人1身份证号, 同行人2姓名, 同行人2身份证号, 状态 FROM 预约表 WHERE (编号 = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@预约日期", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "预约日期", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "时间", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@同行人1姓名", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "同行人1姓名", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@同行人1身份证号", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "同行人1身份证号", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@同行人2姓名", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "同行人2姓名", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -21134,11 +21184,10 @@ SELECT ID, 姓名, 性别, 身份证号, 联系方式, 微信号 FROM 用户表 
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@状态", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "状态", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[预约表] SET [预约日期] = @预约日期, [时间] = @时间, [同行人1姓名] = @同行人1姓名, [同行人1身份证号] = @同行人1身份证号, [同行人2姓名] = @同行人2姓名, [同行人2身份证号] = @同行人2身份证号, [状态] = @状态 WHERE (([编号] = @Original_编号) AND ((@IsNull_预约日期 = 1 AND [预约日期] IS NULL) OR ([预约日期] = @Original_预约日期)) AND ((@IsNull_时间 = 1 AND [时间] IS NULL) OR ([时间] = @Original_时间)) AND ((@IsNull_同行人1姓名 = 1 AND [同行人1姓名] IS NULL) OR ([同行人1姓名] = @Original_同行人1姓名)) AND ((@IsNull_同行人1身份证号 = 1 AND [同行人1身份证号] IS NULL) OR ([同行人1身份证号] = @Original_同行人1身份证号)) AND ((@IsNull_同行人2姓名 = 1 AND [同行人2姓名] IS NULL) OR ([同行人2姓名] = @Original_同行人2姓名)) AND ((@IsNull_同行人2身份证号 = 1 AND [同行人2身份证号] IS NULL) OR ([同行人2身份证号] = @Original_同行人2身份证号)) AND ((@IsNull_状态 = 1 AND [状态] IS NULL) OR ([状态] = @Original_状态)));
-SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, 同行人2姓名, 同行人2身份证号, 状态 FROM 预约表 WHERE (编号 = @编号)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[预约表] SET [预约日期] = @预约日期, [同行人1姓名] = @同行人1姓名, [同行人1身份证号] = @同行人1身份证号, [同行人2姓名] = @同行人2姓名, [同行人2身份证号] = @同行人2身份证号, [状态] = @状态 WHERE (([编号] = @Original_编号) AND ((@IsNull_预约日期 = 1 AND [预约日期] IS NULL) OR ([预约日期] = @Original_预约日期)) AND ((@IsNull_同行人1姓名 = 1 AND [同行人1姓名] IS NULL) OR ([同行人1姓名] = @Original_同行人1姓名)) AND ((@IsNull_同行人1身份证号 = 1 AND [同行人1身份证号] IS NULL) OR ([同行人1身份证号] = @Original_同行人1身份证号)) AND ((@IsNull_同行人2姓名 = 1 AND [同行人2姓名] IS NULL) OR ([同行人2姓名] = @Original_同行人2姓名)) AND ((@IsNull_同行人2身份证号 = 1 AND [同行人2身份证号] IS NULL) OR ([同行人2身份证号] = @Original_同行人2身份证号)) AND ((@IsNull_状态 = 1 AND [状态] IS NULL) OR ([状态] = @Original_状态)));
+SELECT 编号, 预约日期, 同行人1姓名, 同行人1身份证号, 同行人2姓名, 同行人2身份证号, 状态 FROM 预约表 WHERE (编号 = @编号)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@预约日期", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "预约日期", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "时间", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@同行人1姓名", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "同行人1姓名", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@同行人1身份证号", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "同行人1身份证号", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@同行人2姓名", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "同行人2姓名", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -21147,8 +21196,6 @@ SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, �
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "编号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_预约日期", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "预约日期", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_预约日期", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "预约日期", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_时间", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "时间", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "时间", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_同行人1姓名", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "同行人1姓名", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_同行人1姓名", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "同行人1姓名", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_同行人1身份证号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "同行人1身份证号", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -21166,7 +21213,7 @@ SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -21175,7 +21222,7 @@ SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, �
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, 同行人2姓名, 同行人2身份证号, 状态 FROM dbo.预约表";
+            this._commandCollection[0].CommandText = "SELECT 编号, 预约日期, 同行人1姓名, 同行人1身份证号, 同行人2姓名, 同行人2身份证号, 状态 FROM dbo.预约表";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -21183,7 +21230,7 @@ SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.预约表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.预约表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -21196,9 +21243,9 @@ SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.预约表DataTable GetData() {
+        public virtual 美术馆DataSet.预约表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.预约表DataTable dataTable = new artDataSet.预约表DataTable();
+            美术馆DataSet.预约表DataTable dataTable = new 美术馆DataSet.预约表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -21206,14 +21253,14 @@ SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, �
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.预约表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.预约表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "预约表");
         }
         
@@ -21236,7 +21283,7 @@ SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_编号, global::System.Nullable<global::System.DateTime> Original_预约日期, global::System.Nullable<global::System.DateTime> Original_时间, string Original_同行人1姓名, string Original_同行人1身份证号, string Original_同行人2姓名, string Original_同行人2身份证号, string Original_状态) {
+        public virtual int Delete(int Original_编号, global::System.Nullable<global::System.DateTime> Original_预约日期, string Original_同行人1姓名, string Original_同行人1身份证号, string Original_同行人2姓名, string Original_同行人2身份证号, string Original_状态) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_编号));
             if ((Original_预约日期.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
@@ -21246,53 +21293,45 @@ SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, �
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((Original_时间.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((System.DateTime)(Original_时间.Value));
-            }
-            else {
+            if ((Original_同行人1姓名 == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            if ((Original_同行人1姓名 == null)) {
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_同行人1姓名));
+            }
+            if ((Original_同行人1身份证号 == null)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_同行人1姓名));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_同行人1身份证号));
             }
-            if ((Original_同行人1身份证号 == null)) {
+            if ((Original_同行人2姓名 == null)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_同行人1身份证号));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_同行人2姓名));
             }
-            if ((Original_同行人2姓名 == null)) {
+            if ((Original_同行人2身份证号 == null)) {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_同行人2姓名));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_同行人2身份证号));
             }
-            if ((Original_同行人2身份证号 == null)) {
+            if ((Original_状态 == null)) {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_同行人2身份证号));
-            }
-            if ((Original_状态 == null)) {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_状态));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_状态));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -21314,48 +21353,42 @@ SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<global::System.DateTime> 预约日期, global::System.Nullable<global::System.DateTime> 时间, string 同行人1姓名, string 同行人1身份证号, string 同行人2姓名, string 同行人2身份证号, string 状态) {
+        public virtual int Insert(global::System.Nullable<global::System.DateTime> 预约日期, string 同行人1姓名, string 同行人1身份证号, string 同行人2姓名, string 同行人2身份证号, string 状态) {
             if ((预约日期.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(预约日期.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            if ((时间.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((System.DateTime)(时间.Value));
-            }
-            else {
+            if ((同行人1姓名 == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((同行人1姓名 == null)) {
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(同行人1姓名));
+            }
+            if ((同行人1身份证号 == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(同行人1姓名));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(同行人1身份证号));
             }
-            if ((同行人1身份证号 == null)) {
+            if ((同行人2姓名 == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(同行人1身份证号));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(同行人2姓名));
             }
-            if ((同行人2姓名 == null)) {
+            if ((同行人2身份证号 == null)) {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(同行人2姓名));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(同行人2身份证号));
             }
-            if ((同行人2身份证号 == null)) {
+            if ((状态 == null)) {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(同行人2身份证号));
-            }
-            if ((状态 == null)) {
-                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(状态));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(状态));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -21377,123 +21410,93 @@ SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    global::System.Nullable<global::System.DateTime> 预约日期, 
-                    global::System.Nullable<global::System.DateTime> 时间, 
-                    string 同行人1姓名, 
-                    string 同行人1身份证号, 
-                    string 同行人2姓名, 
-                    string 同行人2身份证号, 
-                    string 状态, 
-                    int Original_编号, 
-                    global::System.Nullable<global::System.DateTime> Original_预约日期, 
-                    global::System.Nullable<global::System.DateTime> Original_时间, 
-                    string Original_同行人1姓名, 
-                    string Original_同行人1身份证号, 
-                    string Original_同行人2姓名, 
-                    string Original_同行人2身份证号, 
-                    string Original_状态, 
-                    int 编号) {
+        public virtual int Update(global::System.Nullable<global::System.DateTime> 预约日期, string 同行人1姓名, string 同行人1身份证号, string 同行人2姓名, string 同行人2身份证号, string 状态, int Original_编号, global::System.Nullable<global::System.DateTime> Original_预约日期, string Original_同行人1姓名, string Original_同行人1身份证号, string Original_同行人2姓名, string Original_同行人2身份证号, string Original_状态, int 编号) {
             if ((预约日期.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((System.DateTime)(预约日期.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            if ((时间.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((System.DateTime)(时间.Value));
-            }
-            else {
+            if ((同行人1姓名 == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((同行人1姓名 == null)) {
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(同行人1姓名));
+            }
+            if ((同行人1身份证号 == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(同行人1姓名));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(同行人1身份证号));
             }
-            if ((同行人1身份证号 == null)) {
+            if ((同行人2姓名 == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(同行人1身份证号));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(同行人2姓名));
             }
-            if ((同行人2姓名 == null)) {
+            if ((同行人2身份证号 == null)) {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(同行人2姓名));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(同行人2身份证号));
             }
-            if ((同行人2身份证号 == null)) {
+            if ((状态 == null)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(同行人2身份证号));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(状态));
             }
-            if ((状态 == null)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(状态));
-            }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_编号));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_编号));
             if ((Original_预约日期.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((System.DateTime)(Original_预约日期.Value));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((System.DateTime)(Original_预约日期.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            if ((Original_时间.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((System.DateTime)(Original_时间.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             if ((Original_同行人1姓名 == null)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_同行人1姓名));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_同行人1姓名));
             }
             if ((Original_同行人1身份证号 == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_同行人1身份证号));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_同行人1身份证号));
             }
             if ((Original_同行人2姓名 == null)) {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_同行人2姓名));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_同行人2姓名));
             }
             if ((Original_同行人2身份证号 == null)) {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_同行人2身份证号));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_同行人2身份证号));
             }
             if ((Original_状态 == null)) {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_状态));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_状态));
             }
-            this.Adapter.UpdateCommand.Parameters[22].Value = ((int)(编号));
+            this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(编号));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -21514,8 +21517,8 @@ SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<global::System.DateTime> 预约日期, global::System.Nullable<global::System.DateTime> 时间, string 同行人1姓名, string 同行人1身份证号, string 同行人2姓名, string 同行人2身份证号, string 状态, int Original_编号, global::System.Nullable<global::System.DateTime> Original_预约日期, global::System.Nullable<global::System.DateTime> Original_时间, string Original_同行人1姓名, string Original_同行人1身份证号, string Original_同行人2姓名, string Original_同行人2身份证号, string Original_状态) {
-            return this.Update(预约日期, 时间, 同行人1姓名, 同行人1身份证号, 同行人2姓名, 同行人2身份证号, 状态, Original_编号, Original_预约日期, Original_时间, Original_同行人1姓名, Original_同行人1身份证号, Original_同行人2姓名, Original_同行人2身份证号, Original_状态, Original_编号);
+        public virtual int Update(global::System.Nullable<global::System.DateTime> 预约日期, string 同行人1姓名, string 同行人1身份证号, string 同行人2姓名, string 同行人2身份证号, string 状态, int Original_编号, global::System.Nullable<global::System.DateTime> Original_预约日期, string Original_同行人1姓名, string Original_同行人1身份证号, string Original_同行人2姓名, string Original_同行人2身份证号, string Original_状态) {
+            return this.Update(预约日期, 同行人1姓名, 同行人1身份证号, 同行人2姓名, 同行人2身份证号, 状态, Original_编号, Original_预约日期, Original_同行人1姓名, Original_同行人1身份证号, Original_同行人2姓名, Original_同行人2身份证号, Original_状态, Original_编号);
         }
     }
     
@@ -21646,14 +21649,13 @@ SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, �
             tableMapping.ColumnMappings.Add("性别", "性别");
             tableMapping.ColumnMappings.Add("联系方式", "联系方式");
             tableMapping.ColumnMappings.Add("职位", "职位");
-            tableMapping.ColumnMappings.Add("权限", "权限");
             tableMapping.ColumnMappings.Add("身份证号", "身份证号");
             tableMapping.ColumnMappings.Add("密保问题", "密保问题");
             tableMapping.ColumnMappings.Add("密保问题的答案", "密保问题的答案");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[员工信息表] WHERE (([工号] = @Original_工号) AND ((@IsNull_姓名 = 1 AND [姓名] IS NULL) OR ([姓名] = @Original_姓名)) AND ((@IsNull_密码 = 1 AND [密码] IS NULL) OR ([密码] = @Original_密码)) AND ((@IsNull_性别 = 1 AND [性别] IS NULL) OR ([性别] = @Original_性别)) AND ((@IsNull_联系方式 = 1 AND [联系方式] IS NULL) OR ([联系方式] = @Original_联系方式)) AND ((@IsNull_职位 = 1 AND [职位] IS NULL) OR ([职位] = @Original_职位)) AND ((@IsNull_权限 = 1 AND [权限] IS NULL) OR ([权限] = @Original_权限)) AND ((@IsNull_身份证号 = 1 AND [身份证号] IS NULL) OR ([身份证号] = @Original_身份证号)) AND ((@IsNull_密保问题 = 1 AND [密保问题] IS NULL) OR ([密保问题] = @Original_密保问题)) AND ((@IsNull_密保问题的答案 = 1 AND [密保问题的答案] IS NULL) OR ([密保问题的答案] = @Original_密保问题的答案)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[员工信息表] WHERE (([工号] = @Original_工号) AND ((@IsNull_姓名 = 1 AND [姓名] IS NULL) OR ([姓名] = @Original_姓名)) AND ((@IsNull_密码 = 1 AND [密码] IS NULL) OR ([密码] = @Original_密码)) AND ((@IsNull_性别 = 1 AND [性别] IS NULL) OR ([性别] = @Original_性别)) AND ((@IsNull_联系方式 = 1 AND [联系方式] IS NULL) OR ([联系方式] = @Original_联系方式)) AND ((@IsNull_职位 = 1 AND [职位] IS NULL) OR ([职位] = @Original_职位)) AND ((@IsNull_身份证号 = 1 AND [身份证号] IS NULL) OR ([身份证号] = @Original_身份证号)) AND ((@IsNull_密保问题 = 1 AND [密保问题] IS NULL) OR ([密保问题] = @Original_密保问题)) AND ((@IsNull_密保问题的答案 = 1 AND [密保问题的答案] IS NULL) OR ([密保问题的答案] = @Original_密保问题的答案)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_工号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "工号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_姓名", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "姓名", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -21666,8 +21668,6 @@ SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, �
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_联系方式", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "联系方式", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_职位", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "职位", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_职位", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "职位", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_权限", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "权限", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_权限", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "权限", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_身份证号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "身份证号", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_身份证号", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "身份证号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_密保问题", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "密保问题", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -21676,31 +21676,28 @@ SELECT 编号, 预约日期, 时间, 同行人1姓名, 同行人1身份证号, �
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_密保问题的答案", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "密保问题的答案", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[员工信息表] ([姓名], [密码], [性别], [联系方式], [职位], [权限], [身份证号], [密保问题], " +
-                "[密保问题的答案]) VALUES (@姓名, @密码, @性别, @联系方式, @职位, @权限, @身份证号, @密保问题, @密保问题的答案);\r\nSEL" +
-                "ECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证号, 密保问题, 密保问题的答案 FROM 员工信息表 WHERE (工号 = SCO" +
-                "PE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[员工信息表] ([姓名], [密码], [性别], [联系方式], [职位], [身份证号], [密保问题], [密保问题的" +
+                "答案]) VALUES (@姓名, @密码, @性别, @联系方式, @职位, @身份证号, @密保问题, @密保问题的答案);\r\nSELECT 工号, 姓名," +
+                " 密码, 性别, 联系方式, 职位, 身份证号, 密保问题, 密保问题的答案 FROM 员工信息表 WHERE (工号 = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@姓名", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "姓名", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@密码", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "密码", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@性别", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "性别", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@联系方式", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "联系方式", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@职位", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "职位", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@权限", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "权限", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@身份证号", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "身份证号", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@密保问题", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "密保问题", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@密保问题的答案", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "密保问题的答案", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[员工信息表] SET [姓名] = @姓名, [密码] = @密码, [性别] = @性别, [联系方式] = @联系方式, [职位] = @职位, [权限] = @权限, [身份证号] = @身份证号, [密保问题] = @密保问题, [密保问题的答案] = @密保问题的答案 WHERE (([工号] = @Original_工号) AND ((@IsNull_姓名 = 1 AND [姓名] IS NULL) OR ([姓名] = @Original_姓名)) AND ((@IsNull_密码 = 1 AND [密码] IS NULL) OR ([密码] = @Original_密码)) AND ((@IsNull_性别 = 1 AND [性别] IS NULL) OR ([性别] = @Original_性别)) AND ((@IsNull_联系方式 = 1 AND [联系方式] IS NULL) OR ([联系方式] = @Original_联系方式)) AND ((@IsNull_职位 = 1 AND [职位] IS NULL) OR ([职位] = @Original_职位)) AND ((@IsNull_权限 = 1 AND [权限] IS NULL) OR ([权限] = @Original_权限)) AND ((@IsNull_身份证号 = 1 AND [身份证号] IS NULL) OR ([身份证号] = @Original_身份证号)) AND ((@IsNull_密保问题 = 1 AND [密保问题] IS NULL) OR ([密保问题] = @Original_密保问题)) AND ((@IsNull_密保问题的答案 = 1 AND [密保问题的答案] IS NULL) OR ([密保问题的答案] = @Original_密保问题的答案)));
-SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证号, 密保问题, 密保问题的答案 FROM 员工信息表 WHERE (工号 = @工号)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[员工信息表] SET [姓名] = @姓名, [密码] = @密码, [性别] = @性别, [联系方式] = @联系方式, [职位] = @职位, [身份证号] = @身份证号, [密保问题] = @密保问题, [密保问题的答案] = @密保问题的答案 WHERE (([工号] = @Original_工号) AND ((@IsNull_姓名 = 1 AND [姓名] IS NULL) OR ([姓名] = @Original_姓名)) AND ((@IsNull_密码 = 1 AND [密码] IS NULL) OR ([密码] = @Original_密码)) AND ((@IsNull_性别 = 1 AND [性别] IS NULL) OR ([性别] = @Original_性别)) AND ((@IsNull_联系方式 = 1 AND [联系方式] IS NULL) OR ([联系方式] = @Original_联系方式)) AND ((@IsNull_职位 = 1 AND [职位] IS NULL) OR ([职位] = @Original_职位)) AND ((@IsNull_身份证号 = 1 AND [身份证号] IS NULL) OR ([身份证号] = @Original_身份证号)) AND ((@IsNull_密保问题 = 1 AND [密保问题] IS NULL) OR ([密保问题] = @Original_密保问题)) AND ((@IsNull_密保问题的答案 = 1 AND [密保问题的答案] IS NULL) OR ([密保问题的答案] = @Original_密保问题的答案)));
+SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 身份证号, 密保问题, 密保问题的答案 FROM 员工信息表 WHERE (工号 = @工号)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@姓名", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "姓名", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@密码", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "密码", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@性别", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "性别", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@联系方式", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "联系方式", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@职位", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "职位", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@权限", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "权限", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@身份证号", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "身份证号", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@密保问题", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "密保问题", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@密保问题的答案", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "密保问题的答案", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -21715,8 +21712,6 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_联系方式", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "联系方式", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_职位", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "职位", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_职位", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "职位", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_权限", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "权限", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_权限", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "权限", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_身份证号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "身份证号", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_身份证号", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "身份证号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_密保问题", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "密保问题", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -21730,7 +21725,7 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -21739,7 +21734,7 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证号, 密保问题, 密保问题的答案 FROM dbo.员工信息表";
+            this._commandCollection[0].CommandText = "SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 身份证号, 密保问题, 密保问题的答案 FROM dbo.员工信息表";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -21747,7 +21742,7 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.员工信息表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.员工信息表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -21760,9 +21755,9 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.员工信息表DataTable GetData() {
+        public virtual 美术馆DataSet.员工信息表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.员工信息表DataTable dataTable = new artDataSet.员工信息表DataTable();
+            美术馆DataSet.员工信息表DataTable dataTable = new 美术馆DataSet.员工信息表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -21770,14 +21765,14 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.员工信息表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.员工信息表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "员工信息表");
         }
         
@@ -21800,7 +21795,7 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_工号, string Original_姓名, string Original_密码, string Original_性别, string Original_联系方式, string Original_职位, string Original_权限, string Original_身份证号, string Original_密保问题, string Original_密保问题的答案) {
+        public virtual int Delete(int Original_工号, string Original_姓名, string Original_密码, string Original_性别, string Original_联系方式, string Original_职位, string Original_身份证号, string Original_密保问题, string Original_密保问题的答案) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_工号));
             if ((Original_姓名 == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -21842,37 +21837,29 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_职位));
             }
-            if ((Original_权限 == null)) {
+            if ((Original_身份证号 == null)) {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_权限));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_身份证号));
             }
-            if ((Original_身份证号 == null)) {
+            if ((Original_密保问题 == null)) {
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_身份证号));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_密保问题));
             }
-            if ((Original_密保问题 == null)) {
+            if ((Original_密保问题的答案 == null)) {
                 this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_密保问题));
-            }
-            if ((Original_密保问题的答案 == null)) {
-                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_密保问题的答案));
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_密保问题的答案));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -21894,7 +21881,7 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string 姓名, string 密码, string 性别, string 联系方式, string 职位, string 权限, string 身份证号, string 密保问题, string 密保问题的答案) {
+        public virtual int Insert(string 姓名, string 密码, string 性别, string 联系方式, string 职位, string 身份证号, string 密保问题, string 密保问题的答案) {
             if ((姓名 == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -21925,29 +21912,23 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((string)(职位));
             }
-            if ((权限 == null)) {
+            if ((身份证号 == null)) {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(权限));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(身份证号));
             }
-            if ((身份证号 == null)) {
+            if ((密保问题 == null)) {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(身份证号));
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(密保问题));
             }
-            if ((密保问题 == null)) {
+            if ((密保问题的答案 == null)) {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(密保问题));
-            }
-            if ((密保问题的答案 == null)) {
-                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(密保问题的答案));
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(密保问题的答案));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -21975,7 +21956,6 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
                     string 性别, 
                     string 联系方式, 
                     string 职位, 
-                    string 权限, 
                     string 身份证号, 
                     string 密保问题, 
                     string 密保问题的答案, 
@@ -21985,7 +21965,6 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
                     string Original_性别, 
                     string Original_联系方式, 
                     string Original_职位, 
-                    string Original_权限, 
                     string Original_身份证号, 
                     string Original_密保问题, 
                     string Original_密保问题的答案, 
@@ -22020,104 +21999,90 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(职位));
             }
-            if ((权限 == null)) {
+            if ((身份证号 == null)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(权限));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(身份证号));
             }
-            if ((身份证号 == null)) {
+            if ((密保问题 == null)) {
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(身份证号));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(密保问题));
             }
-            if ((密保问题 == null)) {
+            if ((密保问题的答案 == null)) {
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(密保问题));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(密保问题的答案));
             }
-            if ((密保问题的答案 == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(密保问题的答案));
-            }
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_工号));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_工号));
             if ((Original_姓名 == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_姓名));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_姓名));
             }
             if ((Original_密码 == null)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_密码));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_密码));
             }
             if ((Original_性别 == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_性别));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_性别));
             }
             if ((Original_联系方式 == null)) {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_联系方式));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_联系方式));
             }
             if ((Original_职位 == null)) {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_职位));
-            }
-            if ((Original_权限 == null)) {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_权限));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_职位));
             }
             if ((Original_身份证号 == null)) {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_身份证号));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(Original_身份证号));
             }
             if ((Original_密保问题 == null)) {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_密保问题));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_密保问题));
             }
             if ((Original_密保问题的答案 == null)) {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_密保问题的答案));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_密保问题的答案));
             }
-            this.Adapter.UpdateCommand.Parameters[28].Value = ((int)(工号));
+            this.Adapter.UpdateCommand.Parameters[25].Value = ((int)(工号));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -22144,7 +22109,6 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
                     string 性别, 
                     string 联系方式, 
                     string 职位, 
-                    string 权限, 
                     string 身份证号, 
                     string 密保问题, 
                     string 密保问题的答案, 
@@ -22154,11 +22118,10 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
                     string Original_性别, 
                     string Original_联系方式, 
                     string Original_职位, 
-                    string Original_权限, 
                     string Original_身份证号, 
                     string Original_密保问题, 
                     string Original_密保问题的答案) {
-            return this.Update(姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证号, 密保问题, 密保问题的答案, Original_工号, Original_姓名, Original_密码, Original_性别, Original_联系方式, Original_职位, Original_权限, Original_身份证号, Original_密保问题, Original_密保问题的答案, Original_工号);
+            return this.Update(姓名, 密码, 性别, 联系方式, 职位, 身份证号, 密保问题, 密保问题的答案, Original_工号, Original_姓名, Original_密码, Original_性别, Original_联系方式, Original_职位, Original_身份证号, Original_密保问题, Original_密保问题的答案, Original_工号);
         }
     }
     
@@ -22290,10 +22253,11 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
             tableMapping.ColumnMappings.Add("开始时间", "开始时间");
             tableMapping.ColumnMappings.Add("结束时间", "结束时间");
             tableMapping.ColumnMappings.Add("负责人编号", "负责人编号");
+            tableMapping.ColumnMappings.Add("租金", "租金");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[展览安排表] WHERE (([展览编号] = @Original_展览编号) AND ((@IsNull_展览名称 = 1 AND [展览名称] IS NULL) OR ([展览名称] = @Original_展览名称)) AND ((@IsNull_展览类别 = 1 AND [展览类别] IS NULL) OR ([展览类别] = @Original_展览类别)) AND ((@IsNull_展厅编号 = 1 AND [展厅编号] IS NULL) OR ([展厅编号] = @Original_展厅编号)) AND ((@IsNull_开始时间 = 1 AND [开始时间] IS NULL) OR ([开始时间] = @Original_开始时间)) AND ((@IsNull_结束时间 = 1 AND [结束时间] IS NULL) OR ([结束时间] = @Original_结束时间)) AND ((@IsNull_负责人编号 = 1 AND [负责人编号] IS NULL) OR ([负责人编号] = @Original_负责人编号)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[展览安排表] WHERE (([展览编号] = @Original_展览编号) AND ((@IsNull_展览名称 = 1 AND [展览名称] IS NULL) OR ([展览名称] = @Original_展览名称)) AND ((@IsNull_展览类别 = 1 AND [展览类别] IS NULL) OR ([展览类别] = @Original_展览类别)) AND ((@IsNull_展厅编号 = 1 AND [展厅编号] IS NULL) OR ([展厅编号] = @Original_展厅编号)) AND ((@IsNull_开始时间 = 1 AND [开始时间] IS NULL) OR ([开始时间] = @Original_开始时间)) AND ((@IsNull_结束时间 = 1 AND [结束时间] IS NULL) OR ([结束时间] = @Original_结束时间)) AND ((@IsNull_负责人编号 = 1 AND [负责人编号] IS NULL) OR ([负责人编号] = @Original_负责人编号)) AND ((@IsNull_租金 = 1 AND [租金] IS NULL) OR ([租金] = @Original_租金)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_展览编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览编号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_展览名称", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览名称", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -22308,11 +22272,13 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_结束时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "结束时间", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_负责人编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "负责人编号", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_负责人编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "负责人编号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_租金", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "租金", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_租金", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "租金", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[展览安排表] ([展览名称], [展览类别], [展厅编号], [开始时间], [结束时间], [负责人编号]) VALUE" +
-                "S (@展览名称, @展览类别, @展厅编号, @开始时间, @结束时间, @负责人编号);\r\nSELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开" +
-                "始时间, 结束时间, 负责人编号 FROM 展览安排表 WHERE (展览编号 = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[展览安排表] ([展览名称], [展览类别], [展厅编号], [开始时间], [结束时间], [负责人编号], [租金])" +
+                " VALUES (@展览名称, @展览类别, @展厅编号, @开始时间, @结束时间, @负责人编号, @租金);\r\nSELECT 展览编号, 展览名称, 展览" +
+                "类别, 展厅编号, 开始时间, 结束时间, 负责人编号, 租金 FROM 展览安排表 WHERE (展览编号 = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@展览名称", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览名称", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@展览类别", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览类别", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -22320,10 +22286,11 @@ SELECT 工号, 姓名, 密码, 性别, 联系方式, 职位, 权限, 身份证�
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@开始时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "开始时间", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@结束时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "结束时间", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@负责人编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "负责人编号", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@租金", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "租金", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[展览安排表] SET [展览名称] = @展览名称, [展览类别] = @展览类别, [展厅编号] = @展厅编号, [开始时间] = @开始时间, [结束时间] = @结束时间, [负责人编号] = @负责人编号 WHERE (([展览编号] = @Original_展览编号) AND ((@IsNull_展览名称 = 1 AND [展览名称] IS NULL) OR ([展览名称] = @Original_展览名称)) AND ((@IsNull_展览类别 = 1 AND [展览类别] IS NULL) OR ([展览类别] = @Original_展览类别)) AND ((@IsNull_展厅编号 = 1 AND [展厅编号] IS NULL) OR ([展厅编号] = @Original_展厅编号)) AND ((@IsNull_开始时间 = 1 AND [开始时间] IS NULL) OR ([开始时间] = @Original_开始时间)) AND ((@IsNull_结束时间 = 1 AND [结束时间] IS NULL) OR ([结束时间] = @Original_结束时间)) AND ((@IsNull_负责人编号 = 1 AND [负责人编号] IS NULL) OR ([负责人编号] = @Original_负责人编号)));
-SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结束时间, 负责人编号 FROM 展览安排表 WHERE (展览编号 = @展览编号)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[展览安排表] SET [展览名称] = @展览名称, [展览类别] = @展览类别, [展厅编号] = @展厅编号, [开始时间] = @开始时间, [结束时间] = @结束时间, [负责人编号] = @负责人编号, [租金] = @租金 WHERE (([展览编号] = @Original_展览编号) AND ((@IsNull_展览名称 = 1 AND [展览名称] IS NULL) OR ([展览名称] = @Original_展览名称)) AND ((@IsNull_展览类别 = 1 AND [展览类别] IS NULL) OR ([展览类别] = @Original_展览类别)) AND ((@IsNull_展厅编号 = 1 AND [展厅编号] IS NULL) OR ([展厅编号] = @Original_展厅编号)) AND ((@IsNull_开始时间 = 1 AND [开始时间] IS NULL) OR ([开始时间] = @Original_开始时间)) AND ((@IsNull_结束时间 = 1 AND [结束时间] IS NULL) OR ([结束时间] = @Original_结束时间)) AND ((@IsNull_负责人编号 = 1 AND [负责人编号] IS NULL) OR ([负责人编号] = @Original_负责人编号)) AND ((@IsNull_租金 = 1 AND [租金] IS NULL) OR ([租金] = @Original_租金)));
+SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结束时间, 负责人编号, 租金 FROM 展览安排表 WHERE (展览编号 = @展览编号)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@展览名称", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览名称", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@展览类别", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览类别", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -22331,6 +22298,7 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@开始时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "开始时间", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@结束时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "结束时间", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@负责人编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "负责人编号", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@租金", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "租金", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_展览编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览编号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_展览名称", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览名称", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_展览名称", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览名称", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -22344,6 +22312,8 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_结束时间", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "结束时间", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_负责人编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "负责人编号", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_负责人编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "负责人编号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_租金", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "租金", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_租金", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "租金", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@展览编号", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "展览编号", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -22351,7 +22321,7 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -22360,7 +22330,7 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结束时间, 负责人编号 FROM dbo.展览安排表";
+            this._commandCollection[0].CommandText = "SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结束时间, 负责人编号, 租金 FROM dbo.展览安排表";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -22368,7 +22338,7 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.展览安排表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.展览安排表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -22381,9 +22351,9 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.展览安排表DataTable GetData() {
+        public virtual 美术馆DataSet.展览安排表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.展览安排表DataTable dataTable = new artDataSet.展览安排表DataTable();
+            美术馆DataSet.展览安排表DataTable dataTable = new 美术馆DataSet.展览安排表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -22391,14 +22361,14 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.展览安排表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.展览安排表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "展览安排表");
         }
         
@@ -22421,7 +22391,7 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_展览编号, string Original_展览名称, string Original_展览类别, global::System.Nullable<int> Original_展厅编号, global::System.Nullable<global::System.DateTime> Original_开始时间, global::System.Nullable<global::System.DateTime> Original_结束时间, global::System.Nullable<int> Original_负责人编号) {
+        public virtual int Delete(int Original_展览编号, string Original_展览名称, string Original_展览类别, global::System.Nullable<int> Original_展厅编号, global::System.Nullable<global::System.DateTime> Original_开始时间, global::System.Nullable<global::System.DateTime> Original_结束时间, global::System.Nullable<int> Original_负责人编号, global::System.Nullable<double> Original_租金) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_展览编号));
             if ((Original_展览名称 == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -22471,6 +22441,14 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
+            if ((Original_租金.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((double)(Original_租金.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -22491,7 +22469,7 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string 展览名称, string 展览类别, global::System.Nullable<int> 展厅编号, global::System.Nullable<global::System.DateTime> 开始时间, global::System.Nullable<global::System.DateTime> 结束时间, global::System.Nullable<int> 负责人编号) {
+        public virtual int Insert(string 展览名称, string 展览类别, global::System.Nullable<int> 展厅编号, global::System.Nullable<global::System.DateTime> 开始时间, global::System.Nullable<global::System.DateTime> 结束时间, global::System.Nullable<int> 负责人编号, global::System.Nullable<double> 租金) {
             if ((展览名称 == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -22528,6 +22506,12 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
             else {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
+            if ((租金.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((double)(租金.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -22548,7 +22532,23 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string 展览名称, string 展览类别, global::System.Nullable<int> 展厅编号, global::System.Nullable<global::System.DateTime> 开始时间, global::System.Nullable<global::System.DateTime> 结束时间, global::System.Nullable<int> 负责人编号, int Original_展览编号, string Original_展览名称, string Original_展览类别, global::System.Nullable<int> Original_展厅编号, global::System.Nullable<global::System.DateTime> Original_开始时间, global::System.Nullable<global::System.DateTime> Original_结束时间, global::System.Nullable<int> Original_负责人编号, int 展览编号) {
+        public virtual int Update(
+                    string 展览名称, 
+                    string 展览类别, 
+                    global::System.Nullable<int> 展厅编号, 
+                    global::System.Nullable<global::System.DateTime> 开始时间, 
+                    global::System.Nullable<global::System.DateTime> 结束时间, 
+                    global::System.Nullable<int> 负责人编号, 
+                    global::System.Nullable<double> 租金, 
+                    int Original_展览编号, 
+                    string Original_展览名称, 
+                    string Original_展览类别, 
+                    global::System.Nullable<int> Original_展厅编号, 
+                    global::System.Nullable<global::System.DateTime> Original_开始时间, 
+                    global::System.Nullable<global::System.DateTime> Original_结束时间, 
+                    global::System.Nullable<int> Original_负责人编号, 
+                    global::System.Nullable<double> Original_租金, 
+                    int 展览编号) {
             if ((展览名称 == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -22585,56 +22585,70 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
             else {
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_展览编号));
-            if ((Original_展览名称 == null)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            if ((租金.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((double)(租金.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_展览名称));
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_展览编号));
+            if ((Original_展览名称 == null)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_展览名称));
             }
             if ((Original_展览类别 == null)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_展览类别));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_展览类别));
             }
             if ((Original_展厅编号.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_展厅编号.Value));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_展厅编号.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             if ((Original_开始时间.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((System.DateTime)(Original_开始时间.Value));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((System.DateTime)(Original_开始时间.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             if ((Original_结束时间.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((System.DateTime)(Original_结束时间.Value));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((System.DateTime)(Original_结束时间.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
             }
             if ((Original_负责人编号.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((int)(Original_负责人编号.Value));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(Original_负责人编号.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(展览编号));
+            if ((Original_租金.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((double)(Original_租金.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[22].Value = ((int)(展览编号));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -22655,8 +22669,8 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string 展览名称, string 展览类别, global::System.Nullable<int> 展厅编号, global::System.Nullable<global::System.DateTime> 开始时间, global::System.Nullable<global::System.DateTime> 结束时间, global::System.Nullable<int> 负责人编号, int Original_展览编号, string Original_展览名称, string Original_展览类别, global::System.Nullable<int> Original_展厅编号, global::System.Nullable<global::System.DateTime> Original_开始时间, global::System.Nullable<global::System.DateTime> Original_结束时间, global::System.Nullable<int> Original_负责人编号) {
-            return this.Update(展览名称, 展览类别, 展厅编号, 开始时间, 结束时间, 负责人编号, Original_展览编号, Original_展览名称, Original_展览类别, Original_展厅编号, Original_开始时间, Original_结束时间, Original_负责人编号, Original_展览编号);
+        public virtual int Update(string 展览名称, string 展览类别, global::System.Nullable<int> 展厅编号, global::System.Nullable<global::System.DateTime> 开始时间, global::System.Nullable<global::System.DateTime> 结束时间, global::System.Nullable<int> 负责人编号, global::System.Nullable<double> 租金, int Original_展览编号, string Original_展览名称, string Original_展览类别, global::System.Nullable<int> Original_展厅编号, global::System.Nullable<global::System.DateTime> Original_开始时间, global::System.Nullable<global::System.DateTime> Original_结束时间, global::System.Nullable<int> Original_负责人编号, global::System.Nullable<double> Original_租金) {
+            return this.Update(展览名称, 展览类别, 展厅编号, 开始时间, 结束时间, 负责人编号, 租金, Original_展览编号, Original_展览名称, Original_展览类别, Original_展厅编号, Original_开始时间, Original_结束时间, Original_负责人编号, Original_租金, Original_展览编号);
         }
     }
     
@@ -22787,6 +22801,7 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
             tableMapping.ColumnMappings.Add("展览品作者姓名", "展览品作者姓名");
             tableMapping.ColumnMappings.Add("展览品大小", "展览品大小");
             tableMapping.ColumnMappings.Add("展览品类别", "展览品类别");
+            tableMapping.ColumnMappings.Add("图片", "图片");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -22805,25 +22820,27 @@ SELECT 展览编号, 展览名称, 展览类别, 展厅编号, 开始时间, 结
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_展览品类别", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览品类别", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[展览品表] ([展览编号], [展览品名称], [展览品作者姓名], [展览品大小], [展览品类别]) VALUES (@" +
-                "展览编号, @展览品名称, @展览品作者姓名, @展览品大小, @展览品类别);\r\nSELECT 展览品编号, 展览编号, 展览品名称, 展览品作者姓名, 展览" +
-                "品大小, 展览品类别 FROM 展览品表 WHERE (展览品编号 = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[展览品表] ([展览编号], [展览品名称], [展览品作者姓名], [展览品大小], [展览品类别], [图片]) VAL" +
+                "UES (@展览编号, @展览品名称, @展览品作者姓名, @展览品大小, @展览品类别, @图片);\r\nSELECT 展览品编号, 展览编号, 展览品名称, " +
+                "展览品作者姓名, 展览品大小, 展览品类别, 图片 FROM 展览品表 WHERE (展览品编号 = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@展览编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览编号", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@展览品名称", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览品名称", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@展览品作者姓名", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览品作者姓名", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@展览品大小", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览品大小", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@展览品类别", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览品类别", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@图片", global::System.Data.SqlDbType.Image, 0, global::System.Data.ParameterDirection.Input, 0, 0, "图片", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[展览品表] SET [展览编号] = @展览编号, [展览品名称] = @展览品名称, [展览品作者姓名] = @展览品作者姓名, [展览品大小] = @展览品大小, [展览品类别] = @展览品类别 WHERE (([展览品编号] = @Original_展览品编号) AND ((@IsNull_展览编号 = 1 AND [展览编号] IS NULL) OR ([展览编号] = @Original_展览编号)) AND ((@IsNull_展览品名称 = 1 AND [展览品名称] IS NULL) OR ([展览品名称] = @Original_展览品名称)) AND ((@IsNull_展览品作者姓名 = 1 AND [展览品作者姓名] IS NULL) OR ([展览品作者姓名] = @Original_展览品作者姓名)) AND ((@IsNull_展览品大小 = 1 AND [展览品大小] IS NULL) OR ([展览品大小] = @Original_展览品大小)) AND ((@IsNull_展览品类别 = 1 AND [展览品类别] IS NULL) OR ([展览品类别] = @Original_展览品类别)));
-SELECT 展览品编号, 展览编号, 展览品名称, 展览品作者姓名, 展览品大小, 展览品类别 FROM 展览品表 WHERE (展览品编号 = @展览品编号)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[展览品表] SET [展览编号] = @展览编号, [展览品名称] = @展览品名称, [展览品作者姓名] = @展览品作者姓名, [展览品大小] = @展览品大小, [展览品类别] = @展览品类别, [图片] = @图片 WHERE (([展览品编号] = @Original_展览品编号) AND ((@IsNull_展览编号 = 1 AND [展览编号] IS NULL) OR ([展览编号] = @Original_展览编号)) AND ((@IsNull_展览品名称 = 1 AND [展览品名称] IS NULL) OR ([展览品名称] = @Original_展览品名称)) AND ((@IsNull_展览品作者姓名 = 1 AND [展览品作者姓名] IS NULL) OR ([展览品作者姓名] = @Original_展览品作者姓名)) AND ((@IsNull_展览品大小 = 1 AND [展览品大小] IS NULL) OR ([展览品大小] = @Original_展览品大小)) AND ((@IsNull_展览品类别 = 1 AND [展览品类别] IS NULL) OR ([展览品类别] = @Original_展览品类别)));
+SELECT 展览品编号, 展览编号, 展览品名称, 展览品作者姓名, 展览品大小, 展览品类别, 图片 FROM 展览品表 WHERE (展览品编号 = @展览品编号)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@展览编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览编号", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@展览品名称", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览品名称", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@展览品作者姓名", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览品作者姓名", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@展览品大小", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览品大小", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@展览品类别", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览品类别", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@图片", global::System.Data.SqlDbType.Image, 0, global::System.Data.ParameterDirection.Input, 0, 0, "图片", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_展览品编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览品编号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_展览编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览编号", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_展览编号", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "展览编号", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -22842,7 +22859,7 @@ SELECT 展览品编号, 展览编号, 展览品名称, 展览品作者姓名, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -22851,7 +22868,7 @@ SELECT 展览品编号, 展览编号, 展览品名称, 展览品作者姓名, �
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT 展览品编号, 展览编号, 展览品名称, 展览品作者姓名, 展览品大小, 展览品类别 FROM dbo.展览品表";
+            this._commandCollection[0].CommandText = "SELECT 展览品编号, 展览编号, 展览品名称, 展览品作者姓名, 展览品大小, 展览品类别, 图片 FROM dbo.展览品表";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -22859,7 +22876,7 @@ SELECT 展览品编号, 展览编号, 展览品名称, 展览品作者姓名, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.展览品表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.展览品表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -22872,9 +22889,9 @@ SELECT 展览品编号, 展览编号, 展览品名称, 展览品作者姓名, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.展览品表DataTable GetData() {
+        public virtual 美术馆DataSet.展览品表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.展览品表DataTable dataTable = new artDataSet.展览品表DataTable();
+            美术馆DataSet.展览品表DataTable dataTable = new 美术馆DataSet.展览品表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -22882,14 +22899,14 @@ SELECT 展览品编号, 展览编号, 展览品名称, 展览品作者姓名, �
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.展览品表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.展览品表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "展览品表");
         }
         
@@ -22974,7 +22991,7 @@ SELECT 展览品编号, 展览编号, 展览品名称, 展览品作者姓名, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> 展览编号, string 展览品名称, string 展览品作者姓名, string 展览品大小, string 展览品类别) {
+        public virtual int Insert(global::System.Nullable<int> 展览编号, string 展览品名称, string 展览品作者姓名, string 展览品大小, string 展览品类别, byte[] 图片) {
             if ((展览编号.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((int)(展览编号.Value));
             }
@@ -23005,6 +23022,12 @@ SELECT 展览品编号, 展览编号, 展览品名称, 展览品作者姓名, �
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((string)(展览品类别));
             }
+            if ((图片 == null)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((byte[])(图片));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -23025,7 +23048,7 @@ SELECT 展览品编号, 展览编号, 展览品名称, 展览品作者姓名, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> 展览编号, string 展览品名称, string 展览品作者姓名, string 展览品大小, string 展览品类别, int Original_展览品编号, global::System.Nullable<int> Original_展览编号, string Original_展览品名称, string Original_展览品作者姓名, string Original_展览品大小, string Original_展览品类别, int 展览品编号) {
+        public virtual int Update(global::System.Nullable<int> 展览编号, string 展览品名称, string 展览品作者姓名, string 展览品大小, string 展览品类别, byte[] 图片, int Original_展览品编号, global::System.Nullable<int> Original_展览编号, string Original_展览品名称, string Original_展览品作者姓名, string Original_展览品大小, string Original_展览品类别, int 展览品编号) {
             if ((展览编号.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(展览编号.Value));
             }
@@ -23056,48 +23079,54 @@ SELECT 展览品编号, 展览编号, 展览品名称, 展览品作者姓名, �
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(展览品类别));
             }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_展览品编号));
-            if ((Original_展览编号.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_展览编号.Value));
+            if ((图片 == null)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((byte[])(图片));
+            }
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_展览品编号));
+            if ((Original_展览编号.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_展览编号.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             if ((Original_展览品名称 == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_展览品名称));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_展览品名称));
             }
             if ((Original_展览品作者姓名 == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_展览品作者姓名));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_展览品作者姓名));
             }
             if ((Original_展览品大小 == null)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_展览品大小));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_展览品大小));
             }
             if ((Original_展览品类别 == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_展览品类别));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_展览品类别));
             }
-            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(展览品编号));
+            this.Adapter.UpdateCommand.Parameters[17].Value = ((int)(展览品编号));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -23118,8 +23147,8 @@ SELECT 展览品编号, 展览编号, 展览品名称, 展览品作者姓名, �
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> 展览编号, string 展览品名称, string 展览品作者姓名, string 展览品大小, string 展览品类别, int Original_展览品编号, global::System.Nullable<int> Original_展览编号, string Original_展览品名称, string Original_展览品作者姓名, string Original_展览品大小, string Original_展览品类别) {
-            return this.Update(展览编号, 展览品名称, 展览品作者姓名, 展览品大小, 展览品类别, Original_展览品编号, Original_展览编号, Original_展览品名称, Original_展览品作者姓名, Original_展览品大小, Original_展览品类别, Original_展览品编号);
+        public virtual int Update(global::System.Nullable<int> 展览编号, string 展览品名称, string 展览品作者姓名, string 展览品大小, string 展览品类别, byte[] 图片, int Original_展览品编号, global::System.Nullable<int> Original_展览编号, string Original_展览品名称, string Original_展览品作者姓名, string Original_展览品大小, string Original_展览品类别) {
+            return this.Update(展览编号, 展览品名称, 展览品作者姓名, 展览品大小, 展览品类别, 图片, Original_展览品编号, Original_展览编号, Original_展览品名称, Original_展览品作者姓名, Original_展览品大小, Original_展览品类别, Original_展览品编号);
         }
     }
     
@@ -23305,7 +23334,7 @@ SELECT 展厅编号, 楼层, 位置, 面积, 容量, 租金 FROM 展厅信息总
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -23322,7 +23351,7 @@ SELECT 展厅编号, 楼层, 位置, 面积, 容量, 租金 FROM 展厅信息总
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.展厅信息总表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.展厅信息总表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -23335,9 +23364,9 @@ SELECT 展厅编号, 楼层, 位置, 面积, 容量, 租金 FROM 展厅信息总
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.展厅信息总表DataTable GetData() {
+        public virtual 美术馆DataSet.展厅信息总表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.展厅信息总表DataTable dataTable = new artDataSet.展厅信息总表DataTable();
+            美术馆DataSet.展厅信息总表DataTable dataTable = new 美术馆DataSet.展厅信息总表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -23345,14 +23374,14 @@ SELECT 展厅编号, 楼层, 位置, 面积, 容量, 租金 FROM 展厅信息总
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.展厅信息总表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.展厅信息总表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "展厅信息总表");
         }
         
@@ -23802,7 +23831,7 @@ SELECT 编号, 藏品编号, 类别, 理想价格, 作者, 创作年代, 联系�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -23819,7 +23848,7 @@ SELECT 编号, 藏品编号, 类别, 理想价格, 作者, 创作年代, 联系�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.征集表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.征集表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -23832,9 +23861,9 @@ SELECT 编号, 藏品编号, 类别, 理想价格, 作者, 创作年代, 联系�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.征集表DataTable GetData() {
+        public virtual 美术馆DataSet.征集表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.征集表DataTable dataTable = new artDataSet.征集表DataTable();
+            美术馆DataSet.征集表DataTable dataTable = new 美术馆DataSet.征集表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -23842,14 +23871,14 @@ SELECT 编号, 藏品编号, 类别, 理想价格, 作者, 创作年代, 联系�
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.征集表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.征集表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "征集表");
         }
         
@@ -24433,7 +24462,7 @@ SELECT 专家编号, 姓名, 工号, 擅长领域 FROM 专家表 WHERE (专家�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.artConnectionString;
+            this._connection.ConnectionString = global::美术馆.Properties.Settings.Default.美术馆ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -24450,7 +24479,7 @@ SELECT 专家编号, 姓名, 工号, 擅长领域 FROM 专家表 WHERE (专家�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(artDataSet.专家表DataTable dataTable) {
+        public virtual int Fill(美术馆DataSet.专家表DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -24463,9 +24492,9 @@ SELECT 专家编号, 姓名, 工号, 擅长领域 FROM 专家表 WHERE (专家�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual artDataSet.专家表DataTable GetData() {
+        public virtual 美术馆DataSet.专家表DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            artDataSet.专家表DataTable dataTable = new artDataSet.专家表DataTable();
+            美术馆DataSet.专家表DataTable dataTable = new 美术馆DataSet.专家表DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -24473,14 +24502,14 @@ SELECT 专家编号, 姓名, 工号, 擅长领域 FROM 专家表 WHERE (专家�
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet.专家表DataTable dataTable) {
+        public virtual int Update(美术馆DataSet.专家表DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(artDataSet dataSet) {
+        public virtual int Update(美术馆DataSet dataSet) {
             return this.Adapter.Update(dataSet, "专家表");
         }
         
@@ -25232,7 +25261,7 @@ SELECT 专家编号, 姓名, 工号, 擅长领域 FROM 专家表 WHERE (专家�
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateUpdatedRows(artDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(美术馆DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._展厅信息总表TableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.展厅信息总表.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -25440,7 +25469,7 @@ SELECT 专家编号, 姓名, 工号, 擅长领域 FROM 专家表 WHERE (专家�
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateInsertedRows(artDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(美术馆DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._展厅信息总表TableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.展厅信息总表.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -25626,7 +25655,7 @@ SELECT 专家编号, 姓名, 工号, 擅长领域 FROM 专家表 WHERE (专家�
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateDeletedRows(artDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(美术馆DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._财务表TableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.财务表.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -25836,7 +25865,7 @@ SELECT 专家编号, 姓名, 工号, 擅长领域 FROM 专家表 WHERE (专家�
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public virtual int UpdateAll(artDataSet dataSet) {
+        public virtual int UpdateAll(美术馆DataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

@@ -19,10 +19,6 @@ namespace 美术馆
         {
             InitializeComponent();
         }
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
         private void button1_Click(object sender, EventArgs e)
         {
             string userid = textBox1.Text;
@@ -33,7 +29,7 @@ namespace 美术馆
             }
             else
             {
-                string ConStr = "Data Source=101.132.124.13;Initial Catalog=美术;User ID=sa;Password=123";
+                string ConStr = "Data Source=101.132.124.13;Initial Catalog=美术馆;User ID=sa;Password=123";
                 conn = new SqlConnection(ConStr);
                 conn.Open();
                 string sql = "SELECT 职位,工号,密码 from 员工信息表 where 工号='" + userid + "'and 密码='" + password + "'";

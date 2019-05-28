@@ -42,5 +42,15 @@ namespace 美术馆.Properties {
                 return ((string)(this["artConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=101.132.124.13;Initial Catalog=美术馆;User ID=sa;Password=123")]
+        public string 美术馆ConnectionString {
+            get {
+                return ((string)(this["美术馆ConnectionString"]));
+            }
+        }
     }
 }
