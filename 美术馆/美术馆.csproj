@@ -46,6 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="artDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>artDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="artOfficeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>artOfficeDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="专家\jianding.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,17 +134,17 @@
     <Compile Include="管理员\give.Designer.cs">
       <DependentUpon>give.cs</DependentUpon>
     </Compile>
+    <Compile Include="管理员\index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\index.Designer.cs">
+      <DependentUpon>index.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\lend.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="管理员\lend.Designer.cs">
       <DependentUpon>lend.cs</DependentUpon>
-    </Compile>
-    <Compile Include="管理员\mainForm_admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="管理员\mainForm_admin.Designer.cs">
-      <DependentUpon>mainForm_admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -201,11 +211,11 @@
     <EmbeddedResource Include="管理员\give.resx">
       <DependentUpon>give.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="管理员\index.resx">
+      <DependentUpon>index.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="管理员\lend.resx">
       <DependentUpon>lend.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="管理员\mainForm_admin.resx">
-      <DependentUpon>mainForm_admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -228,6 +238,28 @@
     <EmbeddedResource Include="管理员\watchHistory.resx">
       <DependentUpon>watchHistory.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="artDataSet.xsc">
+      <DependentUpon>artDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="artDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>artDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="artDataSet.xss">
+      <DependentUpon>artDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="artOfficeDataSet.xsc">
+      <DependentUpon>artOfficeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="artOfficeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>artOfficeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="artOfficeDataSet.xss">
+      <DependentUpon>artOfficeDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

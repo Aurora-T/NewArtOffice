@@ -30,12 +30,6 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.藏品编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.藏品名称 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.类型 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.作者 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.创作年代 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.征集时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button3 = new System.Windows.Forms.Button();
             this.搜索 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,6 +42,11 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.藏品名称 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.类型 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.作者 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.创作年代 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.征集时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -65,7 +64,6 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.藏品编号,
             this.藏品名称,
             this.类型,
             this.作者,
@@ -77,48 +75,7 @@
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.Size = new System.Drawing.Size(727, 419);
             this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // 藏品编号
-            // 
-            this.藏品编号.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.藏品编号.HeaderText = "藏品编号";
-            this.藏品编号.MinimumWidth = 10;
-            this.藏品编号.Name = "藏品编号";
-            this.藏品编号.Width = 115;
-            // 
-            // 藏品名称
-            // 
-            this.藏品名称.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.藏品名称.HeaderText = "藏品名称";
-            this.藏品名称.Name = "藏品名称";
-            this.藏品名称.Width = 115;
-            // 
-            // 类型
-            // 
-            this.类型.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.类型.HeaderText = "类型";
-            this.类型.Name = "类型";
-            this.类型.Width = 115;
-            // 
-            // 作者
-            // 
-            this.作者.HeaderText = "作者";
-            this.作者.Name = "作者";
-            this.作者.Width = 115;
-            // 
-            // 创作年代
-            // 
-            this.创作年代.HeaderText = "创作年代";
-            this.创作年代.Name = "创作年代";
-            this.创作年代.Width = 115;
-            // 
-            // 征集时间
-            // 
-            this.征集时间.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.征集时间.HeaderText = "征集时间";
-            this.征集时间.Name = "征集时间";
-            this.征集时间.Width = 115;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // button3
             // 
@@ -128,6 +85,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "添加藏品";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // 搜索
             // 
@@ -146,8 +104,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 18);
             this.label1.TabIndex = 5;
-            this.label1.Text = "请输入藏品信息：";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Text = "请输入藏品编号：";
             // 
             // textBox1
             // 
@@ -155,7 +112,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(171, 28);
             this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button4
             // 
@@ -170,22 +126,17 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "征集时间升序",
-            "征集时间降序",
             "藏品编号升序",
             "藏品编号降序",
-            "藏品名称升序",
-            "藏品名称降序",
-            "类型升序",
-            "类型降序",
-            "作者升序",
-            "作者降序",
             "创作年代升序",
-            "创作年代降序"});
+            "创作年代降序",
+            "征集时间升序",
+            "征集时间降序"});
             this.comboBox1.Location = new System.Drawing.Point(595, 22);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 26);
             this.comboBox1.TabIndex = 8;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -195,7 +146,6 @@
             this.label2.Size = new System.Drawing.Size(62, 18);
             this.label2.TabIndex = 9;
             this.label2.Text = "排序：";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // groupBox1
             // 
@@ -243,7 +193,41 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 18);
             this.label3.TabIndex = 0;
-            this.label3.Text = "藏品编号：";
+            this.label3.Text = "藏品名称：";
+            // 
+            // 藏品名称
+            // 
+            this.藏品名称.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.藏品名称.HeaderText = "藏品名称";
+            this.藏品名称.MinimumWidth = 10;
+            this.藏品名称.Name = "藏品名称";
+            this.藏品名称.Width = 115;
+            // 
+            // 类型
+            // 
+            this.类型.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.类型.HeaderText = "类型";
+            this.类型.Name = "类型";
+            this.类型.Width = 115;
+            // 
+            // 作者
+            // 
+            this.作者.HeaderText = "作者";
+            this.作者.Name = "作者";
+            this.作者.Width = 115;
+            // 
+            // 创作年代
+            // 
+            this.创作年代.HeaderText = "创作年代";
+            this.创作年代.Name = "创作年代";
+            this.创作年代.Width = 115;
+            // 
+            // 征集时间
+            // 
+            this.征集时间.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.征集时间.HeaderText = "征集时间";
+            this.征集时间.Name = "征集时间";
+            this.征集时间.Width = 115;
             // 
             // cangpinjianding
             // 
@@ -285,7 +269,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 藏品编号;
         private System.Windows.Forms.DataGridViewTextBoxColumn 藏品名称;
         private System.Windows.Forms.DataGridViewTextBoxColumn 类型;
         private System.Windows.Forms.DataGridViewTextBoxColumn 作者;
