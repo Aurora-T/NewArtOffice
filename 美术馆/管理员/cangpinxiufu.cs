@@ -52,9 +52,10 @@ namespace 美术馆.管理员
 
         }
 
+        //安排专家
         private void button2_Click(object sender, EventArgs e)
         {
-            if (this.dataGridView1.CurrentRow.Cells[1].Value != null)
+            if (this.dataGridView1.CurrentRow != null&&this.dataGridView1.CurrentRow.Cells[1].Value!= null)
             {
                 int xno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
                 int cno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[1].Value.ToString());
@@ -63,6 +64,21 @@ namespace 美术馆.管理员
             }
             else
                 MessageBox.Show("未选中");
+        }
+
+        //刷新界面
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string sql = "SELECT 编号,藏品编号 FROM 修复表 where 专家编号 is NULL";
+            SqlCommand Cmd = new SqlCommand(sql, conn);
+            SqlDataReader sdr = Cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                int index = this.dataGridView1.Rows.Add();
+                this.dataGridView1.Rows[index].Cells[0].Value = sdr[0].ToString();
+                this.dataGridView1.Rows[index].Cells[1].Value = sdr[1].ToString();
+            }
+            sdr.Close();
         }
     }
 }

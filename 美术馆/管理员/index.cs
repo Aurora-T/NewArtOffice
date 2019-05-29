@@ -15,12 +15,15 @@ namespace 美术馆.管理员
     {
         public SqlConnection conn = null;
         private int id;
+        public loginForm l = null;
         public index(loginForm l,int id)
         {
             InitializeComponent();
+            this.l = l;
             this.conn = l.conn;
             this.id = id;
         }
+        //分配鉴定
         private void button1_Click(object sender, EventArgs e)
         {
             cangpinjianding jianding = new cangpinjianding(this,this.id);
@@ -35,12 +38,41 @@ namespace 美术馆.管理员
             this.Hide();
             jiancha.Show();
         }
-
+        //分配修复
         private void button3_Click(object sender, EventArgs e)
         {
             cangpinxiufu jiancha = new cangpinxiufu(this);
             this.Hide();
             jiancha.Show();
+        }
+
+        //点击退出后断开数据库连接，直接退出系统
+        private void button6_Click(object sender, EventArgs e)
+        {
+                try
+                {
+                    this.Close();
+                    l.Close();
+                    conn.Close();
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("发生错误：" + ex.Message);
+                }
+        }
+
+        //点击叉号退回登录界面
+        private void index_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            try
+            {
+                this.l.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("发生错误：" + ex.Message);
+            }
         }
     }
 }

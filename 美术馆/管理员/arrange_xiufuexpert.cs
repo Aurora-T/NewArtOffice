@@ -26,18 +26,19 @@ namespace 美术馆.管理员
 
         //显示专家和藏品信息
         private void arrange_xiufuexpert_Load(object sender, EventArgs e)
-        {
-            //藏品信息
-            string sql = "SELECT 藏品编号,藏品名称,类型,风格,作者姓名,创作时间 FROM 藏品表 where 藏品编号 ='" + cno + "' ";
+        { //藏品信息
+            string sql = "SELECT 藏品编号,藏品名称,藏品类型,作者姓名,创作时间 FROM 藏品表 where 藏品编号 ='" + cno + "' ";
             SqlCommand Cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = Cmd.ExecuteReader();
             sdr.Read();
             label9.Text = sdr[0].ToString();
             label11.Text = sdr[1].ToString();
             label6.Text = sdr[2].ToString();
-            label13.Text = sdr[3].ToString();
-            label4.Text = sdr[5].ToString();
-            label8.Text = sdr[4].ToString();
+            label8.Text = sdr[3].ToString();
+            label4.Text = sdr[4].ToString().Substring(0, 8);
+            //MemoryStream buf = new MemoryStream((byte[])sdr[5]);
+            //Image image = Image.FromStream(buf, true);
+            //pictureBox1.Image = image;
             sdr.Close();
 
             //专家信息

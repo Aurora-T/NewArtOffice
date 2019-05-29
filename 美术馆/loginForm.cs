@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using 美术馆.管理员;
+using 美术馆.专家;
 
 namespace 美术馆
 {
@@ -29,6 +30,7 @@ namespace 美术馆
             }
             else
             {
+                int flag=0;
                 string ConStr = "Data Source=101.132.124.13;Initial Catalog=美术馆;User ID=sa;Password=123";
                 conn = new SqlConnection(ConStr);
                 conn.Open();
@@ -37,39 +39,42 @@ namespace 美术馆
                 cmd.CommandType = CommandType.Text;
                 SqlDataReader sdr;
                 sdr = cmd.ExecuteReader();
-                if (sdr.Read())         //从结果中找到
+                while (sdr.Read())         //从结果中找到
                 {
+                    if (sdr[1].ToString().Trim() == textBox1.Text.Trim())
+                    {
+                        flag = 1;
+                        break;
+                    }
+                }
+                if (flag == 1)               
+                {
+                    MessageBox.Show("成功登录");
                     if (sdr[2].ToString().Trim() == textBox2.Text.Trim())
                     {
-                        MessageBox.Show("登录成功", "提示");
-                        if (sdr[0].ToString() == "藏品管理员")
+                        string position = sdr[0].ToString();
+                        int id = Int32.Parse(textBox1.Text);
+                        if (position.Replace(" ","").Equals("藏品管理员"))
                         {
-                            int id = Int32.Parse(sdr[1].ToString());
-                            index main = new index(this, id);
+                            index i = new index(this, id);
+                            this.Hide();
+                            i.Show();
+                        }
+                        else if (position.Replace(" ", "").Equals("专家"))
+                        {
+                            expert_main main = new expert_main(this, id);
                             this.Hide();
                             main.Show();
                         }
-                        //else if (sdr[0].ToString() == "专家")
+                        //else if (position.Replace(" ", "").Equals("财务管理员"))
                         //{
-                        //    mainForm_admin main = new mainForm_admin();
+                        //    expert_main main = new expert_main(this, id);
                         //    this.Hide();
                         //    main.Show();
                         //}
-                        //else if (sdr[0].ToString() == "人事管理员")
+                        //else if (position.Replace(" ", "").Equals("通知管理员"))
                         //{
-                        //    mainForm_admin main = new mainForm_admin();
-                        //    this.Hide();
-                        //    main.Show();
-                        //}
-                        //else if (sdr[0].ToString() == "财务管理员")
-                        //{
-                        //    mainForm_admin main = new mainForm_admin();
-                        //    this.Hide();
-                        //    main.Show();
-                        //}
-                        //else if (sdr[0].ToString() == "展览管理员")
-                        //{
-                        //    mainForm_admin main = new mainForm_admin();
+                        //    expert_main main = new expert_main(this, id);
                         //    this.Hide();
                         //    main.Show();
                         //}
@@ -77,16 +82,23 @@ namespace 美术馆
                     else
                     {
                         MessageBox.Show("密码错误", "提示");
-                        return;
+                        textBox2.Text = "";
                     }
                 }
                 else
                 {
                     MessageBox.Show("用户名不存在", "提示");
-                    return;
+                    textBox1.Text = "";
+                    textBox2.Text = "";
                 }
                 sdr.Close();
             }
         }
+
+        /*//关闭界面后退出系统，关闭数据库连接
+        private void loginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            conn.Close();
+        }*/
     }
 }
