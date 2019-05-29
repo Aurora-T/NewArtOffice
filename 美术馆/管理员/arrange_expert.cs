@@ -42,7 +42,7 @@ namespace 美术馆.管理员
             //清空原datagridview中的数据
             this.dataGridView1.Rows.Clear();
             //从数据库查询已到查询时间但未安排的藏品
-            string sql1 = "SELECT 专家编号,工号,姓名,擅长领域 FROM 检查表 where 专家工号 is NULL and (Datename(year,下次检查时间)+'-'+Datename(month,下次检查时间) + '-' + Datename(day, 下次检查时间)) = '" + time + "' or (Datename(year,下次检查时间)+'-'+Datename(month,下次检查时间) + '-' + Datename(day, 下次检查时间)) < '" + time + "'";
+            string sql1 = "SELECT 专家编号,工号,姓名,擅长领域 FROM 检查表 ";
             SqlCommand Cmd1 = new SqlCommand(sql1, conn);
             SqlDataReader sdr1 = Cmd1.ExecuteReader();
             while (sdr1.Read())
