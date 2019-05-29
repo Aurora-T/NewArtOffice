@@ -25,5 +25,20 @@ namespace 美术馆.管理员
             this.Hide();
             jianding.Show();
         }
+
+        //分配检查
+        private void button2_Click(object sender, EventArgs e)
+        {
+            cangpinjiancha jiancha = new cangpinjiancha(this);
+            this.Hide();
+            jiancha.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            cangpinxiufu jiancha = new cangpinxiufu(this);
+            this.Hide();
+            jiancha.Show();
+        }
     }
 }
