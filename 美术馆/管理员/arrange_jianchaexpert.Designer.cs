@@ -1,6 +1,6 @@
 ﻿namespace 美术馆.管理员
 {
-    partial class arrange_expert
+    partial class arrange_jianchaexpert
     {
         /// <summary>
         /// Required designer variable.
