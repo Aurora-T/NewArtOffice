@@ -33,7 +33,7 @@ namespace 美术馆.管理员
             label2.Text = sdr[1].ToString();
             label6.Text = sdr[0].ToString();
             label4.Text = sdr[2].ToString();
-            String sqll = "select 专家表.专家编号,专家表.姓名,专家表.擅长领域,count(*) 待鉴定藏品数 from 专家表,鉴定表 where 专家表.专家编号=鉴定表.专家工号  and charindex('" + sdr[0].ToString() + "',专家表.擅长领域)>=0 and 鉴定表.鉴定结果 is NULL  group by 专家表.专家编号 ,专家表.姓名,专家表.擅长领域";
+            String sqll = "select 专家表.工号,专家表.姓名,专家表.擅长领域,count(*) 待鉴定藏品数 from 专家表 left join 鉴定表 on 专家表.专家编号=鉴定表.专家工号  where charindex('" + sdr[0].ToString() + "',专家表.擅长领域)>=0 and 鉴定表.鉴定结果 is NULL  group by 专家表.工号 ,专家表.姓名,专家表.擅长领域";
             SqlCommand sc = new SqlCommand(sqll, conn);
             SqlDataAdapter myda = new SqlDataAdapter(sc);
             DataTable dt = new DataTable();
@@ -98,11 +98,18 @@ namespace 美术馆.管理员
             {
                 for (int i = 0; i < row - 1; i++)
                 {
-                    SqlCommand cmd = new SqlCommand("insert into 鉴定表(专家工号,藏品编号,管理员工号) values('" + dataGridView2.Rows[i].Cells[0].Value.ToString() + "','" + this.collectid + "','" + this.id  + "')", conn);
+                    String sql = "select 专家编号 from 专家表 where 工号='" + dataGridView2.Rows[i].Cells[0].Value.ToString() + "'";
+                    SqlCommand cm = new SqlCommand(sql, conn);
+                    cm.CommandType = CommandType.Text;
+                    SqlDataReader sdr;
+                    sdr = cm.ExecuteReader();
+                    sdr.Read();
+                    SqlCommand cmd = new SqlCommand("insert into 鉴定表(专家工号,藏品编号,管理员工号) values('" + sdr[0].ToString() + "','" + this.collectid + "','" + this.id  + "')", conn);
+                    sdr.Close();
                     cmd.ExecuteNonQuery();
                     dataGridView2.Rows.RemoveAt(dataGridView2.Rows[i].Index);
                 }
-                SqlCommand cmdd = new SqlCommand("update 征集表 set 状态='已匹配' where 编号= '" + this.collectid +"')", conn);
+                SqlCommand cmdd = new SqlCommand("update 征集表 set 状态='已匹配' where 编号= '" + this.collectid+"'", conn);
                 cmdd.ExecuteNonQuery();
                 MessageBox.Show("提交成功", "提示");
                 this.Close();

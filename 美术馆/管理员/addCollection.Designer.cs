@@ -46,6 +46,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -53,7 +54,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -234,6 +234,17 @@
             this.panel1.Size = new System.Drawing.Size(552, 47);
             this.panel1.TabIndex = 3;
             // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(458, 12);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(69, 22);
+            this.radioButton5.TabIndex = 4;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "版画";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
@@ -303,17 +314,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "*藏品名称：";
             // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(458, 12);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(69, 22);
-            this.radioButton5.TabIndex = 4;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "版画";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
             // addCollection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -321,6 +321,7 @@
             this.ClientSize = new System.Drawing.Size(946, 521);
             this.Controls.Add(this.groupBox1);
             this.Name = "addCollection";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "addCollection";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

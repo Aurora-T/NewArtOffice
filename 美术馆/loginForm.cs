@@ -32,49 +32,57 @@ namespace 美术馆
                 string ConStr = "Data Source=101.132.124.13;Initial Catalog=美术馆;User ID=sa;Password=123";
                 conn = new SqlConnection(ConStr);
                 conn.Open();
-                string sql = "SELECT 职位,工号,密码 from 员工信息表 where 工号='" + userid + "'and 密码='" + password + "'";
+                string sql = "SELECT 职位,工号,密码 from 员工信息表 where 工号='" + userid  + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.CommandType = CommandType.Text;
                 SqlDataReader sdr;
                 sdr = cmd.ExecuteReader();
                 if (sdr.Read())         //从结果中找到
                 {
-                    MessageBox.Show("登录成功", "提示");
-                    if (sdr[0].ToString() == "藏品管理员")
+                    if (sdr[2].ToString().Trim() == textBox2.Text.Trim())
                     {
-                        int id = Int32.Parse(sdr[1].ToString());
-                        index main = new index(this,id);
-                        this.Hide();
-                        main.Show();
+                        MessageBox.Show("登录成功", "提示");
+                        if (sdr[0].ToString() == "藏品管理员")
+                        {
+                            int id = Int32.Parse(sdr[1].ToString());
+                            index main = new index(this, id);
+                            this.Hide();
+                            main.Show();
+                        }
+                        //else if (sdr[0].ToString() == "专家")
+                        //{
+                        //    mainForm_admin main = new mainForm_admin();
+                        //    this.Hide();
+                        //    main.Show();
+                        //}
+                        //else if (sdr[0].ToString() == "人事管理员")
+                        //{
+                        //    mainForm_admin main = new mainForm_admin();
+                        //    this.Hide();
+                        //    main.Show();
+                        //}
+                        //else if (sdr[0].ToString() == "财务管理员")
+                        //{
+                        //    mainForm_admin main = new mainForm_admin();
+                        //    this.Hide();
+                        //    main.Show();
+                        //}
+                        //else if (sdr[0].ToString() == "展览管理员")
+                        //{
+                        //    mainForm_admin main = new mainForm_admin();
+                        //    this.Hide();
+                        //    main.Show();
+                        //}
                     }
-                    //else if (sdr[0].ToString() == "专家")
-                    //{
-                    //    mainForm_admin main = new mainForm_admin();
-                    //    this.Hide();
-                    //    main.Show();
-                    //}
-                    //else if (sdr[0].ToString() == "人事管理员")
-                    //{
-                    //    mainForm_admin main = new mainForm_admin();
-                    //    this.Hide();
-                    //    main.Show();
-                    //}
-                    //else if (sdr[0].ToString() == "财务管理员")
-                    //{
-                    //    mainForm_admin main = new mainForm_admin();
-                    //    this.Hide();
-                    //    main.Show();
-                    //}
-                    //else if (sdr[0].ToString() == "展览管理员")
-                    //{
-                    //    mainForm_admin main = new mainForm_admin();
-                    //    this.Hide();
-                    //    main.Show();
-                    //}
+                    else
+                    {
+                        MessageBox.Show("密码错误", "提示");
+                        return;
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("用户名或密码错误", "提示");
+                    MessageBox.Show("用户名不存在", "提示");
                     return;
                 }
                 sdr.Close();

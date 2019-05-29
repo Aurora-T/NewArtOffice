@@ -69,17 +69,20 @@ namespace 美术馆
             {
                 int intRow = dataGridView1.SelectedCells[0].RowIndex;
                 //得到选中行某列的值
-                string str = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                string str = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 String sql = "select 编号,备注 from 征集表 where 藏品名称 ='" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.CommandType = CommandType.Text;
-                SqlDataReader sdr;
-                sdr = cmd.ExecuteReader();
-                sdr.Read();
-                label11.Text = sdr[1].ToString();
-                this.id = Int32.Parse(sdr[0].ToString());
-                label4.Text= dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                sdr.Close();
+                if (str != "")
+                {
+                    SqlDataReader sdr;
+                    sdr = cmd.ExecuteReader();
+                    sdr.Read();
+                    label11.Text = sdr[1].ToString();
+                    this.id = Int32.Parse(sdr[0].ToString());
+                    label4.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                    sdr.Close();
+                }
             }
         }
 
@@ -179,9 +182,16 @@ namespace 美术馆
 
         private void button4_Click(object sender, EventArgs e)
         {
-            matchingExpert mat = new matchingExpert(this,this.id,this.userid);
-            this.Hide();
-            mat.Show();
+            if (dataGridView1.SelectedCells.Count != 0)
+            {
+                matchingExpert mat = new matchingExpert(this, this.id, this.userid);
+                this.Hide();
+                mat.Show();
+            }
+            else
+            {
+                MessageBox.Show("未选择藏品", "提示");
+            }
         }
     }
 }
