@@ -42,5 +42,19 @@ namespace 美术馆.管理员
             this.Hide();
             jiancha.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            enter ruguan = new enter(this, this.id);
+            this.Hide();
+            ruguan.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            exit chuguan = new exit(this, this.id);
+            this.Hide();
+            chuguan.Show();
+        }
     }
 }

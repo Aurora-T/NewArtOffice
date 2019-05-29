@@ -125,7 +125,7 @@ namespace 美术馆
                 myda.Fill(dt);
                 dataGridView1.DataSource = dt;
             }
-            else if (text == "征集时间升序序")
+            else if (text == "征集时间升序")
             {
                 String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 order by 征集时间";
                 SqlCommand sc = new SqlCommand(sql, conn);
@@ -143,7 +143,7 @@ namespace 美术馆
                 myda.Fill(dt);
                 dataGridView1.DataSource = dt;
             }
-            else if (text == "藏品类别降序")
+            else if (text == "藏品类别升序")
             {
                 String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 order by 类别";
                 SqlCommand sc = new SqlCommand(sql, conn);

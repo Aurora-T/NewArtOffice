@@ -112,6 +112,12 @@
     <Compile Include="管理员\cangpinjiancha.Designer.cs">
       <DependentUpon>cangpinjiancha.cs</DependentUpon>
     </Compile>
+    <Compile Include="管理员\confirmEnter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\confirmEnter.Designer.cs">
+      <DependentUpon>confirmEnter.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\employee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\cangpinjiancha.resx">
       <DependentUpon>cangpinjiancha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\confirmEnter.resx">
+      <DependentUpon>confirmEnter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\employee.resx">
       <DependentUpon>employee.cs</DependentUpon>

@@ -70,6 +70,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "提交";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -149,7 +150,6 @@
             this.label2.Size = new System.Drawing.Size(116, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "美术馆地址：";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
