@@ -82,6 +82,12 @@
     <Compile Include="管理员\addGallery.Designer.cs">
       <DependentUpon>addGallery.cs</DependentUpon>
     </Compile>
+    <Compile Include="管理员\arrange_expert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\arrange_expert.Designer.cs">
+      <DependentUpon>arrange_expert.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\authenticate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,12 @@
     </Compile>
     <Compile Include="loginForm.Designer.cs">
       <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\cangpinjiancha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\cangpinjiancha.Designer.cs">
+      <DependentUpon>cangpinjiancha.cs</DependentUpon>
     </Compile>
     <Compile Include="管理员\employee.cs">
       <SubType>Form</SubType>
@@ -162,6 +174,12 @@
     <Compile Include="管理员\watchHistory.Designer.cs">
       <DependentUpon>watchHistory.cs</DependentUpon>
     </Compile>
+    <Compile Include="管理员\cangpinxiufu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\cangpinxiufu.Designer.cs">
+      <DependentUpon>cangpinxiufu.cs</DependentUpon>
+    </Compile>
     <Compile Include="美术馆DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -185,11 +203,17 @@
     <EmbeddedResource Include="管理员\addGallery.resx">
       <DependentUpon>addGallery.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="管理员\arrange_expert.resx">
+      <DependentUpon>arrange_expert.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="管理员\authenticate.resx">
       <DependentUpon>authenticate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\cangpinjiancha.resx">
+      <DependentUpon>cangpinjiancha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\employee.resx">
       <DependentUpon>employee.cs</DependentUpon>
@@ -232,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\watchHistory.resx">
       <DependentUpon>watchHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\cangpinxiufu.resx">
+      <DependentUpon>cangpinxiufu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
