@@ -45,34 +45,5 @@ namespace 美术馆.管理员
             this.Hide();
             jiancha.Show();
         }
-
-        //点击退出后断开数据库连接，直接退出系统
-        private void button6_Click(object sender, EventArgs e)
-        {
-                try
-                {
-                    this.Close();
-                    l.Close();
-                    conn.Close();
-                }
-                catch (Exception ex)
-                {
-
-                    MessageBox.Show("发生错误：" + ex.Message);
-                }
-        }
-
-        //点击叉号退回登录界面
-        private void index_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            try
-            {
-                this.l.Show();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("发生错误：" + ex.Message);
-            }
-        }
     }
 }
