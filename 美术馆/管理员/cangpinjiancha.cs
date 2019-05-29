@@ -40,14 +40,15 @@ namespace 美术馆.管理员
             this.dataGridView1.Rows.Clear();
 
             //从数据库查询已到查询时间但未安排的藏品
-            string sql = "SELECT 藏品编号,下次检查时间 FROM 检查表 where 专家工号 is NULL and (Datename(year,下次检查时间)+'-'+Datename(month,下次检查时间) + '-' + Datename(day, 下次检查时间)) = '" + time + "' or (Datename(year,下次检查时间)+'-'+Datename(month,下次检查时间) + '-' + Datename(day, 下次检查时间)) < '" + time + "'";
+            string sql = "SELECT 检查记录编号,藏品编号,应该检查时间 FROM 检查表 where 专家工号 is NULL and (Datename(year,应该检查时间)+'-'+Datename(month,应该检查时间) + '-' + Datename(day, 应该检查时间)) = '" + time + "' or (Datename(year,应该检查时间)+'-'+Datename(month,应该检查时间) + '-' + Datename(day, 应该检查时间)) < '" + time + "'";
             SqlCommand Cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = Cmd.ExecuteReader();
             while (sdr.Read())
             {
                 int index = this.dataGridView1.Rows.Add();
                 this.dataGridView1.Rows[index].Cells[0].Value = sdr[0].ToString();
-                this.dataGridView1.Rows[index].Cells[1].Value = sdr[1].ToString();            
+                this.dataGridView1.Rows[index].Cells[1].Value = sdr[1].ToString();
+                this.dataGridView1.Rows[index].Cells[1].Value = sdr[1].ToString();
             }
             sdr.Close();
             //查询从未检查过的藏品
@@ -79,10 +80,17 @@ namespace 美术馆.管理员
         //选中一个藏品编号，为其分配专家
         private void button2_Click(object sender, EventArgs e)
         {
-            cno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            arrange_expert arrange = new arrange_expert(this.conn, cno);
-            arrange.ShowDialog();
-
+            int jno = -1;
+            if (this.dataGridView1.CurrentRow.Cells[1].Value!= null)
+            {
+                if (this.dataGridView1.CurrentRow.Cells[0].Value.ToString() != "")
+                    jno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                cno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[1].Value.ToString());
+                arrange_jianchaexpert arrange = new arrange_jianchaexpert(this.conn, cno, jno);
+                arrange.ShowDialog();
+            }
+            else
+                MessageBox.Show("未选中");
         }
 
         //刷新界面
@@ -102,7 +110,7 @@ namespace 美术馆.管理员
             this.dataGridView1.Rows.Clear();
 
             //从数据库查询曾被检查过，已到检查时间但未安排的藏品
-            string sql = "SELECT 藏品编号,下次检查时间 FROM 检查表 where 专家工号 is  not NULL and (Datename(year,下次检查时间)+'-'+Datename(month,下次检查时间) + '-' + Datename(day, 下次检查时间)) = '" + time + "' or (Datename(year,下次检查时间)+'-'+Datename(month,下次检查时间) + '-' + Datename(day, 下次检查时间)) < '" + time + "'";
+            string sql = "SELECT 藏品编号,应该检查时间 FROM 检查表 where 专家工号 is  not NULL and (Datename(year,应该检查时间)+'-'+Datename(month,应该检查时间) + '-' + Datename(day, 应该检查时间)) = '" + time + "' or (Datename(year,应该检查时间)+'-'+Datename(month,应该检查时间) + '-' + Datename(day, 应该检查时间)) < '" + time + "'";
             SqlCommand Cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = Cmd.ExecuteReader();
             while (sdr.Read())

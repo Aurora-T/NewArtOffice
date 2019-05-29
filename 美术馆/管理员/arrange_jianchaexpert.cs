@@ -11,15 +11,17 @@ using System.Windows.Forms;
 
 namespace 美术馆.管理员
 {
-    public partial class arrange_expert : Form
+    public partial class arrange_jianchaexpert : Form
     {
         SqlConnection conn = null;
         int cno;
-        public arrange_expert(SqlConnection conn,int cno)
+        int jno;
+        public arrange_jianchaexpert(SqlConnection conn,int cno,int jno)
         {
             InitializeComponent();
             this.conn = conn;
             this.cno = cno;
+            this.jno = jno;
         }
 
         //显示选定藏品信息及专家信息
@@ -41,8 +43,8 @@ namespace 美术馆.管理员
             //专家信息
             //清空原datagridview中的数据
             this.dataGridView1.Rows.Clear();
-            //从数据库查询已到查询时间但未安排的藏品
-            string sql1 = "SELECT 专家编号,工号,姓名,擅长领域 FROM 检查表 ";
+            //从数据库查询专家信息
+            string sql1 = "SELECT 专家编号,工号,姓名,擅长领域 FROM 专家表 ";
             SqlCommand Cmd1 = new SqlCommand(sql1, conn);
             SqlDataReader sdr1 = Cmd1.ExecuteReader();
             while (sdr1.Read())
@@ -59,22 +61,48 @@ namespace 美术馆.管理员
         //将选中的专家进行匹配
         private void button1_Click(object sender, EventArgs e)
         {
-            int eno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            string sql = "Insert Into 检查表(藏品编号,专家编号) Values (@cno,@eno)";
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            SqlParameter sp = cmd.Parameters.Add("@cno", SqlDbType.Int);
-            sp.Value = this.cno;
-            sp = cmd.Parameters.Add("@eno", SqlDbType.Int);
-            sp.Value = eno;
-            int n= cmd.ExecuteNonQuery();
-            if (n > 0)
+            
+            //曾被检查过,检查表里已有藏品编号和应该检查时间，更新数据
+            if (jno!=-1)
             {
-                MessageBox.Show("分配成功！");
-                this.Close();
+                int eno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                string sql = "update 检查表(专家编号) Values (@eno) where 检查记录编号='"+jno+"'";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlParameter sp = cmd.Parameters.Add("@cno", SqlDbType.Int);
+                sp.Value = this.cno;
+                sp = cmd.Parameters.Add("@eno", SqlDbType.Int);
+                sp.Value = eno;
+                int n = cmd.ExecuteNonQuery();
+                if (n > 0)
+                {
+                    MessageBox.Show("分配成功！");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("未成功，请重新分配");
+                }
             }
+            //从未被检查过，插入检查记录
             else
             {
-                MessageBox.Show("未成功，请重新分配");
+                int eno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                string sql = "Insert Into 检查表(藏品编号,专家编号) Values (@cno,@eno)";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlParameter sp = cmd.Parameters.Add("@cno", SqlDbType.Int);
+                sp.Value = this.cno;
+                sp = cmd.Parameters.Add("@eno", SqlDbType.Int);
+                sp.Value = eno;
+                int n = cmd.ExecuteNonQuery();
+                if (n > 0)
+                {
+                    MessageBox.Show("分配成功！");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("未成功，请重新分配");
+                }
             }
         }
     }

@@ -31,11 +31,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.藏品编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.下次检查时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.藏品编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.下次检查时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,27 +61,18 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.编号,
             this.藏品编号,
             this.下次检查时间});
-            this.dataGridView1.Location = new System.Drawing.Point(90, 77);
+            this.dataGridView1.Location = new System.Drawing.Point(64, 77);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(242, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(318, 150);
             this.dataGridView1.TabIndex = 4;
-            // 
-            // 藏品编号
-            // 
-            this.藏品编号.HeaderText = "藏品编号";
-            this.藏品编号.Name = "藏品编号";
-            // 
-            // 下次检查时间
-            // 
-            this.下次检查时间.HeaderText = "下次检查时间";
-            this.下次检查时间.Name = "下次检查时间";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(164, 242);
+            this.button2.Location = new System.Drawing.Point(171, 242);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
@@ -107,6 +99,21 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // 编号
+            // 
+            this.编号.HeaderText = "检查记录编号";
+            this.编号.Name = "编号";
+            // 
+            // 藏品编号
+            // 
+            this.藏品编号.HeaderText = "藏品编号";
+            this.藏品编号.Name = "藏品编号";
+            // 
+            // 下次检查时间
+            // 
+            this.下次检查时间.HeaderText = "应该检查时间";
+            this.下次检查时间.Name = "下次检查时间";
+            // 
             // cangpinjiancha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -131,10 +138,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 藏品编号;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 下次检查时间;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 编号;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 藏品编号;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 下次检查时间;
     }
 }

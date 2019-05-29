@@ -82,11 +82,17 @@
     <Compile Include="管理员\addGallery.Designer.cs">
       <DependentUpon>addGallery.cs</DependentUpon>
     </Compile>
-    <Compile Include="管理员\arrange_expert.cs">
+    <Compile Include="管理员\arrange_jianchaexpert.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="管理员\arrange_expert.Designer.cs">
-      <DependentUpon>arrange_expert.cs</DependentUpon>
+    <Compile Include="管理员\arrange_jianchaexpert.Designer.cs">
+      <DependentUpon>arrange_jianchaexpert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\arrange_xiufuexpert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\arrange_xiufuexpert.Designer.cs">
+      <DependentUpon>arrange_xiufuexpert.cs</DependentUpon>
     </Compile>
     <Compile Include="管理员\authenticate.cs">
       <SubType>Form</SubType>
@@ -203,8 +209,11 @@
     <EmbeddedResource Include="管理员\addGallery.resx">
       <DependentUpon>addGallery.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="管理员\arrange_expert.resx">
-      <DependentUpon>arrange_expert.cs</DependentUpon>
+    <EmbeddedResource Include="管理员\arrange_jianchaexpert.resx">
+      <DependentUpon>arrange_jianchaexpert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\arrange_xiufuexpert.resx">
+      <DependentUpon>arrange_xiufuexpert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\authenticate.resx">
       <DependentUpon>authenticate.cs</DependentUpon>
