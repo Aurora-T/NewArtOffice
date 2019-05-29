@@ -16,10 +16,12 @@ namespace 美术馆
     {
         public SqlConnection conn = null;
         private int id;
-        public cangpinjianding(index l)
+        private int userid;
+        public cangpinjianding(index l,int id)
         {
             InitializeComponent();
             this.conn = l.conn;
+            this.userid = id;
             String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 where 状态='未匹配'";
             SqlCommand sc = new SqlCommand(sql, conn);
             SqlDataAdapter myda = new SqlDataAdapter(sc);
@@ -177,7 +179,7 @@ namespace 美术馆
 
         private void button4_Click(object sender, EventArgs e)
         {
-            matchingExpert mat = new matchingExpert(this,this.id);
+            matchingExpert mat = new matchingExpert(this,this.id,this.userid);
             this.Hide();
             mat.Show();
         }
