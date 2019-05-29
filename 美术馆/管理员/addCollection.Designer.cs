@@ -53,6 +53,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -122,7 +123,7 @@
             // 
             this.richTextBox1.Location = new System.Drawing.Point(145, 290);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(634, 98);
+            this.richTextBox1.Size = new System.Drawing.Size(650, 98);
             this.richTextBox1.TabIndex = 16;
             this.richTextBox1.Text = "";
             // 
@@ -134,6 +135,7 @@
             this.button1.TabIndex = 15;
             this.button1.Text = "提交";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkLabel1
             // 
@@ -175,9 +177,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(471, 210);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 18);
+            this.label6.Size = new System.Drawing.Size(107, 18);
             this.label6.TabIndex = 9;
-            this.label6.Text = "联系电话：";
+            this.label6.Text = "*联系方式：";
             // 
             // textBox3
             // 
@@ -191,9 +193,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(54, 210);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 18);
+            this.label5.Size = new System.Drawing.Size(89, 18);
             this.label5.TabIndex = 7;
-            this.label5.Text = "联系人：";
+            this.label5.Text = "*联系人：";
             // 
             // label4
             // 
@@ -216,19 +218,20 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(54, 133);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 18);
+            this.label3.Size = new System.Drawing.Size(107, 18);
             this.label3.TabIndex = 4;
-            this.label3.Text = "理想价格：";
+            this.label3.Text = "*理想价格：";
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.radioButton5);
             this.panel1.Controls.Add(this.radioButton4);
             this.panel1.Controls.Add(this.radioButton3);
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Location = new System.Drawing.Point(148, 77);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(436, 47);
+            this.panel1.Size = new System.Drawing.Size(552, 47);
             this.panel1.TabIndex = 3;
             // 
             // radioButton4
@@ -256,7 +259,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(109, 13);
+            this.radioButton2.Location = new System.Drawing.Point(109, 11);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(69, 22);
             this.radioButton2.TabIndex = 1;
@@ -280,9 +283,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(54, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 18);
+            this.label2.Size = new System.Drawing.Size(107, 18);
             this.label2.TabIndex = 2;
-            this.label2.Text = "藏品类型：";
+            this.label2.Text = "*藏品类别：";
             // 
             // textBox1
             // 
@@ -296,9 +299,20 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(54, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 18);
+            this.label1.Size = new System.Drawing.Size(107, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "藏品名称：";
+            this.label1.Text = "*藏品名称：";
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(458, 12);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(69, 22);
+            this.radioButton5.TabIndex = 4;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "版画";
+            this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // addCollection
             // 
@@ -343,5 +357,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton5;
     }
 }

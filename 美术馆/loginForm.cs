@@ -42,7 +42,8 @@ namespace 美术馆
                     MessageBox.Show("登录成功", "提示");
                     if (sdr[0].ToString() == "藏品管理员")
                     {
-                        index main = new index(this);
+                        int id = Int32.Parse(sdr[1].ToString());
+                        index main = new index(this,id);
                         this.Hide();
                         main.Show();
                     }

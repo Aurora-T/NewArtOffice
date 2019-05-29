@@ -14,15 +14,16 @@ namespace 美术馆.管理员
     public partial class index : Form
     {
         public SqlConnection conn = null;
-        public index(loginForm l)
+        private int id;
+        public index(loginForm l,int id)
         {
             InitializeComponent();
             this.conn = l.conn;
+            this.id = id;
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            cangpinjianding jianding = new cangpinjianding(this);
+            cangpinjianding jianding = new cangpinjianding(this,this.id);
             this.Hide();
             jianding.Show();
         }
