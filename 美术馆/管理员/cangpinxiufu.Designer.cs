@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // 藏品修复
+            // cangpinxiufu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(398, 270);
-            this.Name = "藏品修复";
+            this.ClientSize = new System.Drawing.Size(487, 319);
+            this.Name = "cangpinxiufu";
             this.Text = "藏品修复";
             this.ResumeLayout(false);
 
