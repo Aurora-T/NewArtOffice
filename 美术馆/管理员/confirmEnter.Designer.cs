@@ -103,6 +103,7 @@
             this.ClientSize = new System.Drawing.Size(406, 316);
             this.Controls.Add(this.groupBox1);
             this.Name = "confirmEnter";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "入馆";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

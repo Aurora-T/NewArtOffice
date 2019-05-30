@@ -86,6 +86,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "赠送";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -96,18 +97,18 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "外借";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "--请选择--",
-            "藏品编号升序",
-            "藏品编号降序",
-            "创作时间升序",
-            "创作时间降序",
-            "鉴定价值升序",
-            "鉴定价值降序"});
+            "油画",
+            "水彩",
+            "素描",
+            "国画",
+            "版画"});
             this.comboBox1.Location = new System.Drawing.Point(567, 30);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 26);
@@ -117,11 +118,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(499, 34);
+            this.label2.Location = new System.Drawing.Point(463, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 18);
+            this.label2.Size = new System.Drawing.Size(98, 18);
             this.label2.TabIndex = 7;
-            this.label2.Text = "排序：";
+            this.label2.Text = "类别筛选：";
             // 
             // button4
             // 
@@ -148,7 +149,7 @@
             // 
             this.label5.Location = new System.Drawing.Point(18, 27);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(241, 146);
+            this.label5.Size = new System.Drawing.Size(241, 128);
             this.label5.TabIndex = 0;
             // 
             // groupBox2

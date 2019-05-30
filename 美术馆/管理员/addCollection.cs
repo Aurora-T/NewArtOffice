@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace 美术馆.管理员
     {
         SqlConnection conn = null;
         cangpinjianding page;
+        //byte[] imgBytesIn;
         public addCollection(cangpinjianding l)
         {
             InitializeComponent();
@@ -78,11 +80,25 @@ namespace 美术馆.管理员
                 }
                 SqlCommand cmd = new SqlCommand("insert into 征集表(藏品名称,类别,作者,创作年代,理想价格,联系人姓名,联系方式,备注) values('" + textBox1.Text + "','" + type + "','" + textBox5.Text + "','" + textBox6.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + richTextBox1.Text + "')", conn);
                 cmd.ExecuteNonQuery();
+                //string sql = "insert into pic values(@pic)";
+                //SqlParameter[] param = new SqlParameter[] { new SqlParameter("@pic", imgBytesIn) };
+                //cmd.GetExecuteQuery(sql, param);
                 MessageBox.Show("提交成功", "提示");
                 this.Close();
                 this.page.Show();
                 this.page.save();
             }
         }
+
+        
+
+        //private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        //{
+        //    this.pictureBox1.Image = Image.FromStream(this.openFileDialog1.OpenFile());
+        //    string path = openFileDialog1.FileName.ToString();
+        //    FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read);
+        //    BinaryReader br = new BinaryReader(fs);
+        //    imgBytesIn = br.ReadBytes(Convert.ToInt32(fs.Length));
+        //}
     }
 }

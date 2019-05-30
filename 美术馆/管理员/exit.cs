@@ -23,7 +23,7 @@ namespace 美术馆.管理员
             this.conn = l.conn;
             this.userid = id;
             this.page = l;
-            String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号";
+            String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 order by 藏品表.藏品编号";
             SqlCommand sc = new SqlCommand(sql, conn);
             SqlDataAdapter myda = new SqlDataAdapter(sc);
             DataTable dt = new DataTable();
@@ -38,7 +38,7 @@ namespace 美术馆.管理员
             String text = textBox1.Text;
             if (text.Equals(""))
             {
-                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号";
+                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 order by 藏品表.藏品编号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -48,67 +48,75 @@ namespace 美术馆.管理员
             }
             else
             {
-                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品表.藏品编号='" + text+"'";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-                dataGridView1.ClearSelection();
+                int n;
+                if (!int.TryParse(text, out n))
+                {
+                    MessageBox.Show("请搜索输入纯数字", "提示");
+                }
+                else
+                {
+                    String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品表.藏品编号='" + text + "'";
+                    SqlCommand sc = new SqlCommand(sql, conn);
+                    SqlDataAdapter myda = new SqlDataAdapter(sc);
+                    DataTable dt = new DataTable();
+                    myda.Fill(dt);
+                    dataGridView1.DataSource = dt;
+                    dataGridView1.ClearSelection();
+                }
             }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string text = comboBox1.Text;
-            if (text == "藏品编号升序")
+            if (text == "油画")
+            {
+                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 类别='油画' order by 藏品表.藏品编号";
+                SqlCommand sc = new SqlCommand(sql, conn);
+                SqlDataAdapter myda = new SqlDataAdapter(sc);
+                DataTable dt = new DataTable();
+                myda.Fill(dt);
+                dataGridView1.DataSource = dt;
+            }
+            else if (text == "水彩")
+            {
+                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 类别='水彩' order by 藏品表.藏品编号";
+                SqlCommand sc = new SqlCommand(sql, conn);
+                SqlDataAdapter myda = new SqlDataAdapter(sc);
+                DataTable dt = new DataTable();
+                myda.Fill(dt);
+                dataGridView1.DataSource = dt;
+            }
+            else if (text == "素描")
+            {
+                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 类别='素描' order by 藏品表.藏品编号";
+                SqlCommand sc = new SqlCommand(sql, conn);
+                SqlDataAdapter myda = new SqlDataAdapter(sc);
+                DataTable dt = new DataTable();
+                myda.Fill(dt);
+                dataGridView1.DataSource = dt;
+            }
+            else if (text == "国画")
+            {
+                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 类别='国画' order by 藏品表.藏品编号";
+                SqlCommand sc = new SqlCommand(sql, conn);
+                SqlDataAdapter myda = new SqlDataAdapter(sc);
+                DataTable dt = new DataTable();
+                myda.Fill(dt);
+                dataGridView1.DataSource = dt;
+            }
+            else if (text == "版画")
+            {
+                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 类别='版画' order by 藏品表.藏品编号";
+                SqlCommand sc = new SqlCommand(sql, conn);
+                SqlDataAdapter myda = new SqlDataAdapter(sc);
+                DataTable dt = new DataTable();
+                myda.Fill(dt);
+                dataGridView1.DataSource = dt;
+            }
+            else
             {
                 String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 order by 藏品表.藏品编号";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            else if (text == "藏品编号降序")
-            {
-                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 order by 藏品表.藏品编号 desc";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            else if (text == "创作时间升序")
-            {
-                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 order by 创作时间";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            else if (text == "创作时间降序")
-            {
-                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 order by 创作时间 desc";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            else if (text == "鉴定价值升序")
-            {
-                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 order by 价值";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            else if (text == "鉴定价值降序")
-            {
-                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 order by 价值 desc";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -163,6 +171,41 @@ namespace 美术馆.管理员
             }
             comboBox2.DataSource = list;
             //comboBox2.SelectedIndex = 0;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void ExamCollectStatus(int id)
+        {
+            string sql = "SELECT 藏品编号 from 外借表 where 藏品编号='" + id + "'";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            if(sdr.Read())         //从结果中找到
+            {
+                if (sdr[0].ToString().Trim() == dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim())
+                {
+                    MessageBox.Show("该藏品外借中", "提示");
+                    return;
+
+                }
+            }
+            else
+            {
+                //string sql = "SELECT 藏品编号 from 外借表 where 藏品编号='" + id + "'";
+                //SqlCommand cmd = new SqlCommand(sql, conn);
+                //cmd.CommandType = CommandType.Text;
+                //SqlDataReader sdr;
+                //sdr = cmd.ExecuteReader();
+            }
         }
     }
 }
