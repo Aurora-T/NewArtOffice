@@ -14,7 +14,9 @@ namespace 美术馆.专家
     public partial class jiancha : Form
     {
         public SqlConnection conn = null;
-        public int id,cno,jno;
+        public int id;
+        public int cno;
+        public int jno;
         public expert_main main = null;
         public jiancha(expert_main main)
         {
@@ -31,8 +33,8 @@ namespace 美术馆.专家
             {
                 jno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
                 cno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[1].Value.ToString());
-                jiancha_details jd = new jiancha_details(this);
-                this.Close();
+                jiancha_details jd = new jiancha_details(this,id,jno);
+                this.Hide();
                 jd.Show();
             }
             else

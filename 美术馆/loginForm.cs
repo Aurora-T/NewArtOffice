@@ -48,10 +48,10 @@ namespace 美术馆
                     }
                 }
                 if (flag == 1)               
-                {
-                    MessageBox.Show("成功登录");
-                    if (sdr[2].ToString().Trim() == textBox2.Text.Trim())
+                {                
+                    if (sdr[2].ToString().Replace(" ","") == textBox2.Text.Replace(" ",""))
                     {
+                        MessageBox.Show("成功登录");
                         string position = sdr[0].ToString();
                         int id = Int32.Parse(textBox1.Text);
                         if (position.Replace(" ","").Equals("藏品管理员"))
