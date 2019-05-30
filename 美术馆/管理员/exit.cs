@@ -164,5 +164,32 @@ namespace 美术馆.管理员
             comboBox2.DataSource = list;
             //comboBox2.SelectedIndex = 0;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+        //private bool ExamCollectStatus(int id)
+        //{
+        //    string sql = "SELECT 藏品编号 from 外借表 where 藏品编号='" + id + "'";
+        //    SqlCommand cmd = new SqlCommand(sql, conn);
+        //    cmd.CommandType = CommandType.Text;
+        //    SqlDataReader sdr;
+        //    sdr = cmd.ExecuteReader();
+        //    int flag;
+        //    while (sdr.Read())         //从结果中找到
+        //    {
+        //        if (sdr[0].ToString().Trim() == dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim())
+        //        {
+        //            flag = 1;
+        //            break;
+        //        }
+        //    }
+        //}
     }
 }

@@ -56,7 +56,9 @@ namespace 美术馆.专家
         //鉴定藏品
         private void button1_Click(object sender, EventArgs e)
         {
-
+            jianding jianding = new jianding(this, this.id);
+            this.Hide();
+            jianding.Show();
         }
         //检查藏品
         private void button2_Click(object sender, EventArgs e)
