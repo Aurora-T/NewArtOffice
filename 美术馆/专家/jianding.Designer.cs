@@ -49,6 +49,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(28, 89);
             this.dataGridView1.MultiSelect = false;
@@ -56,8 +57,9 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(688, 337);
+            this.dataGridView1.Size = new System.Drawing.Size(760, 337);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // label1
             // 
@@ -78,24 +80,23 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(489, 49);
+            this.label2.Location = new System.Drawing.Point(529, 46);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 18);
+            this.label2.Size = new System.Drawing.Size(98, 18);
             this.label2.TabIndex = 3;
-            this.label2.Text = "排序：";
+            this.label2.Text = "类别筛选：";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "--请选择--",
-            "藏品编号升序",
-            "藏品编号降序",
-            "创作年代升序",
-            "创作年代降序",
-            "征集时间升序",
-            "征集时间降序"});
-            this.comboBox1.Location = new System.Drawing.Point(567, 43);
+            "油画",
+            "水彩",
+            "素描",
+            "国画",
+            "版画"});
+            this.comboBox1.Location = new System.Drawing.Point(633, 43);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 26);
             this.comboBox1.TabIndex = 4;
@@ -103,6 +104,7 @@
             // 
             // button1
             // 
+            this.button1.AutoSize = true;
             this.button1.Location = new System.Drawing.Point(364, 41);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(60, 28);
@@ -119,7 +121,7 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(750, 39);
+            this.groupBox1.Location = new System.Drawing.Point(815, 41);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(234, 312);
             this.groupBox1.TabIndex = 8;
@@ -182,27 +184,31 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(831, 366);
+            this.button2.AutoSize = true;
+            this.button2.Location = new System.Drawing.Point(886, 362);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 28);
             this.button2.TabIndex = 9;
             this.button2.Text = "鉴定";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(792, 398);
+            this.button3.AutoSize = true;
+            this.button3.Location = new System.Drawing.Point(850, 398);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(169, 28);
             this.button3.TabIndex = 10;
             this.button3.Text = "查看历史鉴定记录";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // jianding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 450);
+            this.ClientSize = new System.Drawing.Size(1073, 450);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);

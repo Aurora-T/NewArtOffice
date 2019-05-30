@@ -75,16 +75,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(58, 91);
+            this.label2.Location = new System.Drawing.Point(112, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 18);
+            this.label2.Size = new System.Drawing.Size(98, 18);
             this.label2.TabIndex = 3;
-            this.label2.Text = "排序：";
+            this.label2.Text = "类别筛选：";
             // 
             // button1
             // 
             this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(392, 35);
+            this.button1.Location = new System.Drawing.Point(392, 31);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 28);
             this.button1.TabIndex = 4;
@@ -94,20 +94,18 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "--请选择--",
-            "藏品编号升序",
-            "藏品编号降序",
-            "藏品名称升序",
-            "藏品名称降序",
-            "藏品类型升序",
-            "藏品类型降序",
-            "征集时间升序",
-            "征集时间降序"});
-            this.comboBox1.Location = new System.Drawing.Point(126, 88);
+            "油画",
+            "水彩",
+            "素描",
+            "国画",
+            "版画"});
+            this.comboBox1.Location = new System.Drawing.Point(216, 91);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 26);
+            this.comboBox1.Size = new System.Drawing.Size(158, 26);
             this.comboBox1.TabIndex = 5;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 

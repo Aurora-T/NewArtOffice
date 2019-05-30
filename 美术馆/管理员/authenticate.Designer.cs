@@ -86,7 +86,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 18);
             this.label1.TabIndex = 5;
-            this.label1.Text = "请输入藏品编号：";
+            this.label1.Text = "请输入藏品名称：";
             // 
             // textBox1
             // 
@@ -107,17 +107,16 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "藏品名称升序",
-            "藏品名称降序",
-            "创作年代升序",
-            "创作年代降序",
-            "藏品类别升序",
-            "藏品类别降序",
-            "征集时间升序",
-            "征集时间降序"});
-            this.comboBox1.Location = new System.Drawing.Point(656, 19);
+            "--请选择--",
+            "油画",
+            "水彩",
+            "素描",
+            "国画",
+            "版画"});
+            this.comboBox1.Location = new System.Drawing.Point(666, 20);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 26);
             this.comboBox1.TabIndex = 8;
@@ -126,11 +125,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(588, 26);
+            this.label2.Location = new System.Drawing.Point(562, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 18);
+            this.label2.Size = new System.Drawing.Size(98, 18);
             this.label2.TabIndex = 9;
-            this.label2.Text = "排序：";
+            this.label2.Text = "类别筛选：";
             // 
             // groupBox1
             // 

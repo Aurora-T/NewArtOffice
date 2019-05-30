@@ -54,6 +54,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -121,15 +122,16 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(145, 290);
+            this.richTextBox1.Location = new System.Drawing.Point(148, 294);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(650, 98);
+            this.richTextBox1.Size = new System.Drawing.Size(647, 98);
             this.richTextBox1.TabIndex = 16;
             this.richTextBox1.Text = "";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(412, 398);
+            this.button1.AutoSize = true;
+            this.button1.Location = new System.Drawing.Point(411, 408);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 28);
             this.button1.TabIndex = 15;
@@ -159,7 +161,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(54, 292);
+            this.label7.Location = new System.Drawing.Point(54, 289);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 18);
             this.label7.TabIndex = 11;
@@ -314,11 +316,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "*藏品名称：";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // addCollection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 521);
+            this.ClientSize = new System.Drawing.Size(946, 508);
             this.Controls.Add(this.groupBox1);
             this.Name = "addCollection";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -359,5 +365,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

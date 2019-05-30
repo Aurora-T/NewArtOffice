@@ -20,13 +20,14 @@ namespace 美术馆.管理员
             InitializeComponent();
             this.conn = l.conn;
             this.userid = id;
-            String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定'";
+            String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' order by 征集时间";
             SqlCommand sc = new SqlCommand(sql, conn);
             SqlDataAdapter myda = new SqlDataAdapter(sc);
             DataTable dt = new DataTable();
             myda.Fill(dt);
             dataGridView1.DataSource = dt;
             dataGridView1.ClearSelection();
+            label4.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,13 +35,14 @@ namespace 美术馆.管理员
             String text = textBox1.Text;
             if (text.Equals(""))
             {
-                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定'";
+                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' order by 征集时间";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
                 myda.Fill(dt);
                 dataGridView1.DataSource = dt;
                 dataGridView1.ClearSelection();
+                label4.Text = "";
             }
             else
             {
@@ -51,49 +53,59 @@ namespace 美术馆.管理员
                 myda.Fill(dt);
                 dataGridView1.DataSource = dt;
                 dataGridView1.ClearSelection();
+                label4.Text = "";
             }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string text = comboBox1.Text;
-            if (text == "藏品编号升序")
+            if (text == "油画")
             {
-                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' order by 编号";
+                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' and 类别='油画' order by 征集时间";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
                 myda.Fill(dt);
                 dataGridView1.DataSource = dt;
             }
-            else if (text == "藏品编号降序")
+            else if (text == "水彩")
             {
-                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' order by 编号 desc";
+                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' and 类别='水彩' order by 征集时间";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
                 myda.Fill(dt);
                 dataGridView1.DataSource = dt;
             }
-            else if (text == "藏品名称升序")
+            else if (text == "素描")
             {
-                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' order by 藏品名称";
+                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' and 类别='素描' order by 征集时间";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
                 myda.Fill(dt);
                 dataGridView1.DataSource = dt;
             }
-            else if (text == "藏品名称降序")
+            else if (text == "国画")
             {
-                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' order by 藏品名称 desc";
+                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' and 类别='国画' order by 征集时间";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
                 myda.Fill(dt);
                 dataGridView1.DataSource = dt;
             }
-            else if (text == "征集时间升序")
+            else if (text == "版画")
+            {
+                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' and 类别='版画' order by 征集时间";
+                SqlCommand sc = new SqlCommand(sql, conn);
+                SqlDataAdapter myda = new SqlDataAdapter(sc);
+                DataTable dt = new DataTable();
+                myda.Fill(dt);
+                dataGridView1.DataSource = dt;
+            }
+            else 
             {
                 String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' order by 征集时间";
                 SqlCommand sc = new SqlCommand(sql, conn);
@@ -102,33 +114,7 @@ namespace 美术馆.管理员
                 myda.Fill(dt);
                 dataGridView1.DataSource = dt;
             }
-            else if (text == "征集时间降序")
-            {
-                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' order by 征集时间 desc";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            else if (text == "藏品类别升序")
-            {
-                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' order by 类别";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            else if (text == "藏品类别降序")
-            {
-                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' order by 类别 desc";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
+            label4.Text = "";
             dataGridView1.ClearSelection();
         }
 
@@ -146,6 +132,7 @@ namespace 美术馆.管理员
 
         private void enter_Load(object sender, EventArgs e)
         {
+            label4.Text = "";
             dataGridView1.ClearSelection();
         }
 
@@ -165,13 +152,14 @@ namespace 美术馆.管理员
         }
         public void save()
         {
-            String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定'";
+            String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' order by 征集时间";
             SqlCommand sc = new SqlCommand(sql, conn);
             SqlDataAdapter myda = new SqlDataAdapter(sc);
             DataTable dt = new DataTable();
             myda.Fill(dt);
             dataGridView1.DataSource = dt;
             dataGridView1.ClearSelection();
+            label4.Text = "";
         }
     }
 }

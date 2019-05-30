@@ -22,7 +22,7 @@ namespace 美术馆
             InitializeComponent();
             this.conn = l.conn;
             this.userid = id;
-            String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 where 状态='未匹配'";
+            String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 where 状态='未匹配'order by 征集时间";
             SqlCommand sc = new SqlCommand(sql, conn);
             SqlDataAdapter myda = new SqlDataAdapter(sc);
             DataTable dt = new DataTable();
@@ -44,7 +44,7 @@ namespace 美术馆
             String text = textBox1.Text;
             if (text.Equals(""))
             {
-                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 where 状态='未匹配'";
+                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 where 状态='未匹配' order by 征集时间";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -54,7 +54,7 @@ namespace 美术馆
             }
             else
             {
-                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 where 藏品名称 ='" + text + "'";
+                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 where 状态='未匹配' and 藏品名称 ='" + text + "'";
                 SqlDataAdapter myda = new SqlDataAdapter(sql, conn);
                 DataTable dt = new DataTable();
                 myda.Fill(dt);
@@ -89,72 +89,54 @@ namespace 美术馆
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string text = comboBox1.Text;
-            if (text == "藏品名称升序")
+            if (text == "油画")
             {
-                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 order by 藏品名称";
+                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 where 状态='未匹配' and 类别='油画' order by 藏品名称";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
                 myda.Fill(dt);
                 dataGridView1.DataSource = dt;
             }
-            else if (text == "藏品名称降序")
+            else if (text == "水彩")
             {
-                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 order by 藏品名称 desc";
+                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 where 状态='未匹配' and 类别='水彩'order by 藏品名称 desc";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
                 myda.Fill(dt);
                 dataGridView1.DataSource = dt;
             }
-            else if (text == "创作年代升序")
+            else if (text == "素描")
             {
-                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 order by 创作年代";
+                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 where 状态='未匹配' and 类别='素描' order by 创作年代";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
                 myda.Fill(dt);
                 dataGridView1.DataSource = dt;
             }
-            else if (text == "创作年代降序")
+            else if (text == "国画")
             {
-                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 order by 创作年代 desc";
+                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 where 状态='未匹配' and 类别='国画' order by 创作年代 desc";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
                 myda.Fill(dt);
                 dataGridView1.DataSource = dt;
             }
-            else if (text == "征集时间升序")
+            else if (text == "版画")
             {
-                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 order by 征集时间";
+                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 where 状态='未匹配' and 类别='版画' order by 征集时间";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
                 myda.Fill(dt);
                 dataGridView1.DataSource = dt;
             }
-            else if (text == "征集时间降序")
+            else 
             {
-                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 order by 征集时间 desc";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            else if (text == "藏品类别升序")
-            {
-                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 order by 类别";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            else if (text == "藏品类别降序")
-            {
-                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 order by 类别 desc";
+                String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 where 状态='未匹配' and 状态='未匹配' order by 征集时间";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
