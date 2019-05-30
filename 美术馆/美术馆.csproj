@@ -88,6 +88,18 @@
     <Compile Include="专家\jiandingHistory.Designer.cs">
       <DependentUpon>jiandingHistory.cs</DependentUpon>
     </Compile>
+    <Compile Include="专家\xiufu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专家\xiufu.Designer.cs">
+      <DependentUpon>xiufu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专家\xiufu_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专家\xiufu_details.Designer.cs">
+      <DependentUpon>xiufu_details.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\addCollection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +210,24 @@
     <Compile Include="管理员\modifyEmployee.Designer.cs">
       <DependentUpon>modifyEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="管理员\piaowu_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\piaowu_main.Designer.cs">
+      <DependentUpon>piaowu_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\piao_amount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\piao_amount.Designer.cs">
+      <DependentUpon>piao_amount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\qupiao_record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\qupiao_record.Designer.cs">
+      <DependentUpon>qupiao_record.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\search.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +245,12 @@
     </Compile>
     <Compile Include="管理员\cangpinxiufu.Designer.cs">
       <DependentUpon>cangpinxiufu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\yuyue_record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\yuyue_record.Designer.cs">
+      <DependentUpon>yuyue_record.cs</DependentUpon>
     </Compile>
     <Compile Include="美术馆DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -241,6 +277,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="专家\jiandingHistory.resx">
       <DependentUpon>jiandingHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专家\xiufu.resx">
+      <DependentUpon>xiufu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专家\xiufu_details.resx">
+      <DependentUpon>xiufu_details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\addCollection.resx">
       <DependentUpon>addCollection.cs</DependentUpon>
@@ -305,6 +347,15 @@
     <EmbeddedResource Include="管理员\modifyEmployee.resx">
       <DependentUpon>modifyEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="管理员\piaowu_main.resx">
+      <DependentUpon>piaowu_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\piao_amount.resx">
+      <DependentUpon>piao_amount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\qupiao_record.resx">
+      <DependentUpon>qupiao_record.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="管理员\search.resx">
       <DependentUpon>search.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,6 +364,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\cangpinxiufu.resx">
       <DependentUpon>cangpinxiufu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\yuyue_record.resx">
+      <DependentUpon>yuyue_record.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

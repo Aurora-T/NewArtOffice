@@ -66,12 +66,12 @@ namespace 美术馆
                             this.Hide();
                             main.Show();
                         }
-                        //else if (position.Replace(" ", "").Equals("财务管理员"))
-                        //{
-                        //    expert_main main = new expert_main(this, id);
-                        //    this.Hide();
-                        //    main.Show();
-                        //}
+                        else if (position.Replace(" ", "").Equals("票务管理员"))
+                        {
+                            piaowu_main main = new piaowu_main(this,id);
+                            this.Hide();
+                            main.Show();
+                        }
                         //else if (position.Replace(" ", "").Equals("通知管理员"))
                         //{
                         //    expert_main main = new expert_main(this, id);

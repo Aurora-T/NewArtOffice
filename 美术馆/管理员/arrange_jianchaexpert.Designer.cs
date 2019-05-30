@@ -31,9 +31,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.专家编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.专家姓名 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.擅长领域 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,10 +49,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.专家编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.专家姓名 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.擅长领域 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -85,6 +85,23 @@
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.Size = new System.Drawing.Size(281, 256);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // 专家编号
+            // 
+            this.专家编号.HeaderText = "专家编号";
+            this.专家编号.Name = "专家编号";
+            // 
+            // 专家姓名
+            // 
+            this.专家姓名.HeaderText = "专家姓名";
+            this.专家姓名.Name = "专家姓名";
+            this.专家姓名.Width = 80;
+            // 
+            // 擅长领域
+            // 
+            this.擅长领域.HeaderText = "擅长领域";
+            this.擅长领域.Name = "擅长领域";
+            this.擅长领域.Width = 80;
             // 
             // label1
             // 
@@ -127,6 +144,14 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "选定藏品信息：";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(31, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 87);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
             // label6
             // 
@@ -238,31 +263,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(31, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 87);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
-            // 专家编号
-            // 
-            this.专家编号.HeaderText = "专家编号";
-            this.专家编号.Name = "专家编号";
-            // 
-            // 专家姓名
-            // 
-            this.专家姓名.HeaderText = "专家姓名";
-            this.专家姓名.Name = "专家姓名";
-            this.专家姓名.Width = 80;
-            // 
-            // 擅长领域
-            // 
-            this.擅长领域.HeaderText = "擅长领域";
-            this.擅长领域.Name = "擅长领域";
-            this.擅长领域.Width = 80;
-            // 
             // arrange_jianchaexpert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -272,6 +272,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Name = "arrange_jianchaexpert";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "arrange_expert";
             this.Load += new System.EventHandler(this.arrange_expert_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

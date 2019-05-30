@@ -181,6 +181,7 @@
             this.ClientSize = new System.Drawing.Size(265, 295);
             this.Controls.Add(this.groupBox3);
             this.Name = "cangpin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "cangpin";
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();

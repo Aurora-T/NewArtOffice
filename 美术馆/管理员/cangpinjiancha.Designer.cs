@@ -31,12 +31,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.藏品编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.下次检查时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,6 +70,21 @@
             this.dataGridView1.Size = new System.Drawing.Size(318, 150);
             this.dataGridView1.TabIndex = 4;
             // 
+            // 编号
+            // 
+            this.编号.HeaderText = "检查记录编号";
+            this.编号.Name = "编号";
+            // 
+            // 藏品编号
+            // 
+            this.藏品编号.HeaderText = "藏品编号";
+            this.藏品编号.Name = "藏品编号";
+            // 
+            // 下次检查时间
+            // 
+            this.下次检查时间.HeaderText = "应该检查时间";
+            this.下次检查时间.Name = "下次检查时间";
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(171, 242);
@@ -99,21 +114,6 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // 编号
-            // 
-            this.编号.HeaderText = "检查记录编号";
-            this.编号.Name = "编号";
-            // 
-            // 藏品编号
-            // 
-            this.藏品编号.HeaderText = "藏品编号";
-            this.藏品编号.Name = "藏品编号";
-            // 
-            // 下次检查时间
-            // 
-            this.下次检查时间.HeaderText = "应该检查时间";
-            this.下次检查时间.Name = "下次检查时间";
-            // 
             // cangpinjiancha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -126,6 +126,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button1);
             this.Name = "cangpinjiancha";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "cangpinjiancha";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.administrator_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

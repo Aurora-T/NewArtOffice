@@ -110,7 +110,7 @@ namespace 美术馆.管理员
             this.dataGridView1.Rows.Clear();
 
             //从数据库查询曾被检查过，已到检查时间但未安排的藏品
-            string sql = "SELECT 藏品编号,应该检查时间 FROM 检查表 where 专家工号 is  NULL and (Datename(year,应该检查时间)+'-'+Datename(month,应该检查时间) + '-' + Datename(day, 应该检查时间)) = '" + time + "' or (Datename(year,应该检查时间)+'-'+Datename(month,应该检查时间) + '-' + Datename(day, 应该检查时间)) < '" + time + "'";
+            string sql = "SELECT 藏品编号,应该检查时间 FROM 检查表 where 专家编号 is  NULL and (Datename(year,应该检查时间)+'-'+Datename(month,应该检查时间) + '-' + Datename(day, 应该检查时间)) = '" + time + "' or (Datename(year,应该检查时间)+'-'+Datename(month,应该检查时间) + '-' + Datename(day, 应该检查时间)) < '" + time + "'";
             SqlCommand Cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = Cmd.ExecuteReader();
             while (sdr.Read())

@@ -22,6 +22,7 @@ namespace 美术馆.管理员
             this.l = l;
             this.conn = l.conn;
             this.id = id;
+            label2.Text = id.ToString();
         }
         //分配鉴定
         private void button1_Click(object sender, EventArgs e)

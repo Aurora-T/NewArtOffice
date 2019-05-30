@@ -22,6 +22,7 @@ namespace 美术馆.专家
             this.id = id;
             this.conn = l.conn;
             InitializeComponent();
+            label2.Text = id.ToString();
         }
 
         //点击退出后断开数据库连接，直接退出系统
@@ -68,7 +69,9 @@ namespace 美术馆.专家
         //修复藏品
         private void button3_Click(object sender, EventArgs e)
         {
-
+            xiufu j = new xiufu(this);
+            this.Hide();
+            j.Show();
         }
     }
 }

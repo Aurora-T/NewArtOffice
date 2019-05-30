@@ -63,14 +63,13 @@ namespace 美术馆.管理员
         private void button1_Click(object sender, EventArgs e)
         {
             int eno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            string sql = "update 修复表(专家编号) Values (@eno) where 编号='" + xno + "'";
+            string sql = "update 修复表 set 专家编号='"+eno+"' where 编号='" + xno + "'";
             SqlCommand cmd = new SqlCommand(sql, conn);
-            SqlParameter sp = cmd.Parameters.Add("@cno", SqlDbType.Int);
-            sp.Value = this.cno;
-            sp = cmd.Parameters.Add("@eno", SqlDbType.Int);
-            sp.Value = eno;
+            string sql1 = "update 修复表 set 专家编号='" + eno + "' where 编号='" + xno + "'";
+            SqlCommand cmd1 = new SqlCommand(sql1, conn);
             int n = cmd.ExecuteNonQuery();
-            if (n > 0)
+            int m = cmd1.ExecuteNonQuery();
+            if (n > 0&&m>0)
             {
                 MessageBox.Show("分配成功！");
                 this.Close();

@@ -132,6 +132,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "jiancha";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "检查藏品";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.jiancha_FormClosed);
             this.Load += new System.EventHandler(this.jiancha_Load);
