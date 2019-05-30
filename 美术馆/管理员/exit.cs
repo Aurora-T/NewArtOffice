@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,6 +30,7 @@ namespace 美术馆.管理员
             myda.Fill(dt);
             dataGridView1.DataSource = dt;
             dataGridView1.ClearSelection();
+            load_gallery();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -145,6 +147,22 @@ namespace 美术馆.管理员
             addGallery ag = new addGallery(this);
             ag.Show();
             this.Close();
+        }
+        private void load_gallery()
+        {
+            ArrayList list = new ArrayList();
+            string str = "select distinct 名称 from 美术馆表 ";
+            SqlDataAdapter da = new SqlDataAdapter(str, conn);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            DataTable dt = ds.Tables[0];
+            foreach (DataRow dr in dt.Rows)
+            {
+                //dr[0]表示取结果的第一列，dr[1]就是第二列
+                list.Add(dr[0].ToString().Trim());
+            }
+            comboBox2.DataSource = list;
+            //comboBox2.SelectedIndex = 0;
         }
     }
 }

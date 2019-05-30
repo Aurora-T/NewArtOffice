@@ -1,4 +1,7 @@
-﻿namespace 美术馆.管理员
+﻿using System;
+using System.Windows.Forms;
+
+namespace 美术馆.管理员
 {
     partial class index
     {
@@ -165,7 +168,6 @@
             this.button6.TabIndex = 10;
             this.button6.Text = "退出";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // index
             // 
@@ -195,6 +197,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void index_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

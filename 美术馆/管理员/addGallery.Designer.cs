@@ -167,6 +167,7 @@
             this.ClientSize = new System.Drawing.Size(476, 348);
             this.Controls.Add(this.groupBox1);
             this.Name = "addGallery";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "addGallery";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
