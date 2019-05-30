@@ -46,6 +46,7 @@ namespace 美术馆.管理员
             jiancha.Show();
         }
 
+        //入馆
         private void button4_Click(object sender, EventArgs e)
         {
             enter ruguan = new enter(this, this.id);
@@ -53,11 +54,42 @@ namespace 美术馆.管理员
             ruguan.Show();
         }
 
+        //出馆
         private void button5_Click(object sender, EventArgs e)
         {
             exit chuguan = new exit(this, this.id);
             this.Hide();
             chuguan.Show();
+        }
+
+        //点击按钮退出系统，关闭数据库连接
+        private void button7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Close();
+                l.Close();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("发生错误：" + ex.Message);
+            }
+        }
+
+        //点击叉号后关闭界面，退回到登录界面
+        void administrator_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            try
+            {
+                this.l.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("发生错误：" + ex.Message);
+            }
+
         }
     }
 }
