@@ -72,12 +72,12 @@ namespace 美术馆
                             this.Hide();
                             main.Show();
                         }
-                        //else if (position.Replace(" ", "").Equals("通知管理员"))
-                        //{
-                        //    expert_main main = new expert_main(this, id);
-                        //    this.Hide();
-                        //    main.Show();
-                        //}
+                        else if (position.Replace(" ", "").Equals("人事管理员"))
+                        {
+                            Personnel_main main = new Personnel_main(this, id);
+                            this.Hide();
+                            main.Show();
+                        }
                     }
                     else
                     {

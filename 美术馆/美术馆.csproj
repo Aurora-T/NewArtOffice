@@ -210,6 +210,12 @@
     <Compile Include="管理员\modifyEmployee.Designer.cs">
       <DependentUpon>modifyEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="管理员\Personnel_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\Personnel_main.Designer.cs">
+      <DependentUpon>Personnel_main.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\piaowu_main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -346,6 +352,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\modifyEmployee.resx">
       <DependentUpon>modifyEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\Personnel_main.resx">
+      <DependentUpon>Personnel_main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\piaowu_main.resx">
       <DependentUpon>piaowu_main.cs</DependentUpon>

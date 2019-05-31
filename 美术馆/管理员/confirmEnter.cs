@@ -38,6 +38,8 @@ namespace 美术馆.管理员
                 cmd.ExecuteNonQuery();
                 SqlCommand cmd1 = new SqlCommand("update 征集表 set 状态='入馆' where 编号='" + this.cid + "'", conn);
                 cmd1.ExecuteNonQuery();
+                //SqlCommand cmd2 = new SqlCommand("insert into 藏品表(藏品编号,操作员工号,来源详情,价值) values('" + this.cid + "','" + this.userid + "','" + textBox2.Text + "','" + textBox1.Text + "')", conn);
+                //cmd2.ExecuteNonQuery();
                 MessageBox.Show("提交成功", "提示");
                 this.Close();
                 this.page.save();
