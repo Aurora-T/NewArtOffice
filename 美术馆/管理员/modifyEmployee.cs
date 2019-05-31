@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,14 +13,17 @@ namespace 美术馆.管理员
 {
     public partial class modifyEmployee : Form
     {
-        public modifyEmployee()
+        SqlConnection conn = null;
+        employee page;
+        int userid;
+        int stid;
+        public modifyEmployee(employee l,int stid,int userid)
         {
             InitializeComponent();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
+            this.conn = l.conn;
+            this.page = l;
+            this.userid = userid;
+            this.stid = stid;
         }
     }
 }
