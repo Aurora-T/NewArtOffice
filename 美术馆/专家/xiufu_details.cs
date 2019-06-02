@@ -38,13 +38,13 @@ namespace 美术馆.专家
         {
             if (richTextBox1.Text != "")
             {
-                //输入修复详情和修复时间
+                //输入修复详情和修复结束时间
                 string s = richTextBox1.Text.ToString().Replace(" ", "");
                 string d = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 string sql1 = "update 修复表 set 修复情况='" + s + "'  where 编号='" + xno + "'";
                 SqlCommand cmd1 = new SqlCommand(sql1, conn);
                 cmd1.ExecuteNonQuery();
-                string sql2 = "update 修复表 set 时间='" + d + "'  where 编号='" + xno + "'";
+                string sql2 = "update 修复表 set 结束时间='" + d + "'  where 编号='" + xno + "'";
                 SqlCommand cmd2 = new SqlCommand(sql2, conn);
                 cmd2.ExecuteNonQuery();
                 MessageBox.Show("修复成功");

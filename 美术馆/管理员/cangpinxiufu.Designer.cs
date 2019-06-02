@@ -32,10 +32,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.藏品编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.开始时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.藏品编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,22 +72,13 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.编号,
+            this.开始时间,
             this.藏品编号});
             this.dataGridView1.Location = new System.Drawing.Point(76, 70);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(295, 187);
             this.dataGridView1.TabIndex = 5;
-            // 
-            // 编号
-            // 
-            this.编号.HeaderText = "编号";
-            this.编号.Name = "编号";
-            // 
-            // 藏品编号
-            // 
-            this.藏品编号.HeaderText = "藏品编号";
-            this.藏品编号.Name = "藏品编号";
             // 
             // button2
             // 
@@ -107,6 +99,21 @@
             this.button3.Text = "刷新";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // 编号
+            // 
+            this.编号.HeaderText = "编号";
+            this.编号.Name = "编号";
+            // 
+            // 开始时间
+            // 
+            this.开始时间.HeaderText = "开始时间";
+            this.开始时间.Name = "开始时间";
+            // 
+            // 藏品编号
+            // 
+            this.藏品编号.HeaderText = "藏品编号";
+            this.藏品编号.Name = "藏品编号";
             // 
             // cangpinxiufu
             // 
@@ -135,9 +142,10 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 编号;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 藏品编号;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 编号;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 开始时间;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 藏品编号;
     }
 }

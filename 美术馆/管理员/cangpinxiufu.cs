@@ -25,7 +25,7 @@ namespace 美术馆.管理员
         //查询要安排修复的藏品
         private void button1_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT 编号,藏品编号 FROM 修复表 where 专家编号 is NULL";
+            string sql = "SELECT 编号,开始时间,藏品编号 FROM 修复表 where 专家编号 is NULL";
             SqlCommand Cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = Cmd.ExecuteReader();
             while (sdr.Read())
@@ -33,6 +33,7 @@ namespace 美术馆.管理员
                 int index = this.dataGridView1.Rows.Add();
                 this.dataGridView1.Rows[index].Cells[0].Value = sdr[0].ToString();
                 this.dataGridView1.Rows[index].Cells[1].Value = sdr[1].ToString();
+                this.dataGridView1.Rows[index].Cells[2].Value = sdr[2].ToString();
             }
             sdr.Close();
         }
@@ -69,7 +70,7 @@ namespace 美术馆.管理员
         //刷新界面
         private void button3_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT 编号,藏品编号 FROM 修复表 where 专家编号 is NULL";
+            string sql = "SELECT 编号,开始时间,藏品编号 FROM 修复表 where 专家编号 is NULL";
             SqlCommand Cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = Cmd.ExecuteReader();
             while (sdr.Read())
@@ -77,6 +78,7 @@ namespace 美术馆.管理员
                 int index = this.dataGridView1.Rows.Add();
                 this.dataGridView1.Rows[index].Cells[0].Value = sdr[0].ToString();
                 this.dataGridView1.Rows[index].Cells[1].Value = sdr[1].ToString();
+                this.dataGridView1.Rows[index].Cells[2].Value = sdr[2].ToString();
             }
             sdr.Close();
         }

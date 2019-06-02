@@ -63,14 +63,14 @@ namespace 美术馆.管理员
         //将选中的专家进行匹配
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            //曾被检查过,检查表里已有藏品编号和应该检查时间，更新数据
+            string d1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            //曾被检查过,检查表里已有藏品编号和应该检查时间，设置专家编号和开始时间
             if (jno!=-1)
             {
                 int eno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
                 string sql = "update 检查表 set 专家编号='" + eno + "' where 检查记录编号='" + jno + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
-                string sql1 = "update 检查表 set 专家编号='" + eno + "' where 检查记录编号='" + jno + "'";
+                string sql1 = "update 检查表 set 开始时间='" + d1 + "' where 检查记录编号='" + jno + "'";
                 SqlCommand cmd1 = new SqlCommand(sql1, conn);
                 int n = cmd.ExecuteNonQuery();
                 int m = cmd1.ExecuteNonQuery();
@@ -88,12 +88,14 @@ namespace 美术馆.管理员
             else
             {
                 int eno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                string sql = "Insert Into 检查表(藏品编号,专家编号) Values (@cno,@eno)";
+                string sql = "Insert Into 检查表(藏品编号,专家编号,开始时间) Values (@cno,@eno,@time)";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 SqlParameter sp = cmd.Parameters.Add("@cno", SqlDbType.Int);
                 sp.Value = this.cno;
                 sp = cmd.Parameters.Add("@eno", SqlDbType.Int);
                 sp.Value = eno;
+                sp = cmd.Parameters.Add("@time", SqlDbType.Char);
+                sp.Value = d1;
                 int n = cmd.ExecuteNonQuery();
                 if (n > 0)
                 {
