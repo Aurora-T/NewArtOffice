@@ -83,6 +83,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(100, 113);
             this.textBox3.Name = "textBox3";
+            this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(173, 28);
             this.textBox3.TabIndex = 7;
             // 
@@ -90,6 +91,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(100, 72);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(173, 28);
             this.textBox2.TabIndex = 6;
             // 
@@ -97,6 +99,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(100, 31);
             this.textBox1.Name = "textBox1";
+            this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(173, 28);
             this.textBox1.TabIndex = 5;
             // 
@@ -134,6 +137,7 @@
             this.ClientSize = new System.Drawing.Size(385, 292);
             this.Controls.Add(this.groupBox1);
             this.Name = "changePassword";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "修改密码";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
