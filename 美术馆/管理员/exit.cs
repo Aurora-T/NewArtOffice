@@ -176,7 +176,14 @@ namespace 美术馆.管理员
         private void button1_Click(object sender, EventArgs e)
         {
             int cid = Int32.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim());
-            lend le = new lend(this, cid,this.userid);
+            string sql1 = "SELECT 美术馆编号 from 美术馆表 where 名称='" + comboBox1.Text + "'";
+            SqlCommand cmd = new SqlCommand(sql1, conn);
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            sdr.Read();
+            int gid = Int32.Parse(sdr[0].ToString());
+            lend le = new lend(this, cid,this.userid,gid);
             le.Show();
             this.Close();
         }
@@ -184,34 +191,17 @@ namespace 美术馆.管理员
         private void button2_Click(object sender, EventArgs e)
         {
             int cid = Int32.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim());
-            give gi = new give(this, cid, this.userid);
+            string sql1 = "SELECT 美术馆编号 from 美术馆表 where 名称='" + comboBox1.Text + "'";
+            SqlCommand cmd = new SqlCommand(sql1, conn);
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            sdr.Read();
+            int gid = Int32.Parse(sdr[0].ToString());
+            sdr.Close();
+            give gi = new give(this, cid, this.userid,gid);
             gi.Show();
             this.Close();
         }
-        //    private void ExamCollectStatus(int id)
-        //    {
-        //        string sql = "SELECT 藏品编号 from 外借表 where 藏品编号='" + id + "'";
-        //        SqlCommand cmd = new SqlCommand(sql, conn);
-        //        cmd.CommandType = CommandType.Text;
-        //        SqlDataReader sdr;
-        //        sdr = cmd.ExecuteReader();
-        //        if(sdr.Read())         //从结果中找到
-        //        {
-        //            if (sdr[0].ToString().Trim() == dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim())
-        //            {
-        //                MessageBox.Show("该藏品外借中", "提示");
-        //                return;
-
-        //            }
-        //        }
-        //        else
-        //        {
-        //            //string sql = "SELECT 藏品编号 from 外借表 where 藏品编号='" + id + "'";
-        //            //SqlCommand cmd = new SqlCommand(sql, conn);
-        //            //cmd.CommandType = CommandType.Text;
-        //            //SqlDataReader sdr;
-        //            //sdr = cmd.ExecuteReader();
-        //        }
-        //    }
     }
 }

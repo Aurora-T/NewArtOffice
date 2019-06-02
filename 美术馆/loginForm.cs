@@ -31,7 +31,7 @@ namespace 美术馆
             else
             {
                 int flag=0;
-                string ConStr = "Data Source=101.132.124.13;Initial Catalog=美术馆;User ID=sa;Password=123";
+                string ConStr = "Data Source=223.104.190.215;Initial Catalog=美术馆;User ID=sa;Password=";
                 conn = new SqlConnection(ConStr);
                 conn.Open();
                 string sql = "SELECT 职位,工号,密码 from 员工信息表 where 工号='" + userid  + "'";
