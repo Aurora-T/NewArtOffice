@@ -40,7 +40,7 @@ namespace 美术馆.管理员
                 int index = this.dataGridView1.Rows.Add();
                 this.dataGridView1.Rows[index].Cells[0].Value = sdr[0].ToString();
                 this.dataGridView1.Rows[index].Cells[1].Value = sdr[1].ToString();
-                this.dataGridView1.Rows[index].Cells[1].Value = sdr[1].ToString();
+                this.dataGridView1.Rows[index].Cells[2].Value = sdr[2].ToString();
             }
             sdr.Close();
             //查询从未检查过并且在馆内的藏品
@@ -102,7 +102,7 @@ namespace 美术馆.管理员
                 int index = this.dataGridView1.Rows.Add();
                 this.dataGridView1.Rows[index].Cells[0].Value = sdr[0].ToString();
                 this.dataGridView1.Rows[index].Cells[1].Value = sdr[1].ToString();
-                this.dataGridView1.Rows[index].Cells[1].Value = sdr[1].ToString();
+                this.dataGridView1.Rows[index].Cells[2].Value = sdr[2].ToString();
             }
             sdr.Close();
             //查询从未检查过并且在馆内的藏品
