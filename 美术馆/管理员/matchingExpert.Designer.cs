@@ -47,6 +47,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -90,7 +91,7 @@
             this.专家姓名,
             this.擅长领域,
             this.待鉴定藏品数});
-            this.dataGridView2.Location = new System.Drawing.Point(596, 203);
+            this.dataGridView2.Location = new System.Drawing.Point(598, 203);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersWidth = 49;
@@ -125,7 +126,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(506, 268);
+            this.button1.Location = new System.Drawing.Point(506, 227);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 35);
             this.button1.TabIndex = 2;
@@ -135,7 +136,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(506, 389);
+            this.button2.Location = new System.Drawing.Point(506, 316);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 35);
             this.button2.TabIndex = 3;
@@ -151,7 +152,7 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(596, 23);
+            this.groupBox1.Location = new System.Drawing.Point(598, 23);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(332, 147);
             this.groupBox1.TabIndex = 4;
@@ -214,7 +215,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(961, 43);
+            this.button3.Location = new System.Drawing.Point(973, 52);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 35);
             this.button3.TabIndex = 5;
@@ -224,7 +225,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(961, 127);
+            this.button4.Location = new System.Drawing.Point(506, 408);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 35);
             this.button4.TabIndex = 6;
@@ -232,11 +233,23 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // button5
+            // 
+            this.button5.AutoSize = true;
+            this.button5.Location = new System.Drawing.Point(973, 109);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 35);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "返回";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // matchingExpert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1136, 489);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox1);
@@ -252,6 +265,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -274,5 +288,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn 专家姓名;
         private System.Windows.Forms.DataGridViewTextBoxColumn 擅长领域;
         private System.Windows.Forms.DataGridViewTextBoxColumn 待鉴定藏品数;
+        private System.Windows.Forms.Button button5;
     }
 }

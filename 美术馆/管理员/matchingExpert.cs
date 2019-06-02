@@ -33,7 +33,7 @@ namespace 美术馆.管理员
             label2.Text = sdr[1].ToString();
             label6.Text = sdr[0].ToString();
             label4.Text = sdr[2].ToString();
-            String sqll = "select 专家表.工号,专家表.姓名,专家表.擅长领域,count(*) 待鉴定藏品数 from 专家表 left join 鉴定表 on 专家表.专家编号=鉴定表.专家工号  where CHARINDEX('" + sdr[0].ToString() + "',专家表.擅长领域)>=0 and 鉴定表.鉴定结果 is NULL  group by 专家表.工号 ,专家表.姓名,专家表.擅长领域";
+            String sqll = "select 专家表.工号,专家表.姓名,专家表.擅长领域,count(鉴定表.藏品编号) 待鉴定藏品数 from 专家表 left join 鉴定表 on 专家表.专家编号=鉴定表.专家工号  where 专家表.擅长领域 ='"+sdr[0].ToString()+"' and 鉴定表.鉴定结果 is NULL  group by 专家表.工号 ,专家表.姓名,专家表.擅长领域";
             SqlCommand sc = new SqlCommand(sqll, conn);
             SqlDataAdapter myda = new SqlDataAdapter(sc);
             DataTable dt = new DataTable();
@@ -42,6 +42,7 @@ namespace 美术馆.管理员
             dataGridView1.DataSource = dt;
             //得到选中行某列的值
             dataGridView1.ClearSelection();
+            dataGridView2.Rows.Clear();
         }
 
         private void button1_Click(object sender, EventArgs e)//添加
@@ -76,22 +77,20 @@ namespace 美术馆.管理员
 
         private void button4_Click(object sender, EventArgs e)
         {
-            int row = dataGridView2.RowCount;
-            for(int i = 0; i < row-1; i++)
-            {
-                int intRow = dataGridView1.SelectedCells[0].RowIndex;
-                int index = dataGridView2.Rows.Add();
-                dataGridView2.Rows[index].Cells[0].Value = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                dataGridView2.Rows[index].Cells[1].Value = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                dataGridView2.Rows[index].Cells[2].Value = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                dataGridView2.Rows[index].Cells[3].Value = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[0].Index);
-                dataGridView2.ClearSelection();
-                dataGridView1.ClearSelection();
-                //string[] strArray = { dataGridView2.Rows[i].Cells[0].Value.ToString(), dataGridView2.Rows[i].Cells[1].Value.ToString(), dataGridView2.Rows[i].Cells[2].Value.ToString(), dataGridView2.Rows[i].Cells[3].Value.ToString() };
-                //((DataTable)dataGridView1.DataSource).Rows.Add(strArray);
-                //dataGridView2.Rows.RemoveAt(dataGridView2.Rows[i].Index);
-            }
+            String sql = "select 类别,藏品名称,理想价格 from 征集表 where 编号='" + this.collectid + "'";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            sdr.Read();
+            String sqll = "select 专家表.工号,专家表.姓名,专家表.擅长领域,count(鉴定表.藏品编号) 待鉴定藏品数 from 专家表 left join 鉴定表 on 专家表.专家编号=鉴定表.专家工号  where 专家表.擅长领域 ='" + sdr[0].ToString() + "' and 鉴定表.鉴定结果 is NULL  group by 专家表.工号 ,专家表.姓名,专家表.擅长领域 ";
+            SqlCommand sc = new SqlCommand(sqll, conn);
+            SqlDataAdapter myda = new SqlDataAdapter(sc);
+            DataTable dt = new DataTable();
+            sdr.Close();
+            myda.Fill(dt);
+            dataGridView1.DataSource = dt;
+            dataGridView2.Rows.Clear();
             dataGridView1.ClearSelection();
             dataGridView2.ClearSelection();
         }
@@ -105,9 +104,10 @@ namespace 美术馆.管理员
             }
             else
             {
-                for (int i = 0; i < row - 1; i++)
+                for (int i = 0; i < row-1; i++)
                 {
-                    String sql = "select 专家编号 from 专家表 where 工号='" + dataGridView2.Rows[i].Cells[0].Value.ToString() + "'";
+                    String sql = "";
+                    sql = "select 专家编号 from 专家表 where 工号='" + dataGridView2.Rows[i].Cells[0].Value.ToString() + "'";
                     SqlCommand cm = new SqlCommand(sql, conn);
                     cm.CommandType = CommandType.Text;
                     SqlDataReader sdr;
@@ -116,7 +116,6 @@ namespace 美术馆.管理员
                     SqlCommand cmd = new SqlCommand("insert into 鉴定表(专家工号,藏品编号,管理员工号) values('" + sdr[0].ToString() + "','" + this.collectid + "','" + this.id  + "')", conn);
                     sdr.Close();
                     cmd.ExecuteNonQuery();
-                    dataGridView2.Rows.RemoveAt(dataGridView2.Rows[i].Index);
                 }
                 SqlCommand cmdd = new SqlCommand("update 征集表 set 状态='已匹配' where 编号= '" + this.collectid+"'", conn);
                 cmdd.ExecuteNonQuery();
@@ -125,6 +124,12 @@ namespace 美术馆.管理员
                 this.page.Show();
                 this.page.save();
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.page.Show();
         }
     }
 }
