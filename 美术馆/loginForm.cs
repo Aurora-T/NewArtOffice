@@ -32,7 +32,7 @@ namespace 美术馆
             else
             {
                 int flag=0;
-                string ConStr = "Data Source=223.104.190.215;Initial Catalog=美术馆;User ID=sa;Password=";
+                string ConStr = "Data Source=101.132.124.13;Initial Catalog=美术馆;User ID=sa;Password=mjsmsg_123";
                 conn = new SqlConnection(ConStr);
                 conn.Open();
                 string sql = "SELECT 职位,工号,密码 from 员工信息表 where 工号='" + userid  + "'";
@@ -52,7 +52,15 @@ namespace 美术馆
                 {                
                     if (sdr[2].ToString().Replace(" ","") == textBox2.Text.Replace(" ",""))
                     {
-                        MessageBox.Show("成功登录");
+                        if (textBox2.Text == "111111")
+                        {
+                            MessageBox.Show("登录成功，请记得尽快修改初始密码与添加密保问题","提示");
+                        }
+                        else
+                        {
+                            MessageBox.Show("登录成功","提示");
+                        }
+                        
                         string position = sdr[0].ToString();
                         int id = Int32.Parse(textBox1.Text);
                         if (position.Replace(" ","").Equals("藏品管理员"))
@@ -73,6 +81,12 @@ namespace 美术馆
                             this.Hide();
                             main.Show();
                         }
+                        else if (position.Replace(" ", "").Equals("人事管理员"))
+                        {
+                            Personnel_main main = new Personnel_main(this, id);
+                            this.Hide();
+                            main.Show();
+                        }
                         //else if (position.Replace(" ", "").Equals("通知管理员"))
                         //{
                         //    expert_main main = new expert_main(this, id);
@@ -83,17 +97,21 @@ namespace 美术馆
                     else
                     {
                         MessageBox.Show("密码错误", "提示");
-                        textBox2.Text = "";
                     }
                 }
                 else
                 {
                     MessageBox.Show("用户名不存在", "提示");
-                    textBox1.Text = "";
-                    textBox2.Text = "";
                 }
                 sdr.Close();
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            forgetPassword fp = new forgetPassword(this);
+            fp.Show();
+            this.Hide();
         }
 
         /*//关闭界面后退出系统，关闭数据库连接

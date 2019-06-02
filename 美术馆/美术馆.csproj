@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="管理员\changeInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\changeInformation.Designer.cs">
+      <DependentUpon>changeInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\changePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\changePassword.Designer.cs">
+      <DependentUpon>changePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgetPassword.Designer.cs">
+      <DependentUpon>forgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifyPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifyPassword.Designer.cs">
+      <DependentUpon>modifyPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="专家\cangpin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +171,18 @@
     </Compile>
     <Compile Include="管理员\cangpinjiancha.Designer.cs">
       <DependentUpon>cangpinjiancha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\changeQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\changeQuestion.Designer.cs">
+      <DependentUpon>changeQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\changeQuestionSecond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\changeQuestionSecond.Designer.cs">
+      <DependentUpon>changeQuestionSecond.cs</DependentUpon>
     </Compile>
     <Compile Include="管理员\confirmEnter.cs">
       <SubType>Form</SubType>
@@ -263,6 +299,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>美术馆DataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="管理员\changeInformation.resx">
+      <DependentUpon>changeInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\changePassword.resx">
+      <DependentUpon>changePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgetPassword.resx">
+      <DependentUpon>forgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifyPassword.resx">
+      <DependentUpon>modifyPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="专家\cangpin.resx">
       <DependentUpon>cangpin.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,6 +361,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\cangpinjiancha.resx">
       <DependentUpon>cangpinjiancha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\changeQuestion.resx">
+      <DependentUpon>changeQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\changeQuestionSecond.resx">
+      <DependentUpon>changeQuestionSecond.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\confirmEnter.resx">
       <DependentUpon>confirmEnter.cs</DependentUpon>
