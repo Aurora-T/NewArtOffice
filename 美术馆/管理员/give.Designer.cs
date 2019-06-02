@@ -63,6 +63,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "提交";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dateTimePicker1
             // 
@@ -95,7 +96,6 @@
             this.label5.Size = new System.Drawing.Size(98, 18);
             this.label5.TabIndex = 7;
             this.label5.Text = "联系电话：";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 

@@ -25,8 +25,7 @@ namespace 美术馆.管理员
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            double age;
+        { 
             if (textBox1.Text.Equals(""))
             {
                 MessageBox.Show("员工姓名未填写", "提示");
