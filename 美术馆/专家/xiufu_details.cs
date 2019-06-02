@@ -15,7 +15,7 @@ namespace 美术馆.专家
     {
         xiufu x = null;
         SqlConnection conn = null;
-        int xno, id,cno;
+        int xno, id;
         public xiufu_details(xiufu x,int xno)
         {
             InitializeComponent();
