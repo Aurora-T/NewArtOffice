@@ -149,15 +149,10 @@ namespace 美术馆.管理员
         {
             if (dataGridView1.SelectedCells.Count != 0)
             {
-                DialogResult result=MessageBox.Show("确认删除吗", "提示",MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
-                if (result == DialogResult.Yes)
-                {
                     SqlCommand cmd = new SqlCommand("delete from 员工信息表  where 工号='" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "'", conn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("删除成功", "提示");
-                    save();
-                }
-
+                    this.save();
             }
             else
             {
