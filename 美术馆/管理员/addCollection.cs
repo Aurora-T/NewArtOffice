@@ -16,7 +16,6 @@ namespace 美术馆.管理员
     {
         SqlConnection conn = null;
         cangpinjianding page;
-        //byte[] imgBytesIn;
         Image image = null;
         public addCollection(cangpinjianding l)
         {
@@ -89,21 +88,26 @@ namespace 美术馆.管理员
                 SqlParameter param = new SqlParameter("@picture", SqlDbType.VarBinary, byteData.Length);
                 param.Value = byteData;
                 cmd.Parameters.Add(param);
-                cmd.ExecuteNonQuery();            
+                cmd.ExecuteNonQuery();
                 MessageBox.Show("提交成功", "提示");
-                this.Close();
-                this.page.Show();
-                this.page.save();
+                this.Hide();
+                //this.page.Show();
+
             }
         }
 
-        //选择图片
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.page.Show();
+        }
+
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (this.openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 string path = this.openFileDialog1.FileName;
-                image= Image.FromFile(path);
+                image = Image.FromFile(path);
             }
         }
     }

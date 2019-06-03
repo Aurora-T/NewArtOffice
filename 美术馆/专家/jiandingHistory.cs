@@ -144,5 +144,11 @@ namespace 美术馆.专家
             }
             dataGridView1.ClearSelection();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.page.Show();
+        }
     }
 }

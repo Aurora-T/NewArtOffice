@@ -54,9 +54,9 @@ namespace 美术馆.管理员
                 SqlCommand cmd = new SqlCommand("insert into 美术馆表(名称,地址,邮政编码,类型) values('" + textBox1.Text + "','" +  textBox2.Text + "','" + textBox3.Text + "','" + type  + "')", conn);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("提交成功", "提示");
-                page.Show();
-                this.Close();
-                //this.page.save();
+                this.Hide();
+                this.page.Show();
+                this.page.load_gallery();
             }
         }
     }

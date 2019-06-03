@@ -13,8 +13,8 @@ namespace 美术馆.管理员
 {
     public partial class addEmployee : Form
     {
-        SqlConnection conn = null;
-        Personnel_main page;
+        public SqlConnection conn = null;
+        public Personnel_main page;
         int userid;
         public addEmployee(Personnel_main l,int id)
         {
@@ -46,6 +46,10 @@ namespace 美术馆.管理员
             {
                 MessageBox.Show("员工职位未选择", "提示");
             }
+            else if (textBox3.Text.ToString().Length!=18)
+            {
+                MessageBox.Show("员工身份证号码格式错误", "提示");
+            }
             else if (!System.Text.RegularExpressions.Regex.IsMatch(textBox2.Text, @"^[1]+[3,5,7,8]+\d{9}"))
             {
                 MessageBox.Show("员工联系电话格式错误", "提示");
@@ -61,11 +65,21 @@ namespace 美术馆.管理员
                 {
                     gender = radioButton2.Text;
                 }
-                SqlCommand cmd = new SqlCommand("insert into 员工信息表(姓名,密码,性别,联系方式,身份证号,职位,入职时间) values('" + textBox1.Text + "','111111','" + gender + "','" + textBox2.Text + "','" + textBox3.Text + "','" + comboBox1.Text +  "','"+ DateTime.Now.ToString() + "')", conn);
+                SqlCommand cmd = new SqlCommand("insert into 员工信息表(姓名,密码,性别,联系方式,身份证号,职位,入职时间,密保问题,密保问题的答案) values('" + textBox1.Text + "','111111','" + gender + "','" + textBox2.Text + "','" + textBox3.Text + "','" + comboBox1.Text + "','" + DateTime.Now.ToString() + "','你的优点是什么？','玛迦山美术馆')", conn);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("提交成功", "提示");
-                this.Close();
-                this.page.Show();
+                if (comboBox1.Text.Equals("专家"))
+                {
+                    goodAt goo = new goodAt(this);
+                    this.Hide();
+                    goo.Show();
+                }
+                else
+                {
+                    MessageBox.Show("提交成功", "提示");
+                    this.Hide();
+                    this.page.Show();
+                }
+                
             }
         }
     }

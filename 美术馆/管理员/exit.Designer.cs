@@ -84,7 +84,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 28);
             this.button1.TabIndex = 3;
-            this.button1.Text = "赠送";
+            this.button1.Text = "外借";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -95,12 +95,13 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 28);
             this.button2.TabIndex = 4;
-            this.button2.Text = "外借";
+            this.button2.Text = "赠送";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "--请选择--",

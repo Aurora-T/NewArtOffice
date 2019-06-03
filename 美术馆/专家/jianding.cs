@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -83,104 +84,6 @@ namespace 美术馆.专家
             dataGridView1.ClearSelection();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string text = comboBox1.Text;
-            if (text == "油画")
-            {
-                String sql1 = "select 专家编号 from 专家表 where 工号='" + this.userid + "'";
-                SqlCommand cmd = new SqlCommand(sql1, conn);
-                SqlDataReader sdr;
-                sdr = cmd.ExecuteReader();
-                sdr.Read();
-                String sql = "select 鉴定表.藏品编号,征集表.藏品名称,类别,作者,创作年代,征集时间 from 鉴定表,征集表 where 鉴定表.藏品编号=征集表.编号 and 专家工号='" + sdr[0].ToString() + "' and 鉴定结果 is NULL and 类别='油画' order by 征集时间";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                sdr.Close();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            else if (text == "水彩")
-            {
-                String sql1 = "select 专家编号 from 专家表 where 工号='" + this.userid + "'";
-                SqlCommand cmd = new SqlCommand(sql1, conn);
-                SqlDataReader sdr;
-                sdr = cmd.ExecuteReader();
-                sdr.Read();
-                String sql = "select 鉴定表.藏品编号,征集表.藏品名称,类别,作者,创作年代,征集时间 from 鉴定表,征集表 where 鉴定表.藏品编号=征集表.编号 and 专家工号='" + sdr[0].ToString() + "' and 鉴定结果 is NULL and 类别='水彩' order by 征集时间";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                sdr.Close();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            else if (text == "素描")
-            {
-                String sql1 = "select 专家编号 from 专家表 where 工号='" + this.userid + "'";
-                SqlCommand cmd = new SqlCommand(sql1, conn);
-                SqlDataReader sdr;
-                sdr = cmd.ExecuteReader();
-                sdr.Read();
-                String sql = "select 鉴定表.藏品编号,征集表.藏品名称,类别,作者,创作年代,征集时间 from 鉴定表,征集表 where 鉴定表.藏品编号=征集表.编号 and 专家工号='" + sdr[0].ToString() + "' and 鉴定结果 is NULL and 类别='素描' order by 征集时间";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                sdr.Close();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            else if (text == "国画")
-            {
-                String sql1 = "select 专家编号 from 专家表 where 工号='" + this.userid + "'";
-                SqlCommand cmd = new SqlCommand(sql1, conn);
-                SqlDataReader sdr;
-                sdr = cmd.ExecuteReader();
-                sdr.Read();
-                String sql = "select 鉴定表.藏品编号,征集表.藏品名称,类别,作者,创作年代,征集时间 from 鉴定表,征集表 where 鉴定表.藏品编号=征集表.编号 and 专家工号='" + sdr[0].ToString() + "' and 鉴定结果 is NULL and 类别='国画' order by 征集时间";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                sdr.Close();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            else if (text == "版画")
-            {
-                String sql1 = "select 专家编号 from 专家表 where 工号='" + this.userid + "'";
-                SqlCommand cmd = new SqlCommand(sql1, conn);
-                SqlDataReader sdr;
-                sdr = cmd.ExecuteReader();
-                sdr.Read();
-                String sql = "select 鉴定表.藏品编号,征集表.藏品名称,类别,作者,创作年代,征集时间 from 鉴定表,征集表 where 鉴定表.藏品编号=征集表.编号 and 专家工号='" + sdr[0].ToString() + "' and 鉴定结果 is NULL and 类别='版画' order by 征集时间";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                sdr.Close();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            else
-            {
-                String sql1 = "select 专家编号 from 专家表 where 工号='" + this.userid + "'";
-                SqlCommand cmd = new SqlCommand(sql1, conn);
-                SqlDataReader sdr;
-                sdr = cmd.ExecuteReader();
-                sdr.Read();
-                String sql = "select 鉴定表.藏品编号,征集表.藏品名称,类别,作者,创作年代,征集时间 from 鉴定表,征集表 where 鉴定表.藏品编号=征集表.编号 and 专家工号='" + sdr[0].ToString() + "' and 鉴定结果 is NULL order by 征集时间";
-                SqlCommand sc = new SqlCommand(sql, conn);
-                SqlDataAdapter myda = new SqlDataAdapter(sc);
-                DataTable dt = new DataTable();
-                sdr.Close();
-                myda.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            label5.Text = "";
-            label3.Text = "";
-            dataGridView1.ClearSelection();
-        }
-
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dataGridView1.SelectedCells.Count != 0)
@@ -223,6 +126,51 @@ namespace 美术馆.专家
             jiandingHistory jh = new jiandingHistory(this, this.userid);
             this.Hide();
             jh.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.l.Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (dataGridView1.SelectedCells.Count != 0)
+            {
+                if (pictureBox1.Image == null)
+                {
+                    String sql = "select 藏品图片 from 征集表 where 编号 ='" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "'";
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                    cmd.CommandType = CommandType.Text;
+                    SqlDataReader sdr;
+                    sdr = cmd.ExecuteReader();
+                    
+                    if (sdr.Read())
+                    {
+                        object o = sdr[0];
+                        if (o != System.DBNull.Value){
+                            MemoryStream buf = new MemoryStream((byte[])sdr[0]);
+                            Image image = Image.FromStream(buf, true);
+                            pictureBox1.Image = image;
+                            sdr.Close();
+                        }
+                        else
+                        {
+                            sdr.Close();
+                            MessageBox.Show("未上传图片", "提示");
+                        }
+                    }
+                }
+                else
+                {
+                    pictureBox1.Image = null;
+                }
+            }
+            else
+            {
+                MessageBox.Show("未选择藏品", "提示");
+            }
         }
     }
 }

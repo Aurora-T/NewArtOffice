@@ -38,5 +38,40 @@ namespace 美术馆.管理员
             this.Hide();
             emp.Show();
         }
+
+        private void 修改个人信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            changeInformationp change = new changeInformationp(this, this.id);
+            this.Hide();
+            change.Show();
+        }
+
+        private void 修改密保问题ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            changeQuestionp change = new changeQuestionp(this, this.id);
+            this.Hide();
+            change.Show();
+        }
+
+        private void 修改密码ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            changePasswordp change = new changePasswordp(this, this.id);
+            this.Hide();
+            change.Show();
+        }
+
+        private void 退出系统ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Close();
+                l.Close();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("发生错误：" + ex.Message);
+            }
+        }
     }
 }

@@ -15,11 +15,13 @@ namespace 美术馆.管理员
     {
         public SqlConnection conn = null;
         private int userid;
+        index page;
         public enter(index l,int id)
         {
             InitializeComponent();
             this.conn = l.conn;
             this.userid = id;
+            this.page = l;
             String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' order by 征集时间";
             SqlCommand sc = new SqlCommand(sql, conn);
             SqlDataAdapter myda = new SqlDataAdapter(sc);
@@ -46,7 +48,8 @@ namespace 美术馆.管理员
             }
             else
             {
-                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' and charindex('" + text + "',藏品名称)>=0";
+                int temp = Int32.Parse(text.ToString());
+                String sql = "select 编号,藏品名称,类别,征集时间 from 征集表 where 状态='已鉴定' and 编号='"+temp+"'";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -160,6 +163,12 @@ namespace 美术馆.管理员
             dataGridView1.DataSource = dt;
             dataGridView1.ClearSelection();
             label4.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.page.Show();
         }
     }
 }

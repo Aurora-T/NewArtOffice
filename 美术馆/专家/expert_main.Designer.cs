@@ -54,7 +54,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(452, 200);
+            this.pictureBox3.Location = new System.Drawing.Point(455, 242);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(87, 87);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -64,7 +64,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(140, 200);
+            this.pictureBox2.Location = new System.Drawing.Point(139, 242);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(87, 87);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -74,7 +74,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(286, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(281, 44);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -85,7 +85,7 @@
             // 
             this.button3.AutoSize = true;
             this.button3.Font = new System.Drawing.Font("隶书", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(478, 356);
+            this.button3.Location = new System.Drawing.Point(475, 392);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(50, 26);
             this.button3.TabIndex = 10;
@@ -97,7 +97,7 @@
             // 
             this.button2.AutoSize = true;
             this.button2.Font = new System.Drawing.Font("隶书", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(164, 356);
+            this.button2.Location = new System.Drawing.Point(161, 392);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(50, 26);
             this.button2.TabIndex = 9;
@@ -109,25 +109,13 @@
             // 
             this.button1.AutoSize = true;
             this.button1.Font = new System.Drawing.Font("隶书", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(315, 172);
+            this.button1.Location = new System.Drawing.Point(317, 209);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(54, 26);
             this.button1.TabIndex = 8;
             this.button1.Text = "鉴定";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button4
-            // 
-            this.button4.AutoSize = true;
-            this.button4.Font = new System.Drawing.Font("隶书", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(651, 412);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 39);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "退出";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button6_Click);
             // 
             // label1
             // 
@@ -226,14 +214,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 302);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(733, 458);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "expert_main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

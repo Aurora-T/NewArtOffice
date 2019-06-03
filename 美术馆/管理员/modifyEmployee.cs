@@ -13,8 +13,8 @@ namespace 美术馆.管理员
 {
     public partial class modifyEmployee : Form
     {
-        SqlConnection conn = null;
-        employee page;
+        public SqlConnection conn = null;
+        public employee page;
         int userid;
         int stid;
         public modifyEmployee(employee l, int stid, int userid)
@@ -24,7 +24,7 @@ namespace 美术馆.管理员
             this.page = l;
             this.userid = userid;
             this.stid = stid;
-            String sql = "select 姓名,性别,职位 from 员工信息表 where 工号 ='" + stid + "'";
+            String sql = "select 姓名,性别,职位,datediff(year,substring(身份证号,7,4),getdate()) 年龄,入职时间 from 员工信息表 where 工号 ='" + stid + "'";
             SqlCommand cmd = new SqlCommand(sql, conn);
             cmd.CommandType = CommandType.Text;
             SqlDataReader sdr;
@@ -34,6 +34,8 @@ namespace 美术馆.管理员
             label4.Text = sdr[0].ToString();
             label8.Text = sdr[1].ToString();
             label9.Text = sdr[2].ToString();
+            label11.Text= sdr[3].ToString();
+            label13.Text = sdr[4].ToString();
             sdr.Close();
         }
 
@@ -44,10 +46,20 @@ namespace 美术馆.管理员
             {
                 SqlCommand cmd = new SqlCommand("update 员工信息表 set 职位='"+ text+"' where 工号='"+this.stid+"'", conn);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("提交成功", "提示");
-                this.Close();
-                this.page.Show();
-                this.page.save();
+                if (text == "专家")
+                {
+                    mgoodAt goo = new mgoodAt(this);
+                    this.Hide();
+                    goo.Show();
+                }
+                else
+                {
+                    MessageBox.Show("提交成功", "提示");
+                    this.Hide();
+                    this.page.Show();
+                    this.page.save();
+                }
+                
             }
             else
             {

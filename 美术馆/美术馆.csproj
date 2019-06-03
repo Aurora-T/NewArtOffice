@@ -46,7 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="管理员\add_zhanlanpin.cs">
+    <Compile Include="changeQuestionSecondp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changeQuestionSecondp.Designer.cs">
+      <DependentUpon>changeQuestionSecondp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专家\changeInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专家\changeInformation.Designer.cs">
+      <DependentUpon>changeInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专家\changePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专家\changePassword.Designer.cs">
+      <DependentUpon>changePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专家\changeQuestion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="专家\changeQuestion.Designer.cs">
@@ -250,12 +268,6 @@
     <Compile Include="管理员\exit.Designer.cs">
       <DependentUpon>exit.cs</DependentUpon>
     </Compile>
-    <Compile Include="管理员\zhanlan_history.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="管理员\zhanlan_history.Designer.cs">
-      <DependentUpon>zhanlan_history.cs</DependentUpon>
-    </Compile>
     <Compile Include="管理员\give.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -353,8 +365,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>美术馆DataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="管理员\add_zhanlanpin.resx">
-      <DependentUpon>add_zhanlanpin.cs</DependentUpon>
+    <EmbeddedResource Include="changeQuestionSecondp.resx">
+      <DependentUpon>changeQuestionSecondp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专家\changeInformation.resx">
+      <DependentUpon>changeInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专家\changePassword.resx">
+      <DependentUpon>changePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专家\changeQuestion.resx">
+      <DependentUpon>changeQuestion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="专家\changeQuestionSecond.resx">
       <DependentUpon>changeQuestionSecond.cs</DependentUpon>
@@ -454,9 +475,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\exit.resx">
       <DependentUpon>exit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="管理员\zhanlan_history.resx">
-      <DependentUpon>zhanlan_history.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\give.resx">
       <DependentUpon>give.cs</DependentUpon>

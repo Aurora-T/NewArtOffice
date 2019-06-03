@@ -31,8 +31,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -43,8 +41,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -64,7 +65,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 44);
+            this.label1.Location = new System.Drawing.Point(49, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 18);
             this.label1.TabIndex = 1;
@@ -72,40 +73,15 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(206, 41);
+            this.textBox1.Location = new System.Drawing.Point(195, 38);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 28);
+            this.textBox1.Size = new System.Drawing.Size(229, 28);
             this.textBox1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(529, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 18);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "类别筛选：";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "--请选择--",
-            "油画",
-            "水彩",
-            "素描",
-            "国画",
-            "版画"});
-            this.comboBox1.Location = new System.Drawing.Point(633, 43);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 26);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
             this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(364, 41);
+            this.button1.Location = new System.Drawing.Point(442, 38);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(60, 28);
             this.button1.TabIndex = 5;
@@ -115,6 +91,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.linkLabel1);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
@@ -123,7 +100,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(815, 41);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(234, 312);
+            this.groupBox1.Size = new System.Drawing.Size(234, 262);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "已选择藏品：";
@@ -137,6 +114,7 @@
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "点击查看";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label7
             // 
@@ -178,14 +156,14 @@
             // 
             this.label3.Location = new System.Drawing.Point(14, 110);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(206, 190);
+            this.label3.Size = new System.Drawing.Size(97, 133);
             this.label3.TabIndex = 0;
             this.label3.Text = "label3";
             // 
             // button2
             // 
             this.button2.AutoSize = true;
-            this.button2.Location = new System.Drawing.Point(886, 362);
+            this.button2.Location = new System.Drawing.Point(886, 318);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 28);
             this.button2.TabIndex = 9;
@@ -196,7 +174,7 @@
             // button3
             // 
             this.button3.AutoSize = true;
-            this.button3.Location = new System.Drawing.Point(850, 398);
+            this.button3.Location = new System.Drawing.Point(848, 359);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(169, 28);
             this.button3.TabIndex = 10;
@@ -204,27 +182,47 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button4
+            // 
+            this.button4.AutoSize = true;
+            this.button4.Location = new System.Drawing.Point(886, 398);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(90, 28);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "返回主页";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(80, 83);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(148, 173);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // jianding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1073, 450);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "jianding";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "jianding";
+            this.Text = "藏品鉴定";
             this.Load += new System.EventHandler(this.jianding_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,8 +233,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
@@ -247,5 +243,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

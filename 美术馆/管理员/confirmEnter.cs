@@ -28,9 +28,9 @@ namespace 美术馆.管理员
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Equals("") || textBox2.Text.Equals(""))
+            if (textBox1.Text.Equals("") || textBox2.Text.Equals("")||textBox3.Text.Equals(""))
             {
-                MessageBox.Show("必要信息未填写", "提示");
+                MessageBox.Show("存在必要信息未填写", "提示");
             }
             else
             {
@@ -38,12 +38,19 @@ namespace 美术馆.管理员
                 cmd.ExecuteNonQuery();
                 SqlCommand cmd1 = new SqlCommand("update 征集表 set 状态='入馆' where 编号='" + this.cid + "'", conn);
                 cmd1.ExecuteNonQuery();
-                //SqlCommand cmd2 = new SqlCommand("insert into 藏品表(藏品编号,操作员工号,来源详情,价值) values('" + this.cid + "','" + this.userid + "','" + textBox2.Text + "','" + textBox1.Text + "')", conn);
-                //cmd2.ExecuteNonQuery();
+                SqlCommand cmd2 = new SqlCommand("update 藏品表 set 备注='"+textBox3.Text+"' where 入馆编号=(select 编号 from 入馆表 where 藏品编号='"+this.cid+"')", conn);
+                cmd2.ExecuteNonQuery();
                 MessageBox.Show("提交成功", "提示");
-                this.Close();
-                this.page.save();
+                this.Hide();
+                this.page.page.Show();
+                this.page.page.save();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.page.Show();
         }
     }
 }

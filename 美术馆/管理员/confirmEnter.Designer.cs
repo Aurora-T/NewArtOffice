@@ -34,11 +34,17 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
@@ -46,7 +52,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(27, 32);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(350, 261);
+            this.groupBox1.Size = new System.Drawing.Size(416, 335);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "入馆：";
@@ -54,7 +60,7 @@
             // button1
             // 
             this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(133, 211);
+            this.button1.Location = new System.Drawing.Point(255, 289);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 28);
             this.button1.TabIndex = 4;
@@ -67,7 +73,7 @@
             this.textBox2.Location = new System.Drawing.Point(109, 94);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(210, 101);
+            this.textBox2.Size = new System.Drawing.Size(245, 101);
             this.textBox2.TabIndex = 3;
             // 
             // textBox1
@@ -75,7 +81,7 @@
             this.textBox1.Location = new System.Drawing.Point(109, 49);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(210, 28);
+            this.textBox1.Size = new System.Drawing.Size(245, 28);
             this.textBox1.TabIndex = 2;
             // 
             // label2
@@ -96,11 +102,39 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "来源详情：";
             // 
+            // button2
+            // 
+            this.button2.AutoSize = true;
+            this.button2.Location = new System.Drawing.Point(67, 289);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 28);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "返回";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 208);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 18);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "藏品备注：";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(109, 205);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(245, 72);
+            this.textBox3.TabIndex = 7;
+            // 
             // confirmEnter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 316);
+            this.ClientSize = new System.Drawing.Size(469, 394);
             this.Controls.Add(this.groupBox1);
             this.Name = "confirmEnter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -119,5 +153,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label3;
     }
 }

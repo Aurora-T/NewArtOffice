@@ -70,6 +70,12 @@ namespace 美术馆.专家
                 this.page.save();
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.page.Show();
+        }
     }
    
 }
