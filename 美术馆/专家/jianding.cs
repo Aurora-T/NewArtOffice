@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -131,6 +132,45 @@ namespace 美术馆.专家
         {
             this.Hide();
             this.l.Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (dataGridView1.SelectedCells.Count != 0)
+            {
+                if (pictureBox1.Image == null)
+                {
+                    String sql = "select 藏品图片 from 征集表 where 编号 ='" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "'";
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                    cmd.CommandType = CommandType.Text;
+                    SqlDataReader sdr;
+                    sdr = cmd.ExecuteReader();
+                    
+                    if (sdr.Read())
+                    {
+                        object o = sdr[0];
+                        if (o != System.DBNull.Value){
+                            MemoryStream buf = new MemoryStream((byte[])sdr[0]);
+                            Image image = Image.FromStream(buf, true);
+                            pictureBox1.Image = image;
+                            sdr.Close();
+                        }
+                        else
+                        {
+                            sdr.Close();
+                            MessageBox.Show("未上传图片", "提示");
+                        }
+                    }
+                }
+                else
+                {
+                    pictureBox1.Image = null;
+                }
+            }
+            else
+            {
+                MessageBox.Show("未选择藏品", "提示");
+            }
         }
     }
 }

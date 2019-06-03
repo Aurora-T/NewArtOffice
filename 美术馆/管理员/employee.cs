@@ -31,7 +31,7 @@ namespace 美术馆.管理员
             String text = textBox1.Text;
             if (text.Equals(""))
             {
-                String sql = "select 工号,姓名,性别,year(getdate())-val(substring(身份证号,7,4)) 年龄,职位,入职时间 from 员工信息表 order by 工号";
+                String sql = "select 工号,姓名,性别,datediff(year,substring(身份证号,7,4),getdate()) 年龄,职位,入职时间 from 员工信息表 order by 工号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -41,7 +41,7 @@ namespace 美术馆.管理员
             }
             else
             {
-                String sql = "select 工号,姓名,性别,year(getdate())-val(substring(身份证号,7,4)) 年龄,职位,入职时间 from 员工信息表 where charindex('" + text+ "',姓名)>=0 or charindex(姓名,'" + text + "')>=0 order by 工号";
+                String sql = "select 工号,姓名,性别,datediff(year,substring(身份证号,7,4),getdate()) 年龄,职位,入职时间 from 员工信息表 where charindex('" + text+ "',姓名)>0 or charindex(姓名,'" + text + "')>0 order by 工号";
                 SqlDataAdapter myda = new SqlDataAdapter(sql, conn);
                 DataTable dt = new DataTable();
                 myda.Fill(dt);
@@ -51,14 +51,16 @@ namespace 美术馆.管理员
             label4.Text = "";
             label6.Text = "";
             label8.Text = "";
+            comboBox1.Text = "--请选择--";
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string text = comboBox1.Text;
+            textBox1.Text = "";
             if (text == "专家")
             {
-                String sql = "select 工号,姓名,性别,year(getdate())-val(substring(身份证号,7,4)) 年龄,职位,入职时间 from 员工信息表 where 职位='专家' order by 工号";
+                String sql = "select 工号,姓名,性别,datediff(year,substring(身份证号,7,4),getdate()) 年龄,职位,入职时间 from 员工信息表 where 职位='专家' order by 工号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -67,7 +69,7 @@ namespace 美术馆.管理员
             }
             else if (text == "藏品管理员")
             {
-                String sql = "select 工号,姓名,性别,year(getdate())-val(substring(身份证号,7,4)) 年龄,职位,入职时间 from 员工信息表 where 职位='藏品管理员' order by 工号";
+                String sql = "select 工号,姓名,性别,datediff(year,substring(身份证号,7,4),getdate()) 年龄,职位,入职时间 from 员工信息表 where 职位='藏品管理员' order by 工号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -76,7 +78,7 @@ namespace 美术馆.管理员
             }
             else if (text == "人事管理员")
             {
-                String sql = "select 工号,姓名,性别,year(getdate())-val(substring(身份证号,7,4)) 年龄,职位,入职时间 from 员工信息表 where 职位='人事管理员' order by 工号";
+                String sql = "select 工号,姓名,性别,datediff(year,substring(身份证号,7,4),getdate()) 年龄,职位,入职时间 from 员工信息表 where 职位='人事管理员' order by 工号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -85,7 +87,7 @@ namespace 美术馆.管理员
             }
             else if (text == "展览管理员")
             {
-                String sql = "select 工号,姓名,性别,year(getdate())-val(substring(身份证号,7,4)) 年龄,职位,入职时间 from 员工信息表 where 职位='展览管理员' order by 工号";
+                String sql = "select 工号,姓名,性别,datediff(year,substring(身份证号,7,4),getdate()) 年龄,职位,入职时间 from 员工信息表 where 职位='展览管理员' order by 工号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -94,7 +96,7 @@ namespace 美术馆.管理员
             }
             else if (text == "票务管理员")
             {
-                String sql = "select 工号,姓名,性别,year(getdate())-val(substring(身份证号,7,4)) 年龄,职位,入职时间 from 员工信息表 where 职位='票务管理员' order by 工号";
+                String sql = "select 工号,姓名,性别,datediff(year,substring(身份证号,7,4),getdate()) 年龄,职位,入职时间 from 员工信息表 where 职位='票务管理员' order by 工号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -103,7 +105,7 @@ namespace 美术馆.管理员
             }
             else if (text == "通知管理员")
             {
-                String sql = "select 工号,姓名,性别,year(getdate())-val(substring(身份证号,7,4)) 年龄,职位,入职时间 from 员工信息表 where 职位='通知管理员' order by 工号";
+                String sql = "select 工号,姓名,性别,datediff(year,substring(身份证号,7,4),getdate()) 年龄,职位,入职时间 from 员工信息表 where 职位='通知管理员' order by 工号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -112,7 +114,7 @@ namespace 美术馆.管理员
             }
             else if (text == "财务管理员")
             {
-                String sql = "select 工号,姓名,性别,year(getdate())-val(substring(身份证号,7,4)) 年龄,职位,入职时间 from 员工信息表 where 职位='财务管理员' order by 工号";
+                String sql = "select 工号,姓名,性别,datediff(year,substring(身份证号,7,4),getdate()) 年龄,职位,入职时间 from 员工信息表 where 职位='财务管理员' order by 工号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -152,6 +154,7 @@ namespace 美术馆.管理员
                 {
                     SqlCommand cmd = new SqlCommand("delete from 员工信息表  where 工号='" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + "'", conn);
                     cmd.ExecuteNonQuery();
+                    MessageBox.Show("删除成功", "提示");
                     save();
                 }
 
@@ -163,7 +166,7 @@ namespace 美术馆.管理员
         }
         public void save()
         {
-            String sql = "select 工号,姓名,性别,year(getdate())-val(substring(身份证号,7,4)) 年龄,职位,入职时间 from 员工信息表 order by 工号";
+            String sql = "select 工号,姓名,性别,datediff(year,substring(身份证号,7,4),getdate()) 年龄,职位,入职时间 from 员工信息表 order by 工号";
             SqlCommand sc = new SqlCommand(sql, conn);
             SqlDataAdapter myda = new SqlDataAdapter(sc);
             DataTable dt = new DataTable();
@@ -195,6 +198,12 @@ namespace 美术馆.管理员
                     label8.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.page.Show();
         }
     }
 }

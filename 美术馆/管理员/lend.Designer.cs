@@ -38,11 +38,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox2);
@@ -61,7 +63,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(152, 197);
+            this.button2.Location = new System.Drawing.Point(254, 197);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 28);
             this.button2.TabIndex = 15;
@@ -133,6 +135,17 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "起始时间：";
             // 
+            // button1
+            // 
+            this.button1.AutoSize = true;
+            this.button1.Location = new System.Drawing.Point(67, 197);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 28);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "返回";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // lend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -140,7 +153,8 @@
             this.ClientSize = new System.Drawing.Size(525, 326);
             this.Controls.Add(this.groupBox1);
             this.Name = "lend";
-            this.Text = "lend";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "外借";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -159,5 +173,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

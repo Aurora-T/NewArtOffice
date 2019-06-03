@@ -43,12 +43,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.员工工号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.姓名 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.性别 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.年龄 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.职位 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.身份证号码 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -57,13 +52,6 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.员工工号,
-            this.姓名,
-            this.性别,
-            this.年龄,
-            this.职位,
-            this.身份证号码});
             this.dataGridView1.Location = new System.Drawing.Point(32, 83);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
@@ -112,6 +100,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "--请选择--",
@@ -131,7 +120,7 @@
             // button3
             // 
             this.button3.AutoSize = true;
-            this.button3.Location = new System.Drawing.Point(784, 311);
+            this.button3.Location = new System.Drawing.Point(784, 290);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(97, 28);
             this.button3.TabIndex = 7;
@@ -211,7 +200,7 @@
             // button4
             // 
             this.button4.AutoSize = true;
-            this.button4.Location = new System.Drawing.Point(784, 361);
+            this.button4.Location = new System.Drawing.Point(784, 334);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(97, 28);
             this.button4.TabIndex = 9;
@@ -219,47 +208,23 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // 员工工号
+            // button2
             // 
-            this.员工工号.HeaderText = "员工工号";
-            this.员工工号.Name = "员工工号";
-            this.员工工号.ReadOnly = true;
-            // 
-            // 姓名
-            // 
-            this.姓名.HeaderText = "姓名";
-            this.姓名.Name = "姓名";
-            this.姓名.ReadOnly = true;
-            // 
-            // 性别
-            // 
-            this.性别.HeaderText = "性别";
-            this.性别.Name = "性别";
-            this.性别.ReadOnly = true;
-            // 
-            // 年龄
-            // 
-            this.年龄.HeaderText = "年龄";
-            this.年龄.Name = "年龄";
-            this.年龄.ReadOnly = true;
-            // 
-            // 职位
-            // 
-            this.职位.HeaderText = "职位";
-            this.职位.Name = "职位";
-            this.职位.ReadOnly = true;
-            // 
-            // 身份证号码
-            // 
-            this.身份证号码.HeaderText = "入职时间";
-            this.身份证号码.Name = "身份证号码";
-            this.身份证号码.ReadOnly = true;
+            this.button2.AutoSize = true;
+            this.button2.Location = new System.Drawing.Point(784, 379);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 28);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "返回主页";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(937, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button3);
@@ -270,7 +235,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "employee";
-            this.Text = "employee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "员工管理";
             this.Load += new System.EventHandler(this.employee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -297,11 +263,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 员工工号;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 姓名;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 性别;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 年龄;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 职位;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 身份证号码;
+        private System.Windows.Forms.Button button2;
     }
 }

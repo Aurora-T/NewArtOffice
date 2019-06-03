@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace 美术馆.管理员
 {
-    public partial class changeInformation : Form
+    public partial class changeInformationp : Form
     {
         public SqlConnection conn = null;
-        index page;
+        Personnel_main page;
         private int userid;
-        public changeInformation(index l, int userid)
+        public changeInformationp(Personnel_main l, int userid)
         {
             InitializeComponent();
             this.conn = l.conn;

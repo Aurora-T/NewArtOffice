@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -40,8 +42,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +66,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "添加员工：";
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(117, 125);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(248, 28);
+            this.textBox2.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(24, 128);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 18);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "联系电话：";
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(141, 254);
@@ -78,6 +94,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "--请选择--",
@@ -174,22 +191,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "姓名：";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 128);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 18);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "联系电话：";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(117, 125);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(248, 28);
-            this.textBox2.TabIndex = 14;
-            // 
             // addEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -197,7 +198,8 @@
             this.ClientSize = new System.Drawing.Size(475, 374);
             this.Controls.Add(this.groupBox1);
             this.Name = "addEmployee";
-            this.Text = "addEmployee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "添加员工";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);

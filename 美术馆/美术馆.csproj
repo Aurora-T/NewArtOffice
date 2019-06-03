@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="changeQuestionSecondp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changeQuestionSecondp.Designer.cs">
+      <DependentUpon>changeQuestionSecondp.cs</DependentUpon>
+    </Compile>
     <Compile Include="专家\changeInformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,12 @@
     </Compile>
     <Compile Include="管理员\changeInformation.Designer.cs">
       <DependentUpon>changeInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\changeInformationp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\changeInformationp.Designer.cs">
+      <DependentUpon>changeInformationp.cs</DependentUpon>
     </Compile>
     <Compile Include="管理员\changePassword.cs">
       <SubType>Form</SubType>
@@ -196,17 +208,35 @@
     <Compile Include="管理员\cangpinjiancha.Designer.cs">
       <DependentUpon>cangpinjiancha.cs</DependentUpon>
     </Compile>
+    <Compile Include="管理员\changePasswordp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\changePasswordp.Designer.cs">
+      <DependentUpon>changePasswordp.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\changeQuestion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="管理员\changeQuestion.Designer.cs">
       <DependentUpon>changeQuestion.cs</DependentUpon>
     </Compile>
+    <Compile Include="管理员\changeQuestionp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\changeQuestionp.Designer.cs">
+      <DependentUpon>changeQuestionp.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\changeQuestionSecond.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="管理员\changeQuestionSecond.Designer.cs">
       <DependentUpon>changeQuestionSecond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\changeQuestionSecondp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\changeQuestionSecondp.Designer.cs">
+      <DependentUpon>changeQuestionSecondp.cs</DependentUpon>
     </Compile>
     <Compile Include="管理员\confirmEnter.cs">
       <SubType>Form</SubType>
@@ -244,6 +274,12 @@
     <Compile Include="管理员\give.Designer.cs">
       <DependentUpon>give.cs</DependentUpon>
     </Compile>
+    <Compile Include="管理员\goodAt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\goodAt.Designer.cs">
+      <DependentUpon>goodAt.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -263,6 +299,12 @@
     </Compile>
     <Compile Include="管理员\matchingExpert.Designer.cs">
       <DependentUpon>matchingExpert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\mgoodAt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\mgoodAt.Designer.cs">
+      <DependentUpon>mgoodAt.cs</DependentUpon>
     </Compile>
     <Compile Include="管理员\modifyEmployee.cs">
       <SubType>Form</SubType>
@@ -323,6 +365,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>美术馆DataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="changeQuestionSecondp.resx">
+      <DependentUpon>changeQuestionSecondp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="专家\changeInformation.resx">
       <DependentUpon>changeInformation.cs</DependentUpon>
     </EmbeddedResource>
@@ -337,6 +382,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\changeInformation.resx">
       <DependentUpon>changeInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\changeInformationp.resx">
+      <DependentUpon>changeInformationp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\changePassword.resx">
       <DependentUpon>changePassword.cs</DependentUpon>
@@ -398,11 +446,20 @@
     <EmbeddedResource Include="管理员\cangpinjiancha.resx">
       <DependentUpon>cangpinjiancha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="管理员\changePasswordp.resx">
+      <DependentUpon>changePasswordp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="管理员\changeQuestion.resx">
       <DependentUpon>changeQuestion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="管理员\changeQuestionp.resx">
+      <DependentUpon>changeQuestionp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="管理员\changeQuestionSecond.resx">
       <DependentUpon>changeQuestionSecond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\changeQuestionSecondp.resx">
+      <DependentUpon>changeQuestionSecondp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\confirmEnter.resx">
       <DependentUpon>confirmEnter.cs</DependentUpon>
@@ -422,6 +479,9 @@
     <EmbeddedResource Include="管理员\give.resx">
       <DependentUpon>give.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="管理员\goodAt.resx">
+      <DependentUpon>goodAt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="管理员\index.resx">
       <DependentUpon>index.cs</DependentUpon>
     </EmbeddedResource>
@@ -439,6 +499,9 @@
     </Compile>
     <EmbeddedResource Include="管理员\matchingExpert.resx">
       <DependentUpon>matchingExpert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\mgoodAt.resx">
+      <DependentUpon>mgoodAt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\modifyEmployee.resx">
       <DependentUpon>modifyEmployee.cs</DependentUpon>

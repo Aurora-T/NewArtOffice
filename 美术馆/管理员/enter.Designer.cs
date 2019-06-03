@@ -76,7 +76,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(102, 95);
+            this.label2.Location = new System.Drawing.Point(48, 95);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 18);
             this.label2.TabIndex = 3;
@@ -104,7 +104,7 @@
             "素描",
             "国画",
             "版画"});
-            this.comboBox1.Location = new System.Drawing.Point(195, 92);
+            this.comboBox1.Location = new System.Drawing.Point(142, 92);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(158, 26);
             this.comboBox1.TabIndex = 5;

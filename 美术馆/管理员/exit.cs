@@ -23,7 +23,7 @@ namespace 美术馆.管理员
             this.conn = l.conn;
             this.userid = id;
             this.page = l;
-            String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 order by 藏品表.藏品编号";
+            String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品表.状态!='出馆' order by 藏品表.藏品编号";
             SqlCommand sc = new SqlCommand(sql, conn);
             SqlDataAdapter myda = new SqlDataAdapter(sc);
             DataTable dt = new DataTable();
@@ -37,10 +37,9 @@ namespace 美术馆.管理员
         private void button4_Click(object sender, EventArgs e)
         {
             String text = textBox1.Text;
-            comboBox1.Text = "";
             if (text.Equals(""))
             {
-                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 order by 藏品表.藏品编号";
+                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品表.状态<>'出馆' order by 藏品表.藏品编号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -57,7 +56,7 @@ namespace 美术馆.管理员
                 }
                 else
                 {
-                    String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品表.藏品编号='" + text + "'";
+                    String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品表.状态<>'出馆' and 藏品表.藏品编号='" + text + "'";
                     SqlCommand sc = new SqlCommand(sql, conn);
                     SqlDataAdapter myda = new SqlDataAdapter(sc);
                     DataTable dt = new DataTable();
@@ -66,6 +65,7 @@ namespace 美术馆.管理员
                     dataGridView1.ClearSelection();
                 }
             }
+            comboBox1.Text = "";
             label5.Text = "";
         }
 
@@ -74,7 +74,7 @@ namespace 美术馆.管理员
             string text = comboBox1.Text;
             if (text == "油画")
             {
-                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品类型='油画' order by 藏品表.藏品编号";
+                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品表.状态<>'出馆' and 藏品类型='油画' order by 藏品表.藏品编号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -83,7 +83,7 @@ namespace 美术馆.管理员
             }
             else if (text == "水彩")
             {
-                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品类型='水彩' order by 藏品表.藏品编号";
+                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品表.状态<>'出馆' and 藏品类型='水彩' order by 藏品表.藏品编号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -92,7 +92,7 @@ namespace 美术馆.管理员
             }
             else if (text == "素描")
             {
-                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品类型='素描' order by 藏品表.藏品编号";
+                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品表.状态<>'出馆' and 藏品类型='素描' order by 藏品表.藏品编号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -101,7 +101,7 @@ namespace 美术馆.管理员
             }
             else if (text == "国画")
             {
-                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品类型='国画' order by 藏品表.藏品编号";
+                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品表.状态<>'出馆' and 藏品类型='国画' order by 藏品表.藏品编号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -110,7 +110,7 @@ namespace 美术馆.管理员
             }
             else if (text == "版画")
             {
-                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品类型='版画' order by 藏品表.藏品编号";
+                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品表.状态<>'出馆' and 藏品类型='版画' order by 藏品表.藏品编号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -119,7 +119,7 @@ namespace 美术馆.管理员
             }
             else
             {
-                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 order by 藏品表.藏品编号";
+                String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品表.状态<>'出馆' order by 藏品表.藏品编号";
                 SqlCommand sc = new SqlCommand(sql, conn);
                 SqlDataAdapter myda = new SqlDataAdapter(sc);
                 DataTable dt = new DataTable();
@@ -155,7 +155,7 @@ namespace 美术馆.管理员
         }
 
         private void button5_Click(object sender, EventArgs e)
-        {      
+        {
             addGallery ag = new addGallery(this);
             ag.Show();
             this.Hide();
@@ -179,33 +179,60 @@ namespace 美术馆.管理员
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int cid = Int32.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim());
-            string sql1 = "SELECT 美术馆编号 from 美术馆表 where 名称='" + comboBox1.Text + "'";
-            SqlCommand cmd = new SqlCommand(sql1, conn);
-            cmd.CommandType = CommandType.Text;
-            SqlDataReader sdr;
-            sdr = cmd.ExecuteReader();
-            sdr.Read();
-            int gid = Int32.Parse(sdr[0].ToString());
-            lend le = new lend(this, cid,this.userid,gid);
-            le.Show();
-            this.Hide();
+            if (dataGridView1.SelectedCells.Count != 0)
+            {
+                int cid = Int32.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim());
+                string sql1 = "SELECT 美术馆编号 from 美术馆表 where 名称='" + comboBox2.Text + "'";
+                SqlCommand cmd = new SqlCommand(sql1, conn);
+                cmd.CommandType = CommandType.Text;
+                SqlDataReader sdr;
+                sdr = cmd.ExecuteReader();
+                sdr.Read();
+                int gid = Int32.Parse(sdr[0].ToString());
+                lend le = new lend(this, cid, this.userid, gid);
+                sdr.Close();
+                le.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("未选择藏品", "提示");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int cid = Int32.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim());
-            string sql1 = "SELECT 美术馆编号 from 美术馆表 where 名称='" + comboBox1.Text + "'";
-            SqlCommand cmd = new SqlCommand(sql1, conn);
-            cmd.CommandType = CommandType.Text;
-            SqlDataReader sdr;
-            sdr = cmd.ExecuteReader();
-            sdr.Read();
-            int gid = Int32.Parse(sdr[0].ToString());
-            sdr.Close();
-            give gi = new give(this, cid, this.userid,gid);
-            gi.Show();
-            this.Hide();
+            if (dataGridView1.SelectedCells.Count != 0)
+            {
+                int cid = Int32.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString().Trim());
+                string sql1 = "SELECT 美术馆编号 from 美术馆表 where 名称='" + comboBox2.Text + "'";
+                SqlCommand cmd = new SqlCommand(sql1, conn);
+                cmd.CommandType = CommandType.Text;
+                SqlDataReader sdr;
+                sdr = cmd.ExecuteReader();
+                sdr.Read();
+                int gid = Int32.Parse(sdr[0].ToString());
+                sdr.Close();
+                give gi = new give(this, cid, this.userid, gid);
+                gi.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("未选择藏品", "提示");
+            }
+        }
+        public void save()
+        {
+            String sql = "select 藏品表.藏品编号,藏品名称,藏品类型,作者姓名,创作时间,价值 from 藏品表,入馆表 where 藏品表.入馆编号=入馆表.编号 and 藏品表.状态!='出馆' order by 藏品表.藏品编号";
+            SqlCommand sc = new SqlCommand(sql, conn);
+            SqlDataAdapter myda = new SqlDataAdapter(sc);
+            DataTable dt = new DataTable();
+            myda.Fill(dt);
+            dataGridView1.DataSource = dt;
+            dataGridView1.ClearSelection();
+            load_gallery();
+            label5.Text = "";
         }
     }
 }

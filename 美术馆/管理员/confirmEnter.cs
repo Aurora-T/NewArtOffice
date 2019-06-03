@@ -38,14 +38,7 @@ namespace 美术馆.管理员
                 cmd.ExecuteNonQuery();
                 SqlCommand cmd1 = new SqlCommand("update 征集表 set 状态='入馆' where 编号='" + this.cid + "'", conn);
                 cmd1.ExecuteNonQuery();
-                String sql = "select 藏品名称,类别,作者,创作年代,藏品图片 from 征集表 where 编号 ='" + this.cid + "'";
-                SqlCommand cmd3 = new SqlCommand(sql, conn);
-                cmd3.CommandType = CommandType.Text;
-                SqlDataReader sdr;
-                sdr = cmd3.ExecuteReader();
-                sdr.Read();
-                SqlCommand cmd2 = new SqlCommand("insert into 藏品表(藏品名称,类别,作者姓名,创作年代,图片,备注) values('" + sdr[0].ToString() + "','" + sdr[1].ToString() + "','" + sdr[2].ToString() + "','" + sdr[3].ToString() + "','"+ sdr[4].ToString() + "','"+textBox3.Text.ToString()+"')", conn);
-                sdr.Close();
+                SqlCommand cmd2 = new SqlCommand("update 藏品表 set 备注='"+textBox3.Text+"' where 入馆编号=(select 编号 from 入馆表 where 藏品编号='"+this.cid+"')", conn);
                 cmd2.ExecuteNonQuery();
                 MessageBox.Show("提交成功", "提示");
                 this.Hide();

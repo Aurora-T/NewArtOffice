@@ -67,7 +67,8 @@ namespace 美术馆.管理员
         private void button1_Click(object sender, EventArgs e)//入馆
         {
             confirmEnter ce = new confirmEnter(this,this.cid,this.userid);
-            ce.ShowDialog();    
+            this.Hide();
+            ce.Show();    
         }
 
         private void button2_Click(object sender, EventArgs e)//退回
@@ -75,7 +76,7 @@ namespace 美术馆.管理员
             SqlCommand cmd1 = new SqlCommand("update 征集表 set 状态='退回' where 编号='" + this.cid + "'", conn);
             cmd1.ExecuteNonQuery();
             MessageBox.Show("提交成功", "提示");
-            this.Close();
+            this.Hide();
             this.page.Show();
             this.page.save();
         }
@@ -85,7 +86,7 @@ namespace 美术馆.管理员
             SqlCommand cmd1 = new SqlCommand("update 征集表 set 状态='未匹配' where 编号='" + this.cid + "'", conn);
             cmd1.ExecuteNonQuery();
             MessageBox.Show("提交成功", "提示");
-            this.Close();
+            this.Hide();
             this.page.Show();
             this.page.save();
         }
