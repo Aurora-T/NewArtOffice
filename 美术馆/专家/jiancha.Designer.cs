@@ -30,13 +30,14 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.藏品编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.应该检查时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.藏品编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.应该检查时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.开始时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,28 +57,14 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.编号,
             this.藏品编号,
-            this.应该检查时间});
+            this.应该检查时间,
+            this.开始时间});
             this.dataGridView1.Location = new System.Drawing.Point(66, 68);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(327, 168);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
-            // 
-            // 编号
-            // 
-            this.编号.HeaderText = "编号";
-            this.编号.Name = "编号";
-            // 
-            // 藏品编号
-            // 
-            this.藏品编号.HeaderText = "藏品编号";
-            this.藏品编号.Name = "藏品编号";
-            // 
-            // 应该检查时间
-            // 
-            this.应该检查时间.HeaderText = "应该检查时间";
-            this.应该检查时间.Name = "应该检查时间";
             // 
             // label2
             // 
@@ -120,6 +107,26 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // 编号
+            // 
+            this.编号.HeaderText = "编号";
+            this.编号.Name = "编号";
+            // 
+            // 藏品编号
+            // 
+            this.藏品编号.HeaderText = "藏品编号";
+            this.藏品编号.Name = "藏品编号";
+            // 
+            // 应该检查时间
+            // 
+            this.应该检查时间.HeaderText = "应该检查时间";
+            this.应该检查时间.Name = "应该检查时间";
+            // 
+            // 开始时间
+            // 
+            this.开始时间.HeaderText = "开始时间";
+            this.开始时间.Name = "开始时间";
+            // 
             // jiancha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -146,12 +153,13 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 编号;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 藏品编号;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 应该检查时间;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 编号;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 藏品编号;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 应该检查时间;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 开始时间;
     }
 }

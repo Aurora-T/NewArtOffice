@@ -56,14 +56,15 @@ namespace 美术馆.管理员
             }
             else
             {
-    
-                    SqlCommand cmd = new SqlCommand("update 员工信息表 set 联系方式='" + textBox1.Text + "' where 工号='" + this.userid + "'", conn);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("提交成功", "提示");
-                    textBox1.Text = "";
-                    this.Hide();
-                    this.page.Show();
-              
+
+                SqlCommand cmd = new SqlCommand("update 员工信息表 set 联系方式='" + textBox1.Text + "' where 工号='" + this.userid + "'", conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("提交成功", "提示");
+                textBox1.Text = "";
+                this.Hide();
+                this.page.Show();
+
             }
         }
+    }
 }

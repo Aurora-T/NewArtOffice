@@ -23,6 +23,8 @@ namespace 美术馆.管理员
             this.id = id;
             this.conn = l.conn;
             label2.Text = id.ToString();
+
+            
         }
     
 

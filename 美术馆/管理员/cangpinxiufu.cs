@@ -25,7 +25,16 @@ namespace 美术馆.管理员
         //查询要安排修复的藏品
         private void button1_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT 编号,开始时间,藏品编号 FROM 修复表 where 专家编号 is NULL";
+            //清空原datagridview中的数据
+            this.dataGridView1.Rows.Clear();
+            string sql;
+            if (textBox1.Text == "")
+                sql = "SELECT 编号,开始时间,藏品编号 FROM 修复表 where 专家编号 is NULL";
+            else
+            {
+                int cno = Int32.Parse(textBox1.Text.ToString());
+                sql = "SELECT 编号,开始时间,藏品编号 FROM 修复表 where 专家编号 is NULL and 藏品编号='"+cno+"'";
+            }
             SqlCommand Cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = Cmd.ExecuteReader();
             while (sdr.Read())
@@ -59,7 +68,7 @@ namespace 美术馆.管理员
             if (this.dataGridView1.CurrentRow != null&&this.dataGridView1.CurrentRow.Cells[1].Value!= null)
             {
                 int xno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                int cno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[1].Value.ToString());
+                int cno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[2].Value.ToString());
                 arrange_xiufuexpert arrange = new arrange_xiufuexpert(this.conn, cno, xno);
                 arrange.ShowDialog();
             }
@@ -70,7 +79,16 @@ namespace 美术馆.管理员
         //刷新界面
         private void button3_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT 编号,开始时间,藏品编号 FROM 修复表 where 专家编号 is NULL";
+            //清空原datagridview中的数据
+            this.dataGridView1.Rows.Clear();
+            string sql;
+            if (textBox1.Text == "")
+                sql = "SELECT 编号,开始时间,藏品编号 FROM 修复表 where 专家编号 is NULL";
+            else
+            {
+                int cno = Int32.Parse(textBox1.Text.ToString());
+                sql = "SELECT 编号,开始时间,藏品编号 FROM 修复表 where 专家编号 is NULL and 藏品编号='" + cno + "'";
+            }
             SqlCommand Cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = Cmd.ExecuteReader();
             while (sdr.Read())

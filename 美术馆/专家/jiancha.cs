@@ -53,7 +53,7 @@ namespace 美术馆.专家
             sdr.Read();
             int zno = Int32.Parse(sdr[0].ToString());
             sdr.Close();
-            string sql1 = "SELECT 检查记录编号,藏品编号,应该检查时间 FROM 检查表 where 专家编号 ='"+zno+"' and 实际检查时间 is NULL";
+            string sql1 = "SELECT 检查记录编号,藏品编号,应该检查时间,开始时间 FROM 检查表 where 专家编号 ='"+zno+"' and 结束时间 is NULL";
             SqlCommand Cmd1 = new SqlCommand(sql1, conn);
             SqlDataReader sdr1 = Cmd1.ExecuteReader();
             while (sdr1.Read())
@@ -62,6 +62,7 @@ namespace 美术馆.专家
                 this.dataGridView1.Rows[index].Cells[0].Value = sdr1[0].ToString();
                 this.dataGridView1.Rows[index].Cells[1].Value = sdr1[1].ToString();
                 this.dataGridView1.Rows[index].Cells[2].Value = sdr1[2].ToString();
+                this.dataGridView1.Rows[index].Cells[3].Value = sdr1[3].ToString();
             }
             sdr1.Close();
         }
@@ -102,7 +103,7 @@ namespace 美术馆.专家
             sdr.Read();
             int zno = Int32.Parse(sdr[0].ToString());
             sdr.Close();
-            string sql1 = "SELECT 检查记录编号,藏品编号,应该检查时间 FROM 检查表 where 专家编号 ='" + zno + "' and 实际检查时间 is NULL";
+            string sql1 = "SELECT 检查记录编号,藏品编号,应该检查时间,开始时间 FROM 检查表 where 专家编号 ='" + zno + "' and 结束时间 is NULL";
             SqlCommand Cmd1 = new SqlCommand(sql1, conn);
             SqlDataReader sdr1 = Cmd1.ExecuteReader();
             while (sdr1.Read())
@@ -111,6 +112,7 @@ namespace 美术馆.专家
                 this.dataGridView1.Rows[index].Cells[0].Value = sdr1[0].ToString();
                 this.dataGridView1.Rows[index].Cells[1].Value = sdr1[1].ToString();
                 this.dataGridView1.Rows[index].Cells[2].Value = sdr1[2].ToString();
+                this.dataGridView1.Rows[index].Cells[3].Value = sdr1[3].ToString();
             }
             sdr1.Close();
         }

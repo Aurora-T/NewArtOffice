@@ -45,14 +45,14 @@ namespace 美术馆.管理员
             if (month.Length == 1)
                 month = "0" + month;
             string day = date.Day.ToString();
-            if (day.Length == 1)
-                day = "0" + day;
+            //if (day.Length == 1)
+            //    day = "0" + day;
             string time = year + "-" + month + "-" + day;
             //清空原datagridview中的数据
             this.dataGridView1.Rows.Clear();
 
             //从数据库查询某一天的预约记录
-            string sql = "SELECT 编号,同行人1姓名,同行人1身份证号,同行人2姓名,同行人2身份证号,联系方式,状态,操作时间 FROM 预约表 where (Datename(year,预约日期)+'-'+Datename(month, 预约日期) + '-' + Datename(day, 预约日期)) = '" + time + "'";
+            string sql = "SELECT 编号,同行人1姓名,同行人1身份证号,同行人2姓名,同行人2身份证号,ID,身份证号,姓名,操作时间,状态 FROM 预约表 where (Datename(year,预约日期)+'-'+Datename(month, 预约日期) + '-' + Datename(day, 预约日期)) = '" + time + "'";
             SqlCommand Cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = Cmd.ExecuteReader();
             while (sdr.Read())
@@ -66,6 +66,8 @@ namespace 美术馆.管理员
                 this.dataGridView1.Rows[index].Cells[5].Value = sdr[5].ToString();
                 this.dataGridView1.Rows[index].Cells[6].Value = sdr[6].ToString();
                 this.dataGridView1.Rows[index].Cells[7].Value = sdr[7].ToString();
+                this.dataGridView1.Rows[index].Cells[8].Value = sdr[8].ToString();
+                this.dataGridView1.Rows[index].Cells[9].Value = sdr[9].ToString();
             }
             sdr.Close();
         }

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="管理员\add_old_zhanlanpin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\add_old_zhanlanpin.Designer.cs">
+      <DependentUpon>add_old_zhanlanpin.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\add_zhanlanpin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +232,12 @@
     <Compile Include="管理员\exit.Designer.cs">
       <DependentUpon>exit.cs</DependentUpon>
     </Compile>
+    <Compile Include="管理员\zhanlan_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\zhanlan_history.Designer.cs">
+      <DependentUpon>zhanlan_history.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\give.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -323,6 +335,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>美术馆DataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="管理员\add_old_zhanlanpin.resx">
+      <DependentUpon>add_old_zhanlanpin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="管理员\add_zhanlanpin.resx">
       <DependentUpon>add_zhanlanpin.cs</DependentUpon>
     </EmbeddedResource>
@@ -412,6 +427,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\exit.resx">
       <DependentUpon>exit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\zhanlan_history.resx">
+      <DependentUpon>zhanlan_history.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\give.resx">
       <DependentUpon>give.cs</DependentUpon>

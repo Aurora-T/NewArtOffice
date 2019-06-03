@@ -15,9 +15,9 @@ namespace 美术馆.管理员
     public partial class zhanlan_details : Form
     {
         SqlConnection conn = null;
-        zhanlan_main main = null;
+        zhanlan_history main = null;
         int zno;
-        public zhanlan_details(zhanlan_main main,int zno)
+        public zhanlan_details(zhanlan_history main,int zno)
         {
             InitializeComponent();
             this.main = main;
@@ -46,8 +46,8 @@ namespace 美术馆.管理员
                 //面板
                 p[n] = new Panel();
                 p[n].BackColor = System.Drawing.Color.Transparent;
-                this.panel1.Name = "panel1";
-                this.panel1.Size = new System.Drawing.Size(130, 189);
+                p[n].Name = "panel1";
+                p[n].Size = new System.Drawing.Size(130, 189);
                 if(n%2==1)
                     p[n].Location = new System.Drawing.Point(22, (n - 1) / 2 * 216 + 36);
                 else
@@ -64,7 +64,7 @@ namespace 美术馆.管理员
                 //label6展览品名称
                 l6[n] = new Label();
                 l6[n].AutoSize = true;
-                l6[n].Location = new System.Drawing.Point(38, 120);
+                l6[n].Location = new System.Drawing.Point(45, 120);
                 l6[n].Name = "label6";
                 l6[n].Size = new System.Drawing.Size(89, 12);
                 l6[n].Text = sdr[0].ToString();
@@ -80,7 +80,7 @@ namespace 美术馆.管理员
                 //label7作者姓名
                 l7[n] = new Label();
                 l7[n].AutoSize = true;
-                l7[n].Location = new System.Drawing.Point(38, 143);
+                l7[n].Location = new System.Drawing.Point(45, 143);
                 l7[n].Name = "label7";
                 l7[n].Size = new System.Drawing.Size(41, 12);
                 l7[n].Text = sdr[1].ToString();
@@ -96,7 +96,7 @@ namespace 美术馆.管理员
                 //label8展览品类别
                 l8[n] = new Label();
                 l8[n].AutoSize = true;
-                l8[n].Location = new System.Drawing.Point(38, 165);
+                l8[n].Location = new System.Drawing.Point(45, 165);
                 l8[n].Name = "label8";
                 l8[n].Size = new System.Drawing.Size(41, 12);
                 l8[n].Text = sdr[2].ToString();
@@ -113,11 +113,24 @@ namespace 美术馆.管理员
                     Image image = Image.FromStream(buf, true);
                     pic[n].Image = image;
                 }
-                this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+                pic[n].SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
                 p[n].Controls.Add(pic[n]);
 
                 n++;
-            }     
+            }
+            sdr.Close();
+        }
+
+        private void zhanlan_details_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            try
+            {
+                this.main.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("发生错误：" + ex.Message);
+            }
         }
     }
 }

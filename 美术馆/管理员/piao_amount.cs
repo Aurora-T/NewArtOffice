@@ -59,9 +59,7 @@ namespace 美术馆.管理员
             string month1 = date1.Month.ToString();
             if (month1.Length == 1)
                 month1 = "0" + month1;
-            string day1 = date1.Day.ToString();
-            if (day1.Length == 1)
-                day1 = "0" + day1;
+            string day1 = date1.Day.ToString();         
             string time1 = year1 + "-" + month1 + "-" + day1;
             //截止时间
             DateTime date2 = DateTime.Parse(dateTimePicker2.Value.ToString());
@@ -69,9 +67,7 @@ namespace 美术馆.管理员
             string month2 = date2.Month.ToString();
             if (month2.Length == 1)
                 month2 = "0" + month2;
-            string day2 = date2.Day.ToString();
-            if (day2.Length == 1)
-                day2 = "0" + day2;
+            string day2 = date2.Day.ToString();           
             string time2 = year2 + "-" + month2 + "-" + day2;
 
             int flag1 = 0,flag2 = 0;

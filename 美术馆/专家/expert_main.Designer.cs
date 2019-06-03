@@ -46,9 +46,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(452, 200);
+            this.pictureBox3.Location = new System.Drawing.Point(301, 133);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(130, 130);
+            this.pictureBox3.Size = new System.Drawing.Size(87, 87);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
@@ -56,9 +57,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(140, 200);
+            this.pictureBox2.Location = new System.Drawing.Point(93, 133);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(130, 130);
+            this.pictureBox2.Size = new System.Drawing.Size(87, 87);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
@@ -66,9 +68,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(286, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(191, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
@@ -77,9 +80,10 @@
             // 
             this.button3.AutoSize = true;
             this.button3.Font = new System.Drawing.Font("隶书", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(478, 356);
+            this.button3.Location = new System.Drawing.Point(319, 237);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 39);
+            this.button3.Size = new System.Drawing.Size(50, 26);
             this.button3.TabIndex = 10;
             this.button3.Text = "修复";
             this.button3.UseVisualStyleBackColor = true;
@@ -89,9 +93,10 @@
             // 
             this.button2.AutoSize = true;
             this.button2.Font = new System.Drawing.Font("隶书", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(164, 356);
+            this.button2.Location = new System.Drawing.Point(109, 237);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 39);
+            this.button2.Size = new System.Drawing.Size(50, 26);
             this.button2.TabIndex = 9;
             this.button2.Text = "检查";
             this.button2.UseVisualStyleBackColor = true;
@@ -101,9 +106,10 @@
             // 
             this.button1.AutoSize = true;
             this.button1.Font = new System.Drawing.Font("隶书", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(315, 172);
+            this.button1.Location = new System.Drawing.Point(210, 115);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 39);
+            this.button1.Size = new System.Drawing.Size(54, 26);
             this.button1.TabIndex = 8;
             this.button1.Text = "鉴定";
             this.button1.UseVisualStyleBackColor = true;
@@ -113,9 +119,10 @@
             // 
             this.button4.AutoSize = true;
             this.button4.Font = new System.Drawing.Font("隶书", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(651, 412);
+            this.button4.Location = new System.Drawing.Point(434, 275);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 39);
+            this.button4.Size = new System.Drawing.Size(50, 26);
             this.button4.TabIndex = 14;
             this.button4.Text = "退出";
             this.button4.UseVisualStyleBackColor = true;
@@ -143,9 +150,9 @@
             // 
             // expert_main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 302);
+            this.ClientSize = new System.Drawing.Size(491, 308);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -153,7 +160,6 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "expert_main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "玛珈山美术馆";

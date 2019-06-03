@@ -78,10 +78,10 @@ namespace 美术馆.专家
             {
                 //输入检查结果和检查结束时间
                 string s = richTextBox1.Text.ToString().Replace(" ", "");
-                string sql1 = "update 检查表 set 检查结果='" + s + "'  where 检查记录编号='" + jno + "'";
+                string sql1 = "update 检查表 set 检查情况='" + s + "'  where 检查记录编号='" + jno + "'";
                 SqlCommand cmd1 = new SqlCommand(sql1, conn);
                 cmd1.ExecuteNonQuery();
-                string sql2 = "update 检查表 set 检查结束时间='" + d1 + "'  where 检查记录编号='" + jno + "'";
+                string sql2 = "update 检查表 set 结束时间='" + d1 + "'  where 检查记录编号='" + jno + "'";
                 SqlCommand cmd2 = new SqlCommand(sql2, conn);
                 cmd2.ExecuteNonQuery();
                 //确定下次检查时间，插入一条新记录，包括藏品编号和应该检查时间
