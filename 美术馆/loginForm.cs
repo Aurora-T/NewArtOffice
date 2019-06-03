@@ -91,9 +91,7 @@ namespace 美术馆
                         {
                             zhanlan_main main = new zhanlan_main(this, id);
                             this.Hide();
-                            sdr.Close();
                             main.Show();
-
                         }
                         //else if (position.Replace(" ", "").Equals("通知管理员"))
                         //{
