@@ -32,7 +32,7 @@ namespace 美术馆.管理员
             this.dataGridView1.Rows.Clear();
 
             //从数据库查询已到检查时间但未安排并且现在在馆内的藏品
-            string sql = "SELECT 检查记录编号,藏品编号,应该检查时间 FROM 检查表 where 专家编号 is NULL and 应该检查时间='" + date + "' or 应该检查时间 < '" + date + "' and 藏品编号 is not in(select 藏品编号 from 外借表 where 起始时间>'" + d1 + "'  and 截止时间<'" + d1 + "' or 截止时间='" + d1 + "')";
+            string sql = "SELECT 检查记录编号,藏品编号,应该检查时间 FROM 检查表 where 专家编号 is NULL and 应该检查时间='" + date + "' or 应该检查时间 < '" + date + "' and 藏品编号 not in(select 藏品编号 from 外借表 where 起始时间>'" + d1 + "'  and 截止时间<'" + d1 + "' or 截止时间='" + d1 + "')";
             SqlCommand Cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = Cmd.ExecuteReader();
             while (sdr.Read())
@@ -44,7 +44,7 @@ namespace 美术馆.管理员
             }
             sdr.Close();
             //查询从未检查过并且在馆内的藏品
-            string sql1 = "SELECT 藏品表.藏品编号 FROM 藏品表 where 藏品表.藏品编号 not in(select 藏品编号 from 检查表) and 藏品表.藏品编号 is not in(select 藏品编号 from 外借表 where 起始时间>'" + d1 + "'  and 截止时间<'" + d1 + "' or 截止时间='" + d1 + "')";
+            string sql1 = "SELECT 藏品表.藏品编号 FROM 藏品表 where 藏品表.藏品编号 not in(select 藏品编号 from 检查表) and 藏品表.藏品编号 not in(select 藏品编号 from 外借表 where 起始时间>'" + d1 + "'  and 截止时间<'" + d1 + "' or 截止时间='" + d1 + "')";
             SqlCommand Cmd1 = new SqlCommand(sql1, conn);
             SqlDataReader sdr1 = Cmd1.ExecuteReader();
             while (sdr1.Read())
@@ -94,7 +94,7 @@ namespace 美术馆.管理员
             this.dataGridView1.Rows.Clear();
 
             //从数据库查询已到检查时间但未安排并且在馆内的藏品
-            string sql = "SELECT 检查记录编号,藏品编号,应该检查时间 FROM 检查表 where 专家编号 is NULL and 应该检查时间='" + date + "' or 应该检查时间 < '" + date + "' and 藏品编号 is not in(select 藏品编号 from 外借表 where 起始时间>'" + d1 + "'  and 截止时间<'" + d1 + "' or 截止时间='" + d1 + "')";
+            string sql = "SELECT 检查记录编号,藏品编号,应该检查时间 FROM 检查表 where 专家编号 is NULL and 应该检查时间='" + date + "' or 应该检查时间 < '" + date + "' and 藏品编号 not in(select 藏品编号 from 外借表 where 起始时间<'" + d1 + "' or 起始时间='" + d1 + "' and 截止时间>'" + d1 + "' )";
             SqlCommand Cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = Cmd.ExecuteReader();
             while (sdr.Read())
@@ -106,7 +106,7 @@ namespace 美术馆.管理员
             }
             sdr.Close();
             //查询从未检查过并且在馆内的藏品
-            string sql1 = "SELECT 藏品表.藏品编号 FROM 藏品表 where 藏品表.藏品编号 not in(select 藏品编号 from 检查表) and 藏品表.藏品编号 is not in(select 藏品编号 from 外借表 where 起始时间>'" + d1 + "'  and 截止时间<'" + d1 + "' or 截止时间='" + d1 + "')";
+            string sql1 = "SELECT 藏品表.藏品编号 FROM 藏品表 where 藏品表.藏品编号 not in(select 藏品编号 from 检查表) and 藏品表.藏品编号 not in(select 藏品编号 from 外借表 where 起始时间<'" + d1 + "'  or 起始时间='" + d1 + "'  and 截止时间>'" + d1 + "')";
             SqlCommand Cmd1 = new SqlCommand(sql1, conn);
             SqlDataReader sdr1 = Cmd1.ExecuteReader();
             while (sdr1.Read())

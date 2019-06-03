@@ -38,9 +38,9 @@ namespace 美术馆.管理员
             label6.Text = sdr[2].ToString();
             label8.Text = sdr[3].ToString();
             label4.Text = sdr[4].ToString().Substring(0, 8);
-            //MemoryStream buf = new MemoryStream((byte[])sdr[5]);
-            //Image image = Image.FromStream(buf, true);
-            //pictureBox1.Image = image;
+            MemoryStream buf = new MemoryStream((byte[])sdr[5]);
+            Image image = Image.FromStream(buf, true);
+            pictureBox1.Image = image;
             sdr.Close();
 
             //专家信息
@@ -63,50 +63,59 @@ namespace 美术馆.管理员
         //将选中的专家进行匹配
         private void button1_Click(object sender, EventArgs e)
         {
+            int eno;
             string d1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             //曾被检查过,检查表里已有藏品编号和应该检查时间，设置专家编号和开始时间
             if (jno!=-1)
             {
-                int eno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                string sql = "update 检查表 set 专家编号='" + eno + "' where 检查记录编号='" + jno + "'";
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                string sql1 = "update 检查表 set 开始时间='" + d1 + "' where 检查记录编号='" + jno + "'";
-                SqlCommand cmd1 = new SqlCommand(sql1, conn);
-                int n = cmd.ExecuteNonQuery();
-                int m = cmd1.ExecuteNonQuery();
-                if (n > 0&&m>0)
+                if (this.dataGridView1.CurrentRow != null)
                 {
-                    MessageBox.Show("分配成功！");
-                    this.Close();
+                    if (this.dataGridView1.CurrentRow.Cells[0].Value != null)
+                    {
+                        eno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                        string sql = "update 检查表 set 专家编号='" + eno + "' where 检查记录编号='" + jno + "'";
+                        SqlCommand cmd = new SqlCommand(sql, conn);
+                        string sql1 = "update 检查表 set 开始时间='" + d1 + "' where 检查记录编号='" + jno + "'";
+                        SqlCommand cmd1 = new SqlCommand(sql1, conn);
+                        int n = cmd.ExecuteNonQuery();
+                        int m = cmd1.ExecuteNonQuery();
+                        if (n > 0 && m > 0)
+                        {
+                            MessageBox.Show("分配成功！");
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("未成功，请重新分配");
+                        }
+                    }
+                    //从未被检查过，插入检查记录
+                    else
+                    {
+                        eno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                        string sql = "Insert Into 检查表(藏品编号,专家编号,开始时间) Values (@cno,@eno,@time)";
+                        SqlCommand cmd = new SqlCommand(sql, conn);
+                        SqlParameter sp = cmd.Parameters.Add("@cno", SqlDbType.Int);
+                        sp.Value = this.cno;
+                        sp = cmd.Parameters.Add("@eno", SqlDbType.Int);
+                        sp.Value = eno;
+                        sp = cmd.Parameters.Add("@time", SqlDbType.Char);
+                        sp.Value = d1;
+                        int n = cmd.ExecuteNonQuery();
+                        if (n > 0)
+                        {
+                            MessageBox.Show("分配成功！");
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("未成功，请重新分配");
+                        }
+                    }
                 }
                 else
-                {
-                    MessageBox.Show("未成功，请重新分配");
-                }
-            }
-            //从未被检查过，插入检查记录
-            else
-            {
-                int eno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                string sql = "Insert Into 检查表(藏品编号,专家编号,开始时间) Values (@cno,@eno,@time)";
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                SqlParameter sp = cmd.Parameters.Add("@cno", SqlDbType.Int);
-                sp.Value = this.cno;
-                sp = cmd.Parameters.Add("@eno", SqlDbType.Int);
-                sp.Value = eno;
-                sp = cmd.Parameters.Add("@time", SqlDbType.Char);
-                sp.Value = d1;
-                int n = cmd.ExecuteNonQuery();
-                if (n > 0)
-                {
-                    MessageBox.Show("分配成功！");
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("未成功，请重新分配");
-                }
-            }
+                    MessageBox.Show("未选中");                               
+            }           
         }
     }
 }

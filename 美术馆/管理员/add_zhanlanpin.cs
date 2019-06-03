@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace 美术馆.管理员
 {
-    public partial class changeQuestionSecond : Form
+    public partial class add_zhanlanpin : Form
     {
-        public changeQuestionSecond(changeQuestion change,int id)
+        public add_zhanlanpin(arrange_zhanlan zhanlan,int zl)
         {
             InitializeComponent();
         }

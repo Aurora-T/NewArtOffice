@@ -47,13 +47,10 @@ namespace 美术馆.管理员
             if (month.Length == 1)
                 month = "0" + month;
             string day = date.Day.ToString();
-            if (day.Length == 1)
-                day = "0" + day;
             string time = year + "-" + month + "-" + day;
 
             //清空原datagridview中的数据
             this.dataGridView1.Rows.Clear();
-
             //从数据库按查询条件获取充值记录
             string sql = "SELECT 票号,出票时间,参观者姓名,参观者身份证号 FROM 取票表 where (Datename(year,出票时间)+'-'+Datename(month, 出票时间) + '-' + Datename(day, 出票时间)) = '" + time + "'";
             SqlCommand Cmd = new SqlCommand(sql, conn);
@@ -64,7 +61,7 @@ namespace 美术馆.管理员
                 this.dataGridView1.Rows[index].Cells[0].Value = sdr[0].ToString();
                 this.dataGridView1.Rows[index].Cells[1].Value = sdr[1].ToString();
                 this.dataGridView1.Rows[index].Cells[2].Value = sdr[2].ToString();
-                this.dataGridView1.Rows[index].Cells[3].Value = sdr[4].ToString();               
+                this.dataGridView1.Rows[index].Cells[3].Value = sdr[3].ToString();               
             }
             sdr.Close();
         }
@@ -85,7 +82,7 @@ namespace 美术馆.管理员
                 this.dataGridView1.Rows[index].Cells[0].Value = sdr[0].ToString();
                 this.dataGridView1.Rows[index].Cells[1].Value = sdr[1].ToString();
                 this.dataGridView1.Rows[index].Cells[2].Value = sdr[2].ToString();
-                this.dataGridView1.Rows[index].Cells[3].Value = sdr[4].ToString();
+                this.dataGridView1.Rows[index].Cells[3].Value = sdr[3].ToString();
             }
             sdr.Close();
         }

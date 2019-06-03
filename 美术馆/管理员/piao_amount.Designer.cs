@@ -49,16 +49,16 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Location = new System.Drawing.Point(97, 148);
+            this.groupBox1.Location = new System.Drawing.Point(97, 149);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(173, 52);
+            this.groupBox1.Size = new System.Drawing.Size(173, 53);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "起始时间";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(6, 20);
+            this.dateTimePicker1.Location = new System.Drawing.Point(6, 21);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(158, 26);
             this.dateTimePicker1.TabIndex = 0;
@@ -68,14 +68,14 @@
             this.groupBox2.Controls.Add(this.dateTimePicker2);
             this.groupBox2.Location = new System.Drawing.Point(97, 225);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(173, 52);
+            this.groupBox2.Size = new System.Drawing.Size(173, 53);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "截止时间";
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(6, 20);
+            this.dateTimePicker2.Location = new System.Drawing.Point(6, 21);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(158, 26);
             this.dateTimePicker2.TabIndex = 0;

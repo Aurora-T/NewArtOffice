@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="管理员\add_zhanlanpin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\add_zhanlanpin.Designer.cs">
+      <DependentUpon>add_zhanlanpin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\arrange_zhanlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\arrange_zhanlan.Designer.cs">
+      <DependentUpon>arrange_zhanlan.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\changeInformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -294,11 +306,29 @@
     <Compile Include="管理员\yuyue_record.Designer.cs">
       <DependentUpon>yuyue_record.cs</DependentUpon>
     </Compile>
+    <Compile Include="管理员\zhanlan_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\zhanlan_details.Designer.cs">
+      <DependentUpon>zhanlan_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\zhanlan_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\zhanlan_main.Designer.cs">
+      <DependentUpon>zhanlan_main.cs</DependentUpon>
+    </Compile>
     <Compile Include="美术馆DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>美术馆DataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="管理员\add_zhanlanpin.resx">
+      <DependentUpon>add_zhanlanpin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\arrange_zhanlan.resx">
+      <DependentUpon>arrange_zhanlan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="管理员\changeInformation.resx">
       <DependentUpon>changeInformation.cs</DependentUpon>
     </EmbeddedResource>
@@ -430,6 +460,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\yuyue_record.resx">
       <DependentUpon>yuyue_record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\zhanlan_details.resx">
+      <DependentUpon>zhanlan_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\zhanlan_main.resx">
+      <DependentUpon>zhanlan_main.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
