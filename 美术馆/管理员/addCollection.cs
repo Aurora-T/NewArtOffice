@@ -87,10 +87,17 @@ namespace 美术馆.管理员
                 this.Close();
                 this.page.Show();
                 this.page.save();
+                
             }
         }
 
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.page.Show();
+        }
+
+
 
         //private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         //{

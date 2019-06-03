@@ -17,11 +17,13 @@ namespace 美术馆
         public SqlConnection conn = null;
         private int id;
         private int userid;
+        index page;
         public cangpinjianding(index l,int id)
         {
             InitializeComponent();
             this.conn = l.conn;
             this.userid = id;
+            this.page = l;
             String sql = "select 藏品名称,类别,作者,创作年代,征集时间 from 征集表 where 状态='未匹配'order by 征集时间";
             SqlCommand sc = new SqlCommand(sql, conn);
             SqlDataAdapter myda = new SqlDataAdapter(sc);
@@ -30,10 +32,15 @@ namespace 美术馆
             dataGridView1.DataSource = dt;
             //得到选中行某列的值
             dataGridView1.ClearSelection();
+            label4.Text = "";
+            label11.Text = "";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            label4.Text = "";
+            label11.Text = "";
+            dataGridView1.ClearSelection();
             addCollection addclo = new addCollection(this);
             this.Hide();
             addclo.Show();
@@ -61,6 +68,8 @@ namespace 美术馆
                 dataGridView1.DataSource = dt;
                 dataGridView1.ClearSelection();
             }
+            label4.Text = "";
+            label11.Text = "";
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -144,6 +153,8 @@ namespace 美术馆
                 dataGridView1.DataSource = dt;
             }
             dataGridView1.ClearSelection();
+            label4.Text = "";
+            label11.Text = "";
         }
 
         private void cangpinjianding_Load(object sender, EventArgs e)
@@ -160,12 +171,17 @@ namespace 美术馆
             dataGridView1.DataSource = dt;
             //得到选中行某列的值
             dataGridView1.ClearSelection();
+            label4.Text = "";
+            label11.Text = "";
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedCells.Count != 0)
             {
+                label4.Text = "";
+                label11.Text = "";
+                dataGridView1.ClearSelection();
                 matchingExpert mat = new matchingExpert(this, this.id, this.userid);
                 this.Hide();
                 mat.Show();
@@ -174,6 +190,15 @@ namespace 美术馆
             {
                 MessageBox.Show("未选择藏品", "提示");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label4.Text = "";
+            label11.Text = "";
+            dataGridView1.ClearSelection();
+            this.Hide();
+            this.page.Show();
         }
     }
 }

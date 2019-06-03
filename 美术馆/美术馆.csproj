@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="专家\changeInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专家\changeInformation.Designer.cs">
+      <DependentUpon>changeInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专家\changePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专家\changePassword.Designer.cs">
+      <DependentUpon>changePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专家\changeQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专家\changeQuestion.Designer.cs">
+      <DependentUpon>changeQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="专家\changeQuestionSecond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="专家\changeQuestionSecond.Designer.cs">
+      <DependentUpon>changeQuestionSecond.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\changeInformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -299,6 +323,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>美术馆DataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="专家\changeInformation.resx">
+      <DependentUpon>changeInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专家\changePassword.resx">
+      <DependentUpon>changePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专家\changeQuestion.resx">
+      <DependentUpon>changeQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="专家\changeQuestionSecond.resx">
+      <DependentUpon>changeQuestionSecond.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="管理员\changeInformation.resx">
       <DependentUpon>changeInformation.cs</DependentUpon>
     </EmbeddedResource>

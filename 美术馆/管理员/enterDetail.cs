@@ -16,7 +16,7 @@ namespace 美术馆.管理员
         public SqlConnection conn = null;
         private int userid;
         private int cid;
-        private enter page;
+        public enter page;
         public enterDetail(enter l,int id,int userid)
         {
             InitializeComponent();
@@ -89,11 +89,11 @@ namespace 美术馆.管理员
             this.page.Show();
             this.page.save();
         }
-        public void save()
+
+        private void button4_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             this.page.Show();
-            this.page.save();
         }
     }
 }

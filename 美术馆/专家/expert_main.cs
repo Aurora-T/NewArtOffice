@@ -22,24 +22,9 @@ namespace 美术馆.专家
             this.id = id;
             this.conn = l.conn;
             InitializeComponent();
-            //label2.Text = id.ToString();
+            label4.Text = id.ToString();
         }
 
-        //点击退出后断开数据库连接，直接退出系统
-        private void button6_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.Close();
-                l.Close();
-                conn.Close();
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show("发生错误：" + ex.Message);
-            }
-        }
 
         //点击叉号退回登录界面
         private void index_FormClosed(object sender, FormClosedEventArgs e)
@@ -74,6 +59,42 @@ namespace 美术馆.专家
             xiufu j = new xiufu(this);
             this.Hide();
             j.Show();
+        }
+
+        private void 修改个人信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            changeInformation change = new changeInformation(this, this.id);
+            this.Hide();
+            change.Show();
+        }
+
+        private void 修改密保问题ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            changeQuestion change = new changeQuestion(this, this.id);
+            this.Hide();
+            change.Show();
+        }
+
+        private void 修改密码ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            changePassword change = new changePassword(this, this.id);
+            this.Hide();
+            change.Show();
+        }
+
+        private void 退出系统ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Close();
+                l.Close();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("发生错误：" + ex.Message);
+            }
         }
     }
 }
