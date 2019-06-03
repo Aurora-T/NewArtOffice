@@ -87,6 +87,12 @@ namespace 美术馆
                             this.Hide();
                             main.Show();
                         }
+                        else if (position.Replace(" ", "").Equals("展览管理员"))
+                        {
+                            zhanlan_main main = new zhanlan_main(this, id);
+                            this.Hide();
+                            main.Show();
+                        }
                         //else if (position.Replace(" ", "").Equals("通知管理员"))
                         //{
                         //    expert_main main = new expert_main(this, id);
@@ -97,11 +103,14 @@ namespace 美术馆
                     else
                     {
                         MessageBox.Show("密码错误", "提示");
+                        textBox2.Text = "";
                     }
                 }
                 else
                 {
                     MessageBox.Show("用户名不存在", "提示");
+                    textBox1.Text = "";
+                    textBox2.Text = "";
                 }
                 sdr.Close();
             }

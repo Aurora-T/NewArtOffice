@@ -63,7 +63,7 @@ namespace 美术馆.管理员
                     textBox1.Text = "";
                     this.Hide();
                     this.page.Show();
-                }
+              
             }
         }
 }

@@ -51,8 +51,8 @@ namespace 美术馆.管理员
             //清空原datagridview中的数据
             this.dataGridView1.Rows.Clear();
 
-            //从数据库查询已到检查时间但未安排并且现在在馆内的藏品
-            string sql = "SELECT 编号,预约日期,同行人1姓名,同行人1身份证号,同行人2姓名,同行人2身份证号,联系方式,状态 FROM 预约表 where (Datename(year,操作时间)+'-'+Datename(month, 操作时间) + '-' + Datename(day, 操作时间)) = '" + time + "'";
+            //从数据库查询某一天的预约记录
+            string sql = "SELECT 编号,同行人1姓名,同行人1身份证号,同行人2姓名,同行人2身份证号,联系方式,状态,操作时间 FROM 预约表 where (Datename(year,预约日期)+'-'+Datename(month, 预约日期) + '-' + Datename(day, 预约日期)) = '" + time + "'";
             SqlCommand Cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = Cmd.ExecuteReader();
             while (sdr.Read())

@@ -25,12 +25,14 @@ namespace 美术馆.管理员
             label2.Text = id.ToString();
 
             //现在的放票数
-            string d = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-            string sql = "select 票数 from 放票数表 where 起始时间<'"+d+" 'and 截止时间>'"+d+"'";
+            string d=DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            string sql = "select 票数 from 放票数表 where 起始时间<='"+d+" 'and 截止时间>='"+d+"'";
             SqlCommand Cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = Cmd.ExecuteReader();
-            sdr.Read();
-            label4.Text = sdr[0].ToString();
+            if (sdr.Read())
+                label4.Text = sdr[0].ToString();
+            else
+                label4.Text = "500";
             sdr.Close();
         }
 
@@ -71,6 +73,7 @@ namespace 美术馆.管理员
             if (day2.Length == 1)
                 day2 = "0" + day2;
             string time2 = year2 + "-" + month2 + "-" + day2;
+
             int flag1 = 0,flag2 = 0;
             if (string.Compare(time1, time2) == 1 || string.Compare(time1, time2) == 0)
                 MessageBox.Show("截止时间应晚于起始时间");
