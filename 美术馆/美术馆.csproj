@@ -365,6 +365,30 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>美术馆DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="通知管理员\complaints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="通知管理员\complaints.Designer.cs">
+      <DependentUpon>complaints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="通知管理员\inform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="通知管理员\inform.Designer.cs">
+      <DependentUpon>inform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="通知管理员\informDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="通知管理员\informDetail.Designer.cs">
+      <DependentUpon>informDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="通知管理员\inform_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="通知管理员\inform_main.Designer.cs">
+      <DependentUpon>inform_main.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="changeQuestionSecondp.resx">
       <DependentUpon>changeQuestionSecondp.cs</DependentUpon>
     </EmbeddedResource>
@@ -529,6 +553,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\yuyue_record.resx">
       <DependentUpon>yuyue_record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="通知管理员\complaints.resx">
+      <DependentUpon>complaints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="通知管理员\inform.resx">
+      <DependentUpon>inform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="通知管理员\informDetail.resx">
+      <DependentUpon>informDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="通知管理员\inform_main.resx">
+      <DependentUpon>inform_main.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
