@@ -14,7 +14,7 @@ namespace 美术馆.管理员
     public partial class changeQuestion : Form
     {
         public SqlConnection conn = null;
-        index page;
+        public index page;
         private int userid;
         public changeQuestion(index l, int userid)
         {
@@ -50,17 +50,24 @@ namespace 美术馆.管理员
                 SqlDataReader sdr;
                 sdr = cmd1.ExecuteReader();
                 sdr.Read();
-                if(sdr[0].ToString()==comboBox1.Text&& sdr[1].ToString() == textBox1.Text)
+                if(sdr[0].ToString()==comboBox1.Text&& sdr[1].ToString().Trim() == textBox1.Text.Trim())
                 {
+                    sdr.Close();
                     changeQuestionSecond change = new changeQuestionSecond(this, this.userid);
                     this.Hide();
                     change.Show();
                 }
                 else
                 {
+                    sdr.Close();
                     MessageBox.Show("密保错误", "提示");
                 }
             }
+        }
+        public void clear()
+        {
+            comboBox1.Text = "";
+            textBox1.Text = "";
         }
     }
 }

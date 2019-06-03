@@ -19,6 +19,9 @@ namespace 美术馆
         public loginForm()
         {
             InitializeComponent();
+            string ConStr = "Data Source=101.132.124.13;Initial Catalog=美术馆;User ID=sa;Password=mjsmsg_123";
+            conn = new SqlConnection(ConStr);
+            conn.Open();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -32,9 +35,6 @@ namespace 美术馆
             else
             {
                 int flag=0;
-                string ConStr = "Data Source=101.132.124.13;Initial Catalog=美术馆;User ID=sa;Password=mjsmsg_123";
-                conn = new SqlConnection(ConStr);
-                conn.Open();
                 string sql = "SELECT 职位,工号,密码 from 员工信息表 where 工号='" + userid  + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.CommandType = CommandType.Text;

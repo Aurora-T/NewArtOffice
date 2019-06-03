@@ -13,7 +13,10 @@ namespace 美术馆.管理员
 {
     public partial class changeQuestionSecond : Form
     {
-        public changeQuestionSecond()
+        public SqlConnection conn = null;
+        changeQuestion page;
+        private int userid;
+        public changeQuestionSecond(changeQuestion page,int userid)
         {
             InitializeComponent();
             this.conn = page.conn;

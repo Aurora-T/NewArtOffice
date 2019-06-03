@@ -52,9 +52,9 @@ namespace 美术馆
             {
                 MessageBox.Show("新密码与确认密码不一致", "提示");
             }
-            else if (textBox2.Text.Length < 6 || textBox2.Text.Length > 16)
+            else if (textBox2.Text.Length < 6 || textBox2.Text.Length > 10)
             {
-                MessageBox.Show("密码长度需为6-16位", "提示");
+                MessageBox.Show("密码长度需为6-10位", "提示");
             }
             else
             {
@@ -66,11 +66,13 @@ namespace 美术馆
                 sdr.Read();
                 if (sdr[0].ToString().Trim() != textBox1.Text.Trim())
                 {
-                    MessageBox.Show("密码长度需为6-16位", "提示");
+                    sdr.Close();
+                    MessageBox.Show("旧密码错误", "提示");
                 }
                 else
                 {
-                    SqlCommand cmd = new SqlCommand("update 员工信息表 set 密码='" + textBox2.Text + "' where 工号='" + this.userid + "'", conn);
+                    sdr.Close();
+                    SqlCommand cmd = new SqlCommand("update 员工信息表 set 密码='" + textBox2.Text.ToString() + "' where 工号='" + this.userid + "'", conn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("提交成功", "提示");
                     textBox1.Text = "";
