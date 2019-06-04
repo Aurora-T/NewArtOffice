@@ -268,6 +268,12 @@
     <Compile Include="管理员\exit.Designer.cs">
       <DependentUpon>exit.cs</DependentUpon>
     </Compile>
+    <Compile Include="管理员\zhanlan_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\zhanlan_history.Designer.cs">
+      <DependentUpon>zhanlan_history.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\give.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -475,6 +481,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\exit.resx">
       <DependentUpon>exit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\zhanlan_history.resx">
+      <DependentUpon>zhanlan_history.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\give.resx">
       <DependentUpon>give.cs</DependentUpon>
