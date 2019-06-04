@@ -59,5 +59,11 @@ namespace 美术馆.管理员
                 this.page.load_gallery();
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.page.Show();
+        }
     }
 }

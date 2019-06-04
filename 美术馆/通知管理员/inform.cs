@@ -104,5 +104,12 @@ namespace 美术馆.通知管理员
             dataGridView1.DataSource = dt;
             dataGridView1.ClearSelection();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            sendInform si = new sendInform(this,this.userid);
+            si.Show();
+            this.Hide();
+        }
     }
 }
