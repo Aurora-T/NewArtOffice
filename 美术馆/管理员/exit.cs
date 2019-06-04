@@ -234,5 +234,11 @@ namespace 美术馆.管理员
             load_gallery();
             label5.Text = "";
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.page.Show();
+        }
     }
 }

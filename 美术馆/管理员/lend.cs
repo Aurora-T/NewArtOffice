@@ -77,7 +77,8 @@ namespace 美术馆.管理员
                     }
                     else
                     {
-                        string sql4 = "SELECT 藏品表.藏品编号,出馆表.出馆时间  from 藏品表,出馆表 where 藏品表.藏品编号=出馆表,藏品编号 and 藏品表.藏品编号='" + this.cid + "' and 藏品表.状态='出馆' and convert(varchar(10),出馆时间,20)<='" + dateTimePicker1.Value.ToString("yyyy-MM-dd 00:00:00")+"'";
+                        string sql4 = "SELECT 藏品表.藏品编号,出馆表.出馆时间  from 藏品表,出馆表 where 藏品表.藏品编号=出馆表.藏品编号 and 藏品表.藏品编号='" + this.cid + "' and 藏品表.状态='出馆' and convert(varchar(10),出馆时间,20)<='" + dateTimePicker1.Value.ToString("yyyy-MM-dd 00:00:00")+"'";
+                        sdr1.Close();
                         SqlCommand cmd4 = new SqlCommand(sql4, conn);
                         cmd4.CommandType = CommandType.Text;
                         SqlDataReader sdr4;
@@ -89,7 +90,7 @@ namespace 美术馆.管理员
                         }
                         else
                         {
-                            sdr1.Close();
+                            sdr4.Close();
                             SqlCommand cmd2 = new SqlCommand("insert into 外借表(藏品编号,操作员工号,外借美术馆编号,美术馆负责人姓名,联系方式,起始时间,截止时间) values('" + this.cid + "','" + this.userid + "','" + this.gid + "','" + textBox2.Text + "','" + textBox3.Text + "','" + dateTimePicker1.Value.ToString("yyyy-MM-dd 00:00:00") + "','" + dateTimePicker2.Value.ToString("yyyy-MM-dd 23:59:59") + "')", conn);
                             cmd2.ExecuteNonQuery();
                             MessageBox.Show("提交成功", "提示");

@@ -54,6 +54,10 @@ namespace 美术馆.管理员
             {
                 MessageBox.Show("员工联系电话格式错误", "提示");
             }
+            else if (!System.Text.RegularExpressions.Regex.IsMatch(textBox3.Text, @"(^\d{18}$)|(^\d{15}$)"))
+            {
+                MessageBox.Show("员工身份证号码格式错误", "提示");
+            }
             else
             {
                 string gender = "";
@@ -81,6 +85,12 @@ namespace 美术馆.管理员
                 }
                 
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.page.Show();
         }
     }
 }

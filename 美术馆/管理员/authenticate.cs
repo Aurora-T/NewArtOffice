@@ -70,6 +70,7 @@ namespace 美术馆
             }
             label4.Text = "";
             label11.Text = "";
+            comboBox1.Text = "";
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

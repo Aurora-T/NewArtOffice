@@ -61,6 +61,14 @@ namespace 美术馆.管理员
             {
                 label10.Text = sdr1[0].ToString();
             }
+            if (sdr1.HasRows == false)
+            {
+                label4.Text = "无";
+            }
+            else
+            {
+                label4.Text = sdr1[1].ToString();
+            }
             sdr1.Close();
         }
 

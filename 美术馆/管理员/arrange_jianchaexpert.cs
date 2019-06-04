@@ -74,8 +74,9 @@ namespace 美术馆.管理员
             //曾被检查过,检查表里已有藏品编号和应该检查时间，设置专家编号和开始时间
             if (jno != -1)
             {
-                if (this.dataGridView1.CurrentRow != null)
+                if (this.dataGridView1.CurrentRow != null&& this.dataGridView1.CurrentRow.Cells[0].Value != null)
                 {        
+                        
                         eno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
                         string sql = "update 检查表 set 专家编号='" + eno + "' where 检查记录编号='" + jno + "'";
                         SqlCommand cmd = new SqlCommand(sql, conn);

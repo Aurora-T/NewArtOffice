@@ -42,6 +42,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -80,7 +81,7 @@
             // button1
             // 
             this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(828, 428);
+            this.button1.Location = new System.Drawing.Point(828, 385);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 28);
             this.button1.TabIndex = 3;
@@ -91,7 +92,7 @@
             // button2
             // 
             this.button2.AutoSize = true;
-            this.button2.Location = new System.Drawing.Point(828, 488);
+            this.button2.Location = new System.Drawing.Point(828, 436);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 28);
             this.button2.TabIndex = 4;
@@ -139,7 +140,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(766, 234);
+            this.groupBox1.Location = new System.Drawing.Point(766, 191);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(278, 173);
             this.groupBox1.TabIndex = 11;
@@ -158,7 +159,7 @@
             this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Controls.Add(this.comboBox2);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Location = new System.Drawing.Point(766, 76);
+            this.groupBox2.Location = new System.Drawing.Point(766, 34);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(278, 136);
             this.groupBox2.TabIndex = 12;
@@ -200,11 +201,23 @@
             this.label6.Size = new System.Drawing.Size(0, 18);
             this.label6.TabIndex = 0;
             // 
+            // button3
+            // 
+            this.button3.AutoSize = true;
+            this.button3.Location = new System.Drawing.Point(828, 487);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(155, 28);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "返回主页";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // exit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1072, 558);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
@@ -244,5 +257,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button button3;
     }
 }

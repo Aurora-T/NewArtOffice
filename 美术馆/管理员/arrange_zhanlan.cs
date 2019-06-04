@@ -84,9 +84,9 @@ namespace 美术馆.管理员
                 sp.Value = richTextBox1.Text;
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("安排成功");
-            }
 
-            button2.Enabled = true;
+                button2.Enabled = true;
+            }      
         }
 
         //显示开始时间时的空余的展厅
@@ -139,6 +139,11 @@ namespace 美术馆.管理员
             {
                 MessageBox.Show("发生错误：" + ex.Message);
             }
+        }
+
+        private void arrange_zhanlan_Load(object sender, EventArgs e)
+        {
+
         }
 
         //选择展厅
