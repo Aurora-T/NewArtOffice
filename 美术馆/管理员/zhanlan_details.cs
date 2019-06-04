@@ -15,21 +15,19 @@ namespace 美术馆.管理员
     public partial class zhanlan_details : Form
     {
         SqlConnection conn = null;
-        zhanlan_history main = null;
-        int zno;
-        public zhanlan_details(zhanlan_history main,int zno)
+        zhanlan_history h = null;
+        int zl;
+        public zhanlan_details(zhanlan_history h, int zl)
         {
             InitializeComponent();
-            this.main = main;
-            this.conn = main.conn;
-            this.zno = zno;
-            label2.Text = zno.ToString();
+            this.h = h;
+            this.conn = h.conn;
+            this.zl = zl;
+            label2.Text = zl.ToString();
         }
 
-        //显示展览详情
         private void zhanlan_details_Load(object sender, EventArgs e)
         {
-            int n = 1;
             Panel[] p = new Panel[500];
             Label[] l3 = new Label[500];
             Label[] l4 = new Label[500];
@@ -37,84 +35,92 @@ namespace 美术馆.管理员
             Label[] l6 = new Label[500];
             Label[] l7 = new Label[500];
             Label[] l8 = new Label[500];
-            PictureBox[] pic = new PictureBox[500];
-            string sql = "Select 展览品名称,展览品作者姓名,展览品类别,图片 from 展览品表 where 展览编号='"+zno+"'";
+            Label[] l9 = new Label[500];
+            Label[] l10 = new Label[500];
+            int n = 1;
+            PictureBox[] picture = new PictureBox[500];
+            string sql = "Select 展览品名称,展览品作者姓名,展览品类别,联系方式,图片 from 展览品表 where 展览编号='"+zl+"'";
             SqlCommand Cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = Cmd.ExecuteReader();
             while (sdr.Read())
             {
                 //面板
                 p[n] = new Panel();
-                p[n].BackColor = System.Drawing.Color.Transparent;
-                p[n].Name = "panel1";
-                p[n].Size = new System.Drawing.Size(130, 189);
-                if(n%2==1)
-                    p[n].Location = new System.Drawing.Point(22, (n - 1) / 2 * 216 + 36);
+                p[n].Size = new System.Drawing.Size(145, 197);
+                if (n % 2 == 1)
+                    p[n].Location = new System.Drawing.Point(13, (n - 1) / 2 * 224 + 41);
                 else
-                    p[n].Location = new System.Drawing.Point(177, (n - 2) / 2 * 216 + 36);
+                    p[n].Location = new System.Drawing.Point(188, (n - 2) / 2 * 224 + 41);
                 this.Controls.Add(p[n]);
-                //label3名称
+                //label3
                 l3[n] = new Label();
                 l3[n].AutoSize = true;
-                l3[n].Location = new System.Drawing.Point(3, 120);
-                l3[n].Name = "label3";
+                l3[n].Location = new System.Drawing.Point(4, 110);
                 l3[n].Size = new System.Drawing.Size(41, 12);
                 l3[n].Text = "名称：";
                 p[n].Controls.Add(l3[n]);
-                //label6展览品名称
-                l6[n] = new Label();
-                l6[n].AutoSize = true;
-                l6[n].Location = new System.Drawing.Point(45, 120);
-                l6[n].Name = "label6";
-                l6[n].Size = new System.Drawing.Size(89, 12);
-                l6[n].Text = sdr[0].ToString();
-                p[n].Controls.Add(l6[n]);
-                //label4作者
+                //label4
                 l4[n] = new Label();
                 l4[n].AutoSize = true;
-                l4[n].Location = new System.Drawing.Point(3, 143);
-                l4[n].Name = "label4";
+                l4[n].Location = new System.Drawing.Point(51, 110);
                 l4[n].Size = new System.Drawing.Size(41, 12);
-                l4[n].Text = "作者：";
+                l4[n].Text = sdr[0].ToString();
                 p[n].Controls.Add(l4[n]);
-                //label7作者姓名
-                l7[n] = new Label();
-                l7[n].AutoSize = true;
-                l7[n].Location = new System.Drawing.Point(45, 143);
-                l7[n].Name = "label7";
-                l7[n].Size = new System.Drawing.Size(41, 12);
-                l7[n].Text = sdr[1].ToString();
-                p[n].Controls.Add(l7[n]);
-                //label5类别
+                //label5
                 l5[n] = new Label();
                 l5[n].AutoSize = true;
-                l5[n].Location = new System.Drawing.Point(3, 165);
-                l5[n].Name = "label5";
-                l5[n].Size = new System.Drawing.Size(41, 12);
-                l5[n].Text = "类别：";
+                l5[n].Location = new System.Drawing.Point(3, 131);
+                l5[n].Size = new System.Drawing.Size(89, 12);
+                l5[n].Text = "作者或负责人：";
                 p[n].Controls.Add(l5[n]);
-                //label8展览品类别
+                //label6
+                l6[n] = new Label();
+                l6[n].AutoSize = true;
+                l6[n].Location = new System.Drawing.Point(95, 131);
+                l6[n].Size = new System.Drawing.Size(41, 12);
+                l6[n].Text = sdr[1].ToString();
+                p[n].Controls.Add(l6[n]);
+                //label7
+                l7[n] = new Label();
+                l7[n].AutoSize = true;
+                l7[n].Location = new System.Drawing.Point(4, 152);
+                l7[n].Size = new System.Drawing.Size(41, 12);
+                l7[n].Text = "类别：";
+                p[n].Controls.Add(l7[n]);
+                //label8
                 l8[n] = new Label();
                 l8[n].AutoSize = true;
-                l8[n].Location = new System.Drawing.Point(45, 165);
-                l8[n].Name = "label8";
+                l8[n].Location = new System.Drawing.Point(51, 152);
                 l8[n].Size = new System.Drawing.Size(41, 12);
                 l8[n].Text = sdr[2].ToString();
                 p[n].Controls.Add(l8[n]);
+                //label9
+                l9[n] = new Label();
+                l9[n].AutoSize = true;
+                l9[n].Location = new System.Drawing.Point(3, 174);
+                l9[n].Size = new System.Drawing.Size(65, 12);
+                l9[n].Text = "联系方式：";
+                p[n].Controls.Add(l9[n]);
+                //label10
+                l10[n] = new Label();
+                l10[n].AutoSize = true;
+                l10[n].Location = new System.Drawing.Point(68, 174);
+                l10[n].Size = new System.Drawing.Size(47, 12);
+                l10[n].Text = sdr[3].ToString();
+                p[n].Controls.Add(l10[n]);
                 //图片
-                pic[n] = new PictureBox();
-                pic[n].Location = new System.Drawing.Point(15, 11);
-                pic[n].Name = "pictureBox1";
-                pic[n].Size = new System.Drawing.Size(100, 97);
-                pic[n].TabStop = false;
-                if (sdr[3]!=null)
+                picture[n] = new PictureBox();
+                picture[n].Location = new System.Drawing.Point(15, 11);
+                picture[n].Size = new System.Drawing.Size(112, 96);
+                picture[n].SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+                picture[n].TabStop = false;
+                if (sdr[4] != DBNull.Value)
                 {
-                    MemoryStream buf = new MemoryStream((byte[])sdr[3]);
+                    MemoryStream buf = new MemoryStream((byte[])sdr[4]);
                     Image image = Image.FromStream(buf, true);
-                    pic[n].Image = image;
+                    picture[n].Image = image;
                 }
-                pic[n].SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-                p[n].Controls.Add(pic[n]);
+                p[n].Controls.Add(picture[n]);
 
                 n++;
             }
@@ -125,7 +131,7 @@ namespace 美术馆.管理员
         {
             try
             {
-                this.main.Show();
+                this.h.Show();
             }
             catch (Exception ex)
             {

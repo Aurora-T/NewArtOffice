@@ -29,7 +29,8 @@ namespace 美术馆.管理员
             string sql = "select 票数 from 放票数表 where 起始时间<='"+d+" 'and 截止时间>='"+d+"'";
             SqlCommand Cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = Cmd.ExecuteReader();
-            if (sdr.Read())
+            sdr.Read();
+            if (sdr[0].ToString()!="0")
                 label4.Text = sdr[0].ToString();
             else
                 label4.Text = "500";

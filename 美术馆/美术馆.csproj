@@ -76,6 +76,24 @@
     <Compile Include="专家\changeQuestionSecond.Designer.cs">
       <DependentUpon>changeQuestionSecond.cs</DependentUpon>
     </Compile>
+    <Compile Include="管理员\add_old_zhanlanpn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\add_old_zhanlanpn.Designer.cs">
+      <DependentUpon>add_old_zhanlanpn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\add_zanlanpin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\add_zanlanpin.Designer.cs">
+      <DependentUpon>add_zanlanpin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\arrange_zhanlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\arrange_zhanlan.Designer.cs">
+      <DependentUpon>arrange_zhanlan.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\changeInformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -268,6 +286,12 @@
     <Compile Include="管理员\exit.Designer.cs">
       <DependentUpon>exit.cs</DependentUpon>
     </Compile>
+    <Compile Include="管理员\zhanlan_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\zhanlan_details.Designer.cs">
+      <DependentUpon>zhanlan_details.cs</DependentUpon>
+    </Compile>
     <Compile Include="管理员\zhanlan_history.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -366,6 +390,12 @@
     <Compile Include="管理员\yuyue_record.Designer.cs">
       <DependentUpon>yuyue_record.cs</DependentUpon>
     </Compile>
+    <Compile Include="管理员\zhanlan_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\zhanlan_main.Designer.cs">
+      <DependentUpon>zhanlan_main.cs</DependentUpon>
+    </Compile>
     <Compile Include="美术馆DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -385,6 +415,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="专家\changeQuestionSecond.resx">
       <DependentUpon>changeQuestionSecond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\add_old_zhanlanpn.resx">
+      <DependentUpon>add_old_zhanlanpn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\add_zanlanpin.resx">
+      <DependentUpon>add_zanlanpin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\arrange_zhanlan.resx">
+      <DependentUpon>arrange_zhanlan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\changeInformation.resx">
       <DependentUpon>changeInformation.cs</DependentUpon>
@@ -482,6 +521,9 @@
     <EmbeddedResource Include="管理员\exit.resx">
       <DependentUpon>exit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="管理员\zhanlan_details.resx">
+      <DependentUpon>zhanlan_details.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="管理员\zhanlan_history.resx">
       <DependentUpon>zhanlan_history.cs</DependentUpon>
     </EmbeddedResource>
@@ -538,6 +580,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="管理员\yuyue_record.resx">
       <DependentUpon>yuyue_record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\zhanlan_main.resx">
+      <DependentUpon>zhanlan_main.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

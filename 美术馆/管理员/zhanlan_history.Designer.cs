@@ -149,12 +149,12 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 30);
             this.label1.TabIndex = 26;
-            this.label1.Text = "取票记录";
+            this.label1.Text = "展览记录";
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("华文新魏", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(209, 329);
+            this.button4.Location = new System.Drawing.Point(203, 329);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(98, 23);
             this.button4.TabIndex = 28;
