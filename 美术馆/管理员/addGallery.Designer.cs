@@ -40,12 +40,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.textBox3);
@@ -64,7 +66,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(172, 231);
+            this.button1.Location = new System.Drawing.Point(225, 232);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 28);
             this.button1.TabIndex = 8;
@@ -160,6 +162,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "美术馆名称：";
             // 
+            // button2
+            // 
+            this.button2.AutoSize = true;
+            this.button2.Location = new System.Drawing.Point(59, 232);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(108, 28);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "返回上一级";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // addGallery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -191,5 +204,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
