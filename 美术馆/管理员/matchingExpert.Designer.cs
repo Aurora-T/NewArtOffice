@@ -259,7 +259,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "matchingExpert";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "matchingExpert";
+            this.Text = "鉴定专家匹配";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox1.ResumeLayout(false);

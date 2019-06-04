@@ -65,7 +65,7 @@ namespace 美术馆.管理员
                     dataGridView1.ClearSelection();
                 }
             }
-            comboBox1.Text = "";
+            comboBox1.Text = "--请选择--";
             label5.Text = "";
         }
 
@@ -128,6 +128,7 @@ namespace 美术馆.管理员
             }
             dataGridView1.ClearSelection();
             label5.Text = "";
+            textBox1.Text = "";
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

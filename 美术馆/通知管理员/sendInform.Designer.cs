@@ -35,7 +35,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,28 +107,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "标题：";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(84, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 18);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
-            // 
             // sendInform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(479, 332);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Name = "sendInform";
             this.Text = "发布通知";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -142,6 +130,5 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
     }
 }

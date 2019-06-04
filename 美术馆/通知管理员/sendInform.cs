@@ -42,10 +42,9 @@ namespace 美术馆.通知管理员
             }
             else
             {
-                SqlCommand cmd = new SqlCommand("insert into 通知表(发布者工号,发布时间,标题,内容) values('" + this.userid + "','" + DateTime.Now.ToString("yy-mm-dd 00:00:00") + "','" + textBox1.Text + "','" + textBox2.Text + "')", conn);
+                SqlCommand cmd = new SqlCommand("insert into 通知表(发布者工号,发布时间,标题,内容) values('" + this.userid + "','" + DateTime.Now.ToString() + "','" + textBox1.Text + "','" + textBox2.Text + "')", conn);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("提交成功", "提示");
-                label2.Text = DateTime.Now.ToString("yy-mm-dd 00:00:00");
                 this.Hide();
                 this.page.Show();
                 this.page.save();

@@ -34,7 +34,8 @@ namespace 美术馆.管理员
             }
             else
             {
-                SqlCommand cmd = new SqlCommand("insert into 入馆表(藏品编号,操作员工号,来源详情,价值) values('" + this.cid + "','" + this.userid + "','" + textBox2.Text + "','" + textBox1.Text + "')", conn);
+                float price = float.Parse(textBox1.Text.ToString());
+                SqlCommand cmd = new SqlCommand("insert into 入馆表(藏品编号,操作员工号,入馆时间,来源详情,价值) values('" + this.cid + "','" + this.userid  +"','"+DateTime.Now.ToString()+"','" + textBox2.Text.ToString() + "'," + price + ")", conn);
                 cmd.ExecuteNonQuery();
                 SqlCommand cmd1 = new SqlCommand("update 征集表 set 状态='入馆' where 编号='" + this.cid + "'", conn);
                 cmd1.ExecuteNonQuery();
