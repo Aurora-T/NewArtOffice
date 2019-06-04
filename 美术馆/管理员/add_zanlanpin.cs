@@ -152,12 +152,12 @@ namespace 美术馆.管理员
         //导入Excel文件
         private void button2_Click(object sender, EventArgs e)
         {
-            string connString = "server = (local); uid = sa; pwd = sa; database = db_test";
-            System.Windows.Forms.OpenFileDialog fd = new OpenFileDialog();
-            if (fd.ShowDialog() == DialogResult.OK)
-            {
-                TransferData(fd.FileName, "student", connString);
-            }
+            //string connString = "server = (local); uid = sa; pwd = sa; database = db_test";
+            //System.Windows.Forms.OpenFileDialog fd = new OpenFileDialog();
+            //if (fd.ShowDialog() == DialogResult.OK)
+            //{
+            //    TransferData(fd.FileName, "student", connString);
+            //}
         }
     }
 }

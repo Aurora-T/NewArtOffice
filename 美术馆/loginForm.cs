@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using 美术馆.管理员;
 using 美术馆.专家;
+using 美术馆.通知管理员;
 
 namespace 美术馆
 {
@@ -93,12 +94,12 @@ namespace 美术馆
                             this.Hide();
                             main.Show();
                         }
-                        //else if (position.Replace(" ", "").Equals("通知管理员"))
-                        //{
-                        //    expert_main main = new expert_main(this, id);
-                        //    this.Hide();
-                        //    main.Show();
-                        //}
+                        else if (position.Replace(" ", "").Equals("通知管理员"))
+                        {
+                            inform_main main = new inform_main(this, id);
+                            this.Hide();
+                            main.Show();
+                        }
                     }
                     else
                     {
