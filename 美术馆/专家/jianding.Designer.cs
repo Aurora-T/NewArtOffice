@@ -33,6 +33,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -98,12 +98,21 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(815, 41);
+            this.groupBox1.Location = new System.Drawing.Point(811, 28);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(234, 262);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "已选择藏品：";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(80, 83);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(148, 173);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
             // linkLabel1
             // 
@@ -163,9 +172,9 @@
             // button2
             // 
             this.button2.AutoSize = true;
-            this.button2.Location = new System.Drawing.Point(886, 318);
+            this.button2.Location = new System.Drawing.Point(886, 307);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 28);
+            this.button2.Size = new System.Drawing.Size(90, 30);
             this.button2.TabIndex = 9;
             this.button2.Text = "鉴定";
             this.button2.UseVisualStyleBackColor = true;
@@ -174,9 +183,9 @@
             // button3
             // 
             this.button3.AutoSize = true;
-            this.button3.Location = new System.Drawing.Point(848, 359);
+            this.button3.Location = new System.Drawing.Point(843, 351);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(169, 28);
+            this.button3.Size = new System.Drawing.Size(170, 30);
             this.button3.TabIndex = 10;
             this.button3.Text = "查看历史鉴定记录";
             this.button3.UseVisualStyleBackColor = true;
@@ -185,22 +194,13 @@
             // button4
             // 
             this.button4.AutoSize = true;
-            this.button4.Location = new System.Drawing.Point(886, 398);
+            this.button4.Location = new System.Drawing.Point(886, 396);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 28);
+            this.button4.Size = new System.Drawing.Size(90, 30);
             this.button4.TabIndex = 11;
             this.button4.Text = "返回主页";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(80, 83);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(148, 173);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // jianding
             // 

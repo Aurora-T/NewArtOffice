@@ -31,7 +31,7 @@ namespace 美术馆.管理员
             myda.Fill(dt);
             dataGridView1.DataSource = dt;
             dataGridView1.ClearSelection();
-            string sql1 = "SELECT count(*),理想价格 from 征集表 left join 鉴定表 on 鉴定表.藏品编号=征集表.编号 where 鉴定结果='真' and 征集表.编号='" + id + "'group by 理想价格";
+            string sql1 = "SELECT count(*) from 征集表 left join 鉴定表 on 鉴定表.藏品编号=征集表.编号 where 鉴定结果='真' and 征集表.编号='" + id + "'group by 理想价格";
             SqlCommand cmd = new SqlCommand(sql1, conn);
             cmd.CommandType = CommandType.Text;
             SqlDataReader sdr;
@@ -47,7 +47,7 @@ namespace 美术馆.管理员
                 label8.Text = sdr[0].ToString();
             }
             sdr.Close();
-            string sql2 = "SELECT count(*),理想价格 from 鉴定表,征集表 where 鉴定表.藏品编号=征集表.编号 and 鉴定结果='假' and 征集表.编号='" + id + "'group by 理想价格";
+            string sql2 = "SELECT count(*) from 鉴定表,征集表 where 鉴定表.藏品编号=征集表.编号 and 鉴定结果='假' and 征集表.编号='" + id + "'group by 理想价格";
             SqlCommand cmd1 = new SqlCommand(sql2, conn);
             cmd1.CommandType = CommandType.Text;
             SqlDataReader sdr1;
@@ -62,6 +62,14 @@ namespace 美术馆.管理员
                 label10.Text = sdr1[0].ToString();
             }
             sdr1.Close();
+            string sql3 = "SELECT 理想价格 from 征集表  where 编号='" + this.cid + "'";
+            SqlCommand cmd3 = new SqlCommand(sql3, conn);
+            cmd3.CommandType = CommandType.Text;
+            SqlDataReader sdr3;
+            sdr3 = cmd3.ExecuteReader();
+            sdr3.Read();
+            label4.Text = sdr3[0].ToString();
+            sdr3.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)//入馆

@@ -50,5 +50,19 @@ namespace 美术馆.通知管理员
             }
 
         }
+
+        private void 退出系统ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Close();
+                page.Close();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("发生错误：" + ex.Message);
+            }
+        }
     }
 }

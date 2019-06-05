@@ -57,6 +57,7 @@ namespace 美术馆.专家
                 }
             }
             dataGridView1.ClearSelection();
+            comboBox1.Text = "--请选择--";
         }
         private void save()
         {
@@ -143,6 +144,7 @@ namespace 美术馆.专家
                 save();
             }
             dataGridView1.ClearSelection();
+            textBox1.Text = "";
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -196,6 +196,7 @@
             // 
             // button4
             // 
+            this.button4.AutoSize = true;
             this.button4.Location = new System.Drawing.Point(603, 422);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(147, 29);
@@ -219,6 +220,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
