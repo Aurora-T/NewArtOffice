@@ -103,7 +103,7 @@ namespace 美术馆.管理员
         //点击展览编号显示展览详情
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if (e.RowIndex > -1 && e.ColumnIndex > -1)
+            if (e.RowIndex > -1 && e.ColumnIndex > -1&& this.dataGridView1.CurrentRow.Cells[0].Value!=null)
             {
                 int zno = Int32.Parse(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
                 zhanlan_details details = new zhanlan_details(this, zno);
