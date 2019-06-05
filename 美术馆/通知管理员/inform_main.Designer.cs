@@ -75,26 +75,27 @@
             // 修改个人信息ToolStripMenuItem
             // 
             this.修改个人信息ToolStripMenuItem.Name = "修改个人信息ToolStripMenuItem";
-            this.修改个人信息ToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.修改个人信息ToolStripMenuItem.Size = new System.Drawing.Size(218, 30);
             this.修改个人信息ToolStripMenuItem.Text = "修改个人信息";
             // 
             // 修改密保问题ToolStripMenuItem
             // 
             this.修改密保问题ToolStripMenuItem.Name = "修改密保问题ToolStripMenuItem";
-            this.修改密保问题ToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.修改密保问题ToolStripMenuItem.Size = new System.Drawing.Size(218, 30);
             this.修改密保问题ToolStripMenuItem.Text = "修改密保问题";
             // 
             // 修改密码ToolStripMenuItem
             // 
             this.修改密码ToolStripMenuItem.Name = "修改密码ToolStripMenuItem";
-            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(218, 30);
             this.修改密码ToolStripMenuItem.Text = "修改密码";
             // 
             // 退出系统ToolStripMenuItem
             // 
             this.退出系统ToolStripMenuItem.Name = "退出系统ToolStripMenuItem";
-            this.退出系统ToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.退出系统ToolStripMenuItem.Size = new System.Drawing.Size(218, 30);
             this.退出系统ToolStripMenuItem.Text = "退出系统";
+            this.退出系统ToolStripMenuItem.Click += new System.EventHandler(this.退出系统ToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -180,7 +181,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "inform_main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "主界面";
+            this.Text = "玛迦山美术馆";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.administrator_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

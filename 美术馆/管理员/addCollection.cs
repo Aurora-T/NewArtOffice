@@ -78,29 +78,17 @@ namespace 美术馆.管理员
                 {
                     type = radioButton5.Text;
                 }
-                
-                
-                if (image != null)
-                {
-                    SqlCommand cmd = new SqlCommand("insert into 征集表(藏品名称,类别,作者,创作年代,理想价格,联系人姓名,联系方式,备注,藏品图片) values('" + textBox1.Text + "','" + type + "','" + textBox5.Text + "','" + textBox6.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + richTextBox1.Text + "',@picture)", conn);
-                    MemoryStream mstream = new MemoryStream();
-                    image.Save(mstream, System.Drawing.Imaging.ImageFormat.Jpeg);
-                    byte[] byteData = new Byte[mstream.Length];
-                    mstream.Position = 0;
-                    mstream.Read(byteData, 0, byteData.Length);
-                    mstream.Close();
-                    SqlParameter param = new SqlParameter("@picture", SqlDbType.VarBinary, byteData.Length);
-                    param.Value = byteData;
-                    cmd.Parameters.Add(param);
-                    cmd.ExecuteNonQuery();
-                }
-                else
-                {
-                    SqlCommand cmd = new SqlCommand("insert into 征集表(藏品名称,类别,作者,创作年代,理想价格,联系人姓名,联系方式,备注) values('" + textBox1.Text + "','" + type + "','" + textBox5.Text + "','" + textBox6.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + richTextBox1.Text + "')", conn);
-                    cmd.ExecuteNonQuery();
-                }
-
-                
+                SqlCommand cmd = new SqlCommand("insert into 征集表(藏品名称,类别,作者,创作年代,理想价格,联系人姓名,联系方式,备注,藏品图片) values('" + textBox1.Text + "','" + type + "','" + textBox5.Text + "','" + textBox6.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + richTextBox1.Text + "',@picture)", conn);
+                MemoryStream mstream = new MemoryStream();
+                image.Save(mstream, System.Drawing.Imaging.ImageFormat.Jpeg);
+                byte[] byteData = new Byte[mstream.Length];
+                mstream.Position = 0;
+                mstream.Read(byteData, 0, byteData.Length);
+                mstream.Close();
+                SqlParameter param = new SqlParameter("@picture", SqlDbType.VarBinary, byteData.Length);
+                param.Value = byteData;
+                cmd.Parameters.Add(param);
+                cmd.ExecuteNonQuery();
                 MessageBox.Show("提交成功", "提示");
                 this.Hide();
                 this.page.Show();
