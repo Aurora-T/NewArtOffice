@@ -66,5 +66,11 @@ namespace 美术馆.管理员
                 MessageBox.Show("未选择修改职位", "提示");
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.page.Show();
+        }
     }
 }

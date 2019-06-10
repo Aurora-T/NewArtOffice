@@ -32,11 +32,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.开始时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.藏品编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,9 +76,28 @@
             this.藏品编号});
             this.dataGridView1.Location = new System.Drawing.Point(76, 70);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(295, 187);
             this.dataGridView1.TabIndex = 5;
+            // 
+            // 编号
+            // 
+            this.编号.HeaderText = "编号";
+            this.编号.Name = "编号";
+            this.编号.ReadOnly = true;
+            // 
+            // 开始时间
+            // 
+            this.开始时间.HeaderText = "开始时间";
+            this.开始时间.Name = "开始时间";
+            this.开始时间.ReadOnly = true;
+            // 
+            // 藏品编号
+            // 
+            this.藏品编号.HeaderText = "藏品编号";
+            this.藏品编号.Name = "藏品编号";
+            this.藏品编号.ReadOnly = true;
             // 
             // button2
             // 
@@ -99,21 +118,6 @@
             this.button3.Text = "刷新";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // 编号
-            // 
-            this.编号.HeaderText = "编号";
-            this.编号.Name = "编号";
-            // 
-            // 开始时间
-            // 
-            this.开始时间.HeaderText = "开始时间";
-            this.开始时间.Name = "开始时间";
-            // 
-            // 藏品编号
-            // 
-            this.藏品编号.HeaderText = "藏品编号";
-            this.藏品编号.Name = "藏品编号";
             // 
             // cangpinxiufu
             // 

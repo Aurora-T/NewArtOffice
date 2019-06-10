@@ -84,9 +84,10 @@ namespace 美术馆.管理员
                 sp.Value = richTextBox1.Text;
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("安排成功");
+                button2.Enabled = true;
             }
 
-            button2.Enabled = true;
+            
         }
 
         //显示开始时间时的空余的展厅

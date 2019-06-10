@@ -91,12 +91,15 @@ namespace 美术馆.专家
         //点击某个单元格时，提示藏品信息
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if (e.RowIndex > -1 && e.ColumnIndex > -1)
+            if (e.RowIndex > -1 && e.ColumnIndex > -1 && dataGridView1.Rows[e.RowIndex].Cells[1].Value != null)
             {
                 int cno = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString());
                 cangpin c = new cangpin(conn, cno);
                 c.ShowDialog();
+                button1.Enabled = true;
             }
+            else
+                MessageBox.Show("未选中！");
         }
 
         private void jiancha_FormClosed(object sender, FormClosedEventArgs e)

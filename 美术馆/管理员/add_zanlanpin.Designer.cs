@@ -121,6 +121,7 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Enabled = false;
             this.linkLabel2.LinkColor = System.Drawing.Color.DarkOrchid;
             this.linkLabel2.Location = new System.Drawing.Point(36, 76);
             this.linkLabel2.Name = "linkLabel2";

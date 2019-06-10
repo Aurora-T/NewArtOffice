@@ -66,6 +66,7 @@
             this.下次检查时间});
             this.dataGridView1.Location = new System.Drawing.Point(64, 77);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(318, 150);
             this.dataGridView1.TabIndex = 4;
@@ -74,16 +75,19 @@
             // 
             this.编号.HeaderText = "检查记录编号";
             this.编号.Name = "编号";
+            this.编号.ReadOnly = true;
             // 
             // 藏品编号
             // 
             this.藏品编号.HeaderText = "藏品编号";
             this.藏品编号.Name = "藏品编号";
+            this.藏品编号.ReadOnly = true;
             // 
             // 下次检查时间
             // 
             this.下次检查时间.HeaderText = "应该检查时间";
             this.下次检查时间.Name = "下次检查时间";
+            this.下次检查时间.ReadOnly = true;
             // 
             // button2
             // 

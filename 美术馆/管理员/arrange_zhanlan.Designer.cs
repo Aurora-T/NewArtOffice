@@ -82,6 +82,7 @@
             this.dataGridView1.Enabled = false;
             this.dataGridView1.Location = new System.Drawing.Point(12, 75);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(240, 220);
             this.dataGridView1.TabIndex = 1;
@@ -91,31 +92,37 @@
             // 
             this.展厅编号.HeaderText = "展厅编号";
             this.展厅编号.Name = "展厅编号";
+            this.展厅编号.ReadOnly = true;
             // 
             // 楼层
             // 
             this.楼层.HeaderText = "楼层";
             this.楼层.Name = "楼层";
+            this.楼层.ReadOnly = true;
             // 
             // 位置
             // 
             this.位置.HeaderText = "位置";
             this.位置.Name = "位置";
+            this.位置.ReadOnly = true;
             // 
             // 面积
             // 
             this.面积.HeaderText = "面积";
             this.面积.Name = "面积";
+            this.面积.ReadOnly = true;
             // 
             // 容量
             // 
             this.容量.HeaderText = "容量";
             this.容量.Name = "容量";
+            this.容量.ReadOnly = true;
             // 
             // 租金
             // 
             this.租金.HeaderText = "租金";
             this.租金.Name = "租金";
+            this.租金.ReadOnly = true;
             // 
             // label2
             // 

@@ -77,6 +77,7 @@
             this.状态});
             this.dataGridView1.Location = new System.Drawing.Point(51, 124);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(369, 175);
             this.dataGridView1.TabIndex = 6;
@@ -85,55 +86,65 @@
             // 
             this.编号.HeaderText = "编号";
             this.编号.Name = "编号";
+            this.编号.ReadOnly = true;
             // 
             // 同行人1姓名
             // 
             this.同行人1姓名.HeaderText = "同行人1姓名";
             this.同行人1姓名.Name = "同行人1姓名";
+            this.同行人1姓名.ReadOnly = true;
             this.同行人1姓名.Width = 110;
             // 
             // 同行人1身份证号
             // 
             this.同行人1身份证号.HeaderText = "同行人1身份证号";
             this.同行人1身份证号.Name = "同行人1身份证号";
+            this.同行人1身份证号.ReadOnly = true;
             this.同行人1身份证号.Width = 140;
             // 
             // 同行人2姓名
             // 
             this.同行人2姓名.HeaderText = "同行人2姓名";
             this.同行人2姓名.Name = "同行人2姓名";
+            this.同行人2姓名.ReadOnly = true;
             this.同行人2姓名.Width = 110;
             // 
             // 同行人2身份证号
             // 
             this.同行人2身份证号.HeaderText = "同行人2身份证号";
             this.同行人2身份证号.Name = "同行人2身份证号";
+            this.同行人2身份证号.ReadOnly = true;
             this.同行人2身份证号.Width = 140;
             // 
             // 微信号
             // 
             this.微信号.HeaderText = "微信号";
             this.微信号.Name = "微信号";
+            this.微信号.ReadOnly = true;
             // 
             // 身份证号
             // 
             this.身份证号.HeaderText = "身份证号";
             this.身份证号.Name = "身份证号";
+            this.身份证号.ReadOnly = true;
             // 
             // 姓名
             // 
             this.姓名.HeaderText = "姓名";
             this.姓名.Name = "姓名";
+            this.姓名.ReadOnly = true;
             // 
             // 操作时间
             // 
             this.操作时间.HeaderText = "操作时间";
             this.操作时间.Name = "操作时间";
+            this.操作时间.ReadOnly = true;
             // 
             // 状态
             // 
             this.状态.HeaderText = "状态";
             this.状态.Name = "状态";
+            this.状态.ReadOnly = true;
             // 
             // groupBox1
             // 

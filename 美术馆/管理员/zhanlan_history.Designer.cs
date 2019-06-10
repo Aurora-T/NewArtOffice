@@ -62,6 +62,7 @@
             this.dataGridView1.GridColor = System.Drawing.Color.Black;
             this.dataGridView1.Location = new System.Drawing.Point(28, 134);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(519, 243);
             this.dataGridView1.TabIndex = 23;
@@ -71,36 +72,43 @@
             // 
             this.展览编号.HeaderText = "展览编号";
             this.展览编号.Name = "展览编号";
+            this.展览编号.ReadOnly = true;
             // 
             // 展览名称
             // 
             this.展览名称.HeaderText = "展览名称";
             this.展览名称.Name = "展览名称";
+            this.展览名称.ReadOnly = true;
             // 
             // 展厅编号
             // 
             this.展厅编号.HeaderText = "展厅编号";
             this.展厅编号.Name = "展厅编号";
+            this.展厅编号.ReadOnly = true;
             // 
             // 负责人编号
             // 
             this.负责人编号.HeaderText = "负责人编号";
             this.负责人编号.Name = "负责人编号";
+            this.负责人编号.ReadOnly = true;
             // 
             // 租金
             // 
             this.租金.HeaderText = "租金";
             this.租金.Name = "租金";
+            this.租金.ReadOnly = true;
             // 
             // 开始时间
             // 
             this.开始时间.HeaderText = "开始时间";
             this.开始时间.Name = "开始时间";
+            this.开始时间.ReadOnly = true;
             // 
             // 结束时间
             // 
             this.结束时间.HeaderText = "结束时间";
             this.结束时间.Name = "结束时间";
+            this.结束时间.ReadOnly = true;
             // 
             // button2
             // 

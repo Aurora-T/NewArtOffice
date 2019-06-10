@@ -181,7 +181,15 @@ namespace 美术馆.管理员
             if (fd.ShowDialog() == DialogResult.OK)
             {
                 string fileName = fd.FileName;
-                bind(fileName);
+                try
+                {
+                    bind(fileName);
+                }
+                catch (Exception er)
+                {
+
+                    MessageBox.Show(er.ToString());
+                }              
             }
         }
         private void bind(string fileName)
@@ -200,27 +208,39 @@ namespace 美术馆.管理员
             int m = Int32.Parse(sdr1[0].ToString());
             sdr1.Close();
 
-            string strConn = "Provider=Microsoft.Jet.OLEDB.4.0;" +
+            DataSet ds = new DataSet();
+            try
+            {
+                string strConn = "Provider=Microsoft.Jet.OLEDB.4.0;" +
                  "Data Source=" + fileName + ";" +
                  "Extended Properties='Excel 8.0; HDR=Yes; IMEX=1'";
-            OleDbDataAdapter da = new OleDbDataAdapter("SELECT *  FROM [展览品$]", strConn);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
+                OleDbDataAdapter da = new OleDbDataAdapter("SELECT *  FROM [展览品$]", strConn);               
+                da.Fill(ds);
+            }
+            catch (Exception er)
+            {
+
+                MessageBox.Show(er.ToString());
+            }           
             int rowsnum = ds.Tables[0].Rows.Count;
             if (rowsnum <= m - n)
             {
                 try
                 {
                     int flag = 0;
-                    dt = ds.Tables[0];
+                    dt = ds.Tables[0];                   
                     DataRow dr = null;                  
                     for (int i = 0; i < dt.Rows.Count; i++)
                     {
                         dr = dt.Rows[i];
                         flag+=insertToSql(dr);
                     }
+                    
                     if (flag > 0)
+                    {
                         MessageBox.Show("导入数据成功");
+                        linkLabel2.Enabled = true;
+                    }
                     else
                         MessageBox.Show("未成功");
                 }
@@ -245,8 +265,10 @@ namespace 美术馆.管理员
             SqlCommand cmd = new SqlCommand(sql, conn);
             int i=cmd.ExecuteNonQuery();
             return i;
+            
         }
      
+        //导入
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
@@ -257,13 +279,17 @@ namespace 美术馆.管理员
 
                 if (textBox5.Text != "")
                 {
-                    string sql1 = "SELECT * FROM 展览品表 where 展览编号='" + label2.Text + "'";
+                    int flag = 0;
+                    string sql1 = "SELECT * FROM 展览品表 where 展览编号='" + label2.Text + "' and 展览品名称='"+textBox5.Text.Replace(" ","")+"'";
                     SqlCommand Cmd1 = new SqlCommand(sql1, conn);
                     SqlDataReader sdr1 = Cmd1.ExecuteReader();
-                    sdr1.Read();
+                    //sdr1.Read();
                     if (sdr1.Read())
+                        flag = 1;
+                    sdr1.Close();
+                    if (flag==1)
                     {
-                        string sql = "Insert Into 展览品表(图片) Values (@Picture) where 展览品名称='"+textBox5.Text+"'";
+                        string sql = "update 展览品表 set 图片=@Picture where 展览品名称='"+textBox5.Text+"'";
                         SqlCommand cmd = new SqlCommand(sql, conn);
                         //插入图片
                         MemoryStream mstream = new MemoryStream();
@@ -277,9 +303,11 @@ namespace 美术馆.管理员
                         cmd.Parameters.Add(param);
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("添加图片成功");
+                        image = null;
                     }
                     else
                         MessageBox.Show("该展览品不存在");
+                    sdr1.Close();
                 }
                 else
                     MessageBox.Show("请选择展览品");

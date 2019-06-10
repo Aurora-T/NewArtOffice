@@ -30,14 +30,14 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.藏品编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.应该检查时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.开始时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,10 +61,31 @@
             this.开始时间});
             this.dataGridView1.Location = new System.Drawing.Point(66, 68);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(327, 168);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
+            // 
+            // 编号
+            // 
+            this.编号.HeaderText = "编号";
+            this.编号.Name = "编号";
+            // 
+            // 藏品编号
+            // 
+            this.藏品编号.HeaderText = "藏品编号";
+            this.藏品编号.Name = "藏品编号";
+            // 
+            // 应该检查时间
+            // 
+            this.应该检查时间.HeaderText = "应该检查时间";
+            this.应该检查时间.Name = "应该检查时间";
+            // 
+            // 开始时间
+            // 
+            this.开始时间.HeaderText = "开始时间";
+            this.开始时间.Name = "开始时间";
             // 
             // label2
             // 
@@ -89,6 +110,7 @@
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(195, 251);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -106,26 +128,6 @@
             this.button2.Text = "刷新";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // 编号
-            // 
-            this.编号.HeaderText = "编号";
-            this.编号.Name = "编号";
-            // 
-            // 藏品编号
-            // 
-            this.藏品编号.HeaderText = "藏品编号";
-            this.藏品编号.Name = "藏品编号";
-            // 
-            // 应该检查时间
-            // 
-            this.应该检查时间.HeaderText = "应该检查时间";
-            this.应该检查时间.Name = "应该检查时间";
-            // 
-            // 开始时间
-            // 
-            this.开始时间.HeaderText = "开始时间";
-            this.开始时间.Name = "开始时间";
             // 
             // jiancha
             // 

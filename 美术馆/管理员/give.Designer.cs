@@ -48,18 +48,21 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Location = new System.Drawing.Point(39, 42);
+            this.groupBox1.Location = new System.Drawing.Point(26, 28);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(406, 227);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(271, 151);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "藏品赠送：";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(127, 172);
+            this.button1.Location = new System.Drawing.Point(85, 115);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 28);
+            this.button1.Size = new System.Drawing.Size(92, 19);
             this.button1.TabIndex = 13;
             this.button1.Text = "提交";
             this.button1.UseVisualStyleBackColor = true;
@@ -67,60 +70,68 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(127, 37);
+            this.dateTimePicker1.Location = new System.Drawing.Point(85, 25);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(265, 28);
+            this.dateTimePicker1.Size = new System.Drawing.Size(178, 21);
             this.dateTimePicker1.TabIndex = 12;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 42);
+            this.label6.Location = new System.Drawing.Point(10, 28);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 18);
+            this.label6.Size = new System.Drawing.Size(65, 12);
             this.label6.TabIndex = 11;
             this.label6.Text = "出馆时间：";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(127, 80);
+            this.textBox3.Location = new System.Drawing.Point(85, 53);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(266, 28);
+            this.textBox3.Size = new System.Drawing.Size(179, 21);
             this.textBox3.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 127);
+            this.label5.Location = new System.Drawing.Point(10, 85);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 18);
+            this.label5.Size = new System.Drawing.Size(65, 12);
             this.label5.TabIndex = 7;
             this.label5.Text = "联系电话：";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 85);
+            this.label4.Location = new System.Drawing.Point(10, 57);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 18);
+            this.label4.Size = new System.Drawing.Size(53, 12);
             this.label4.TabIndex = 6;
             this.label4.Text = "负责人：";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(127, 123);
+            this.textBox2.Location = new System.Drawing.Point(85, 82);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(266, 28);
+            this.textBox2.Size = new System.Drawing.Size(179, 21);
             this.textBox2.TabIndex = 5;
             // 
             // give
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 296);
+            this.ClientSize = new System.Drawing.Size(325, 197);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "give";
-            this.Text = "give";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "赠送";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
