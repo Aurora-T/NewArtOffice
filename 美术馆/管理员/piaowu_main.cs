@@ -71,6 +71,7 @@ namespace 美术馆.管理员
         {
             try
             {
+                MessageBox.Show("成功退出系统！");
                 this.Close();
                 l.Close();
                 conn.Close();

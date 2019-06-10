@@ -97,9 +97,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(144, 212);
+            this.button1.Font = new System.Drawing.Font("隶书", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.Location = new System.Drawing.Point(151, 213);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(58, 23);
             this.button1.TabIndex = 15;
             this.button1.Text = "确定";
             this.button1.UseVisualStyleBackColor = true;
@@ -119,7 +120,7 @@
             this.Controls.Add(this.label2);
             this.Name = "xiufu_details";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "xiufu_details";
+            this.Text = "修复详情";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.jiancha_details_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();

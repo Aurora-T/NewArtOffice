@@ -47,6 +47,7 @@ namespace 美术馆.管理员
                 //面板
                 p[n] = new Panel();
                 p[n].Size = new System.Drawing.Size(145, 197);
+                p[n].BackColor = System.Drawing.Color.Transparent;
                 if (n % 2 == 1)
                     p[n].Location = new System.Drawing.Point(13, (n - 1) / 2 * 224 + 41);
                 else
@@ -57,6 +58,7 @@ namespace 美术馆.管理员
                 l3[n].AutoSize = true;
                 l3[n].Location = new System.Drawing.Point(4, 110);
                 l3[n].Size = new System.Drawing.Size(41, 12);
+                l3[n].BackColor = System.Drawing.Color.Transparent;
                 l3[n].Text = "名称：";
                 p[n].Controls.Add(l3[n]);
                 //label4
@@ -64,6 +66,7 @@ namespace 美术馆.管理员
                 l4[n].AutoSize = true;
                 l4[n].Location = new System.Drawing.Point(51, 110);
                 l4[n].Size = new System.Drawing.Size(41, 12);
+                l4[n].BackColor = System.Drawing.Color.Transparent;
                 l4[n].Text = sdr[0].ToString();
                 p[n].Controls.Add(l4[n]);
                 //label5
@@ -71,6 +74,7 @@ namespace 美术馆.管理员
                 l5[n].AutoSize = true;
                 l5[n].Location = new System.Drawing.Point(3, 131);
                 l5[n].Size = new System.Drawing.Size(89, 12);
+                l5[n].BackColor = System.Drawing.Color.Transparent;
                 l5[n].Text = "作者或负责人：";
                 p[n].Controls.Add(l5[n]);
                 //label6
@@ -78,6 +82,7 @@ namespace 美术馆.管理员
                 l6[n].AutoSize = true;
                 l6[n].Location = new System.Drawing.Point(95, 131);
                 l6[n].Size = new System.Drawing.Size(41, 12);
+                l6[n].BackColor = System.Drawing.Color.Transparent;
                 l6[n].Text = sdr[1].ToString();
                 p[n].Controls.Add(l6[n]);
                 //label7
@@ -85,6 +90,7 @@ namespace 美术馆.管理员
                 l7[n].AutoSize = true;
                 l7[n].Location = new System.Drawing.Point(4, 152);
                 l7[n].Size = new System.Drawing.Size(41, 12);
+                l7[n].BackColor = System.Drawing.Color.Transparent;
                 l7[n].Text = "类别：";
                 p[n].Controls.Add(l7[n]);
                 //label8
@@ -92,6 +98,7 @@ namespace 美术馆.管理员
                 l8[n].AutoSize = true;
                 l8[n].Location = new System.Drawing.Point(51, 152);
                 l8[n].Size = new System.Drawing.Size(41, 12);
+                l8[n].BackColor = System.Drawing.Color.Transparent;
                 l8[n].Text = sdr[2].ToString();
                 p[n].Controls.Add(l8[n]);
                 //label9
@@ -99,6 +106,7 @@ namespace 美术馆.管理员
                 l9[n].AutoSize = true;
                 l9[n].Location = new System.Drawing.Point(3, 174);
                 l9[n].Size = new System.Drawing.Size(65, 12);
+                l9[n].BackColor = System.Drawing.Color.Transparent;
                 l9[n].Text = "联系方式：";
                 p[n].Controls.Add(l9[n]);
                 //label10
@@ -106,12 +114,14 @@ namespace 美术馆.管理员
                 l10[n].AutoSize = true;
                 l10[n].Location = new System.Drawing.Point(68, 174);
                 l10[n].Size = new System.Drawing.Size(47, 12);
+                l10[n].BackColor = System.Drawing.Color.Transparent;
                 l10[n].Text = sdr[3].ToString();
                 p[n].Controls.Add(l10[n]);
                 //图片
                 picture[n] = new PictureBox();
                 picture[n].Location = new System.Drawing.Point(15, 11);
                 picture[n].Size = new System.Drawing.Size(112, 96);
+                picture[n].BackColor = System.Drawing.Color.Transparent;
                 picture[n].SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
                 picture[n].TabStop = false;
                 if (sdr[4] != DBNull.Value)

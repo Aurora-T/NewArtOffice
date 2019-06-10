@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(zhanlan_history));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.展览编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.展览名称 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +49,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.展览编号,
@@ -57,10 +59,11 @@
             this.租金,
             this.开始时间,
             this.结束时间});
-            this.dataGridView1.Location = new System.Drawing.Point(24, 115);
+            this.dataGridView1.GridColor = System.Drawing.Color.Black;
+            this.dataGridView1.Location = new System.Drawing.Point(28, 134);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(445, 208);
+            this.dataGridView1.Size = new System.Drawing.Size(519, 243);
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
@@ -101,10 +104,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(355, 77);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button2.Location = new System.Drawing.Point(414, 90);
+            this.button2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(64, 20);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 25;
             this.button2.Text = "全部";
             this.button2.UseVisualStyleBackColor = true;
@@ -112,29 +115,29 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(51, 72);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel1.Location = new System.Drawing.Point(59, 84);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(256, 27);
+            this.panel1.Size = new System.Drawing.Size(299, 31);
             this.panel1.TabIndex = 24;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(6, 3);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dateTimePicker1.Location = new System.Drawing.Point(7, 3);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(162, 21);
+            this.dateTimePicker1.Size = new System.Drawing.Size(188, 23);
             this.dateTimePicker1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(176, 3);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button1.Location = new System.Drawing.Point(205, 3);
+            this.button1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 20);
+            this.button1.Size = new System.Drawing.Size(77, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "搜索";
             this.button1.UseVisualStyleBackColor = true;
@@ -144,8 +147,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("华文新魏", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(198, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(231, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 30);
             this.label1.TabIndex = 26;
@@ -154,9 +157,9 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("华文新魏", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(203, 329);
+            this.button4.Location = new System.Drawing.Point(237, 384);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(98, 23);
+            this.button4.Size = new System.Drawing.Size(114, 27);
             this.button4.TabIndex = 28;
             this.button4.Text = "添加展览品";
             this.button4.UseVisualStyleBackColor = true;
@@ -164,14 +167,18 @@
             // 
             // zhanlan_history
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 361);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(573, 421);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("隶书", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "zhanlan_history";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "展览记录";
